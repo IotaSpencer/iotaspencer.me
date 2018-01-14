@@ -1,9 +1,9 @@
-#version
+# version
 version: "1.0"
 
 permalink: date
 
-# 站点设置
+# site
 title: "IotaSpencer"
 email: ken@electrocode.net
 description: ""
@@ -12,7 +12,7 @@ keywords: "iotaspencer"
 
 github_username: IotaSpencer
 
-# Markdown设置
+# Markdown
 kramdown:
   input:  GFM
   use_coderay: true
@@ -21,20 +21,21 @@ kramdown:
 
 
 
-# 地址设置
+# paths
 baseurl: "/"
 url: "https://iotaspencer.me"
 
 
-# 分页设置
+# paginate
 paginate: 10
 paginate_path: "page/:num"
 
-#scss设置
+# scss
 sass:
   sass_dir: /assets/stylesheet
   style: :compressed
 
+# jekyll
 plugins:
   - jekyll-feed
 theme: jekyll-theme-hacker
