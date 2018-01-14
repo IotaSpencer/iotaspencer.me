@@ -1,7 +1,7 @@
 # version
 version: "1.0"
 
-permalink: date
+permalink: pretty
 
 # site
 title: "IotaSpencer"
