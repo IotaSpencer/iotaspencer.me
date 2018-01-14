@@ -35,4 +35,6 @@ sass:
   sass_dir: /assets/stylesheet
   style: :compressed
 
+plugins:
+  - jekyll-feed
 theme: jekyll-theme-hacker
