@@ -524,7 +524,7 @@ h2 {
 
 h3 {
     padding-top: 5pt;
-    color: #666666;
+    color: #060606;
     font-size: 8pt;
     padding-bottom: 5pt;
     font-family: "Open Sans";
@@ -536,7 +536,7 @@ h3 {
 h4 {
     padding-top: 8pt;
     -webkit-text-decoration-skip: none;
-    color: #666666;
+    color: #060606;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     font-size: 11pt;
@@ -549,7 +549,7 @@ h4 {
 
 h5 {
     padding-top: 8pt;
-    color: #666666;
+    color: #060606;
     font-size: 11pt;
     padding-bottom: 0pt;
     font-family: "Trebuchet MS";
@@ -560,7 +560,7 @@ h5 {
 
 h6 {
     padding-top: 8pt;
-    color: #666666;
+    color: #060606;
     font-size: 11pt;
     padding-bottom: 0pt;
     font-family: "Trebuchet MS";
