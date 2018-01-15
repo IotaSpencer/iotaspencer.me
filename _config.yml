@@ -8,6 +8,8 @@ my_age: 26
 # Url is currently only used only for the RSS feed in feed.xml
 url: https://iotaspencer.me
 
+# host for serving locally and viewing with my phone
+host: 0.0.0.0
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 baseurl: '/'
 
@@ -52,5 +54,5 @@ kramdown:
   auto_ids: true
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
   hard_wrap: true
-
-exclude: ['README.md', 'LICENSE']
+timezone: America/New_York
+exclude: ['README.md', 'LICENSE', 'vendor/']
