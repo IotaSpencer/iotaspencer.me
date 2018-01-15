@@ -7,18 +7,24 @@
     <title>{{ site.name }}{% if page.title %} | {{ page.title }} {% endif %}</title>
     <meta name="theme-color" content="#222222" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--
     <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
+    -->
     <script src="{{ '/assets/js/header.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/toc.js' | relative_url }}"></script>
-    <link href="{{ '/assets/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <link href="{{ '/assets/css/theme.css' | relative_url }}" rel="stylesheet">
     <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
     <link href="{{ '/assets/css/font-awesome/css/font-awesome.min.css' | relative_url }}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    {% if page.title == 'resume' %}
-      <link href="{{ '/assets/css/resume.scss' | relative_url }}" rel="stylesheet">
-    {% endif %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> {% if page.title == 'resume' %}
+    <link href="{{ '/assets/css/resume.scss' | relative_url }}" rel="stylesheet"> {% endif %}
   </head>
 
   <body>
@@ -53,7 +59,9 @@
           <a class="navbar-brand" href="{{ '' | relative_url }}/">
             {{ site.name }}
             <br />
-            <small class="mt-2"><sub>{{ site.description }}</sub></small>
+            <small class="mt-2 pt-2">
+              <sub>{{ site.description }}</sub>
+            </small>
           </a>
 
         </div>
