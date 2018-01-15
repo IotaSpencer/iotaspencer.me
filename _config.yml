@@ -50,7 +50,9 @@ permalink: pretty
 
 markdown: kramdown
 kramdown:
+  auto_ids: true
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
   hard_wrap: true
 
 exclude: ['README.md', 'LICENSE']
+incremental: true
