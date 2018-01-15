@@ -1,3 +1,6 @@
+---
+title: resume
+---
 <div>
   <p class="c10 c38">
     <span class="c3"></span>
