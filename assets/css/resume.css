@@ -190,7 +190,7 @@ table th {
 }
 
 .c3 {
-    color: #666666;
+    color: #060606;
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
@@ -238,7 +238,7 @@ table th {
 }
 
 .c15 {
-    color: #666666;
+    color: #060606;
     text-decoration: none;
     vertical-align: baseline;
     font-size: 8pt;
@@ -292,7 +292,7 @@ table th {
 }
 
 .c31 {
-    color: #b7b7b7;
+    color: #060606;
     text-decoration: none;
     vertical-align: baseline;
     font-size: 9pt;
@@ -301,7 +301,7 @@ table th {
 }
 
 .c30 {
-    color: #666666;
+    color: #060606;
     text-decoration: none;
     vertical-align: baseline;
     font-size: 6pt;
@@ -487,14 +487,14 @@ table th {
 }
 
 li {
-    color: #666666;
+    color: #060606;
     font-size: 9pt;
     font-family: "Merriweather"
 }
 
 p {
     margin: 0;
-    color: #666666;
+    color: #060606;
     font-size: 9pt;
     font-family: "Merriweather"
 }
