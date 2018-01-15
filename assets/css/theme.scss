@@ -31,7 +31,7 @@ $footer-background-color: #292c2f;
 $note-color: #87CEFA;
 $warning-color: #ffff00;
 // use this or pick any from /css/pics/background folder or from transparenttextures.com
-$background-pattern: 'random-grey-variations.png';
+$background-pattern: '3px-tile.png';
 
 //********************************************************
 //                  Common styles
@@ -169,7 +169,7 @@ ul.sideBarTags {
   list-style: disc;
   li:before {
     content: '\f02b';
-    display:none;
+    display: none;
     font-family: 'Font Awesome 5 Solid';
     float: left;
     margin-left: -1.5em;
