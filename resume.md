@@ -1,5 +1,5 @@
 ---
-title: resume
+title: Resume
 regenerate: true
 ---
 <div>
