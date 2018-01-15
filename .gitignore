@@ -4,3 +4,5 @@ _site
 .vscode/
 vendor/bundle/
 .bundle/
+_site/
+_plugins/
