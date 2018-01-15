@@ -1,5 +1,4 @@
 {% if site.tags != "" %} {% include collecttags.html %} {% endif %}
-
 <html lang="en">
 
   <head>
@@ -9,10 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--
-    <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
-    -->
     <script src="{{ '/assets/js/header.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/toc.js' | relative_url }}"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
@@ -20,17 +15,17 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-    <link href="{{ '/assets/css/theme.css' | relative_url }}" rel="stylesheet">
-    <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
-    <link href="{{ '/assets/css/font-awesome/css/font-awesome.min.css' | relative_url }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> {% if page.title == 'resume' %}
     <link href="{{ '/assets/css/resume.scss' | relative_url }}" rel="stylesheet"> {% endif %}
+
+    <link href="{{ '/assets/css/theme.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
   </head>
 
   <body>
-
     {% include google-analytics.html %} {% include yandex-metrica.html %}
-
     <script type="text/javascript">
       WebFontConfig = {
         google: {
@@ -48,38 +43,28 @@
       })();
     </script>
 
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ '' | relative_url }}/">
-            {{ site.name }}
-            <br />
-            <small>
-              <sub>{{ site.description }}</sub>
-            </small>
-          </a>
-
-        </div>
-        <div id="navbar" class="navbar-collapse right justify-content-end">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="{{ '' | relative_url }}/">/home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ 'about' | relative_url }}">/about</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ 'tags' | relative_url }}">/tags</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ 'archive' | relative_url }}">/archive</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md" style="margin-bottom: 80px;">
+      <a class="navbar-brand" href="{{ '' | relative_url }}/">{{ site.name }}</a>
+      <span class="navbar-text mr-1">
+        <sup>{{ site.description }}</sup>
+      </span>
+      <div class="bg-dark navbar-toggle navbar-toggler justify-content-end" data-toggle="collapse" data-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse justify-content-end">
+        <ul class="nav navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ '' | relative_url }}/">/home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ 'about' | relative_url }}">/about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ 'tags' | relative_url }}">/tags</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ 'archive' | relative_url }}">/archive</a>
+          </li>
+        </ul>
       </div>
     </nav>
