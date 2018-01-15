@@ -5,13 +5,13 @@
   {% if site.social.twitter %}
   <li>
     <a title="@{{ site.social.twitter}} on Twitter" href="https://twitter.com/{{site.social.twitter}}" target="_blank">
-      <i class="fa fa-twitter fa-2x"></i>
+      <i class="fab fa-twitter fa-2x"></i>
     </a>
   </li>
   {% endif %} {% if site.social.github %}
   <li>
     <a title="{{ site.social.github }} on Github" href="https://github.com/{{ site.social.github }}" target="_blank">
-      <i class="fa fa-github fa-2x"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   </li>
   {% endif %} {% if site.social.tel %}
@@ -22,26 +22,9 @@
   </li>
   {% endif %} {% if site.social.discord %}
   <li>
-    <a title="Talk to {{site.name}} on Discord" href="#" data-toggle="modal" data-target="#myModal">
-      <img src="{{ '/assets/images/discord.svg' | relative_url }}" height="45px" width="45px" />
+    <a title="Talk to {{site.name}} on Discord" href="#">
+      <i class="fab fa-discord fa-2x"></i>
     </a>
-
-    <!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-body primary">
-            <p>My Discord Tag is <pre><code>Iota#1651</code></pre></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
   </li>
   {% endif %}
   <!--
