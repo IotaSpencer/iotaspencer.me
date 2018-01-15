@@ -37,7 +37,7 @@ $background-pattern: 'random-grey-variations.png';
 //                  Common styles
 //********************************************************
 body {
-  padding-top: 80px;
+
   color: $font-color;
   background: $background-color url(pics/background/#{$background-pattern});
 }
@@ -264,13 +264,7 @@ nav.shrink .navbar-brand {
   font-size: 25px;
   height: inherit;
 }
-.navbar .navbar-nav {
-  display: inline-block;
-  float: right;
-}
-nav .navbar-toggle {
-  margin: 13px 15px 13px 0;
-}
+
 nav.shrink .navbar-toggle {
   padding: 4px 5px;
   margin: 8px 15px 8px 0;
@@ -361,9 +355,7 @@ nav.shrink .navbar-toggle {
 //********************************************************
 
 @media (min-width: 1000px) {
-  .twoRow .navbar-collapse {
-    clear: left;
-  }
+
   .footer-distributed .footer {
     text-align: center;
   }
