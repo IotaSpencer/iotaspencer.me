@@ -166,10 +166,11 @@ ul.share-buttons {
   line-height: 1em;
 }
 ul.sideBarTags {
-  list-style: none;
+  list-style: disc;
   li:before {
     content: '\f02b';
-    font-family: 'Font Awesome 5 Brands';
+    display:none;
+    font-family: 'Font Awesome 5 Solid';
     float: left;
     margin-left: -1.5em;
   }
@@ -220,7 +221,7 @@ div.post-meta {
 .note:before {
   content: "\f06a";
   font-size: 2em;
-  font-family: 'Font Awesome 5 Solids';
+  font-family: 'Font Awesome 5 Solid';
   left: 0px;
   position:absolute;
   top: 0;
