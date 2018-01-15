@@ -16,7 +16,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> {% if page.title == 'resume' %}
     <link href="{{ '/assets/css/resume.scss' | relative_url }}" rel="stylesheet"> {% endif %}
 
@@ -43,10 +43,10 @@
       })();
     </script>
 
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top" style="margin-bottom: 80px;">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
       <a class="navbar-brand" href="{{ '' | relative_url }}/">{{ site.name }}</a>
       <span class="navbar-text mr-1">
-        <sup>{{ site.description }}</sup>
+        <sub>{{ site.description }}</sub>
       </span>
       <div class="bg-dark navbar-toggle navbar-toggler justify-content-end" data-toggle="collapse" data-target="#navbar">
         <span class="navbar-toggler-icon"></span>
