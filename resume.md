@@ -1,5 +1,6 @@
 ---
 title: resume
+regenerate: true
 ---
 <div>
   <p class="c10 c38">
