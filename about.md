@@ -16,4 +16,4 @@ Unless I'm deeply down, programming is my goto for winding down after a hard day
 ## Links
 
 * [ElectroCode](https://electrocode.net) <span class="badge badge-pill badge-dark">My IRC Network and other IRC related projects site</span>
-* [My Resume/CV](/resume) <span class="badge badge-pill badge-dark">Looking to Hire? Here's my Skills and such.</span>
+<!--* [My Resume/CV](/resume) <span class="badge badge-pill badge-dark">Looking to Hire? Here's my Skills and such.</span>-->
