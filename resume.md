@@ -17,7 +17,7 @@ regenerate: true
     <tr class="c26">
       <td class="c13" colspan="1" rowspan="1">
         <p class="c18 title" id="h.x8fm1uorkbaw">
-          <span class="c14">Ken Spencer</span>
+          <span class="c14 title">Ken Spencer</span>
         </p>
         <p class="c8 subtitle" id="h.ymi089liagec">
           <span class="c21 c7"></span>
@@ -25,16 +25,7 @@ regenerate: true
       </td>
       <td class="c4" colspan="1" rowspan="1">
         <p class="c11">
-          <span class="c21 c7">2043 St Paul Dr</span>
-        </p>
-        <p class="c11">
-          <span class="c7 c21">Ballston Spa, NY 12020</span>
-        </p>
-        <p class="c11">
-          <span class="c21 c29">(518) 649-0583</span>
-        </p>
-        <p class="c11">
-          <span class="c21 c29">iota@electrocode.net</span>
+          <span class="c21 c29">me@iotaspencer.me</span>
         </p>
       </td>
     </tr>
