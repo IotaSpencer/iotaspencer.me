@@ -56,3 +56,16 @@ kramdown:
   hard_wrap: true
 timezone: America/New_York
 exclude: ['README.md', 'LICENSE', 'vendor/']
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jemoji
+  - jekyll-mentions
+  - jekyll-include-cache
+collections_dir: my_collections
+collections:
+  - projects
+  
