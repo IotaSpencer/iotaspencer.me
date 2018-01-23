@@ -22,9 +22,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> {% if page.title == 'resume' %}
-    <link href="{{ '/assets/css/resume.scss' | relative_url }}" rel="stylesheet"> {% endif %}
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    {% if page.title == 'resume' %}
+        <link href="{{ '/assets/css/resume.scss' | relative_url }}" rel="stylesheet">
+    {% endif %}
     <link href="{{ '/assets/css/theme.css' | relative_url }}" rel="stylesheet">
     <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
   </head>
@@ -70,6 +71,13 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ 'archive' | relative_url }}">/archive</a>
           </li>
+          <li> class="nav-item">
+            <a class="nav-link" href="{{'resume' | relative_url }}">/resume</a>
+          </li>
+          <li> class="nav-item">
+            <a class="nav-link" href="{{'projects' | relative_url }}">/projects</a>
+          </li>
+
         </ul>
       </div>
     </nav>
