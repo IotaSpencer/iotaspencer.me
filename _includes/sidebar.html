@@ -22,9 +22,9 @@
 <div class="sidebar">
     <h2>Page Links</h2>
     <ul>
-        {% for name, link in page.page_links %}
+        {% for name in page.page_links %}
         <li>
-            <a href="{{ link }}" title="{{ name }}">
+            <a href="{{ name }}" title="{{ name }}">
                 <span>{{name}}</span>
             </a>
         </li>
