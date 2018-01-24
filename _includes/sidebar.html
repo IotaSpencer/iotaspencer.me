@@ -24,8 +24,8 @@
     <ul>
         {% for name in page.page_links %}
         <li>
-            <a href="{{ name }}" title="{{ name }}">
-                <span>{{name}}</span>
+            <a href="{{ name[1] }}" title="{{ name[0] }}">
+                <span>{{name[0]}}</span>
             </a>
         </li>
         {% endfor %}
