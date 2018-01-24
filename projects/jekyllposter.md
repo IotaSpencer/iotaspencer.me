@@ -9,4 +9,4 @@ page_links:
 ---
 # Jekyllposter
 
-Jekyllposter is a [Ruby](https://ruby-lang.com/) [Gem](https://rubygems.org/)
+Jekyllposter is a [Ruby](https://ruby-lang.com/) [Gem](https://rubygems.org/) for the [Jekyll](https://jekyllrb.com) blog-aware, static site generator.
