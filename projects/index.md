@@ -26,14 +26,13 @@ projects:
 {% for project in page.projects %}
 
 ## {{project[0]}}
-{% for item in project[1] %}
+
+
 
 ### Description
-  {{item.description}}
 
+  > {{project[1].description}}
 
+> [Link]({{project[1].link}})
 
-> [Link]({{item.link}})
-
-{% endfor %}
 {% endfor %}
