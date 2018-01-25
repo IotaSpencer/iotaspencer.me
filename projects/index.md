@@ -7,13 +7,12 @@ title: Projects
 
 ## User/Org Links
 
-<span><i class="fab fa-github-square fa-2x"></i> &mdash; GitHub</span>
-<span><i class="fab fab-gitlab"></i></span>
+<a href="https://github.com/IotaSpencer"><span><i class="fab fa-github-square fa-2x"></i> &mdash; GitHub</span>
+</a>
 
-
-
-
-
+<a>
+<span><i class="fab fa-gitlab fa-2x"></i></span> &mdash; GitLab
+</a>
 
 ## Jekyllposter
 
