@@ -28,6 +28,16 @@
     {% endif %}
     <link href="{{ '/assets/css/theme.css' | relative_url }}" rel="stylesheet">
     <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "24b58b08-c7c8-4c50-98e1-e82fd7d7f03f",
+        });
+      });
+    </script>
   </head>
 
   <body>
