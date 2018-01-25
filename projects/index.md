@@ -10,8 +10,10 @@ title: Projects
 <a href="https://github.com/IotaSpencer"><span><i class="fab fa-github-square fa-2x"></i> &mdash; GitHub</span>
 </a>
 
-<a>
-<span><i class="fab fa-gitlab fa-2x"></i></span> &mdash; GitLab
+<a href="https://gitlab.com/IotaSpencer">
+<span color="orange">
+<i class="fab fa-gitlab fa-2x"></i>
+</span> &mdash; GitLab
 </a>
 
 ## Jekyllposter
