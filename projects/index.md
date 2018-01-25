@@ -2,8 +2,14 @@
 layout: page
 title: Projects
 projects:
-  - name: Jekyllposter
-    link: /projects/jekyllposter
+  -
+  - - name: Jekyllposter
+  - - link: /projects/jekyllposter
+  - - description: A Ruby package (usually known as a gem) for generating jekyll posts and pages, as well as drafts.
+  -
+  - - name: bot-template
+  - - link: /projects/bot-template
+  - - description: A template for cinch bots
 ---
 # Projects
 
@@ -22,7 +28,6 @@ projects:
 
 ## {{project.name}}
 
-A Ruby package (usually known as a gem) for generating jekyll posts and pages, as well as drafts.
 
 > [Link]({{project.link}})
 
