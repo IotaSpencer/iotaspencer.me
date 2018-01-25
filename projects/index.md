@@ -27,9 +27,11 @@ projects:
 
 {% for project in page.projects %}
 
-## {{project}}
+{% for item in project %}
+## {{item[0]}}
 
 
-> [Link]({{project}})
+> [Link]({{project[1]}})
 
+{% endfor %}
 {% endfor %}
