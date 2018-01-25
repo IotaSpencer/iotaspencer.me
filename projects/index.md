@@ -3,7 +3,7 @@ layout: page
 title: Projects
 projects:
   Jekyllposter:
-    link: projects/jekyllposter
+    link: /projects/jekyllposter
     description: "A Ruby package (usually known as a gem) for generating jekyll posts and pages, as well as drafts."
 
   bot-template:
@@ -29,10 +29,11 @@ projects:
 
 
 
-### Description
+<dl>
+  <dt>Description</dt>
+  <dd>{{project[1].description}}</dd>
+  <dt>Link</dt>
+  <dd>[{{project[1].link}}]({{project[1].link}})</dd>
 
-  > {{project[1].description}}
-
-> [Link]({{project[1].link}})
-
+</dl>
 {% endfor %}
