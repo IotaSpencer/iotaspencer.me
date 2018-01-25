@@ -33,7 +33,7 @@ projects:
   <dt>Description</dt>
   <dd>{{project[1].description}}</dd>
   <dt>Link</dt>
-  <dd>[{{project[1].link}}]({{project[1].link}})</dd>
+  <dd><a href="{{project[1].link}}">{{project[1].link}}</a></dd>
 
 </dl>
 {% endfor %}
