@@ -3,12 +3,10 @@ layout: page
 title: Projects
 projects:
   Jekyllposter:
-    name: Jekyllposter
     link: projects/jekyllposter
     description: "A Ruby package (usually known as a gem) for generating jekyll posts and pages, as well as drafts."
 
   bot-template:
-    name: bot-template
     link: /projects/bot-template
     description: A template for cinch bots
 ---
@@ -30,9 +28,12 @@ projects:
 ## {{project[0]}}
 {% for item in project[1] %}
 
+### Description
+  {{item.description}}
 
 
-> [Link]({{item[0]}})
+
+> [Link]({{item.link}})
 
 {% endfor %}
 {% endfor %}
