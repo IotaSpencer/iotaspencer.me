@@ -31,7 +31,7 @@ projects:
 ## {{item[0]}}
 
 
-> [Link]({{project[1]}})
+> [Link]({{project[0]}})
 
 {% endfor %}
 {% endfor %}
