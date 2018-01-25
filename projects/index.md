@@ -27,8 +27,9 @@ projects:
 
 {% for project in page.projects %}
 
-{% for item in project %}
 ## {{project[0]}}
+{% for item in project[1] %}
+
 
 
 > [Link]({{item[0]}})
