@@ -65,7 +65,3 @@ plugins:
   - jemoji
   - jekyll-mentions
   - jekyll-include-cache
-collections_dir: my_collections
-collections:
-  - projects
-  

@@ -4,6 +4,7 @@
   font-size: $size;
   font-size: calculateRem($size);
 }
+
 @mixin transition($args...) {
   -webkit-transition: $args;
   -moz-transition: $args;
@@ -15,15 +16,13 @@
 //********************************************************
 //                    Variables
 //********************************************************
-
 // Several accent colors, choose one or create your own!
-$accent-color: #3CA2A2;    // original =)
+//$accent-color: #3CA2A2; // original =)
 //$accent-color: #C38FD6;  // velvet
-//$accent-color: #8FD6B3;  // greenish
+$accent-color: #8FD6B3;  // greenish
 //$accent-color: #35B4DE;  // bluish
 //$accent-color: #D2E354;  // yellowish
 //$accent-color: #52B54B;  // green
-
 $font-color: #dddddd;
 $background-color: #292929;
 $post-panel-color: #444;
@@ -32,31 +31,48 @@ $note-color: #87CEFA;
 $warning-color: #ffff00;
 // use this or pick any from /css/pics/background folder or from transparenttextures.com
 $background-pattern: '3px-tile.png';
-
 //********************************************************
 //                  Common styles
 //********************************************************
 body {
-
   color: $font-color;
   background: $background-color url(pics/background/#{$background-pattern});
 }
+
 .well {
   background-color: $post-panel-color;
   box-shadow: 0 0 0 0, 0px 8px 16px rgba(0, 0, 0, 0.2);
   border: 0;
   border-radius: 6px;
 }
+
 .main-page {
   width: 75%;
 }
 
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
-h4 { font-size: 1.12em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1.12em;
+}
+
+h5 {
+    font-size: .83em;
+}
+
+h6 {
+    font-size: .75em;
+}
 
 img {
   display: inline-block;
@@ -65,7 +81,7 @@ img {
   max-height: 100%;
 }
 
-img + em {
+img+em {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -79,6 +95,14 @@ blockquote {
 
 a {
   color: $accent-color;
+  &:hover {
+    color: darkgreen;
+    text-decoration: none;
+  }
+  &:visited {
+    color: green;
+    text-decoration: none;
+  }
 }
 
 //********************************************************
@@ -90,7 +114,7 @@ ul.social-media {
   li {
     display: inline-block;
   }
-  li > a {
+    li>a {
     width: 45px;
     height: 45px;
     @include transition(color 0.2s);
@@ -102,11 +126,10 @@ ul.social-media {
   }
 }
 
-
 //********************************************************
 //                    Share
 //********************************************************
-.share-bar{
+.share-bar {
   text-align: right;
 }
 
@@ -126,35 +149,56 @@ ul.share-buttons {
     a {
       text-decoration: none;
     }
-
     -webkit-transition: -webkit-transform .4s;
     -moz-transition: -moz-transform .4s;
     -ms-transition: -ms-transform .4s;
     -o-transition: -o-transform .4s;
     transition: transform .4s;
   }
-
   // Square frame
-  li.share-facebook .fa-square-o { color: #3B5998;}
-  li.share-twitter .fa-square-o { color: #55acee;}
-  li.share-google-plus .fa-square-o { color: #dd4b39;}
-  li.share-linkedin .fa-square-o { color: #4875B4;}
-  li.share-pinterest .fa-square-o { color: #BD081C;}
-  li.share-envelope .fa-square-o { color: #3B5998;}
+    li.share-facebook .fa-square-o {
+        color: #3B5998;
+    }
+    li.share-twitter .fa-square-o {
+        color: #55acee;
+    }
+    li.share-google-plus .fa-square-o {
+        color: #dd4b39;
+    }
+    li.share-linkedin .fa-square-o {
+        color: #4875B4;
+    }
+    li.share-pinterest .fa-square-o {
+        color: #BD081C;
+    }
+    li.share-envelope .fa-square-o {
+        color: #3B5998;
+    }
   // Circle frame
-  li.share-facebook .fa-circle-thin { color: #3B5998;}
-  li.share-twitter .fa-circle-thin { color: #55acee;}
-  li.share-google-plus .fa-circle-thin { color: #dd4b39;}
-  li.share-linkedin .fa-circle-thin { color: #4875B4;}
-  li.share-pinterest .fa-circle-thin { color: #BD081C;}
-  li.share-envelope .fa-circle-thin { color: #3B5998;}
-
+    li.share-facebook .fa-circle-thin {
+        color: #3B5998;
+    }
+    li.share-twitter .fa-circle-thin {
+        color: #55acee;
+    }
+    li.share-google-plus .fa-circle-thin {
+        color: #dd4b39;
+    }
+    li.share-linkedin .fa-circle-thin {
+        color: #4875B4;
+    }
+    li.share-pinterest .fa-circle-thin {
+        color: #BD081C;
+    }
+    li.share-envelope .fa-circle-thin {
+        color: #3B5998;
+    }
   li:hover {
-    -webkit-transform: scale(1.3,1.3);
-    -moz-transform: scale(1.3,1.3);
-    -ms-transform: scale(1.3,1.3);
-    -o-transform: scale(1.3,1.3);
-    transform: scale(1.3,1.3);
+        -webkit-transform: scale(1.3, 1.3);
+        -moz-transform: scale(1.3, 1.3);
+        -ms-transform: scale(1.3, 1.3);
+        -o-transform: scale(1.3, 1.3);
+        transform: scale(1.3, 1.3);
   }
 }
 
@@ -165,16 +209,31 @@ ul.share-buttons {
   margin-top: .7em;
   line-height: 1em;
 }
+ol.breadcrumb {
+    li:before {
+        content: '\f101';
+        display: none;
+        font-family: 'Font Awesome 5 Solid';
+        float: left;
+        margin-left: -1.5em;
+    }
+    li:after {
+        margin-left: -1.5em;
+    }
+}
+
 ul.sideBarTags {
   list-style: none;
   list-style-type: none;
-  li:before {
-    content: '\f02b';
-    display: none;
-    font-family: 'Font Awesome 5 Solid';
-    float: left;
-    margin-left: -1.5em;
-  }
+
+    li:before {
+      content: '\f02b';
+      display: none;
+      font-family: 'Font Awesome 5 Solid';
+
+      margin-left: -1.5em;
+    }
+
 }
 
 //********************************************************
@@ -184,6 +243,7 @@ h2.post-title {
   padding-top: 10px;
   text-align: left;
 }
+
 div.post-meta {
   border-width: 1px 0;
   border-color: #666666;
@@ -191,16 +251,18 @@ div.post-meta {
   margin: 0 0 20px;
   ul {
     display: inline;
-    padding-left: 0;
+    padding-left: 5px;
   }
-  ul > li {
+    ul>li {
     display: inline;
-    padding: 0 0 5px 20px;
+        padding: 0 10px 5px 10px;
   }
   .post-time {
     display: inline;
+    padding-right:10px
   }
 }
+
 .post-footer {
   height: 40px;
   display: table;
@@ -214,19 +276,21 @@ div.post-meta {
 //                    Note / Warning
 //********************************************************
 .note {
-  position:relative;
+    position: relative;
   border: 0;
   padding-left: 30px;
 }
+
 .note:before {
   content: "\f06a";
   font-size: 2em;
   font-family: 'Font Awesome 5 Solid';
   left: 0px;
-  position:absolute;
+    position: absolute;
   top: 0;
   color: $note-color;
 }
+
 .warning:before {
   content: "\f071";
   color: $warning-color;
@@ -244,23 +308,27 @@ nav a {
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
+
 nav.navbar {
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
+
 nav.navbar.shrink {
   min-height: 15px;
 }
+
 .navbar-brand {
   font-size: 30px;
   color: $accent-color;
-
 }
+
 nav.shrink a {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
   font-size: 15px;
 }
+
 nav.shrink .navbar-brand {
   font-size: 25px;
   height: inherit;
@@ -290,7 +358,6 @@ nav.shrink .navbar-toggle {
   position: absolute;
 }
 
-
 //********************************************************
 //            Table of content (work in progress)
 //********************************************************
@@ -300,22 +367,25 @@ nav.shrink .navbar-toggle {
   margin-right: -19px;
 }
 
-.box h3{
-	text-align:center;
-	position:relative;
-	top:80px;
+.box h3 {
+    text-align: center;
+    position: relative;
+    top: 80px;
 }
+
 .box {
-	width:70%;
-	height:200px;
-	background:#FFF;
-	margin:40px auto;
+    width: 70%;
+    height: 200px;
+    background: #FFF;
+    margin: 40px auto;
 }
-.wrapper{
+
+.wrapper {
   min-height: 100%;
   position: relative;
 }
-.content{
+
+.content {
   padding-bottom: 250px;
 }
 
@@ -332,12 +402,13 @@ nav.shrink .navbar-toggle {
   margin: 2px 3px;
   padding: 0px 5px;
 }
-.center-image
-{
+
+.center-image {
   margin: 0 auto;
   display: block;
 }
-.filename{
+
+.filename {
   padding: 0px;
   margin: 0px;
   background-color: #292929;
@@ -346,7 +417,7 @@ nav.shrink .navbar-toggle {
   border-top-right-radius: 3px;
   margin-bottom: 0px;
   padding-left: 1em;
-  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   border-left: 0px;
   bottom: -2px;
   position: relative;
@@ -354,9 +425,7 @@ nav.shrink .navbar-toggle {
 }
 
 //********************************************************
-
 @media (min-width: 1000px) {
-
   .footer-distributed .footer {
     text-align: center;
   }
