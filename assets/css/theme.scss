@@ -210,16 +210,19 @@ ul.share-buttons {
   line-height: 1em;
 }
 ol.breadcrumb {
-    li:before {
-        content: '\f101';
-        display: none;
-        font-family: 'Font Awesome 5 Solid';
-        float: left;
-        margin-left: -1.5em;
+  li:before {
+    content: '\f101';
+    display: none;
+    font-family: 'Font Awesome 5 Solid';
+  }
+  li:after {
+    padding-right: 1em;
+  }
+  li {
+    a:before {
+      padding-left: 1em;
     }
-    li:after {
-        margin-left: -1.5em;
-    }
+  }
 }
 
 ul.sideBarTags {

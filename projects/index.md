@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Projects
+breadcrumb: Projects
 projects:
   Jekyllposter:
     link: /projects/jekyllposter
