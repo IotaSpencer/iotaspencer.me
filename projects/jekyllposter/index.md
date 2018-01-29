@@ -2,6 +2,7 @@
 layout: page
 title: Jekyllposter
 permalink: /projects/jekyllposter
+breadcrumb: Jekyllposter
 page_links:
 # Links
   GitHub: https://github.com/IotaSpencer/jekyllposter

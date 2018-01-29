@@ -1,5 +1,32 @@
-<h6>Follow me</h6>
-<!-- every thing will be alright! -->
+<div on-tap="followme();" onclick="followme();">
+  <h6>Follow me</h6>
+
+  <div class="modal-lg fade" id="myModal" onload="$(this).hide(); $(this).css('display', 'none');" hidden>
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+              <iframe src="https://www.youtube.com/embed/0Gjx-ZQuQ_Y?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+</div>
 
 <ul class="social-media">
   {% if site.social.twitter %}
@@ -65,3 +92,13 @@
   </li>
 
 </ul>
+<script>
+  function followme() {
+  $(document).ready(
+    function () {
+
+      $('#myModal').modal('show')
+    }
+  )
+}
+</script>
