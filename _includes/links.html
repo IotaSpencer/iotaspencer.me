@@ -1,13 +1,13 @@
-<div on-tap="followme();" onclick="followme();">
+<div onclick="followme();">
   <h6>Follow me</h6>
 
-  <div class="modal-lg fade" id="myModal" onload="$(this).hide(); $(this).css('display', 'none');" hidden>
-      <div class="modal-dialog">
+  <div class="modal fade" id="myModal" hidden>
+      <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
 
           <!-- Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">Modal Heading</h4>
+            <h4 class="modal-title">Follow Me!</h4>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
 
@@ -98,6 +98,7 @@
     function () {
 
       $('#myModal').modal('show')
+      $('#myModal').removeAttr('hidden');
     }
   )
 }
