@@ -6,6 +6,7 @@
     <title>{{ site.name }}{% if page.title %} | {{ page.title }} {% endif %}</title>
     <meta name="theme-color" content="#222222" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
     <script>
       FontAwesomeConfig = {
         searchPseudoElements: true
@@ -22,14 +23,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-    {% if page.title == 'resume' %}
-        <link href="{{ '/assets/css/resume.scss' | relative_url }}" rel="stylesheet">
-    {% endif %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="{{ '/assets/css/theme.css' | relative_url }}" rel="stylesheet">
     <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
     <link rel="manifest" href="/manifest.json" />
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
     <script>
       var OneSignal = window.OneSignal || [];
       OneSignal.push(function() {
