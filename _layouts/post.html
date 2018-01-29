@@ -26,8 +26,13 @@
                                 </ul>
                             </div>
                             <div class="post-content">
-                                <div id="toc" class="toc"></div>
-                                {{ content }} {% include share.html %}
+                                <div class="float-left mr-3 pr-3 bg-dark">
+                                {% include toc.html html=content ordered=true id="post_toc" %}
+                                </div>
+                                <div>
+                                    {{ content }}
+                                </div>
+                                {% include share.html %}
                             </div>
                             {% if page.comments %}
                             <div id="disqus_thread">
