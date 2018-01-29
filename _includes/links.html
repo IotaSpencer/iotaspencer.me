@@ -1,29 +1,75 @@
 <div onclick="followme();">
-  <h6>Follow me</h6>
+  <h6 id="follow-me">Follow me</h6>
 
-  <div class="modal fade" id="myModal" hidden>
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
+  <div class="modal fade" id="FollowMe" hidden>
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
 
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Follow Me!</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-              <iframe src="https://www.youtube.com/embed/0Gjx-ZQuQ_Y?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Follow Me!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+          <div id="player"></div>
+
+          <script>
+            // 2. This code loads the IFrame Player API code asynchronously.
+            var tag = document.createElement('script');
+
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            // 3. This function creates an <iframe> (and YouTube player)
+            //    after the API code downloads.
+            var player;
+
+            function onYouTubeIframeAPIReady() {
+              player = new YT.Player('player', {
+                height: '100%',
+                width: '100%',
+                videoId: '0Gjx-ZQuQ_Y',
+                origin: 'https://iotaspencer.me',
+                events: {
+                  'onReady': onPlayerReady,
+                  'onStateChange': onPlayerStateChange
+                }
+              });
+            }
+
+            // 4. The API will call this function when the video player is ready.
+            function onPlayerReady(event) {
+              $('#follow-me').click(function () {
+                event.target.playVideo();
+              })
+            }
+
+            // 5. The API calls this function when the player's state changes.
+            //    The function indicates that when playing a video (state=1),
+            //    the player should play for six seconds and then stop.
+            var done = false;
+
+            function onPlayerStateChange(event) {
+            }
+
+            function stopVideo() {
+              player.stopVideo();
+            }
+          </script>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+
       </div>
     </div>
+  </div>
 </div>
 
 <ul class="social-media">
@@ -47,10 +93,45 @@
   </li>
   {% endif %} {% if site.social.discord %}
   <li>
-    <a title="Talk to {{site.name}} on Discord" href="#">
+    <a title="Talk to {{site.name}} on Discord" onclick="discord();">
       <i class="fab fa-discord fa-2x"></i>
     </a>
   </li>
+  <div class="modal fade" id="discord" hidden>
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title">Follow Me!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body bg-dark">
+          My Discord Tag is
+          <span style='color:darkgreen;'>Iota
+            <span style='color:gray'>#0001</span>
+          </span>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer bg-dark">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    function discord() {
+      $(document).ready(
+        function () {
+          $('#discord').modal('show');
+          $('#discord').removeAttr('hidden');
+        });
+    };
+  </script>
   {% endif %}
   <!--
   {% if site.social.stackoverflow %}
@@ -85,19 +166,19 @@
   {% endif %}
   <li>
     <a title="My GNUPG Key" href="/gnupg" target="_blank">
-    <i class="fas fa-key fa-2x"
-    </a>
+      <i class="fas fa-key fa-2x" </a>
   </li>
 
 </ul>
 <script>
   function followme() {
-  $(document).ready(
-    function () {
+    $(document).ready(
+      function () {
 
-      $('#myModal').modal('show')
-      $('#myModal').removeAttr('hidden');
-    }
-  )
-}
+        $('#FollowMe').modal('show')
+        $('#FollowMe').removeAttr('hidden');
+        window.player.play();
+      }
+    )
+  }
 </script>
