@@ -203,26 +203,18 @@ ul.share-buttons {
 }
 
 //********************************************************
+//                  Breadcrumbs
+//********************************************************
+
+//ol.breadcrumb {
+//}
+
+//********************************************************
 //                    Sidebar
 //********************************************************
 .sidebar li {
   margin-top: .7em;
   line-height: 1em;
-}
-ol.breadcrumb {
-  li:before {
-    content: '\f101';
-    display: none;
-    font-family: 'Font Awesome 5 Solid';
-  }
-  li:after {
-    padding-right: 1em;
-  }
-  li {
-    a:before {
-      padding-left: 1em;
-    }
-  }
 }
 
 ul.sideBarTags {
