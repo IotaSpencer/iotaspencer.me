@@ -130,76 +130,57 @@ ul.social-media {
 //                    Share
 //********************************************************
 .share-bar {
-  text-align: right;
+  text-align: left;
+  position: fixed;
+  top: 50%;
+  margin-right: 100%;
+  margin-left: 0%;
+  left: 0;
+  z-index: 10;
 }
 
 ul.share-buttons {
   list-style: none;
+  margin-right: 100%;
+  margin-left: 0;
   padding: 0;
   li {
-    display: inline-block;
-    .fa-facebook,
-    .fa-twitter,
-    .fa-google-plus,
-    .fa-linkedin,
-    .fa-envelope-o,
-    .fa-pinterest {
-      color: #ffffff
-    }
     a {
       text-decoration: none;
     }
-    -webkit-transition: -webkit-transform .4s;
-    -moz-transition: -moz-transform .4s;
-    -ms-transition: -ms-transform .4s;
-    -o-transition: -o-transform .4s;
-    transition: transform .4s;
   }
-  // Square frame
-    li.share-facebook .fa-square-o {
+    li.share-facebook {
         color: #3B5998;
     }
-    li.share-twitter .fa-square-o {
+    li.share-twitter {
         color: #55acee;
     }
-    li.share-google-plus .fa-square-o {
+    li.share-google-plus {
         color: #dd4b39;
     }
-    li.share-linkedin .fa-square-o {
+    li.share-linkedin {
         color: #4875B4;
     }
-    li.share-pinterest .fa-square-o {
+    li.share-pinterest {
         color: #BD081C;
     }
-    li.share-envelope .fa-square-o {
+    li.share-envelope {
         color: #3B5998;
     }
-  // Circle frame
-    li.share-facebook .fa-circle-thin {
-        color: #3B5998;
+    li.share-reddit {
+      color: tomato;
     }
-    li.share-twitter .fa-circle-thin {
-        color: #55acee;
+    li:hover {
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5);
     }
-    li.share-google-plus .fa-circle-thin {
-        color: #dd4b39;
-    }
-    li.share-linkedin .fa-circle-thin {
-        color: #4875B4;
-    }
-    li.share-pinterest .fa-circle-thin {
-        color: #BD081C;
-    }
-    li.share-envelope .fa-circle-thin {
-        color: #3B5998;
-    }
-  li:hover {
-        -webkit-transform: scale(1.3, 1.3);
-        -moz-transform: scale(1.3, 1.3);
-        -ms-transform: scale(1.3, 1.3);
-        -o-transform: scale(1.3, 1.3);
-        transform: scale(1.3, 1.3);
-  }
 }
 
 //********************************************************
