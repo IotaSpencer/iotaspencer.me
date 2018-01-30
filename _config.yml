@@ -20,6 +20,7 @@ share:
   linkedin: false
   pinterest: false
   email: true
+  reddit: true
 
 social:
   github: IotaSpencer
