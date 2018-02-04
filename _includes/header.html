@@ -14,7 +14,7 @@
     </script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
     <script src="{{ '/assets/js/header.js' | relative_url }}"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
@@ -31,7 +31,7 @@
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
     <script>
       var OneSignal = window.OneSignal || [];
-      OneSignal.push(function() {
+      OneSignal.push(function () {
         OneSignal.init({
           appId: "24b58b08-c7c8-4c50-98e1-e82fd7d7f03f",
           autoRegister: false,
@@ -61,36 +61,40 @@
         s.parentNode.insertBefore(wf, s);
       })();
     </script>
-
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
-      <a class="navbar-brand" href="{{ '' | relative_url }}/">{{ site.name }}</a>
-      <span class="navbar-text mr-1">
-        <sub>{{ site.description }}</sub>
-      </span>
-      <div class="bg-dark navbar-toggle navbar-toggler justify-content-end" data-toggle="collapse" data-target="#navbar">
-        <span class="navbar-toggler-icon"></span>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse justify-content-end">
-        <ul class="nav navbar-nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="{{ '' | relative_url }}/">/home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ 'about' | relative_url }}">/about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ 'tags' | relative_url }}">/tags</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ 'archive' | relative_url }}">/archive</a>
-          </li>
-          <!--<li class="nav-item">
+    <header id="header">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+        <a class="navbar-brand" href="{{ '' | relative_url }}/">{{ site.name }}</a>
+        <span class="navbar-text text-small mr-1">
+          <sub>{{ site.description }}</sub>
+        </span>
+        <div class="bg-dark navbar-toggle navbar-toggler justify-content-end" data-toggle="collapse" data-target="#navbar">
+          <span class="center-image col-12">
+            <i class="fas fa-angle-double-down"></i>
+          </span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse justify-content-end">
+          <ul class="nav navbar-nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ '' | relative_url }}/">/home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ 'about' | relative_url }}">/about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ 'tags' | relative_url }}">/tags</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ 'archive' | relative_url }}">/archive</a>
+            </li>
+            <!--<li class="nav-item">
             <a class="nav-link" href="{{'resume' | relative_url }}">/resume</a>
           </li>-->
-          <li class="nav-item">
-            <a class="nav-link" href="{{'projects' | relative_url }}">/projects</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{'projects' | relative_url }}">/projects</a>
+            </li>
 
-        </ul>
-      </div>
-    </nav>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="between">
