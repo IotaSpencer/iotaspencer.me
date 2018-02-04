@@ -6,7 +6,9 @@
                 <div class="col-md-8">
                     <div class="article">
                         <div class="well px-3 py-3">
-                            <h1 class="post-title page-header pl-4 pt-4 display-4"><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1>
+                            <h1 class="post-title page-header pl-4 pt-4 display-5">
+                                <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+                            </h1>
                             <div class="post-meta container">
                                 <div class="post-time">
                                     <i class="fas fa-calendar"></i>
@@ -14,8 +16,7 @@
                                 </div>
                                 <i class="fas fa-minus fa-spin"></i>
                                 <ul>
-                                    {% for tag in page.tags %}
-                                    {% if page.tags.first != tag %}
+                                    {% for tag in page.tags %} {% if page.tags.first != tag %}
                                     <i class="fab fa-linux"></i>
                                     {% endif %}
                                     <li>
@@ -26,8 +27,8 @@
                                 </ul>
                             </div>
                             <div class="post-content">
-                                <div class="float-left mr-3 pr-3 bg-dark">
-                                {% include toc.html html=content ordered=true id="post_toc" %}
+                                <div class="float-right ml-3 pl-3 bg-dark">
+                                    {% include toc.html html=content ordered=true id="post_toc" %}
                                 </div>
                                 <div>
                                     {{ content }}
@@ -36,14 +37,19 @@
                             </div>
                             {% if page.comments %}
                             <div id="disqus_thread">
-                                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                                <noscript>Please enable JavaScript to view the
+                                    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                                </noscript>
+                                <a href="http://disqus.com" class="dsq-brlink">comments powered by
+                                    <span class="logo-disqus">Disqus</span>
+                                </a>
                             </div>
                             {% endif %}
                         </div>
                         <div class="my-3 alert bg-dark text-center">
                             <span>
-                                If theres something you want me to post about. Contact me! See <a href="https://iotaspencer.me/contact">here</a>
+                                If theres something you want me to post about. Contact me! See
+                                <a href="https://iotaspencer.me/contact">here</a>
                             </span>
                         </div>
                     </div>
@@ -57,6 +63,8 @@
     </div>
     {% include footer.html %}
 </div>
+</div>
+
 </body>
 
 </html>
