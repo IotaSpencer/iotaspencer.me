@@ -11,16 +11,17 @@
     </div>
 
     <div class="sidebar">
-        <h2>Tags</h2>
-        <ul class="sideBarTags">
+        <h2>        <span class="fa-layers fa-fw">
+          <i class="fas fa-cloud" style="color:white;"></i>
+          <i class="fas fa-tag" data-fa-transform="shrink-6" style="color:Green"></i>
+        </span></h2>
             {% assign tags = (site.tags | sort:0) %} {% for tag in tags %}
-            <li class="list-item-inline">
-                <a href="{{ '/tag/' | append: tag[0] | relative_url }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}">
-                    <span>{{tag[0] }}</span>
+
+                <a href="/tag/{{ tag[0] | slugify }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}" style="font-size: {{ tag | last | size | times: 4 | plus: 100 }}%">
+
+                    <span>{{ tag | first }}</span>
                 </a>
-            </li>
             {% endfor %}
-        </ul>
     </div>
     {% if page.page_links %}
     <div class="sidebar">
