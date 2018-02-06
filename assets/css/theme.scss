@@ -307,8 +307,8 @@ nav.navbar.shrink {
   font-size: 30px;
   color: $accent-color;
 }
-div.navbar-brand span.navbar-text {
-  padding-top: 0;
+span.navbar-text {
+
 }
 
 nav.shrink a {
@@ -322,12 +322,6 @@ nav.shrink .navbar-brand {
   height: inherit;
 }
 
-nav.shrink .navbar-toggle {
-  width: 100%;
-}
-div.navbar-toggler {
-  padding: 0;
-}
 nav.shrink span.center-image.col-12 {
   display: inline-block;
   transform: scale(20,1);
@@ -416,5 +410,25 @@ iframe#follow.followme {
 @include media-breakpoint-down(md) {
   #between {
     margin-top: 120px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .shrink {
+    .navbar-brand {
+      margin-right: 0px;
+    }
+    .navbar-toggle {
+      width: 100%;
+      button {
+        width: 100%;
+      }
+      div {
+        width: 100%;
+      }
+      svg {
+        transform: scaleX(18);
+      }
+    }
   }
 }
