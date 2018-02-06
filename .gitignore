@@ -12,3 +12,4 @@ _sass/node_src/bootstrap/LICENSE
 **/package.json
 **/*.min.css
 _sass/node_src/bootstrap/**/*.scss
+assets/css/themes
