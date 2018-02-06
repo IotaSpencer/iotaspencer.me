@@ -11,13 +11,15 @@
     </div>
 
     <div class="sidebar">
-        <h2>        <span class="fa-layers fa-fw">
-          <i class="fas fa-cloud" style="color:white;"></i>
-          <i class="fas fa-tag" data-fa-transform="shrink-6" style="color:Green"></i>
-        </span></h2>
+        <h2>
+            <span class="fa-layers fa-fw">
+                <i class="fas fa-cloud fa-2x" style="color:white;"></i>
+                <i class="fas fa-tag fa-1x" data-fa-transform="shrink-1 right-10 down-2" style="color:Green"></i>
+            </span>
+        </h2>
             {% assign tags = (site.tags | sort:0) %} {% for tag in tags %}
 
-                <a href="/tag/{{ tag[0] | slugify }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}" style="font-size: {{ tag | last | size | times: 4 | plus: 100 }}%">
+                <a href="/tag/{{ tag[0] | slugify }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}" style="font-size: {{ tag | last | size | times: 20 | plus: 100 }}%">
 
                     <span>{{ tag | first }}</span>
                 </a>
