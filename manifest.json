@@ -8,5 +8,9 @@
     "type": "image/png",
     "sizes": "622x622"
   }],
-  "display": "standalone"
+  "display": "standalone",
+  "background_color": "#292929",
+  "theme_color": "#292929",
+  "lang": "en-US",
+  "start_url": "/?utm_source=android_homescreen&utm_medium=android&utm_campaign=homescreen"
 }
