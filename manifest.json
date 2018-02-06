@@ -1,4 +1,12 @@
 {
+  "short_name": "Iota",
+  "name": "IotaSpencer.me",
   "gcm_sender_id": "482941778795",
-  "gcm_sender_id_comment": "Do not change the GCM Sender ID"
+  "gcm_sender_id_comment": "Do not change the GCM Sender ID",
+  "icons": [{
+    "src": "/iota.png",
+    "type": "image/png",
+    "sizes": "622x622"
+  }],
+  "display": "standalone"
 }

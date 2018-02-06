@@ -12,7 +12,6 @@ url: https://iotaspencer.me
 host: 0.0.0.0
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 baseurl: '/'
-
 share:
   facebook: true
   twitter: true
@@ -48,15 +47,15 @@ permalink: pretty
 # Enable for using pages, more details are here: http://jekyllrb.com/docs/pagination/
 #paginate: 3
 
-#highlighter: rouge
-
+highlighter: rouge
 markdown: kramdown
 kramdown:
   auto_ids: true
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
   hard_wrap: true
 timezone: America/New_York
-exclude: ['README.md', 'LICENSE', 'vendor/']
+exclude: ['README.md', 'LICENSE', 'vendor/', 'node_src', '*.map', '.gitignore']
+sass_dir: _sass
 plugins:
   - jekyll-feed
   - jekyll-redirect-from

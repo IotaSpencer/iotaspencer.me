@@ -242,6 +242,7 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
+  jekyll-theme-primer
   jemoji
 
 BUNDLED WITH

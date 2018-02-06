@@ -6,3 +6,9 @@ vendor/bundle/
 .bundle/
 _site/
 _plugins/
+*.map
+*.js
+_sass/node_src/bootstrap/LICENSE
+**/package.json
+**/*.min.css
+_sass/node_src/bootstrap/**/*.scss

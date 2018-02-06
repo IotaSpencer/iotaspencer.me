@@ -1,5 +1,6 @@
 ---
 ---
+
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateRem($size);
@@ -12,6 +13,7 @@
   -o-transition: $args;
   transition: $args;
 }
+
 
 //********************************************************
 //                    Variables
@@ -36,7 +38,8 @@ $background-pattern: '3px-tile.png';
 //********************************************************
 body {
   color: $font-color;
-  background: $background-color url(pics/background/#{$background-pattern});
+  background-color: $background-color;
+  background-image: url("/assets/css/pics/background/#{$background-pattern}");
 }
 
 .well {
@@ -402,7 +405,10 @@ iframe#follow.followme {
     line-height: 1;
   }
 }
+@import 'node_src/bootstrap/scss/bootstrap';
 
-div#between {
-  margin-top: 100px;
+@include media-breakpoint-down(md) {
+  .between {
+    margin-top: 120px;
+  }
 }
