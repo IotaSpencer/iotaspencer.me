@@ -1,6 +1,8 @@
 ---
 ---
 
+@import 'node_src/bootstrap/scss/bootstrap';
+
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateRem($size);
@@ -345,6 +347,7 @@ nav.shrink span.center-image.col-12 {
   font: normal 16px sans-serif;
   padding: 20px 25px;
   text-align: center;
+  margin-top: 20px;
 
   width: 100%;
 }
@@ -405,10 +408,13 @@ iframe#follow.followme {
     line-height: 1;
   }
 }
-@import 'node_src/bootstrap/scss/bootstrap';
-
+@include media-breakpoint-up(lg) {
+  #between {
+    margin-top: 95px;
+  }
+}
 @include media-breakpoint-down(md) {
-  .between {
+  #between {
     margin-top: 120px;
   }
 }
