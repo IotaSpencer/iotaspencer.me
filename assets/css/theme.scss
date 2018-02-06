@@ -1,7 +1,7 @@
 ---
 ---
 
-@import 'node_src/bootstrap/scss/bootstrap';
+@import "bootstrap.scss";
 
 @mixin font-size($size) {
   font-size: $size;

@@ -55,7 +55,7 @@ kramdown:
   hard_wrap: true
 timezone: America/New_York
 exclude: ['README.md', 'LICENSE', 'vendor/', 'node_src', '*.map', '.gitignore']
-sass_dir: _sass
+sass_dir: _sass/
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
