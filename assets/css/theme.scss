@@ -313,11 +313,6 @@ nav.shrink .navbar-brand {
   height: inherit;
 }
 
-nav.shrink span.center-image.col-12 {
-  display: inline-block;
-  transform: scale(20, 1);
-  text-align: center;
-}
 
 //********************************************************
 //                    Footer
@@ -389,23 +384,5 @@ iframe#follow.followme {
   }
   .footer-distributed .footer {
     line-height: 1;
-  }
-}
-
-
-@include media-breakpoint-down(md) {
-  .shrink {
-    .navbar-brand {
-      margin-right: 0px;
-    }
-    button {
-      width: 100%;
-    }
-    div {
-      width: 100%;
-    }
-    svg {
-      transform: scaleX(18);
-    }
   }
 }
