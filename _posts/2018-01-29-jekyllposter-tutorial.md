@@ -8,14 +8,16 @@ categories:
 tags:
 - tutorial
 - jekyllposter
+- jekyll
+- jekyllrb
 date: '2018-01-29 14:38:29 -0500'
 published: true
 draft: false
 toc: true
 share: true
-gem: jekyllposter
+gem: mkmatter
 ---
-# {{ page.gem | capitalize }} - A Tutorial
+# {{ page.gem }} - A Tutorial
 
 ## Installation
 
@@ -23,6 +25,7 @@ gem: jekyllposter
 
 {% highlight ruby %}
 gem install {{ page.gem }}
+sudo gem install {{ page.gem }}
 {% endhighlight %}
 
 ### Non-Root
