@@ -4,7 +4,7 @@ title: Projects
 breadcrumb: Projects
 projects:
   Jekyllposter:
-    link: /projects/jekyllposter
+    link: /projects/mkmatter
     description: "A Ruby package (usually known as a gem) for generating jekyll posts and pages, as well as drafts."
 
   bot-template:
@@ -15,7 +15,7 @@ projects:
 
 ## User/Org Links
 
-<a href="https://github.com/IotaSpencer"><span><i class="fab fa-github-square fa-2x"></i> &mdash; GitHub</span>
+<a href="https://github.com/IotaSpencer"><span color="black"><i class="fab fa-github-square fa-2x"></i> &mdash; GitHub</span>
 </a>
 
 <a href="https://gitlab.com/IotaSpencer">
