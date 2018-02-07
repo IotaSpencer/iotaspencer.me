@@ -5,7 +5,7 @@ $(window).scroll(function() {
     $('nav').addClass('shrink');
   } else {
     $('nav').removeClass('shrink');
-    $('div.wrapper').css('top', 120);
+
 
   }
 });
