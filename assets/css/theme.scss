@@ -302,8 +302,6 @@ nav.navbar.shrink {
   color: $accent-color;
 }
 
-span.navbar-text {}
-
 nav.shrink a {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
@@ -396,7 +394,7 @@ iframe#follow.followme {
 
 @include media-breakpoint-up(lg) {
   #between {
-    margin-top: 95px;
+    margin-top: 20px;
   }
 }
 
