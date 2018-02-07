@@ -392,17 +392,6 @@ iframe#follow.followme {
   }
 }
 
-@include media-breakpoint-up(lg) {
-  #between {
-    margin-top: 20px;
-  }
-}
-
-@include media-breakpoint-down(md) {
-  #between {
-    margin-top: 20px;
-  }
-}
 
 @include media-breakpoint-down(md) {
   .shrink {
