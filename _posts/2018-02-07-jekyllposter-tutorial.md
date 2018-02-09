@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jekyllposter Tutorial
+title: mkmatter Tutorial
 categories:
 - Tutorial
 - Jekyll
@@ -10,7 +10,7 @@ tags:
 - mkmatter
 - jekyll
 - jekyllrb
-date: '2018-01-29 14:38:29 -0500'
+date: '2018-02-07 00:49:02 -0500'
 published: false
 draft: false
 toc: true
