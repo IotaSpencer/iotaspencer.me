@@ -1,12 +1,17 @@
-<ol class="breadcrumb bg-dark">
-    <li class="breadcrumb-item pl-2 pr-1"><a href="/"><i class="fas fa-home"></i></a></li>
+{% unless page.hide-breadcrumbs %}
+  <ol class="breadcrumb bg-dark">
+    <li class="breadcrumb-item pl-2 pr-1"><a href="/"><i class="fas fa-home" title="{{site.title}}"></i></a></li>
     {% assign crumbs = page.url | split: '/' %}
-    {% assign crumbs_total = crumbs | size | minus: 1 %}
-      {% for crumb in crumbs offset: 1 %}
-       {% if forloop.index == crumbs_total %}
-           <li class="breadcrumb-item active ">{{ crumb | replace:'-',' ' | capitalize }}</li>
-       {% else %}
-           <li class="breadcrumb-item"><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '\f101' }}{% endfor %}">{{ crumb | replace:'-',' ' | capitalize }}</a>
-       {% endif %}
-     {% endfor %}
-   </ol>
+    {% for crumb in crumbs offset:1 %}
+      <li class="breadcrumb-item{% if forloop.last %} active {% endif %}">
+        {% unless forloop.last %}
+          <a href="/{% for crumb in crumbs offset:1 limit:forloop.index %}{{crumb}}/{% endfor %}">
+            {{ crumb | capitalize }}
+          </a>
+        {% else %}
+          {{ crumb | capitalize }}
+        {% endunless %}
+      </li>
+    {% endfor %}
+  </ol>
+{% endunless %}
