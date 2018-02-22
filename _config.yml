@@ -12,6 +12,7 @@ url: https://iotaspencer.me
 host: 0.0.0.0
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 baseurl: '/'
+repository: IotaSpencer/iotaspencer.me
 share:
   facebook: true
   twitter: true

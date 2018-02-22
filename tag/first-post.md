@@ -1,4 +1,5 @@
 ---
 layout: tag_index
-tag: first-post
+title: First Post
 ---
+

@@ -2,7 +2,8 @@
 layout: page
 title: About
 breadcrumb: About
-
+tags:
+- about
 ---
 # Me Stuff
 
