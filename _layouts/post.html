@@ -14,7 +14,7 @@
                                     <i class="fas fa-calendar"></i>
                                     <time>{{ page.date | date_to_string }}</time>
                                 </div>
-                                <i class="fas fa-minus fa-spin"></i>
+                                <i class="fas fa-times fa-spin"></i>
                                 <ul>
                                     {% for tag in page.tags %} {% if page.tags.first != tag %}
                                     <i class="fab fa-linux"></i>
@@ -27,7 +27,7 @@
                                 </ul>
                             </div>
                             <div class="post-content">
-                                <div class="float-right mx-3 px-3 bg-dark">
+                                <div class="well toc-well float-right mx-3 px-3 pt-2 bg-dark">
                                     {% include toc.html html=content h_min=2 ordered=true id="post_toc" %}
                                 </div>
                                 <div>

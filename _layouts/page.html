@@ -7,8 +7,13 @@
                     <div>
                         {% include breadcrumbs.html %}
                     </div>
+                    <div class="container">
+                    <div class="toc-well well bg-dark float-right my-2 pt-3 mx-2 px-3">
+                        {% include toc.html html=content h_min=2 ordered=true id="post_toc" %}
+                    </div>
                     <div class="well p-2 p-sm-2">
                         {{ content }}
+                    </div>
                     </div>
                 </div>
                 <div class="col-md-3 d-none d-md-block">
