@@ -39,4 +39,8 @@ While I've only started using [Jekyll](https://jekyllrb.com) but its already ver
 
 Jekyll is easy, and its.. at least for me.. fun.
 
-**If you think I should make a tutorial on Jekyll or my `Jekyllposter` ruby gem, [seen here](https://rubygems.org/gems/jekyllposter), then let me know!**
+**If you think I should make a tutorial on Jekyll, then let me know!**
+
+**As of 03/2018**: I now have a guide on mkmatter [here](/projects/mkmatter/guide).
+
+**mkmatter RubyGems.org Link**: [https://rubygems.org/gems/mkmatter](https://rubygems.org/gems/mkmatter)
