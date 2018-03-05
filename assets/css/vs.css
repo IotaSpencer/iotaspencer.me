@@ -5,12 +5,11 @@
  * Dingle berry
  */
 .highlight {
-  border-radius: 10px;
+
   display: inline-block;
   padding-bottom: -1em;
 }
 div .highlight {
-  border-radius: 5px;
   display: inherit;
   white-space: nowrap;
   width: max-content;
