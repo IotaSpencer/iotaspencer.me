@@ -1,6 +1,7 @@
 ---
 ---
-$(window).scroll(function() {
+
+$(window).scroll(function () {
   if ($(document).scrollTop() > 50) {
     $('nav').addClass('shrink');
   } else {
@@ -10,6 +11,13 @@ $(window).scroll(function() {
   }
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
+});
+$(document).ready(function () {
+  $('#projects-dropdown').hover(function () {
+    $('.dropdown-toggle').dropdown("toggle")
+  }, function () {
+    $('.dropdown-toggle').dropdown("toggle")
+  })
 });

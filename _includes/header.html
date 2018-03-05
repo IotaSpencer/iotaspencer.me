@@ -87,8 +87,14 @@
             <!--<li class="nav-item">
             <a class="nav-link" href="{{'resume' | relative_url }}">/resume</a>
           </li>-->
-            <li class="nav-item">
-              <a class="nav-link" href="{{'projects' | relative_url }}">/projects</a>
+            <li class="nav-item dropdown" id="projects-dropdown">
+              <a class="nav-link dropdown-toggle" href="{{'projects' | relative_url }}" data-toggle="dropdown">/projects</a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item" href="/projects/mkmatter">mkmatter</a>
+                <a class="dropdown-item" href="/projects/bot-template">bot-template</a>
+                <a class="dropdown-item" href="/projects/micro-install">micro_install</a>
+
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ 'gnupg' | relative_url }}">/gnupg</a>
