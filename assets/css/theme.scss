@@ -43,11 +43,15 @@ body {
 
 .well {
   background-color: $post-panel-color;
-  box-shadow: 0 0 0 0, 0px 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 0, 0px 8px 16px rgba(63, 63, 63, 0.2);
   border: 0;
   border-radius: 6px;
 }
-
+.toc-well {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #666666;
+}
 .main-page {
   width: 75%;
 }
@@ -397,4 +401,8 @@ img#nixstats {
   height: 40px;
   width: 40px;
 
+}
+
+.bg-dark-gray {
+  background-color: #292929
 }
