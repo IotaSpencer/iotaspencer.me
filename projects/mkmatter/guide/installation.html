@@ -11,3 +11,23 @@ tags:
 date: '2018-03-04 06:52:40 -0500'
 ---
 <h1>{{ page.title }}</h1>
+
+<p>To install 'mkmatter', do the following.</p>
+
+<h2>To Share or not To Share</h2>
+<ul class="list-group bg-dark">
+  <li class="list-group-item bg-dark ml-3">
+    <h3>User Install</h3>
+    <code class="d-block">$ gem install --user-install mkmatter</code>
+  </li>
+  <li class="list-group-item bg-dark ml-3">
+    <h3>System-wide Install</h3>
+
+    <code class="d-block mb-1">$ sudo gem install mkmatter</code>
+
+    <code class="d-block mt-1">$ gem install mkmatter</code>
+  </li>
+</ul>
+
+<p>Doing such will install mkmatter and all its needed gems to whichever path is applicable for the width of its installation.</p>
+<p>This most likely will include 'micro-install' a script that 'one-stop-shop' installs 'micro' a terminal text editor. 'micro' will be used by default if installed, unless <code>--editor=EDITORCOMMAND</code> is provided.</p>

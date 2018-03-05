@@ -43,5 +43,4 @@ If you haven't already, put
 
 ## Usage
 
-First off, when you want to use mkmatter, make sure you are directly above your jekyll site root. This is also what this tutorial assumes.
-**ProTip**: *if you have to use* `'..'` *then you are not above the directory.*
+First off, when you want to use mkmatter, you have to be somewhere inside a jekyll site tree.
