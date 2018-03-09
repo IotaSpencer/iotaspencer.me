@@ -9,21 +9,22 @@ tags:
 - bot-template
 projects:
   mkmatter:
-    link: /projects/mkmatter
-    description: "A Ruby package (usually known as a gem) for generating jekyll posts and pages, as well as drafts."
+    link: projects/mkmatter/index.md
+    description: 
 
   bot-template:
-    link: /projects/bot-template
+    link: projects/bot-template/index.md
     description: A template for cinch bots
 ---
 <h1>Projects</h1>
 
 <h2>User/Org Links</h2>
-<ul>
-  <li>
+<div class="container">
+<ul class="list-group d-inline-block">
+  <li class="list-group-item bg-dark-gray">
     <a href="https://github.com/IotaSpencer"><span color="black"><i class="fab fa-github-square fa-2x"></i> &mdash; GitHub</span></a>
   </li>
-  <li>
+  <li class="list-group-item bg-dark-gray">
     <a href="https://gitlab.com/IotaSpencer">
       <span color="orange">
         <i class="fab fa-gitlab fa-2x"></i>
@@ -31,17 +32,37 @@ projects:
     </a>
   </li>
 </ul>
-{% for project in page.projects %}
-
-<h2>{{project[0]}}</h2>
-
-
+</div>
+<div class="container">
+<ul class="list-group d-inline-block">
+  <li class="list-group-item bg-dark-gray">
+    <h2>mkmatter</h2>
+    <dl>
+      <dt>Description</dt>
+      <dd>A Ruby package (usually known as a gem) for generating jekyll posts and pages, as well as drafts.</dd>
+      <dt>Link</dt>
+      <dd><a href="{% link projects/mkmatter/index.html %}">/projects/mkmatter/</a></dd>
+    </dl>
+  </li>
+  <li class="list-group-item bg-dark-gray">
+<h2>bot-template</h2>
 
 <dl>
   <dt>Description</dt>
-  <dd>{{project[1].description}}</dd>
+  <dd>A template for cinch bots</dd>
   <dt>Link</dt>
-  <dd><a href="{{project[1].link}}">{{project[1].link}}</a></dd>
-
+  <dd><a href="{% link projects/bot-template/index.md %}">/projects/bot-template/</a></dd>
 </dl>
-{% endfor %}
+</li>
+<li class="list-group-item bg-dark-gray">
+<h2>micro-install</h2>
+
+<dl>
+  <dt>Description</dt>
+  <dd>An install script for the terminal text editor 'micro'</dd>
+  <dt>Link</dt>
+  <dd><a href="{% link projects/micro-install/index.md %}">/projects/micro-install/</a></dd>
+</dl>
+</li>
+</ul>
+</div>

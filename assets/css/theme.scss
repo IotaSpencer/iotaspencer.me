@@ -55,37 +55,34 @@ body {
 .main-page {
   width: 75%;
 }
+$list-border-radius: 5px;
+$list-border-color: forestgreen;
+.list-group-item {
+  border-radius: $list-border-radius !important;
+  border-style: solid;
+  border-width: 2.5px;
+  //border-color: $list-border-color;
+}
 
+.list-group-header {
+  border-radius: $list-border-radius !important;
+  border-style: solid;
+  border-width: 2.5px;
+  border-color: $list-border-color;
+}
+
+.list-group {
+  border-radius: $list-border-radius !important;
+  border-style: solid;
+  border-width: 2.5px;
+  border-color: $list-border-color;
+}
 sub {
   line-height: 1;
 }
 
 sup {
   line-height: 1;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-h3 {
-  font-size: 1.17em;
-}
-
-h4 {
-  font-size: 1.12em;
-}
-
-h5 {
-  font-size: .83em;
-}
-
-h6 {
-  font-size: .75em;
 }
 
 span.badge {
@@ -122,7 +119,11 @@ a {
     text-decoration: none;
   }
 }
-
+hr {
+  background-color: forestgreen;
+  height: 2pt;
+  border-radius: 5px;
+}
 //********************************************************
 //                    Social Links
 //********************************************************
@@ -410,4 +411,19 @@ img#nixstats {
 .dropdown-item:hover {
   background-color: #292c2f
 
+}
+
+dt {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+dd {
+	background:none no-repeat left top;
+	padding-left: 50px;
+}
+
+#markdown-toc {
+  li {  
+    list-style: none;
+  }
 }
