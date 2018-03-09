@@ -36,7 +36,6 @@ if you want to use 'micro' the terminal text editor.
 
 ##### Post (mkmatter new post)
 
-
 <div class="list-group bg-dark-gray d-flex">
 <div class="list-group-item bg-dark-gray">
 
