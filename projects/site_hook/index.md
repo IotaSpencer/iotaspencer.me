@@ -51,7 +51,7 @@ page_links:
      or
      * `sudo gem install site_hook-x.x.x.gem`{:.highlight} to install to system when a sudoer
      or
-     * `gem install site_hook-x.x.x.gem --user-install`{:.highlight} to install as root
+     * `gem install site_hook-x.x.x.gem --user-install`{:.highlight} to install as current user (to user GEM_HOME)
   </div>
 
   </div>
