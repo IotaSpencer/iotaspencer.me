@@ -27,23 +27,15 @@ page_links:
 
 ## Setup
 
-1. Create a file named `.jph-rc` in the home
+1. Create a file named `.jph-rc`{:.highlight} in the home
     directory of the user that's going to be running the site_hook
 
-1. Create a directory named `.jph` in the same home directory.
+    You can either do this using
 
-```yaml
-log_levels:
-  hook: info  # fatal, error, warn, info, debug
-  build: info # fatal, error, warn, info, debug
-  git: info   # fatal, error, warn, info, debug
-  app: info   # fatal, error, warn, info, debug
-projects:
-  project.name: # as it appears on a github or gitlab or similar service
-  # SERVICE.TLD/USER/project.name
-    src: /home/user/path/to/jekyll/source
-    dst: /path/to/destination
-    hookpass: SOMEPASSWORD
-```
+    * `site_hook config gen > ~/.jph-rc`{:.highlight}
+    or
+    * `site_hook config gen -f`{:.highlight}
+
+1. Create a directory named `.jph`{:.highlight} in the same home directory.
 
 </div>
