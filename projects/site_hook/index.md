@@ -45,7 +45,7 @@ page_links:
 
   1. Install
      * `bundle install --system`{:.highlight}
-     * `gem build site_hook.gemspec` then `gem install site_hook-x.x.x.gem`{:.highlight}
+     * `gem build site_hook.gemspec`{:.highlight} then `gem install site_hook-x.x.x.gem`{:.highlight}
   </div>
 
   </div>
