@@ -99,7 +99,7 @@ page_links:
   To redirect the output to a file.
   </div>
 
-  <div class="mx-auto d-inline-flex w-100">or</div>
+  <div class="mx-auto d-flex w-100">or</div>
 
   <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
