@@ -31,12 +31,12 @@ page_links:
     directory of the user that's going to be running the site_hook
 
     You can either do this using
-<div class="list-group">
-<div> class="list-group-item">
+<div class="list-group bg-dark-gray">
+<div class="list-group-item bg-dark-gray">
 
 `site_hook config gen > ~/.jph-rc`{:.highlight}
 </div>
-<div class="list-group-item ">
+<div class="list-group-item bg-dark-gray">
 
 `site_hook config gen -f`{:.highlight}
 </div>
