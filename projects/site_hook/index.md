@@ -35,7 +35,7 @@ page_links:
 
   </div>
 
-  <div class="list-group-item bg-dark-gray d-flex">or</div>
+  <div class="list-group-item bg-dark-gray d-flex mx-auto">or</div>
 
   <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
