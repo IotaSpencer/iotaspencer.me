@@ -32,12 +32,7 @@ page_links:
 
     You can either do this using
 
-    * `site_hook config gen > ~/.jph-rc`{:.highlight}
-
-    {:.list-unstyled}
-    * or
-
-    * `site_hook config gen -f`{:.highlight}
+    `site_hook config gen > ~/.jph-rc`{:.highlight} or `site_hook config gen -f`{:.highlight}
 
 1. Create a directory named `.jph`{:.highlight} in the same home directory.
 
