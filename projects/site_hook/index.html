@@ -1,7 +1,7 @@
 ---
 layout: page
 title: site_hook
-permalink: /projects/site_hook
+permalink: /projects/site_hook/
 breadcrumb: site_hook
 tags:
 - jekyll
@@ -13,7 +13,6 @@ page_links:
   'site_hook on RubyGems.org': https://rubygems.org/gems/site_hook
   GitHub: https://github.com/IotaSpencer/site_hook
 ---
-{::options parse_block_html="true" /}
 <div class="float-right card bg-dark ml-4 mr-2" style="order: 2;">
 
 # Contents
@@ -24,6 +23,32 @@ page_links:
 </div>
 
 <div>
+# {{ page.title }}
+
+## Installation
+
+  <div class="list-group bg-dark-gray">
+
+  <div class="list-group-item bg-dark-gray">
+
+  `gem install site_hook`{:.highlight}
+
+  </div>
+  
+  <div class="list-group-item bg-dark-gray">or</div>
+
+  <div class="list-group-item bg-dark-gray">
+
+  1. `git clone https://github.com/IotaSpencer/site_hook`{:.highlight}
+
+  1. `cd site_hook`{:.highlight}
+
+  1. Install
+     * `bundle install --system`{:.highlight}
+     * `gem build site_hook.gemspec` then `gem install site_hook-x.x.x.gem`{:.highlight}
+  </div>
+
+  </div>
 
 ## Setup
 
@@ -49,4 +74,9 @@ page_links:
 
 * Create a directory named `.jph`{:.highlight} in the same home directory.
 
+## Usage
+
+### Start
+
+  If a configuration file has been created or generated(then edited correctly)... using 'start' should initiate the webhook and have it start
 </div>
