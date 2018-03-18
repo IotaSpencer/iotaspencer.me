@@ -22,7 +22,7 @@ page_links:
 {:toc class="well bg-dark d-inline-block pr-3 py-2"}
 </div>
 
-<div markdown="1" class="d-inline-flex">
+<div markdown="1" class="d-block">
 # {{ page.title }}
 
 ## Installation
