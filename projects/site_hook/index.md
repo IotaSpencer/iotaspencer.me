@@ -22,22 +22,22 @@ page_links:
 {:toc class="well bg-dark d-inline-block pr-3 py-2"}
 </div>
 
-<div markdown="1">
+<div markdown="1" class="d-flex">
 # {{ page.title }}
 
 ## Installation
 
-  <div class="list-group bg-dark-gray">
+  <div class="list-group bg-dark-gray d-flex">
 
-  <div markdown="1" class="list-group-item bg-dark-gray">
+  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
   `gem install site_hook`{:.highlight}
 
   </div>
 
-  <div class="list-group-item bg-dark-gray">or</div>
+  <div class="list-group-item bg-dark-gray d-flex">or</div>
 
-  <div markdown="1" class="list-group-item bg-dark-gray">
+  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
   1. `git clone https://github.com/IotaSpencer/site_hook`{:.highlight}
 
@@ -73,7 +73,7 @@ page_links:
 
   <div class="mx-auto d-flex">or</div>
 
-  <div markdown="1" class="list-group-item bg-dark-gray">
+  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
   `site_hook config gen -f`{:.highlight}
 
