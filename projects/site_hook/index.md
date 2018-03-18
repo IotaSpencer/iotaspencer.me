@@ -34,7 +34,8 @@ page_links:
 
     * `site_hook config gen > ~/.jph-rc`{:.highlight}
 
-    or
+    * or
+    {:.list-unstyled}
 
     * `site_hook config gen -f`{:.highlight}
 
