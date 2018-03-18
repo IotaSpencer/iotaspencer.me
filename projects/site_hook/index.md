@@ -62,7 +62,7 @@ page_links:
 * Create a file named `.jph-rc`{:.highlight} in the home
     directory of the user that's going to be running the site_hook
     You can either do this using
-  <div class="list-group bg-dark-gray d-inline-flex">
+  <div class="list-group bg-dark-gray d-flex">
 
   <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
