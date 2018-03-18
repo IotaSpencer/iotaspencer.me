@@ -90,7 +90,7 @@ page_links:
 
   If a configuration file has been created or generated(then edited correctly)... using 'start' should initiate the webhook and have it start
 
-  <div class="list-group bg-dark-gray d-block">
+  <div class="list-group bg-dark-gray d-flex">
 
   <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
@@ -99,7 +99,7 @@ page_links:
   To redirect the output to a file.
   </div>
 
-  <div class="mx-auto d-flex">or</div>
+  <div class="mx-auto d-inline-flex w-100">or</div>
 
   <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
