@@ -27,7 +27,7 @@ page_links:
 
 ## Installation
 
-  <div class="list-group bg-dark-gray d-inline-flex">
+  <div class="list-group bg-dark-gray d-flex">
 
   <div markdown="1" class="list-group-item bg-dark-gray d-inline-flex">
 
