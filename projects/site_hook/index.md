@@ -31,9 +31,15 @@ page_links:
     directory of the user that's going to be running the site_hook
 
     You can either do this using
+    <ul class="list-group">
+    <li class="list-group-item">
+    `site_hook config gen > ~/.jph-rc`{:.highlight}
+    </li>
+    <li class="list-group-item ">
+    `site_hook config gen -f`{:.highlight}
+    </li>
 
-    `site_hook config gen > ~/.jph-rc`{:.highlight} or `site_hook config gen -f`{:.highlight}
-
+</ul>
 1. Create a directory named `.jph`{:.highlight} in the same home directory.
 
 </div>
