@@ -62,12 +62,16 @@ page_links:
 
   `site_hook config gen > ~/.jph-rc`{:.highlight}
 
+  To redirect the output to a file.
   </div>
+
+  or
 
   <div markdown="1" class="list-group-item bg-dark-gray">
 
   `site_hook config gen -f`{:.highlight}
 
+  To force a file to be created by the script.
   </div>
 
   </div>
