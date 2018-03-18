@@ -13,7 +13,7 @@ page_links:
   'site_hook on RubyGems.org': https://rubygems.org/gems/site_hook
   GitHub: https://github.com/IotaSpencer/site_hook
 ---
-<div class=" float-right card bg-dark ml-4 mr-2" style="order: 2;" markdown="1">
+<div class="float-right card bg-dark ml-4 mr-2" style="order: 2;" markdown="1">
 
 # Contents
 {:.no_toc .mx-auto}
@@ -29,15 +29,15 @@ page_links:
 
   <div class="list-group bg-dark-gray">
 
-  <div class="list-group-item bg-dark-gray">
+  <div markdown="1" class="list-group-item bg-dark-gray">
 
   `gem install site_hook`{:.highlight}
 
   </div>
-  
+
   <div class="list-group-item bg-dark-gray">or</div>
 
-  <div class="list-group-item bg-dark-gray">
+  <div markdown="1" class="list-group-item bg-dark-gray">
 
   1. `git clone https://github.com/IotaSpencer/site_hook`{:.highlight}
 
@@ -58,13 +58,13 @@ page_links:
     You can either do this using
   <div class="list-group bg-dark-gray">
 
-  <div class="list-group-item bg-dark-gray">
+  <div markdown="1" class="list-group-item bg-dark-gray">
 
   `site_hook config gen > ~/.jph-rc`{:.highlight}
 
   </div>
 
-  <div class="list-group-item bg-dark-gray">
+  <div markdown="1" class="list-group-item bg-dark-gray">
 
   `site_hook config gen -f`{:.highlight}
 
