@@ -64,7 +64,7 @@ page_links:
     You can either do this using
   <div class="list-group bg-dark-gray d-flex">
 
-  <div markdown="1" class="list-group-item bg-dark-gray">
+  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
   `site_hook config gen > ~/.jph-rc`{:.highlight}
 
@@ -92,7 +92,7 @@ page_links:
 
   <div class="list-group bg-dark-gray d-flex">
 
-  <div markdown="1" class="list-group-item bg-dark-gray">
+  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
   `site_hook config gen > ~/.jph-rc`{:.highlight}
 
@@ -101,7 +101,7 @@ page_links:
 
   <div class="mx-auto d-flex">or</div>
 
-  <div markdown="1" class="list-group-item bg-dark-gray">
+  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
   `site_hook config gen -f`{:.highlight}
 
