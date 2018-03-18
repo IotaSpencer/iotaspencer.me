@@ -65,7 +65,7 @@ page_links:
   To redirect the output to a file.
   </div>
 
-  or
+  <div>or</div>
 
   <div markdown="1" class="list-group-item bg-dark-gray">
 
