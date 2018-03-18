@@ -45,7 +45,13 @@ page_links:
 
   1. Install
      * `bundle install --system`{:.highlight}
-     * `gem build site_hook.gemspec`{:.highlight} then `gem install site_hook-x.x.x.gem`{:.highlight}
+     * `gem build site_hook.gemspec`{:.highlight}
+     then
+     * `gem install site_hook-x.x.x.gem`{:.highlight} to install to system (as root)
+     or
+     * `sudo gem install site_hook-x.x.x.gem`{:.highlight} to install to system when a sudoer
+     or
+     * `gem install site_hook-x.x.x.gem --user-install`{:.highlight} to install as root
   </div>
 
   </div>
@@ -82,7 +88,25 @@ page_links:
 
 ### Start
 
-  If a configuration file has been created or
-  generated(then edited correctly)... using 'start'
-   should initiate the webhook and have it start
+  If a configuration file has been created or generated(then edited correctly)... using 'start' should initiate the webhook and have it start
+
+  <div class="list-group bg-dark-gray d-flex">
+
+  <div markdown="1" class="list-group-item bg-dark-gray">
+
+  `site_hook config gen > ~/.jph-rc`{:.highlight}
+
+  To redirect the output to a file.
+  </div>
+
+  <div class="mx-auto d-flex">or</div>
+
+  <div markdown="1" class="list-group-item bg-dark-gray">
+
+  `site_hook config gen -f`{:.highlight}
+
+  To force a file to be created by the script.
+  </div>
+
+  </div>
 </div>
