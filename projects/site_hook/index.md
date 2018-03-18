@@ -33,10 +33,14 @@ page_links:
     You can either do this using
     <ul class="list-group">
     <li class="list-group-item">
+
     `site_hook config gen > ~/.jph-rc`{:.highlight}
+
     </li>
     <li class="list-group-item ">
+
     `site_hook config gen -f`{:.highlight}
+
     </li>
 
 </ul>
