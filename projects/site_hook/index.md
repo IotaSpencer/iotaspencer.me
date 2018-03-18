@@ -29,15 +29,15 @@ page_links:
 
   <div class="list-group bg-dark-gray d-flex">
 
-  <div markdown="1" class="list-group-item bg-dark-gray d-inline-flex">
+  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
   `gem install site_hook`{:.highlight}
 
   </div>
 
-  <div class="list-group-item bg-dark-gray d-inline-flex">or</div>
+  <div class="list-group-item bg-dark-gray d-flex">or</div>
 
-  <div markdown="1" class="list-group-item bg-dark-gray d-inline-flex">
+  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
   1. `git clone https://github.com/IotaSpencer/site_hook`{:.highlight}
 
@@ -64,16 +64,16 @@ page_links:
     You can either do this using
   <div class="list-group bg-dark-gray d-inline-flex">
 
-  <div markdown="1" class="list-group-item bg-dark-gray d-inline-flex">
+  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
   `site_hook config gen > ~/.jph-rc`{:.highlight}
 
   To redirect the output to a file.
   </div>
 
-  <div class="mx-auto d-inline-flex">or</div>
+  <div class="mx-auto d-flex">or</div>
 
-  <div markdown="1" class="list-group-item bg-dark-gray d-inline-flex">
+  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
   `site_hook config gen -f`{:.highlight}
 
@@ -90,18 +90,18 @@ page_links:
 
   If a configuration file has been created or generated(then edited correctly)... using 'start' should initiate the webhook and have it start
 
-  <div class="list-group bg-dark-gray d-inline-flex">
+  <div class="list-group bg-dark-gray d-flex">
 
-  <div markdown="1" class="list-group-item bg-dark-gray d-inline-flex">
+  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
   `site_hook config gen > ~/.jph-rc`{:.highlight}
 
   To redirect the output to a file.
   </div>
 
-  <div class="mx-auto d-inline-flex">or</div>
+  <div class="mx-auto d-flex">or</div>
 
-  <div markdown="1" class="list-group-item bg-dark-gray d-inline-flex">
+  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
   `site_hook config gen -f`{:.highlight}
 
