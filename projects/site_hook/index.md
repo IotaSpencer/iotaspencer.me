@@ -86,6 +86,12 @@ page_links:
 
 ## Usage
 
+#### Notes on Usage
+
+* Clone your site to where you want it built from
+* **IMPORTANT**: Run `bundle install --path vendor/bundle`
+    otherwise you will get dependency errors
+
 ### Start
 
   If a configuration file has been created or generated(then edited correctly)... using 'start' should initiate the webhook and have it start
@@ -94,18 +100,16 @@ page_links:
 
   <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
-  `site_hook config gen > ~/.jph-rc`{:.highlight}
+  `site_hook start`{:.highlight}
 
-  To redirect the output to a file.
   </div>
 
   <div class="mx-auto d-flex list-group-item bg-dark-gray">or</div>
 
   <div markdown="1" class="list-group-item bg-dark-gray d-flex">
 
-  `site_hook config gen -f`{:.highlight}
+  `site_hook start`{:.highlight}
 
-  To force a file to be created by the script.
   </div>
 
   </div>

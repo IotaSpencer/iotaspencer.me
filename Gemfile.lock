@@ -237,6 +237,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll
   jekyll-avatar
   jekyll-feed
   jekyll-include-cache
