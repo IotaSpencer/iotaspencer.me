@@ -89,7 +89,7 @@ page_links:
 #### Notes on Usage
 
 * Clone your site to where you want it built from
-* **IMPORTANT**: Run `bundle install --path vendor/bundle`
+* **IMPORTANT**: Run `bundle install --path vendor/bundle`{:.highlight}
     otherwise you will get dependency errors
 
 ### Start
