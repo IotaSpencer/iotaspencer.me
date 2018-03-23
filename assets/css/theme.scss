@@ -443,7 +443,7 @@ hr.hr-text {
     content: '';
     // use the linear-gradient for the fading effect
     // use a solid background color for a solid bar
-    background-color: linear-gradient(to right, black, rgb(4, 59, 4), black) !important;
+    background: linear-gradient(to right, black, rgb(4, 59, 4), black) !important;
     position: absolute !important;
     left: 0 !important;
     top: 50% !important;
@@ -460,7 +460,7 @@ hr.hr-text {
     line-height: 1.5em !important;
     // this is really the only tricky part, you need to specify the background color of the container element...
     color: #2ab80d !important;
-    background-color: #444 !important;
+    background: #444 !important;
   }
 }
 
