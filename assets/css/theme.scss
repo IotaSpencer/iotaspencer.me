@@ -428,8 +428,7 @@ dd {
   }
 }
 
-.hr-text {
-  hr.hr-text {
+hr.hr-text {
   line-height: 1em !important;
   position: relative !important;
   margin-right: 25% !important;
@@ -439,7 +438,7 @@ dd {
   text-align: center !important;
   height: 1.5em !important;
   opacity: .5 !important;
-  }
+  
   &:before {
     content: '' !important;
     // use the linear-gradient for the fading effect
