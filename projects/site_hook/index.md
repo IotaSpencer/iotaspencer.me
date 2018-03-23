@@ -13,13 +13,13 @@ page_links:
   'site_hook on RubyGems.org': https://rubygems.org/gems/site_hook
   GitHub: https://github.com/IotaSpencer/site_hook
 ---
-<div class="float-right card bg-dark-og ml-4 mr-2" style="order: 2;" markdown="1">
+<div class="float-right card bg-dark ml-4 mr-2" style="order: 2;" markdown="1">
 
 # Contents
 {:.no_toc .mx-auto}
 
 * TOC
-{:toc class="well bg-dark-og d-inline-block pr-3 py-2"}
+{:toc class="well bg-dark d-inline-block pr-3 py-2"}
 </div>
 
 <div markdown="1">
