@@ -13,13 +13,13 @@ page_links:
   'site_hook on RubyGems.org': https://rubygems.org/gems/site_hook
   GitHub: https://github.com/IotaSpencer/site_hook
 ---
-<div class="float-right card bg-dark ml-4 mr-2" style="order: 2;" markdown="1">
+<div class="float-right card bg-dark-og ml-4 mr-2" style="order: 2;" markdown="1">
 
 # Contents
 {:.no_toc .mx-auto}
 
 * TOC
-{:toc class="well bg-dark d-inline-block pr-3 py-2"}
+{:toc class="well bg-dark-og d-inline-block pr-3 py-2"}
 </div>
 
 <div markdown="1">
@@ -27,34 +27,25 @@ page_links:
 
 ## Installation
 
-  <div class="list-group bg-dark-gray d-flex">
+* `gem install site_hook`{:.highlight}
 
-  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
+  <hr class="hr-text d-flex justify-content-center bg-dark" data-content="or">
 
-  `gem install site_hook`{:.highlight}
+1. `git clone https://github.com/IotaSpencer/site_hook`{:.highlight}
 
-  </div>
+1. `cd site_hook`{:.highlight}
 
-  <div class="list-group-item bg-dark-gray d-flex mx-auto">or</div>
-
-  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
-
-  1. `git clone https://github.com/IotaSpencer/site_hook`{:.highlight}
-
-  1. `cd site_hook`{:.highlight}
-
-  1. Install
-     * `bundle install --system`{:.highlight}
-     * `gem build site_hook.gemspec`{:.highlight}
+1. Install
+   1. Bundler
+      * `bundle install --system`{:.highlight}
+   1. Gem
+      * `gem build site_hook.gemspec`{:.highlight}
      then
-     * `gem install site_hook-x.x.x.gem`{:.highlight} to install to system (as root)
-     or
-     * `sudo gem install site_hook-x.x.x.gem`{:.highlight} to install to system when a sudoer
-     or
-     * `gem install site_hook-x.x.x.gem --user-install`{:.highlight} to install as current user (to user GEM_HOME)
-  </div>
+      * `gem install site_hook-x.x.x.gem`{:.highlight} to install to system (as root)
+      <hr class="d-flex justify-content-center hr-text bg-dark" data-content="or">
 
-  </div>
+      * `sudo gem install site_hook-x.x.x.gem`{:.highlight} to install to system when a sudoer
+      * `gem install site_hook-x.x.x.gem --user-install`{:.highlight} to install as current user (to user GEM_HOME)
 
 ## Setup
 
@@ -62,25 +53,13 @@ page_links:
 * Create a file named `.jph-rc`{:.highlight} in the home
     directory of the user that's going to be running the site_hook
     You can either do this using
-  <div class="list-group bg-dark-gray d-flex">
 
-  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
+  * `site_hook config gen > ~/.jph-rc`{:.highlight}
+    * To redirect the output to a file.
+  <hr class="hr-text bg-dark d-flex justify-content-center" data-content="or">
 
-  `site_hook config gen > ~/.jph-rc`{:.highlight}
-
-  To redirect the output to a file.
-  </div>
-
-  <div class="mx-auto d-flex">or</div>
-
-  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
-
-  `site_hook config gen -f`{:.highlight}
-
-  To force a file to be created by the script.
-  </div>
-
-  </div>
+  * `site_hook config gen -f`{:.highlight}
+    * To force a file to be created by the script.
 
 * Create a directory named `.jph`{:.highlight} in the same home directory.
 
@@ -96,21 +75,9 @@ page_links:
 
   If a configuration file has been created or generated(then edited correctly)... using 'start' should initiate the webhook and have it start
 
-  <div class="list-group bg-dark-gray d-flex">
+* `site_hook start`{:.highlight}
+  <hr class="d-flex justify-content-center hr-text bg-dark" data-content="or">
 
-  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
+* `site_hook start`{:.highlight}
 
-  `site_hook start`{:.highlight}
-
-  </div>
-
-  <div class="mx-auto d-flex list-group-item bg-dark-gray">or</div>
-
-  <div markdown="1" class="list-group-item bg-dark-gray d-flex">
-
-  `site_hook start`{:.highlight}
-
-  </div>
-
-  </div>
 </div>

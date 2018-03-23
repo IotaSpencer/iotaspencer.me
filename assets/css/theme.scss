@@ -405,11 +405,15 @@ img#nixstats {
 }
 
 .bg-dark-gray {
-  background-color: #292929
+  background-color: #292929;
+}
+
+.bg-dark-og {
+  background-color: rgb(41,41,41);
 }
 
 .dropdown-item:hover {
-  background-color: #292c2f
+  background-color: #292c2f;
 
 }
 
@@ -426,4 +430,52 @@ dd {
   li {  
     list-style: none;
   }
+}
+.bg-dark {
+  background-color: #444 !important;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  margin-right: 25%;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+  &:before {
+    content: '';
+    // use the linear-gradient for the fading effect
+    // use a solid background color for a solid bar
+    background: linear-gradient(to right, black, rgb(4, 59, 4), black);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    // this is really the only tricky part, you need to specify the background color of the container element...
+    color: #2ab80d;
+    background-color: #444
+  }
+}
+//hr {
+//  background: darkgray;
+//  color: black;
+//  font-family: Futura, sans-serif;
+//}
+
+.container {
+  max-width: 50%;  
+  margin: 40px auto;
 }
