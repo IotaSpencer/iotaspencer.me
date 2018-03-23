@@ -29,7 +29,7 @@ page_links:
 
 * `gem install site_hook`{:.highlight}
 
-  <hr class="hr-text d-flex justify-content-center bg-dark" data-content="or">
+  <hr class="hr-text d-flex justify-content-center" data-content="or">
 
 1. `git clone https://github.com/IotaSpencer/site_hook`{:.highlight}
 
@@ -42,7 +42,7 @@ page_links:
       * `gem build site_hook.gemspec`{:.highlight}
      then
       * `gem install site_hook-x.x.x.gem`{:.highlight} to install to system (as root)
-      <hr class="d-flex justify-content-center hr-text bg-dark" data-content="or">
+      <hr class="d-flex justify-content-center hr-text " data-content="or">
 
       * `sudo gem install site_hook-x.x.x.gem`{:.highlight} to install to system when a sudoer
       * `gem install site_hook-x.x.x.gem --user-install`{:.highlight} to install as current user (to user GEM_HOME)
@@ -56,7 +56,7 @@ page_links:
 
   * `site_hook config gen > ~/.jph-rc`{:.highlight}
     * To redirect the output to a file.
-  <hr class="hr-text bg-dark d-flex justify-content-center" data-content="or">
+  <hr class="hr-text d-flex justify-content-center" data-content="or">
 
   * `site_hook config gen -f`{:.highlight}
     * To force a file to be created by the script.
@@ -76,7 +76,7 @@ page_links:
   If a configuration file has been created or generated(then edited correctly)... using 'start' should initiate the webhook and have it start
 
 * `site_hook start`{:.highlight}
-  <hr class="d-flex justify-content-center hr-text bg-dark" data-content="or">
+  <hr class="d-flex justify-content-center hr-text" data-content="or">
 
 * `site_hook start`{:.highlight}
 
