@@ -56,7 +56,7 @@ page_links:
 
   * `site_hook config gen > ~/.jph-rc`{:.highlight}
     * To redirect the output to a file.
-  <hr class="hr-text d-flex justify-content-center" data-content="or">
+    <hr class="hr-text d-flex justify-content-center" data-content="or">
 
   * `site_hook config gen -f`{:.highlight}
     * To force a file to be created by the script.
