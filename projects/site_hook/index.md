@@ -78,6 +78,7 @@ page_links:
 * `site_hook start`{:.highlight}
   <hr class="d-flex justify-content-center hr-text" data-content="or">
 
-* `site_hook start`{:.highlight}
+* `bundle exec site_hook start`{:.highlight}
 
+Depending on how you installed site_hook.
 </div>
