@@ -442,7 +442,7 @@ dd {
     content: '';
     // use the linear-gradient for the fading effect
     // use a solid background color for a solid bar
-    background: linear-gradient(to right, black, rgb(4, 59, 4), black);
+    background-color: linear-gradient(to right, black, rgb(4, 59, 4), black);
     position: absolute;
     left: 0;
     top: 50%;
