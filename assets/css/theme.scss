@@ -431,9 +431,6 @@ dd {
     list-style: none;
   }
 }
-.bg-dark {
-  background-color: #444 !important;
-}
 
 .hr-text {
   line-height: 1em;
@@ -466,14 +463,9 @@ dd {
     line-height: 1.5em;
     // this is really the only tricky part, you need to specify the background color of the container element...
     color: #2ab80d;
-    background-color: #444
+    background-color: #444;
   }
 }
-//hr {
-//  background: darkgray;
-//  color: black;
-//  font-family: Futura, sans-serif;
-//}
 
 .container {
   max-width: 50%;  
