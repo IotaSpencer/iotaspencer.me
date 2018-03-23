@@ -430,38 +430,38 @@ dd {
 
 .hr-text {
   hr.hr-text {
-  line-height: 1em;
-  position: relative;
-  margin-right: 25%;
-  outline: 0;
-  border: 0;
-  color: black;
-  text-align: center;
-  height: 1.5em;
-  opacity: .5;
+  line-height: 1em !important;
+  position: relative !important;
+  margin-right: 25% !important;
+  outline: 0 !important;
+  border: 0 !important;
+  color: black !important;
+  text-align: center !important;
+  height: 1.5em !important;
+  opacity: .5 !important;
   }
   &:before {
-    content: '';
+    content: '' !important;
     // use the linear-gradient for the fading effect
     // use a solid background color for a solid bar
-    background-color: linear-gradient(to right, black, rgb(4, 59, 4), black);
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: 1px;
+    background-color: linear-gradient(to right, black, rgb(4, 59, 4), black) !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 50% !important;
+    width: 100% !important;
+    height: 1px !important;
   }
   &:after {
-    content: attr(data-content);
-    position: relative;
-    display: inline-block;
-    color: black;
+    content: attr(data-content) !important;
+    position: relative !important;
+    display: inline-block !important;
+    color: black !important;
 
-    padding: 0 .5em;
-    line-height: 1.5em;
+    padding: 0 .5em !important;
+    line-height: 1.5em !important;
     // this is really the only tricky part, you need to specify the background color of the container element...
-    color: #2ab80d;
-    background-color: #444;
+    color: #2ab80d !important;
+    background-color: #444 !important;
   }
 }
 
