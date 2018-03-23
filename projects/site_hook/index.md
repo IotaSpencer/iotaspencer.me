@@ -42,7 +42,7 @@ page_links:
       * `gem build site_hook.gemspec`{:.highlight}
      then
       * `gem install site_hook-x.x.x.gem`{:.highlight} to install to system (as root)
-      <hr class="d-flex justify-content-center hr-text " data-content="or">
+        <hr class="d-flex justify-content-center hr-text " data-content="or">
 
       * `sudo gem install site_hook-x.x.x.gem`{:.highlight} to install to system when a sudoer
       * `gem install site_hook-x.x.x.gem --user-install`{:.highlight} to install as current user (to user GEM_HOME)
