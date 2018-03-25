@@ -2,12 +2,13 @@
 layout: page
 title: About
 breadcrumb: About
+excerpt: Iota\'s contact information and bio. -- Hi, my name is Ken Spencer, if you didn't already figure that out.. I'm 26 years old and live in New York State.
 tags:
 - about
 ---
 # Me Stuff
 
-## So um..
+## So um
 
 Hi, my name is Ken Spencer, if you didn't already figure that out.. I'm 26 years old and live in New York State.
 
