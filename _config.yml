@@ -47,7 +47,7 @@ comments: false
 permalink: pretty
 
 # Enable for using pages, more details are here: http://jekyllrb.com/docs/pagination/
-#paginate: 3
+paginate: 3
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -74,3 +74,4 @@ plugins:
   - jemoji
   - jekyll-mentions
   - jekyll-include-cache
+  - jekyll-asciinema

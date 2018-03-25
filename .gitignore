@@ -5,7 +5,6 @@ _site
 vendor/bundle/
 .bundle/
 _site/
-_plugins/
 *.map
 *.js
 _sass/node_src/bootstrap/LICENSE
