@@ -14,10 +14,3 @@ $(window).scroll(function () {
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
-$(document).ready(function () {
-  $('#projects-dropdown').hover(function () {
-    $('.dropdown-toggle').dropdown("toggle")
-  }, function () {
-    $('.dropdown-toggle').dropdown("toggle")
-  })
-});
