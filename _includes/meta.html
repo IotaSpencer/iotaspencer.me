@@ -1,20 +1,20 @@
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
 
-<meta property="og:site_name" content="{{ site.title }}"/>
+<meta property="og:site_name" content="{{ site.description }}"/>
 {% if post.title %}
   <meta property="og:title" content="{{ post.title }}"/>
   <meta property="og:type" content="article"/>
   {% if post.image %}
     <meta property="og:image" content="{{ post.image | absolute_url }}"/>
   {% elsif !post.image %}
-    <meta property="og:image" content="{{ /iota.png | absolute_url }}"/>
+    <meta property="og:image" content="{{ '/iota.png' | absolute_url }}"/>
   {% else %}
-    <meta property="og:image" content="{{ /iota.png | absolute_url }}"/>
+    <meta property="og:image" content="{{ '/iota.png' | absolute_url }}"/>
   {% endif %}
 {% elsif page.title %}
   <meta property="og:title" content="{{ page.title }}"/>
   <meta property="og:type" content="page"/>
-  <meta property="og:image" content="{{ /iota.png | absolute_url }}"/>
+  <meta property="og:image" content="{{ '/iota.png' | absolute_url }}"/>
   <meta property="og:description" content="{{ page.excerpt | strip_html }}"/>
 {% else %}
 <meta property="og:title" content="{{ site.title }}"/>
