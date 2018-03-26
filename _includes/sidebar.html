@@ -21,7 +21,7 @@
 
                 <a href="/tag/{{ tag[0] | slugify }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}" style="font-size: {{ tag | last | size | times: 20 | plus: 100 }}%">
 
-                    <span>{{ tag | first }}</span>
+                    <span>{{ tag | first }} ({{ tag | last| size }})</span>
                 </a>
             {% endfor %}
     </div>
