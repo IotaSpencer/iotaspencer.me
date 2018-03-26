@@ -16,4 +16,4 @@ The reason it is under the  Cinch::* namespace is to make it easier to find in `
 
 ## License
 
-cinch-bot_template is licensed under the `MIT License` in the LICENSE file in the root of this repository.
+cinch-bot_template is licensed under the `MIT License` in the LICENSE file in the root of the repository.
