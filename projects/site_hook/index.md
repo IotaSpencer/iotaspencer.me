@@ -20,7 +20,7 @@ page_links:
 {:.no_toc .mx-auto}
 
 * TOC
-{:toc class="well bg-dark d-inline-block pr-3 py-2"}
+{:toc class="well bg-dark d-inline-block pr-3 py-3"}
 </div>
 
 <div markdown="1">

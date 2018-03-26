@@ -11,6 +11,4 @@ tags:
 - micro
 - text-editor
 ---
-
-
 # micro_install
