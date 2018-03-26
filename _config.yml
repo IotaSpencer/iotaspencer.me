@@ -75,3 +75,12 @@ plugins:
   - jekyll-mentions
   - jekyll-include-cache
   - jekyll-asciinema
+#defaults:
+#  -
+#    scope:
+#      path: "projects"
+#      type: "pages"
+#    values:
+#      layout: "project"
+#      author: "Mr. Hyde"
+#      category: "project"
