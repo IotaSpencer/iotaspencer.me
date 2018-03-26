@@ -51,6 +51,8 @@ page_links:
 ## Setup
 
 ### Create Needed Files & Directories
+* Create a directory named `.jph`{:.highlight} in the same home directory.
+
 * Create a file named `.jph-rc`{:.highlight} in the home
     directory of the user that's going to be running the site_hook
     You can either do this using
@@ -61,8 +63,6 @@ page_links:
 
   * `site_hook config gen -f`{:.highlight}
     * To force a file to be created by the script.
-
-* Create a directory named `.jph`{:.highlight} in the same home directory.
 
 ## Usage
 
