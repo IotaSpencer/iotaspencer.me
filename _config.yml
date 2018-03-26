@@ -75,6 +75,7 @@ plugins:
   - jekyll-mentions
   - jekyll-include-cache
   - jekyll-asciinema
+  - jekyll-paginate
 #defaults:
 #  -
 #    scope:

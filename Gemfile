@@ -9,5 +9,5 @@ gem 'jemoji'
 gem 'jekyll-mentions'
 gem 'jekyll-include-cache'
 gem 'jekyll-asciinema'
-
+gem 'jekyll-paginate'
 gem 'netrc'
