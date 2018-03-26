@@ -52,7 +52,6 @@ page_links:
 
 ### Create Needed Files & Directories
 * Create a directory named `.jph`{:.highlight} in the your home directory.
-
 * Create a file named `.jph-rc`{:.highlight} in the home
     directory of the user that's going to be running the site_hook
     You can either do this using
