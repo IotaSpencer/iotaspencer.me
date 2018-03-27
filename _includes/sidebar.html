@@ -1,45 +1,43 @@
-<div class="card bg-dark">
-    <div class="sidebar card-body">
-        <h2>Recent Posts</h2>
-        <ul>
-            {% for post in site.posts limit:5 %}
-            <li>
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
+<div class="sidebar card-body">
+    <h2>Recent Posts</h2>
+    <ul>
+        {% for post in site.posts limit:5 %}
+        <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 
-    <div class="sidebar card-body">
-        <h2>
-            <span class="fa-layers fa-fw">
-                <i class="fas fa-cloud fa-2x" style="color:white;"></i>
-                <i class="fas fa-tag fa-1x" data-fa-transform="shrink-1 right-10 down-2" style="color:Green"></i>
-            </span>
-        </h2>
-            {% assign tags = (site.tags | sort:0) %} {% for tag in tags %}
+<div class="sidebar card-body">
+    <h2>
+        <span class="fa-layers fa-fw">
+            <i class="fas fa-cloud fa-2x" style="color:white;"></i>
+            <i class="fas fa-tag fa-1x" data-fa-transform="shrink-1 right-10 down-2" style="color:Green"></i>
+        </span>
+    </h2>
+        {% assign tags = (site.tags | sort:0) %} {% for tag in tags %}
 
-                <a href="/tag/{{ tag[0] | slugify }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}" style="font-size: {{ tag | last | size | times: 20 | plus: 100 }}%">
+            <a data-placement="right" data-toggle="tooltip" href="/tag/{{ tag[0] | slugify }}" title="{{ tag[1].size }}" style="font-size: {{ tag | last | size | times: 20 | plus: 100 }}%">
 
-                    <span>{{ tag | first }} ({{ tag | last| size }})</span>
-                </a>
-            {% endfor %}
-    </div>
-    {% if page.page_links %}
-    <div class="sidebar card-body">
-        <h2>Page Links</h2>
-        <ul>
-            {% for name in page.page_links %}
-            <li>
-                <a href="{{ name[1] }}" title="{{ name[0] }}">
-                    <span>{{name[0]}}</span>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-    {% endif %}
-    <div class="sidebar card-body">
+                <span>{{ tag | first }} ({{ tag | last| size }})</span>
+            </a>
+        {% endfor %}
+</div>
+{% if page.page_links %}
+<div class="sidebar card-body">
+    <h2>Page Links</h2>
+    <ul>
+        {% for name in page.page_links %}
+        <li>
+            <a href="{{ name[1] }}" title="{{ name[0] }}">
+                <span>{{name[0]}}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+<div class="sidebar card-body">
 
-    </div>
 </div>
