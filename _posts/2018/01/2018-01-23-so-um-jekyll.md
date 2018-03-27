@@ -13,6 +13,7 @@ tags:
 date: '2018-01-23 20:41:47 -0500'
 published: true
 draft: false
+comments: true
 keywords:
 - jekyll ruby
 - jekyll framework

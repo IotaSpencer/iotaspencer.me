@@ -55,6 +55,11 @@ body {
 .main-page {
   width: 75%;
 }
+
+#content-div {
+  margin-bottom: 1em
+}
+
 $list-border-radius: 5px;
 $list-border-color: forestgreen;
 .list-group-item {
@@ -264,6 +269,14 @@ div.post-meta {
 }
 
 //********************************************************
+//                       Comments
+//********************************************************
+
+#disqus_thread {
+  background: linear-gradient(to bottom, black, rgb(11, 177, 11), black)
+}
+
+//********************************************************
 //                    Note / Warning
 //********************************************************
 .note {
@@ -347,9 +360,6 @@ iframe#follow.followme {
   height: 100%;
 }
 
-//********************************************************
-//            Table of content (work in progress)
-//********************************************************
 //********************************************************
 //       Custom classes to apply to block elements,
 //  more info: http://pavelmakhov.com/2015/12/images-in-jekyll
