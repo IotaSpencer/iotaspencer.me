@@ -4,6 +4,7 @@ _site
 .vscode/
 vendor/bundle/
 .bundle/
+/.sass-cache/
 _site/
 *.map
 *.js
