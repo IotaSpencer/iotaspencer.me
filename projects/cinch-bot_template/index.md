@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bot Template
-permalink: /projects/bot-template
+permalink: /projects/cinch-bot_template
 page_links:
   GitHub:
     https://github.com/IotaSpencer/cinch-bot_template
