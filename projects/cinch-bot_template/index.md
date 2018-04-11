@@ -30,7 +30,6 @@ page_links:
 
 ![Website](https://img.shields.io/website/http/shields.io.svg?label=cinch-bot_template%20on%20IotaSpencer.me&style=for-the-badge)
 
-
 </div>
 
 ## About
@@ -38,17 +37,15 @@ page_links:
 You don't ever 'require' `cinch-bot_template` it is used as a executable to bootstrap a cinch bot.
 The reason it is under the  Cinch::* namespace is to make it easier to find in `gem search cinch`
 
-
 ## Usage
 
 * Use `cinch-mktpl` if installed, via `gem` or `bundle install --(system/deployment)`
 
 * Most options and commands can be seen by just asking a section for help
-* * `cinch-mktpl help`
-* * `cinch-mktpl help gen`
-* * `cinch-mktpl config help gen`
-* * etc.
-
+  * `cinch-mktpl help`
+  * `cinch-mktpl help gen`
+  * `cinch-mktpl config help gen`
+  * etc.
 
 ## License
 
