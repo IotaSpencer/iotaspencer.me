@@ -3,8 +3,8 @@ layout: page
 title: Bot Template
 permalink: /projects/cinch-bot_template
 page_links:
-  GitHub:
-    https://github.com/IotaSpencer/cinch-bot_template
+  'cinch-bot_template on RubyGems.org': https://rubygems.org/gems/cinch-bot_template
+  GitHub: https://github.com/IotaSpencer/cinch-bot_template
 
 ---
 # cinch-bot_template
