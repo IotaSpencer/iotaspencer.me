@@ -34,7 +34,7 @@ page_links:
 
 ## About
 
-You don't ever 'require' `cinch-bot_template` it is used as a executable to bootstrap a cinch bot.
+You don't ever 'require' `cinch-bot_template`, it is used as a executable to bootstrap a cinch bot.
 The reason it is under the  Cinch::* namespace is to make it easier to find in `gem search cinch`
 
 ## Usage
