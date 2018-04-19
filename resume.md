@@ -2,6 +2,13 @@
 title: Resume
 layout: page
 breadcrumb: Resume
+categories:
+- resume
+- pages
+tags:
+- resume
+- pages
+
 ---
 
 <span class="title">Ken Spencer</span>
