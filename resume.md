@@ -1,5 +1,6 @@
 ---
 title: Resume
+layout: page
 ---
 
 <span class="title">Ken Spencer</span>
