@@ -1,6 +1,7 @@
 ---
 title: Resume
 layout: page
+breadcrumb: Resume
 ---
 
 <span class="title">Ken Spencer</span>
