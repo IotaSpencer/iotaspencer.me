@@ -490,6 +490,10 @@ hr.hr-text {
   }
 }
 
+div#resume-sidebar>ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
 .xp {
   .xp-desc {
 
@@ -497,5 +501,24 @@ hr.hr-text {
   .xp-duration {
 
   }
-  
+
+}
+
+@media print {
+  #breadcrumbs {
+    display: none;
+  }
+  #sidebar {
+    display: none;
+
+  }
+  #footer-distributed {
+    display: none;
+  }
+  #sidebar-recent-posts {
+    display: none;
+  }
+  #sidebar-tag-cloud {
+    display: none;
+  }
 }
