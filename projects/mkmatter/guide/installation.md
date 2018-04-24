@@ -39,15 +39,15 @@ To install 'mkmatter', do the following.
 
 ## To Share or not To Share
 
-{:.list-group .bg-dark}
+{:.list-group .list-options .bg-dark}
 <div class="d-flex">
 
-{:.list-group-item .bg-dark .list-unstyled}
+{:.list-group-item .list-options-item .bg-dark .list-unstyled}
 * ### User Install
 
   `$ gem install --user-install mkmatter`{: .highlight .d-block}
 
-{:.list-group-item .bg-dark .list-unstyled}
+{:.list-group-item .list-options-item .bg-dark .list-unstyled}
 * ### System-wide Install
 
   `$ sudo gem install mkmatter`{: .highlight .d-block}

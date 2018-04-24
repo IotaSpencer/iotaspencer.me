@@ -36,10 +36,10 @@ if you want to use 'micro' the terminal text editor.
 
 ##### Post (mkmatter new post)
 
-<div class="list-group bg-dark-gray d-flex">
-<div class="list-group-item bg-dark-gray">
+<div class="list-group list-options bg-dark-gray d-flex">
+<div class="list-group-item list-options-item bg-dark-gray">
 
-<h6 class="no_toc bg-dark-gray list-group-header d-inline-block p-2">Options</h6>
+<h6 class="no_toc bg-dark-gray list-group-header list-options-header d-inline-block p-2">Options</h6>
 
 * `--publish`{:.highlight}
   * Whether to publish the following post.
@@ -53,10 +53,10 @@ if you want to use 'micro' the terminal text editor.
 
 ##### Page (mkmatter new page)
 
-<div class="list-group bg-dark-gray d-flex">
-<div class="list-group-item bg-dark-gray">
+<div class="list-group list-options bg-dark-gray d-flex">
+<div class="list-group-item list-options-item bg-dark-gray">
 
-<h6 class="no_toc bg-dark-gray list-group-header d-inline-block p-2">Options</h6>
+<h6 class="no_toc bg-dark-gray list-group-header list-options-header d-inline-block p-2">Options</h6>
 
 * `--publish`{:.highlight}
 * `--file`{:.highlight}
@@ -69,8 +69,8 @@ if you want to use 'micro' the terminal text editor.
 
 ##### Gen (mkmatter tags gen)
 
-<div class="list-group bg-dark-gray d-flex">
-<div class="list-group-item bg-dark-gray">
+<div class="list-group list-options bg-dark-gray d-flex">
+<div class="list-group-item list-options-item bg-dark-gray">
 
 <h6 class="no_toc bg-dark-gray list-group-header d-inline-block p-2">Options</h6>
 
