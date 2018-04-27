@@ -38,10 +38,6 @@ body {
   background-color: $background-color;
   background-image: url("/assets/css/pics/background/#{$background-pattern}");
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Cutive Mono", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", monospace !important;
-}
 .well {
   background-color: $post-panel-color;
   box-shadow: 0 0 0 0, 0 8px 16px rgba(63, 63, 63, 0.2);
@@ -595,6 +591,7 @@ $list-border-color: forestgreen;
 }
 
 h1.section-header, h2.section-header, h3.section-header, h4.section-header, h5.section-header, h6.section-header {
+  font-family: "Cutive Mono", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", monospace !important;
   &:before {
     content: '> '
   }
