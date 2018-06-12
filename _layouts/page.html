@@ -5,8 +5,10 @@
             <div class="row">
                 {% if page.sidebar != false %}
                 <div class="col-md-9 d-inline-block">
-                {% elsif %}
-                <div class="col-md-12 d-inline-block"
+                {% elsif page.sidebar == true %}
+                <div class="col-md-12 d-inline-block">
+                {% else %}
+                 <div class="col-md-9 d-inline-block">
                 {% endif %}
                     <div id="breadcrumbs">
                         {% include nav-breadcrumbs.html %}
