@@ -13,7 +13,9 @@
                     </div>
                 </div>
                 <div id="sidebar" class="col-md-3 d-sm-block d-xs-block d-md-block">
-                    {% include sidebar.html %}
+                    {% if page.sidebar != false %}
+                      {% include sidebar.html %}
+                    {% endif %}
                 </div>
             </div>
         </div>
