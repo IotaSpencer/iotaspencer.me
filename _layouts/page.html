@@ -16,11 +16,13 @@
                         {{ content }}
                     </div>
                 </div>
+                {% if page.sidebar != 'false' %}
                 <div id="sidebar" class="col-md-3 d-sm-block d-xs-block d-md-block">
-                    {% if page.sidebar != false %}
+
                       {% include sidebar.html %}
-                    {% endif %}
+
                 </div>
+                {% endif %}
             </div>
         </div>
     </div>
