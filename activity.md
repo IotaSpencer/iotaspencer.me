@@ -1,0 +1,21 @@
+---
+layout: page
+title: Coding Activity
+categories:
+- Wakatime
+tags:
+- wakatime
+- coding
+- activity
+- coding activity
+
+---
+
+# Coding Activity
+
+<div>
+<div class="col-12">
+  <img src="https://wakatime.com/share/@IotaSpencer/e9cafdd2-bd12-44d5-a8fc-53da4b728399.svg"
+  class="embed-responsive-4by3" />
+</div>
+</div>
