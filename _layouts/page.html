@@ -3,9 +3,7 @@
     <div class="content" id="content-div">
         <div class="container-fluid">
             <div class="row">
-                {% if page.sidebar != false %}
-                <div class="col-md-9 d-inline-block">
-                {% elsif page.sidebar == true %}
+                {% if page.sidebar == 'false' %}
                 <div class="col-md-12 d-inline-block">
                 {% else %}
                  <div class="col-md-9 d-inline-block">
