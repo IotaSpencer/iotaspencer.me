@@ -1,9 +1,9 @@
 _cache
 _site
-.idea/
-.vscode/
+/.idea/
+/.vscode/
 vendor/bundle/
-.bundle/
+/.bundle/
 /.sass-cache/
 _site/
 *.map
