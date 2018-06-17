@@ -20,3 +20,10 @@ PyLink is a janus like python program used primarily to link different networks 
 ## Involvement
 
 I have previously had code pulled in and have submitted a few plugins and services to the 3rd party plugins repository.
+
+### Plugins
+
+* Quotes
+* CTCP (On connect versioner)
+* Welcome (Anope Services
+* Additions to the main pseudoclient for my own network, like DNS control, fun commands, and other utilities.
