@@ -1,17 +1,17 @@
 {% if site.tags != "" %} {% include collecttags.html %} {% endif %}
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>{{ site.name }}{% if page.title %} | {{ page.title }} {% endif %}</title>
-    <meta name="theme-color" content="#292929" />
+    <meta name="theme-color" content="#292929"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
     {% include meta.html %}
     <script>
-      FontAwesomeConfig = {
-        autoReplaceSvg: 'nest'
-      };
+        FontAwesomeConfig = {
+            autoReplaceSvg: 'nest'
+        };
     </script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -23,96 +23,98 @@
     <script data-cfasync="false" defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Fira+Mono|Overpass+Mono|Oxygen+Mono|PT+Mono|Roboto+Mono|Space+Mono|Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Fira+Mono|Overpass+Mono|Oxygen+Mono|PT+Mono|Roboto+Mono|Space+Mono|Ubuntu+Mono"
+          rel="stylesheet">
     <link href="{{ '/assets/css/theme.css' | relative_url }}" rel="stylesheet">
     <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="/manifest.json"/>
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
     <script>
-      var OneSignal = window.OneSignal || [];
-      OneSignal.push(function () {
-        OneSignal.init({
-          appId: "24b58b08-c7c8-4c50-98e1-e82fd7d7f03f",
-          autoRegister: false,
-          notifyButton: {
-            enable: true,
-          },
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function () {
+            OneSignal.init({
+                appId: "24b58b08-c7c8-4c50-98e1-e82fd7d7f03f",
+                autoRegister: false,
+                notifyButton: {
+                    enable: true,
+                },
+            });
         });
-      });
     </script>
-  </head>
+</head>
 
-  <body data-spy="scroll">
-    {% include google-analytics.html %} {% include yandex-metrica.html %}
-    <script type="text/javascript">
-      WebFontConfig = {
+<body data-spy="scroll">
+{% include google-analytics.html %} {% include yandex-metrica.html %}
+<script type="text/javascript">
+    WebFontConfig = {
         google: {
-          families: ['Ubuntu::latin']
+            families: ['Ubuntu::latin']
         }
-      };
-      (function () {
+    };
+    (function () {
         var wf = document.createElement('script');
         wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
         wf.type = 'text/javascript';
         wf.async = 'true';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
-      })();
-    </script>
-    <header id="header">
-      <nav class="navbar navbar-dark bg-dark navbar-expand-md mb-3">
+    })();
+</script>
+<header id="header">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md mb-3">
         <a class="navbar-brand"
            href="{{ '' | relative_url }}/"><span style="color:green;">{{ site.name }} - {{ site.author }}</span></a>
         <span class="navbar-text text-small mr-1">
           <sub>{{ site.description }}</sub>
         </span>
         <div class="bg-dark navbar-toggle justify-content-end d-md-none" data-toggle="collapse" data-target="#navbar">
-          <button class="bg-dark py-2 px-3 border border-1 border-secondary rounded">
-            <i class="fas fa-bars"></i>
-          </button>
+            <button class="bg-dark py-2 px-3 border border-1 border-secondary rounded">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
         <div id="navbar" class="navbar-collapse collapse justify-content-end">
-          <ul class="nav navbar-nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" href="{{ '' | relative_url }}/">/home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ 'about' | relative_url }}">/about</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ 'resume' | relative_url }}">/resume</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ 'activity' | relative_url }}">/activity</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ 'tags' | relative_url }}">/tags</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ 'archive' | relative_url }}">/archive</a>
-            </li>
+            <ul class="nav navbar-nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '' | relative_url }}/">/home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ 'about' | relative_url }}">/about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ 'resume' | relative_url }}">/resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ 'activity' | relative_url }}">/activity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ 'tags' | relative_url }}">/tags</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ 'archive' | relative_url }}">/archive</a>
+                </li>
 
-            <li class="nav-item dropdown" id="projects-dropdown">
-              <a class="nav-link dropdown-toggle" href="{{ 'projects' | relative_url }}" data-toggle="dropdown">/projects</a>
-              <div class="dropdown-menu bg-dark">
-                <a class="dropdown-item" href="/projects/mkmatter">mkmatter</a>
-                <a class="dropdown-item" href="/projects/cinch-bot_template">cinch-bot_template</a>
-                <a class="dropdown-item" href="/projects/micro-install">micro_install</a>
-                <a class="dropdown-item" href="/projects/site_hook">site_hook</a>
-                <a class="dropdown-item" href="/projects/irc-source">irc-source</a>
-                <a class="dropdown-item" href="/projects/dnsbl.im">dnsbl.im</a>
-                <a class="dropdown-item" href="/projects/pylink">pylink</a>
-                <a class="dropdown-item" href="/projects/supyplugins">supyplugins</a>
+                <li class="nav-item dropdown" id="projects-dropdown">
+                    <a class="nav-link dropdown-toggle" href="{{ 'projects' | relative_url }}" data-toggle="dropdown">/projects</a>
+                    <div class="dropdown-menu bg-dark">
+                        <a class="dropdown-item" href="/projects/mkmatter">mkmatter</a>
+                        <a class="dropdown-item" href="/projects/cinch-bot_template">cinch-bot_template</a>
+                        <a class="dropdown-item" href="/projects/micro-install">micro_install</a>
+                        <a class="dropdown-item" href="/projects/gitall">gitall</a>
+                        <a class="dropdown-item" href="/projects/site_hook">site_hook</a>
+                        <a class="dropdown-item" href="/projects/irc-source">irc-source</a>
+                        <a class="dropdown-item" href="/projects/dnsbl.im">dnsbl.im</a>
+                        <a class="dropdown-item" href="/projects/pylink">pylink</a>
+                        <a class="dropdown-item" href="/projects/supyplugins">supyplugins</a>
 
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/gnupg">/gnupg</a>
-            </li>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gnupg">/gnupg</a>
+                </li>
 
-          </ul>
+            </ul>
         </div>
-      </nav>
-    </header>
-    <div id="between">
+    </nav>
+</header>
+<div id="between">
