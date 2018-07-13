@@ -9,6 +9,12 @@ my_age: 26
 # Url is currently only used only for the RSS feed in feed.xml
 url: https://iotaspencer.me
 
+
+related_project_keys: ["technology"]
+skip_related_projects: true
+
+related_min_common: 0.7
+
 # host for serving locally and viewing with my phone
 host: 0.0.0.0
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
