@@ -1,14 +1,34 @@
 {% include header.html %}
 
-<h2>{{ page.title }} <span>{{ page.category }}</span></h2>
+<div class="wrapper">
+    <div class="content" id="content-div">
+        <div class="container-fluid">
+            <div class="row">
+                {% if page.sidebar == 'false' %}
+                <div class="col-md-12 d-inline-block">
+                    {% else %}
+                    <div class="col-md-9 d-inline-block">
+                        {% endif %}
+                        <div id="breadcrumbs">
+                            {% include nav-breadcrumbs.html %}
+                        </div>
 
-<p>{{ page.description }}</p>
+                        <div class="well px-1 py-1 p-sm-2">
+                            <h2>{{ page.title }} <span>{{ page.category }}</span></h2>
 
-<ul>
-    {% for technology in page.technology %}
-    <li><a>{{ technology }}</a></li>
-    {% endfor %}
-</ul>
+                            <p>{{ page.description }}</p>
+
+                            <ul>
+                                {% for technology in page.technology %}
+                                <li><a>{{ technology }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 {% include footer.html %}
 </div>
