@@ -596,3 +596,12 @@ h1.section-header, h2.section-header, h3.section-header, h4.section-header, h5.s
     content: '> '
   }
 }
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}

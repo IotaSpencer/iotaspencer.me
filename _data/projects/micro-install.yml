@@ -1,0 +1,17 @@
+title: Micro Install
+description: A Gem that installs 'micro' a extensible terminal text editor
+href: /projects/micro-install
+category: 'Gem'
+technology:
+  - name: Ruby
+    type: Language
+  - name: Thor
+    type: Ruby gem
+  - name: HTTParty
+    type: Ruby gem
+
+links:
+  - title: Thor
+    url: https://rubygems.org/gems/thor
+  - title: HTTParty
+    url: https://rubygems.org/gems/httparty

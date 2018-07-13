@@ -1,0 +1,22 @@
+title: GitAll
+description: A Git service webhook
+href: /projects/gitall
+category: 'Gem'
+technology:
+  - name: Ruby
+    type: Language
+  - name: Git
+    type: Software
+  - name: HTTParty
+    type: Ruby gem
+  - name: Sinatra
+    type: Ruby gem
+links:
+  - title: HTTParty
+    url: https://rubygems.org/gems/httparty
+  - title: Git
+    url: https://git-scm.com
+  - title: Thor
+    url: https://rubygems.org/gems/thor
+  - title: Sinatra
+    url: https://sinatrarb.com

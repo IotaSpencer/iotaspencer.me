@@ -7,20 +7,26 @@
                 {% if page.sidebar == 'false' %}
                 <div class="col-md-12 d-inline-block">
                     {% else %}
-                    <div class="col-md-9 d-inline-block">
+                    <div class="col-md-12 d-inline-block">
                         {% endif %}
                         <div id="breadcrumbs">
                             {% include nav-breadcrumbs.html %}
                         </div>
 
                         <div class="well px-1 py-1 p-sm-2">
-                            <h2>{{ page.title }} <span>{{ page.category }}</span></h2>
+                            <h2>{{ page.title }} &mdash; <span>{{ page.category }}</span></h2>
 
                             <p>{{ page.description }}</p>
-
+                            <h3>Software/Languages Used</h3>
                             <ul>
                                 {% for technology in page.technology %}
-                                <li><a>{{ technology }}</a></li>
+                                <li><a>{{ technology.name }}</a> &ndash; <span>{{ technology.type }}</span></li>
+                                {% endfor %}
+                            </ul>
+                            <h3>Related Links</h3>
+                            <ul class="list-group bg-dark w-25">
+                                {% for link in page.links %}
+                                <li class="list-group-item bg-dark"><a href="{{ link.url }}">{{link.title}}</a></li>
                                 {% endfor %}
                             </ul>
                         </div>

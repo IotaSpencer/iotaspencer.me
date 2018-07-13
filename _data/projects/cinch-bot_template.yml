@@ -1,0 +1,16 @@
+title: cinch-bot_template
+description: A Gem that helps generate cinch bots
+href: /projects/cinch-bot_template
+category: 'Gem'
+technology:
+  - name: Ruby
+    type: Language
+  - name: Thor
+    type: Ruby gem
+  - name: HighLine
+    type: Ruby gem
+links:
+  - title: Thor
+    url: https://rubygems.org/gems/thor
+  - title: HighLine
+    url: https://rubygems.org/gems/highline

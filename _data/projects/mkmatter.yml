@@ -1,19 +1,23 @@
-title: Site_Hook
-description: A Gem that watches for git pushes to repositories and builds jekyll sites
-href: /projects/site_hook
+title: Mkmatter
+description: A Gem that helps with content creation on Jekyll Sites
+href: /projects/mkmatter
 category: 'Gem'
 technology:
   - name: Git
     type: Software
   - name: Ruby
     type: Language
+  - name: Thor
+    type: Ruby gem
   - name: Sinatra
     type: Ruby gem / Software
   - name: Jekyll
     type: Ruby gem / Software
 links:
   - title: Git
-    url: https://git-scm.org
+    url: https://git-scm.com
+  - title: Thor
+    url: https://rubygems.org/gems/thor
   - title: Sinatra
     url: https://sinatrarb.com
   - title: Jekyll
