@@ -29,6 +29,17 @@
                                 <li class="list-group-item bg-dark"><a href="{{ link.url }}">{{link.title}}</a></li>
                                 {% endfor %}
                             </ul>
+
+                            {% if page.related_projects.size > 0 %}
+                            <h3>Related Projects</h3>
+                            {% for project in page.related_projects limit:3 %}
+                            <a href="/{{ project.dir }} ">
+                                <div title="{{ project.image.title }}">
+                                    <span>{{ project.title }}</span>
+                                </div>
+                            </a>
+                            {% endfor %}
+                            {% endif %}
                         </div>
                     </div>
                 </div>

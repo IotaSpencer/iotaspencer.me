@@ -605,3 +605,10 @@ h1.section-header, h2.section-header, h3.section-header, h4.section-header, h5.s
     column-count: 5;
   }
 }
+
+.card-text {
+  border-top: {
+    color: #0b2e13;
+    style: solid;
+  }
+}

@@ -75,7 +75,7 @@ module Jekyll
       result = total.fdiv(total_possible_matches).round(2)
 
       # Uncomment to see info about the matches for each project
-      # puts "Matches between #{project1["title"]} and #{project2["title"]}: #{total} (#{result})"
+      puts "Matches between #{project1["title"]} and #{project2["title"]}: #{total} (#{result})"
 
       result
     end

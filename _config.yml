@@ -10,10 +10,8 @@ my_age: 26
 url: https://iotaspencer.me
 
 
-related_project_keys: ["technology"]
+#related_project_keys: ["technology", "gem"]
 skip_related_projects: true
-
-related_min_common: 0.7
 
 # host for serving locally and viewing with my phone
 host: 0.0.0.0
