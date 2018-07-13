@@ -1,22 +1,25 @@
 title: GitAll
 description: A Git service webhook
+gem: "https://rubygems.org/gems/gitall"
 href: /projects/gitall
-category: 'Gem'
+repo: "https://gitlab.com/gitall/gitall"
+hosted: gitlab.com
+category: Gem
 technology:
   - name: Ruby
     type: Language
   - name: Git
-    type: Software
-  - name: HTTParty
-    type: Ruby gem
+    type: Protocol / Software
   - name: Sinatra
-    type: Ruby gem
+    type: Ruby gem / Web Framework
+  - name: Thor
+    type: Ruby gem / CLI Framework
+  - name: Cinch
+    type: IRC Framework
 links:
-  - title: HTTParty
-    url: https://rubygems.org/gems/httparty
-  - title: Git
-    url: https://git-scm.com
-  - title: Thor
-    url: https://rubygems.org/gems/thor
   - title: Sinatra
     url: https://sinatrarb.com
+  - title: GitAll on freenode
+    url: "ircs://chat.freenode.net/#gitall,#gitall-dev"
+  - title: GitAll on EBP Net
+    url: "ircs://irc.electrocode.net/#gitall,#gitall-dev"

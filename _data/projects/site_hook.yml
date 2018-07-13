@@ -1,20 +1,15 @@
 title: Site_Hook
 description: A Gem that watches for git pushes to repositories and builds jekyll sites
+gem: "https://rubygems.org/gems/site_hook"
 href: /projects/site_hook
-category: 'Gem'
+hosted: github.com
+repo: "https://github.com/IotaSpencer/site_hook"
+category: Gem
 technology:
-  - name: Git
-    type: Software
   - name: Ruby
     type: Language
-  - name: Sinatra
-    type: Ruby gem / Software
-  - name: Jekyll
-    type: Ruby gem / Software
+  - name: Thor
+    type: CLI Framework
 links:
-  - title: Git
-    url: https://git-scm.org
-  - title: Sinatra
-    url: https://sinatrarb.com
-  - title: Jekyll
-    url: https://jekyllrb.com
+  - title: Thor
+    url: https://rubygems.org/gems/thor

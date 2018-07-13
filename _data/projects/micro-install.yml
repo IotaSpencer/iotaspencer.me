@@ -1,17 +1,11 @@
 title: Micro Install
 description: A Gem that installs 'micro' a extensible terminal text editor
+gem: "https://rubygems.org/gems/micro_install"
 href: /projects/micro-install
-category: 'Gem'
+hosted: github.com
+repo: "https://github.com/IotaSpencer/micro_install"
+category: Gem
 technology:
   - name: Ruby
     type: Language
-  - name: Thor
-    type: Ruby gem
-  - name: HTTParty
-    type: Ruby gem
-
 links:
-  - title: Thor
-    url: https://rubygems.org/gems/thor
-  - title: HTTParty
-    url: https://rubygems.org/gems/httparty

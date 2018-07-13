@@ -1,0 +1,16 @@
+title: PyLink
+description: A Python program that allows bridging IRC networks
+href: /projects/pylink
+repo: "https://github.com/jlu5/PyLink"
+hosted: github.com
+category: Python
+technology:
+  - name: Python
+    type: Language
+  - name: HTTP
+    type: Protocol
+links:
+  - title: PyLink
+    url: https://github.com/jlu5/PyLink
+  - title: PyLink Contrib
+    url: https://github.com/PyLink/pylink-contrib-modules
