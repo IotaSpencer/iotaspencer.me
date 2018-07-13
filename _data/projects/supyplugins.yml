@@ -1,0 +1,12 @@
+title: SupyPlugins
+description: A bunch of Limnoria/Supybot plugins
+href: /projects/supyplugins
+repo: "https://github.com/IotaSpencer/supyplugins"
+hosted: github.com
+category: Python
+technology:
+  - name: Python
+    type: Language
+  - name: SupyBot / Limnoria
+    type: IRC Bot Framework
+links:
