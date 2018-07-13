@@ -19,5 +19,4 @@ Myself and [Robert Whitney](https://xnite.me) have been working on it for over a
 
 ## API
 
-I've been the one constructing the API, its a public DNSBL but there is restricted access to the API. It has multiple
- abilities, involving adding, removing and checking.
+I've been the one constructing the API, its a public DNSBL but there is restricted access to the API. It has multiple abilities, involving adding, removing and checking.
