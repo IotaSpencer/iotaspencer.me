@@ -27,5 +27,4 @@ Some plugins are already made, like `OperUp`{:.highlight} a plugin for making a 
 While I can send in Pull Requests, not all projects are still *alive*, so I have to take matters into my own hands
 and either make a new plugin, or take the previous code and change it myself.
 
-Most of the plugins I've made that I can publicly show are housed at [IotaSpencer/supyplugins on GitHub]
-(https://github.com/IotaSpencer/supyplugins).
+Most of the plugins I've made that I can publicly show are housed at [IotaSpencer/supyplugins on GitHub](https://github.com/IotaSpencer/supyplugins).
