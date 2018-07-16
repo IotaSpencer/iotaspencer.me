@@ -12,7 +12,12 @@
 /ElectroCode
 </a>
 </div>
-
+<div class="container">
+<a href="https://steamcommunity.com/id/IotaSpencer">
+<i class="fab fa-steam fa-2x"></i>
+IotaSpencer on Steam
+</a>
+</div>
 <div class="container">
 <a href="tel:18022220843">
 <i class="fas fa-phone-square fa-2x"></i>

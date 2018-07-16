@@ -1,202 +1,214 @@
 <div onclick="followme();">
-  <h6 id="follow-me">Follow me</h6>
+    <h6 id="follow-me">Follow me</h6>
 
-  <div class="modal fade" id="FollowMe" hidden>
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
+    <div class="modal fade" id="FollowMe" hidden>
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
 
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Follow Me!</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Follow Me!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+                    <div id="player"></div>
+
+                    <script>
+                        // 2. This code loads the IFrame Player API code asynchronously.
+                        var tag = document.createElement('script');
+
+                        tag.src = "https://www.youtube.com/iframe_api";
+                        var firstScriptTag = document.getElementsByTagName('script')[0];
+                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                        // 3. This function creates an <iframe> (and YouTube player)
+                        //    after the API code downloads.
+                        var player;
+
+                        function onYouTubeIframeAPIReady() {
+                            player = new YT.Player('player', {
+                                height: '100%',
+                                width: '100%',
+                                videoId: '0Gjx-ZQuQ_Y',
+                                origin: 'https://iotaspencer.me',
+                                events: {
+                                    'onReady': onPlayerReady,
+                                    'onStateChange': onPlayerStateChange
+                                }
+                            });
+                        }
+
+                        // 4. The API will call this function when the video player is ready.
+                        function onPlayerReady(event) {
+                            $('#follow-me').click(function () {
+                                event.target.playVideo();
+                            })
+                        }
+
+                        // 5. The API calls this function when the player's state changes.
+                        //    The function indicates that when playing a video (state=1),
+                        //    the player should play for six seconds and then stop.
+                        var done = false;
+
+                        function onPlayerStateChange(event) {
+                        }
+
+                        function stopVideo() {
+                            player.stopVideo();
+                        }
+                    </script>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
         </div>
-
-        <!-- Modal body -->
-        <div class="modal-body">
-          <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-          <div id="player"></div>
-
-          <script>
-            // 2. This code loads the IFrame Player API code asynchronously.
-            var tag = document.createElement('script');
-
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-            // 3. This function creates an <iframe> (and YouTube player)
-            //    after the API code downloads.
-            var player;
-
-            function onYouTubeIframeAPIReady() {
-              player = new YT.Player('player', {
-                height: '100%',
-                width: '100%',
-                videoId: '0Gjx-ZQuQ_Y',
-                origin: 'https://iotaspencer.me',
-                events: {
-                  'onReady': onPlayerReady,
-                  'onStateChange': onPlayerStateChange
-                }
-              });
-            }
-
-            // 4. The API will call this function when the video player is ready.
-            function onPlayerReady(event) {
-              $('#follow-me').click(function () {
-                event.target.playVideo();
-              })
-            }
-
-            // 5. The API calls this function when the player's state changes.
-            //    The function indicates that when playing a video (state=1),
-            //    the player should play for six seconds and then stop.
-            var done = false;
-
-            function onPlayerStateChange(event) {
-            }
-
-            function stopVideo() {
-              player.stopVideo();
-            }
-          </script>
-        </div>
-
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-
-      </div>
     </div>
-  </div>
 </div>
 
 <ul class="social-media">
-  {% if site.social.twitter %}
-  <li>
-    <a title="@{{ site.social.twitter}} on Twitter" href="https://twitter.com/{{site.social.twitter}}" target="_blank">
-      <i class="fab fa-twitter fa-2x" style="color:#1da1f2;"></i>
-    </a>
-  </li>
-  {% endif %}
-  {% if site.social.github %}
-  <li>
-    <a title="{{ site.social.github }} on Github" href="https://github.com/{{ site.social.github }}" target="_blank">
-      <i class="fab fa-github fa-2x" style="color:333;"></i>
-    </a>
-  </li>
-  {% endif %}
-  {% if site.social.gitlab %}
-  <li>
-    <a title="{{ site.social.gitlab }} on GitLab" href="https://gitlab.com/{{ site.social.gitlab }}" target="_blank">
-      <i class="fab fa-gitlab fa-2x" style="color: e24329;"></i>
-    </a>
-  </li>
-  {% endif %}
-  {% if site.social.tel %}
-  <li>
-    <a title="Call {{site.name}} via Telephone" href="tel:{{ site.social.tel }}" target="_blank">
-      <i class="fas fa-phone-square fa-2x" style="color:black;"></i>
-    </a>
-  </li>
-  {% endif %} {% if site.social.discord %}
-  <li>
-    <a title="Talk to {{site.name}} on Discord" onclick="discord();">
-      <i class="fab fa-discord fa-2x" style="color:#7289da;"></i>
-    </a>
-  </li>
-  <div class="modal fade" id="discord" hidden>
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
+    {% if site.social.twitter %}
+    <li>
+        <a title="@{{ site.social.twitter}} on Twitter" href="https://twitter.com/{{site.social.twitter}}"
+           target="_blank">
+            <i class="fab fa-twitter fa-2x" style="color:#1da1f2;"></i>
+        </a>
+    </li>
+    {% endif %}
+    {% if site.social.github %}
+    <li>
+        <a title="{{ site.social.github }} on Github" href="https://github.com/{{ site.social.github }}"
+           target="_blank">
+            <i class="fab fa-github fa-2x" style="color:333;"></i>
+        </a>
+    </li>
+    {% endif %}
+    {% if site.social.gitlab %}
+    <li>
+        <a title="{{ site.social.gitlab }} on GitLab" href="https://gitlab.com/{{ site.social.gitlab }}"
+           target="_blank">
+            <i class="fab fa-gitlab fa-2x" style="color: e24329;"></i>
+        </a>
+    </li>
+    {% endif %}
+    {% if site.social.tel %}
+    <li>
+        <a title="Call {{site.name}} via Telephone" href="tel:{{ site.social.tel }}" target="_blank">
+            <i class="fas fa-phone-square fa-2x" style="color:black;"></i>
+        </a>
+    </li>
+    {% endif %} {% if site.social.steam %}
+    <li>
+        <a href="https://steamcommunity.com/id/{{ site.social.steam}}" title="{{ site.social.steam }} on Steam">
+            <i class="fab fa-steam" aria-hidden="true"></i>"
+        </a>
+    </li>
+    {% endif %} {% if site.social.discord %}
+    <li>
+        <a title="Talk to {{site.name}} on Discord" onclick="discord();">
+            <i class="fab fa-discord fa-2x" style="color:#7289da;"></i>
+        </a>
+    </li>
+    <div class="modal fade" id="discord" hidden>
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
 
-        <!-- Modal Header -->
-        <div class="modal-header bg-dark">
-          <h4 class="modal-title">Follow Me!</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
+                <!-- Modal Header -->
+                <div class="modal-header bg-dark">
+                    <h4 class="modal-title">Follow Me!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
 
-        <!-- Modal body -->
-        <div class="modal-body bg-dark">
-          My Discord Tag is
-          <span style='color:darkgreen;'>Iota
+                <!-- Modal body -->
+                <div class="modal-body bg-dark">
+                    My Discord Tag is
+                    <span style='color:darkgreen;'>Iota
             <span style='color:gray'>#0001</span>
           </span>
-        </div>
+                </div>
 
-        <!-- Modal footer -->
-        <div class="modal-footer bg-dark">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
+                <!-- Modal footer -->
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <script>
-    function discord() {
-      $(document).ready(
-        function () {
-          $('#discord').modal('show');
-          $('#discord').removeAttr('hidden');
-        });
-    };
-  </script>
-  {% endif %}
-  {% if site.social.stackoverflow %}
+    <script>
+        function discord() {
+            $(document).ready(
+                function () {
+                    $('#discord').modal('show');
+                    $('#discord').removeAttr('hidden');
+                });
+        };
+    </script>
+    {% endif %}
+    {% if site.social.stackoverflow %}
     <li>
-      <a title="{{ site.social.stackoverflow }} on StackOverflow" href="https://stackoverflow.com/users/{{ site.social.stackoverflow }}" target="_blank"><i class="fab fa-stack-overflow fa-2x"></i></a>
+        <a title="{{ site.social.stackoverflow }} on StackOverflow"
+           href="https://stackoverflow.com/users/{{ site.social.stackoverflow }}" target="_blank"><i
+                class="fab fa-stack-overflow fa-2x"></i></a>
     </li>
-  {% endif %}
-  {% if site.social.linkedin %}
+    {% endif %}
+    {% if site.social.linkedin %}
     <li>
-      {% assign linkedin = site.social.linkedin | split: '-' %}
-      {% capture titlecase %}{% for word in linkedin %}{{ word | capitalize }} {% endfor %}{% endcapture %}
+        {% assign linkedin = site.social.linkedin | split: '-' %}
+        {% capture titlecase %}{% for word in linkedin %}{{ word | capitalize }} {% endfor %}{% endcapture %}
 
-      <a title="{{ titlecase }} on LinkedIn" href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank">
-        <i class="fab fa-linkedin fa-2x"></i>
-      </a>
+        <a title="{{ titlecase }} on LinkedIn" href="https://www.linkedin.com/in/{{ site.social.linkedin }}"
+           target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
     </li>
-  {% endif %}
-  <!--
-  {% if site.social.instagram %}
-    <li>
-      <a title="{{ site.social.instagram }} on Instagram" href="https://instagram.com/{{ site.social.instagram }}" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-    </li>
-  {% endif %}
+    {% endif %}
+    <!--
+    {% if site.social.instagram %}
+      <li>
+        <a title="{{ site.social.instagram }} on Instagram" href="https://instagram.com/{{ site.social.instagram }}" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+      </li>
+    {% endif %}
 
-  {% if site.social.lastfm %}
+    {% if site.social.lastfm %}
+      <li>
+        <a title="{{ site.social.lastfm }} on Last.fm" href="https://www.lastfm.com/user/{{ site.social.lastfm }}" target="_blank"><i class="fa fa-lastfm fa-2x"></i></a>
+      </li>
+    {% endif %} -->
+    {% if site.social.rss %}
     <li>
-      <a title="{{ site.social.lastfm }} on Last.fm" href="https://www.lastfm.com/user/{{ site.social.lastfm }}" target="_blank"><i class="fa fa-lastfm fa-2x"></i></a>
+        <a title="{{ site.social.rss }} RSS" href="{{ site.social.rss | relative_url }}" target="_blank">
+            <i class="fas fa-rss fa-2x" style="color:#FF6600;"></i>
+        </a>
     </li>
-  {% endif %} -->
-  {% if site.social.rss %}
-  <li>
-    <a title="{{ site.social.rss }} RSS" href="{{ site.social.rss | relative_url }}" target="_blank">
-      <i class="fas fa-rss fa-2x" style="color:#FF6600;"></i>
-    </a>
-  </li>
-  {% endif %}
-  <li>
-    <a title="My GNUPG Key" href="/gnupg" target="_blank">
-      <i class="fas fa-key fa-2x" style="color:yellow;"></i>
-    </a>
-  </li>
-  <li>
-    <a title="NixStats Affiliate" href="https://nixstats.com/r/32628" target="_blank">
-      <img id="nixstats" src="{{ '/assets/images/nixstats.png' | relative_url }}" />
-    </a>
-  </li>
+    {% endif %}
+    <li>
+        <a title="My GNUPG Key" href="/gnupg" target="_blank">
+            <i class="fas fa-key fa-2x" style="color:yellow;"></i>
+        </a>
+    </li>
+    <li>
+        <a title="NixStats Affiliate" href="https://nixstats.com/r/32628" target="_blank">
+            <img id="nixstats" src="{{ '/assets/images/nixstats.png' | relative_url }}"/>
+        </a>
+    </li>
 
 </ul>
 <script>
-  function followme() {
-    $(document).ready(
-      function () {
+    function followme() {
+        $(document).ready(
+            function () {
 
-        $('#FollowMe').modal('show')
-        $('#FollowMe').removeAttr('hidden');
-        window.player.playVideo();
-      }
-    )
-  }
+                $('#FollowMe').modal('show')
+                $('#FollowMe').removeAttr('hidden');
+                window.player.playVideo();
+            }
+        )
+    }
 </script>
