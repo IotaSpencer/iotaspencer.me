@@ -1,5 +1,7 @@
 title: Micro Install
-description: A Gem that installs 'micro' a extensible terminal text editor
+description: |
+ A Gem that installs 'micro' a extensible terminal text editor
+ 'micro' is a terminal text editor developed by zyedidia
 gem: "https://rubygems.org/gems/micro_install"
 href: /projects/micro-install
 hosted: github.com
@@ -9,3 +11,5 @@ technology:
   - name: Ruby
     type: Language
 links:
+  - title: micro-install on RubyGems.org
+    url: https://rubygems.org/gems/micro_install

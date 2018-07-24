@@ -1,0 +1,9 @@
+name: MicroInstall
+priority: 0
+name-selector: micro-install
+desc: An install script for the terminal text editor 'micro'</dd>
+links:
+  - name: /projects/micro-install/
+    url: /projects/micro-install/
+  - name: RubyGems.org
+    url: https://rubygems.org/gems/micro-install

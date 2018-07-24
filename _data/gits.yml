@@ -1,0 +1,13 @@
+services:
+  GitHub:
+    - name: IotaSpencer
+      url: https://github.com/IotaSpencer
+    - name: ElectroCode
+      url: https://github.com/ElectroCode
+  GitLab:
+    - name: IotaSpencer
+      url: https://gitlab.com/IotaSpencer
+    - name: GitAll
+      url: https://gitlab.com/gitall
+    - name: ElectroCode
+      url: https://gitlab.com/ElectroCode
