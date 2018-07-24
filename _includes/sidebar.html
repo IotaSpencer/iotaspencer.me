@@ -1,5 +1,5 @@
 <div id="sidebar-recent-posts" class="sidebar bg-dark">
-    <h2>Recent Posts</h2>
+    <h4>Recent Posts</h4>
     <ul>
         {% for post in site.posts limit:5 %}
         <li>
@@ -10,12 +10,9 @@
 </div>
 
 <div id="sidebar-tag-cloud" class="sidebar bg-dark pt-3">
-    <h2>
-        <span class="fa-layers fa-fw">
-            <i class="fas fa-cloud fa-2x" style="color:white;"></i>
-            <i class="fas fa-tag fa-1x" data-fa-transform="shrink-1 right-10 down-2" style="color:Green"></i>
-        </span>
-    </h2>
+    <h4>
+        Tags
+    </h4>
         {% assign tags = (site.tags | sort:0) %} {% for tag in tags %}
 
             <a data-placement="right" data-toggle="tooltip" href="/tag/{{ tag[0] | slugify }}" title="{{ tag[1].size }}">
@@ -26,7 +23,7 @@
 </div>
 {% if page.page_links %}
 <div class="sidebar bg-dark" id="sidebar-page-links">
-    <h2>Page Links</h2>
+    <h4>Page Links</h4>
     <ul>
         {% for name in page.page_links %}
         <li>
@@ -38,6 +35,3 @@
     </ul>
 </div>
 {% endif %}
-<div class="sidebar bg-dark">
-
-</div>

@@ -14,32 +14,32 @@
                         </div>
 
                         <div class="well px-1 py-1 p-sm-2">
-                            <h2>{{ page.title }} &mdash; <span>{{ page.category }}</span></h2>
-
-                            <p>{{ page.description }}</p>
-                            <h3>Software/Languages Used</h3>
-                            <ul>
-                                {% for technology in page.technology %}
-                                <li><a>{{ technology.name }}</a> &ndash; <span>{{ technology.type }}</span></li>
-                                {% endfor %}
-                            </ul>
-                            <h3>Related Links</h3>
-                            <ul class="list-group bg-dark w-25">
-                                {% for link in page.links %}
-                                <li class="list-group-item bg-dark"><a href="{{ link.url }}">{{link.title}}</a></li>
-                                {% endfor %}
-                            </ul>
-
-                            {% if page.related_projects.size > 0 %}
-                            <h3>Related Projects</h3>
-                            {% for project in page.related_projects limit:3 %}
-                            <a href="/{{ project.dir }} ">
-                                <div title="{{ project.image.title }}">
-                                    <span>{{ project.title }}</span>
+                            <div class="card bg-dark-gray">
+                                <div class="card-header">
+                                    <h2>{{ page.title }} &mdash; <span>{{ page.category }}</span></h2>
                                 </div>
-                            </a>
-                            {% endfor %}
-                            {% endif %}
+
+                                <div class="card-body">
+                                    <h5>About</h5>
+                                    <div class="card-subtitle">
+                                        <p>{{ page.description | newline_to_br }}</p>
+                                    </div>
+
+                                    <h5>Software/Languages Used</h5>
+                                    <ul>
+                                        {% for technology in page.technology %}
+                                        <li><a>{{ technology.name }}</a> &ndash; <span>{{ technology.type }}</span></li>
+                                        {% endfor %}
+                                    </ul>
+                                    <h5>Related Links</h5>
+                                    <div class="btn-group bg-dark">
+                                        {% for link in page.links %}
+                                        <a class="btn btn-dark" role="button" href="{{ link.url }}">{{link.title}}</a>
+
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -47,10 +47,6 @@
         </div>
 
 
+    </div>
+</div>
 {% include footer.html %}
-</div>
-</div>
-
-</body>
-
-</html>
