@@ -7,33 +7,31 @@ layout: page-nosidebar
     {% assign projects = site.data.projects | get_projects_from_files | sort:'date' %}
     {% for project in projects reversed %}
     <!-- portfolio-item -->
-    <div class="card bg-dark">
+    <div class="card bg-dark-gray">
         <div class="card-body">
             <h2 class="card-title">{{ project.title }}</h2>
 
-            <p class="card-text">{{ project.description }}</p>
+            <p class="card-text">{{ project.description | newline_to_br }}</p>
             <div class="pt-2 pb-2">
                 <div class="badge-success badge-pill w-75"><a href="{{ project.href }}">Project Page</a></div>
             </div>
         </div>
 
-        <ul class="list-group list-group-flush bg-dark">
+        <ul class="list-group list-group-flush bg-dark-gray">
             {% for technology in project.technology %}
-            <li class="list-group-item bg-dark">
+            <li class="list-group-item bg-dark-gray">
                 <h4>{{ technology.name }}</h4>
-                <span class="badge badge-success badge-pill"><small>{{ technology.type }}</small></span>
+                <span class="badge badge-success badge-pill">{{ technology.type }}</span>
             </li>
             {% endfor %}
         </ul>
         <div class="card-body">
-            {% if project.links != nil? %}
+            {% if project.links != nil %}
+            <div class="btn-group-vertical">
             {% for link in project.links %}
-            {% if forloop.last %}
-            <a href="{{ link.url }}" class="card-link" title="{{ link.title }}">{{ link.title }}</a>
-            {% else %}
-            <a href="{{ link.url }}" class="card-link" title="{{ link.title }}">{{ link.title }}</a> <span>|</span>
-            {% endif %}
+            <a class="btn btn-dark card-link" href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
             {% endfor %}
+            </div>
             {% else %}
             <span>No links</span>
             {% endif %}
