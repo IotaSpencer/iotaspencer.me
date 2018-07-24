@@ -118,6 +118,14 @@ module Jekyll
       projects
     end
   end
+  module ProjectsDirFilter
+    def get_projectsdir_from_files(input)
+      projectsdir = []
+      input.each { |project| projectsdir.push(project[1]) }
+      projectsdir
+    end
+  end
 end
 
 Liquid::Template.register_filter(Jekyll::ProjectFilter)
+Liquid::Template.register_filter(Jekyll::ProjectsDirFilter)
