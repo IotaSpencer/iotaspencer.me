@@ -56,19 +56,19 @@ page_links:
 ## Usage
 
 #### Notes on Usage
-
+* You must at least have a 'Gemfile' as the jekyll command used requires it
 * Clone your site to where you want it built from
 * **IMPORTANT**: Run `bundle install --path vendor/bundle`{:.highlight}
-    otherwise you will get dependency errors
+    otherwise you may get dependency errors
 
 ### Start
 
-  If a configuration file has been created or generated(then edited correctly)... using 'start' should initiate the webhook and have it start
+  If a configuration file has been created and/or generated(then edited correctly)... using 'server listen' should initiate the webhook and have it start
 
-* `site_hook start`{:.highlight}
+* `site_hook server listen`{:.highlight}
   <hr class="d-flex justify-content-center hr-text" data-content="or">
 
-* `bundle exec site_hook start`{:.highlight}
+* `bundle exec site_hook server listen`{:.highlight}
 
 Depending on how you installed site_hook.
 </div>

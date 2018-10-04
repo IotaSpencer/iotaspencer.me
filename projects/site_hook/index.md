@@ -14,4 +14,6 @@ page_links:
   'site_hook on RubyGems.org': https://rubygems.org/gems/site_hook
   GitHub: https://github.com/IotaSpencer/site_hook
 ---
-<h1></h1>
+# Badges
+
+[![Gem](https://img.shields.io/gem/v/site_hook.svg?style=plastic)](https://github.com/IotaSpencer/site_hook)
