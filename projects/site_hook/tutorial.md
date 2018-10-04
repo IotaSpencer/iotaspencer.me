@@ -40,6 +40,8 @@ for helping develop site_hook, please go [>here<](/projects/site_hook/developing
 * `site_hook config gen`{:.highlight}
   * This will create the following files and directories.
     * `~/.jph/`{:.highlight}
+    * `~/.jph/config`{:.highlight}
+    * `~/.jph/logs`{:.highlight}
 
 ## Usage
 
