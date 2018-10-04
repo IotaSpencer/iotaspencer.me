@@ -45,8 +45,6 @@ page_links:
 
       * `sudo gem install site_hook-x.x.x.gem`{:.highlight} to install to system when a sudoer
 
-          <hr class="d-flex justify-content-center hr-text " data-content="or">
-
       * `gem install site_hook-x.x.x.gem --user-install`{:.highlight} to install as current user (to user GEM_HOME)
 
 ## Setup
