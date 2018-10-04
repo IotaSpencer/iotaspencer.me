@@ -61,6 +61,15 @@ page_links:
 * **IMPORTANT**: Run `bundle install --path vendor/bundle`{:.highlight}
     otherwise you may get dependency errors
 
+#### Generating a Project Block
+To generate a project block, (using the latest version of site_hook).
+* `site_hook config gen-project`{:.highlight}
+
+This command will ask you questions and spit out an indent block to put into your `~/.jph/config`{:.highlight} file.
+
+This command also gives you a hook password/token/secret.
+* If you don't like the string that was generated, then you can change it once you've copied the rest to your config.
+
 ### Start
 
   If a configuration file has been created and/or generated(then edited correctly)... using 'server listen' should initiate the webhook and have it start
