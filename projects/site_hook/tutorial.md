@@ -37,11 +37,11 @@ page_links:
 1. `cd site_hook`{:.highlight}
 
 1. Install
-   1. Bundler
+  1. Bundler
       * `bundle install --system`{:.highlight}
-   1. Gem
+  1. Gem
       * `gem build site_hook.gemspec`{:.highlight}
-     then
+      then
       * `gem install site_hook-x.x.x.gem`{:.highlight} to install to system (as root)
         <hr class="d-flex justify-content-center hr-text " data-content="or">
 
@@ -51,17 +51,10 @@ page_links:
 ## Setup
 
 ### Create Needed Files & Directories
-* Create a directory named `.jph`{:.highlight} in the your home directory.
-* Create a file named `.jph-rc`{:.highlight} in the home
-    directory of the user that's going to be running the site_hook
-    You can either do this using
-
-  * `site_hook config gen > ~/.jph-rc`{:.highlight}
-    * To redirect the output to a file.
-    <hr class="hr-text d-flex justify-content-center" data-content="or">
-
-  * `site_hook config gen -f`{:.highlight}
-    * To force a file to be created by the script.
+* Backup any previous site_hook configs
+* `site_hook config gen`{:.highlight}
+  * This will create the following files and directories.
+    * `~/.jph/`{:.highlight}
 
 ## Usage
 
