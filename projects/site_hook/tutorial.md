@@ -41,9 +41,9 @@ page_links:
       * `bundle install --system`{:.highlight}
     1. Gem
     * First `gem build site_hook.gemspec`{:.highlight}
-        * then `gem install site_hook-x.x.x.gem`{:.highlight} to install to system (as root)
-        * `sudo gem install site_hook-x.x.x.gem`{:.highlight} to install to system when a sudoer
-        * `gem install site_hook-x.x.x.gem --user-install`{:.highlight} to install as current user (to user GEM_HOME)
+      * then `gem install site_hook-x.x.x.gem`{:.highlight} to install to system (as root)
+      * `sudo gem install site_hook-x.x.x.gem`{:.highlight} to install to system when a sudoer
+      * `gem install site_hook-x.x.x.gem --user-install`{:.highlight} to install as current user (to user GEM_HOME)
 
 ## Setup
 
