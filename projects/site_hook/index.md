@@ -35,7 +35,7 @@ page_links:
    * once all bugs pertaining to the current minor.patch version have been fixed or features added, then there may be a x.0.0 release.
 
 
-*NOTE*: With a development release, when submitting a issue/bug report, please include the version number in your issue title.
+**NOTE**: With a development release, when submitting a issue/bug report, please include the version number in your issue title.
 
 ## Tutorial
 
