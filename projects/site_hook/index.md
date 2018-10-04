@@ -16,6 +16,14 @@ page_links:
 ---
 # {{ page.title }}
 
+## About
+
+{{ page.excerpt }}
+
+## Tutorial
+
+I've made a tutorial for `site_hook`{:.highlight} [here](/projects/site_hook/tutorial/)
+
 #### Badges
 
 [![Gem](https://img.shields.io/gem/v/site_hook.svg?style=plastic)](https://github.com/IotaSpencer/site_hook)
