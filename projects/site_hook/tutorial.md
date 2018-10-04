@@ -41,7 +41,7 @@ page_links:
       * `bundle install --system`{:.highlight}
   1. Gem
       * `gem build site_hook.gemspec`{:.highlight}
-      then
+     then
       * `gem install site_hook-x.x.x.gem`{:.highlight} to install to system (as root)
         <hr class="d-flex justify-content-center hr-text " data-content="or">
 
