@@ -30,20 +30,8 @@ page_links:
 
 * `gem install site_hook`{:.highlight}
 
-  <hr class="hr-text d-flex justify-content-center" data-content="or">
-
-1. `git clone https://github.com/IotaSpencer/site_hook`{:.highlight}
-
-1. `cd site_hook`{:.highlight}
-
-1. Install
-    1. Bundler
-      * `bundle install --system`{:.highlight}
-    1. Gem
-    * First `gem build site_hook.gemspec`{:.highlight}
-      * then `gem install site_hook-x.x.x.gem`{:.highlight} to install to system (as root)
-      * `sudo gem install site_hook-x.x.x.gem`{:.highlight} to install to system when a sudoer
-      * `gem install site_hook-x.x.x.gem --user-install`{:.highlight} to install as current user (to user GEM_HOME)
+Support is only given when using the latest version unless you are explicitly trying to help develop site_hook,
+for helping develop site_hook, please go [>here<](/projects/site_hook/developing/)
 
 ## Setup
 
