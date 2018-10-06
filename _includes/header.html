@@ -98,7 +98,7 @@
                 <li class="nav-item dropdown" id="portfolio-dropdown">
                     <a class="nav-link dropdown-toggle" href="{{ 'portfolio' | relative_url }}" data-toggle="dropdown">/portfolio</a>
                     <div class="dropdown-menu dropdown-menu-right bg-dark">
-                        <a class="dropdown-item" href="/portfolio/">Portfolio Page</a>
+                        <a class="dropdown-header" href="/portfolio/">Portfolio Page</a>
                         <div class="dropdown-divider" style="border-color: darkgreen;"></div>
                         {% for item in site.data.navbar %}
                         <a class="dropdown-item" title="{{ item.title }}" href="{{ item.path }}">
