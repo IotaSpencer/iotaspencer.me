@@ -624,8 +624,10 @@ small.text-green, span.text-green {
 .dropdown-item {
   &:hover {
     background-color: #292929 !important;
+    background: none !important;
   }
   &:focus {
     background-color: #292929 !important;
+    background: none !important;
   }
 }
