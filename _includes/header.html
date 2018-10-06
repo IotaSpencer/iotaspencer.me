@@ -101,7 +101,10 @@
                         <a class="dropdown-item" href="/portfolio/">Portfolio Page</a>
                         <div class="dropdown-divider" style="border-color: darkgreen;"></div>
                         {% for item in site.data.navbar %}
-                        <a class="dropdown-item" href="{{ item.path }}">{{ item.name }}</a>
+                        <a class="dropdown-item" title="{{ item.title }}" href="{{ item.path }}">
+                            {{ item.name }}
+                            {% for badge in item.badges %}<small><span class="badge badge-dark">{{ badge }}</span></small>{% endfor %}
+                        </a>
                         {% endfor %}
                     </div>
                 </li>
