@@ -103,7 +103,7 @@
                         {% for item in site.data.navbar %}
                         <a class="dropdown-item" title="{{ item.title }}" href="{{ item.path }}">
                             {{ item.name }}
-                            {% for badge in item.badges %}<small><span class="badge badge-dark">{{ badge }}</span></small>{% endfor %}
+                            {% for badge in item.badges %}<small><span class="badge badge-dark text-green">{{ badge }}</span></small>{% endfor %}
                         </a>
                         {% endfor %}
                     </div>
