@@ -631,3 +631,13 @@ small.text-green, span.text-green {
     background: none !important;
   }
 }
+.dropdown-item {
+  &:hover {
+    background-color: #292929 !important;
+
+  }
+  &:focus {
+    background-color: #292929 !important;
+
+  }
+}
