@@ -100,16 +100,9 @@
                     <div class="dropdown-menu bg-dark">
                         <a class="dropdown-item" href="/portfolio/">Portfolio Page</a>
                         <div class="dropdown-divider" style="border-color: darkgreen;"></div>
-                        <a class="dropdown-item" href="/portfolio/mkmatter">mkmatter</a>
-                        <a class="dropdown-item" href="/portfolio/cinch-bot_template">cinch-bot_template</a>
-                        <a class="dropdown-item" href="/portfolio/micro-install">micro_install</a>
-                        <a class="dropdown-item" href="/portfolio/gitall">gitall</a>
-                        <a class="dropdown-item" href="/portfolio/site_hook">site_hook</a>
-                        <a class="dropdown-item" href="/portfolio/irc-source">irc-source</a>
-                        <a class="dropdown-item" href="/portfolio/dnsblim">dnsbl.im</a>
-                        <a class="dropdown-item" href="/portfolio/pylink">pylink</a>
-                        <a class="dropdown-item" href="/portfolio/supyplugins">supyplugins</a>
-
+                        {% for item in site.data.navbar %}
+                        <a class="dropdown-item" href="{{ item.path }}">{{ item.name }}</a>
+                        {% endfor %}
                     </div>
                 </li>
                 <li class="nav-item">
