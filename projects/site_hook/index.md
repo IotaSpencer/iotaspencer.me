@@ -20,7 +20,7 @@ page_links:
 {:.d-none}
 
 Version: [![Gem](https://img.shields.io/gem/v/site_hook.svg?style=plastic)](https://github.com/IotaSpencer/site_hook)
-Downloads on latest version: [![Gem](https://img.shields.io/gem/dtv/site_hook.svg?style=plastic)(https://rubygems.org/gems/site_hook)
+Downloads on latest version: [![Gem](https://img.shields.io/gem/dtv/site_hook.svg?style=plastic)](https://rubygems.org/gems/site_hook)
 Discord Chat: [![Discord](https://img.shields.io/discord/497246541053165570.svg?logo=discord&style=plastic)](https://discord.gg/999b6Rr)
 
 
