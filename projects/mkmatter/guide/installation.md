@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Installation
+breadcrumb: Installation
 categories:
 - Jekyll
 - mkmatter

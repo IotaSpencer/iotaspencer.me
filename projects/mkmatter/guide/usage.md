@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Usage
+breadcrumb: Usage
 categories:
 - Jekyll
 - mkmatter
