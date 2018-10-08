@@ -1,5 +1,5 @@
 <ol class="breadcrumb bg-dark">
-    <li><a href="{{ site.baseurl }}/">Home</a></li><span class="px-1">/</span>
+    <li><a href="{{ site.baseurl }}/"><span class="sr-only">Home</span><i class="fas fa-home"></i></a></li><span class="px-1">/</span>
     {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
     {% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
     {% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}
