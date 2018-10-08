@@ -64,12 +64,13 @@ This command also gives you a hook password/token/secret.
 
   If a configuration file has been created and/or generated(then edited correctly)... using 'server listen'
   should initiate the webhook and have it start
-
+#### Multiplexer Usage
 **NOTE**: I would suggest running the 'listen' command in a `screen`{:.highlight} or `tmux`{:.highlight} session.
   This is due to the output of logs and due to the fact that the gem is not a daemon.
 * `tmux new -s site_hook`{:.highlight}
 * `screen -mS site_hook`{:.highlight}
 
+#### Starting Syntax
 
 * `site_hook server listen`{:.highlight}
   <hr class="d-flex justify-content-center hr-text" data-content="or">
