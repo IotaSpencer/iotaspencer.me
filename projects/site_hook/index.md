@@ -1,6 +1,6 @@
 ---
 layout: page
-title: site_hook - Home
+title: site_hook
 permalink: projects/site_hook/index.html
 breadcrumb: site_hook
 excerpt: SiteHook is a RubyGem that is used to pull jekyll blogs and build them as a intermediary between a git service webhook and a production server.
