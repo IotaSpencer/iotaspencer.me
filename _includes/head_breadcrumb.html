@@ -1,4 +1,4 @@
-<ol class="breadcrumb">
+<ol class="breadcrumb bg-dark">
     <li><a href="{{ site.baseurl }}/">Home</a></li>
     {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
     {% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
@@ -12,7 +12,7 @@
             {% assign j = forLoopMaxInt | plus: 0 %}
                 <li {% if i == j %}class="active"{% endif %}>
                     {% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
-                    <a href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">{{breadcrumb_page.breadcrumb}}</a>
+                    <a href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">{{breadcrumb_page.breadcrumb}}</a>{% if i != j %}<span class="px-1">/</span>{% endif %}
                 </li>
             {% endif %}
         {% endfor %}
