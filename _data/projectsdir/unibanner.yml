@@ -1,0 +1,9 @@
+name: Unibanner / Unicode Banner
+priority: 0
+name-selector: unibanner
+desc: A simple-ish IRC bot that bans unicode spamming bots
+links:
+  - name: /projects/unibanner
+    url: /projects/unibanner
+  - name: Portfolio
+    url: /portfolio/unibanner/
