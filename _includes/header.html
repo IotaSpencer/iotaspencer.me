@@ -28,6 +28,9 @@
           rel="stylesheet">
     <link href="{{ '/assets/css/theme.css' | relative_url }}" rel="stylesheet">
     <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
+    {% if page.title == 'Resume' %}
+      <link href="{{ '/assets/css/resume.css' | relative_url }}" rel="stylesheet">
+    {% endif %}
     <link rel="manifest" href="/manifest.json"/>
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
     <script>

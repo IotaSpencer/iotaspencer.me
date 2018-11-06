@@ -38,3 +38,11 @@
   name: Mastosite
   title: Mastosite
   badges: ['Site', 'HTML+CSS+JS', 'Ruby', 'Jekyll']
+- path: /portfolio/unibanner
+  name: Unibanner
+  title: Unibanner
+  badges: ['Ruby', 'IRC', 'Gem', 'IRC Bot']
+- path: /portfolio/irc_socket
+  name: IRCSocket
+  title: IRCSocket
+  badges: ['Ruby', 'Gem', 'Sockets', 'IRC']
