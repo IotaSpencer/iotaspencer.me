@@ -16,11 +16,10 @@ page_links:
   micro: https://github.com/zyedidia/micro
   getmic.ro: https://github.com/benweissmann/getmic.ro
 ---
-<h1>micro_install</h1>
+# micro_install
 
-<h2>About</h2>
+## About
 
-<div markdown="1">
 micro_install is a ruby gem ported from [benweissmann](https://github.com/benweissmann) curlable script hosted at https://getmic.ro, and micro is developed and owned by [@zyedidia](https://github.com/zyedidia)
 
 micro_install is used as an ruby port to benweissmann's [https://getmic.ro](https://getmic.ro) but packaged as a gem.
@@ -41,4 +40,3 @@ $ micro-install [options]
 # ...
 # Installer runs
 ```
-</div>
