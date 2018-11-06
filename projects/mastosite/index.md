@@ -1,6 +1,7 @@
 ---
 layout: page
 title: mastosite
+permalink: /projects/mastosite/index.html
 categories:
 - mastodon
 tags:

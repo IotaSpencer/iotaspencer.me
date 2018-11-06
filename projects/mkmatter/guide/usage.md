@@ -9,6 +9,7 @@ categories:
 tags:
 - mkmatter
 - usage
+permalink: /projects/mkmatter/guide/usage/index.html
 date: '2018-03-04 06:52:40 -0500'
 ---
 {::options parse_block_html="true" /}

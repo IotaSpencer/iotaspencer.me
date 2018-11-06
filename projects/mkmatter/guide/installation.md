@@ -2,6 +2,7 @@
 layout: page
 title: Installation
 breadcrumb: Installation
+permalink: /projects/mkmatter/guide/installation/index.html
 categories:
 - Jekyll
 - mkmatter

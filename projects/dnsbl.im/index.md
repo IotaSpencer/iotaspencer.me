@@ -1,6 +1,7 @@
 ---
 layout: page
 title: DNSBL.im
+permalink: /projects/dnsbl.im/index.html
 tags:
 - dnsbl
 - dnsbl.im

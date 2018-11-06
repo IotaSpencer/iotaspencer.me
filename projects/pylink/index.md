@@ -1,6 +1,7 @@
 ---
 layout: page
 title: PyLink
+permalink: /projects/pylink/index.html
 categories:
 - Python
 - Janus

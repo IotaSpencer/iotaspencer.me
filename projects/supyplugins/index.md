@@ -1,6 +1,7 @@
 ---
 layout: page
 title: SupyPlugins
+permalink: /projects/supyplugins/index.html
 categories:
 - Python
 - Limnoria
