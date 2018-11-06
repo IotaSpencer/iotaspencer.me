@@ -19,7 +19,6 @@ page_links:
 
 ## About
 
-
 Unibanner is a small-ish IRC bot built to `ZLINE`{:.highlight} and blacklist
   unicode spamming bots like those originating from the freenodegate-type bots
 
