@@ -19,9 +19,9 @@ page_links:
 
 ## About
 
-<div markdown="1">
 
 Unibanner is a small-ish IRC bot built to `ZLINE`{:.highlight} and blacklist
+
 unicode spamming bots like those originating from the freenodegate-type bots
 
 
@@ -31,5 +31,3 @@ $ unibanner
 # ...
 # Unibanner runs
 ```
-
-</div>
