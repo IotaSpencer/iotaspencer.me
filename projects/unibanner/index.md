@@ -15,9 +15,9 @@ page_links:
   GitHub: https://git.lasershark.army/IotaSpencer/unibanner
 ---
 
-<h1>unibanner</h1>
+# unibanner
 
-<h2>About</h2>
+## About
 
 <div markdown="1">
 
