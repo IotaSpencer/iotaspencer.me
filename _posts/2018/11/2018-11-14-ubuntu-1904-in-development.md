@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ubuntu 19.04 in Development
+description: Ubuntu 19.04, the latest non-lts stable is under development
 categories:
 - Ubuntu
 - Linux
