@@ -1,0 +1,7 @@
+- title: Follow me on Twitter
+  href: https://twitter.com/@IotaEcode
+  color:
+  fa-icon: fa-twitter
+  #image: /path/to/image
+  hide: false
+  html: false
