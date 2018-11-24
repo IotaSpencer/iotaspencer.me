@@ -67,11 +67,8 @@
 </script>
 <header id="header">
     <nav class="navbar navbar-dark bg-dark navbar-expand-md mb-3">
-        <a class="navbar-brand"
-           href="{{ '' | relative_url }}/"><span class="navbar-brand" style="color:green;">{{ site.name }} - {{ site.author }}</span></a>
-        <span class="navbar-text text-small mr-1">
-          <sub>{{ site.description }}</sub>
-        </span>
+        <a class="navbar-brand" href="{{ '' | relative_url }}/">{{ site.name }} - {{ site.author }}</a>
+        <p class="navbar-text small mr-1">{{ site.description }}</p>
         <div class="bg-dark navbar-toggle justify-content-end d-md-none" data-toggle="collapse" data-target="#navbar">
             <button class="bg-dark py-2 px-3 border border-1 border-secondary rounded">
                 <i class="fas fa-bars"></i>
