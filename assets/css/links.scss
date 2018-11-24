@@ -5,13 +5,28 @@
 @include media-breakpoint-down(md) {
   .grid {
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(3,1fr);
   }
-  a[id^="social-button-"].btn {
-    width: 100px !important;
+  a[id^="social-button-"].btn.btn-dark {
     grid-column: auto;
+    grid-row: auto;
+    grid-row-gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
-  a.btn.btn-dark[id^="social-button-"] {
-    width: 100%
+  a.btn.btn-dark {
+    width: 100%;
   }
+
 }
+/*
+a[id^="social-button-"].btn {
+  width: 100px !important;
+  grid-column: auto;
+}
+a.btn.btn-dark[id^="social-button-"] {
+  width: 100%;
+}
+div[class^="social-button-"] {
+}
+*/
