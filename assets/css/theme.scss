@@ -95,13 +95,13 @@ a {
   color: $accent-color;
 
   &:hover {
-    color: darkgreen;
-    text-decoration: none;
+    color: darkgreen !important;
+    text-decoration: none !important;
   }
 
   &:visited {
-    color: green;
-    text-decoration: none;
+    color: green !important;
+    text-decoration: none !important;
   }
 }
 //********************************************************
@@ -121,8 +121,6 @@ ul.social-media {
     height: 45px;
     @include transition(color 0.2s);
     display: inline-block;
-    color: white;
-
     &:hover {
       color: $accent-color;
     }
