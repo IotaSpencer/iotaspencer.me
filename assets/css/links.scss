@@ -2,7 +2,7 @@
 ---
 @import "bootstrap.scss";
 
-@include media-breakpoint-down(xs) {
+@include media-breakpoint-down(md) {
   .grid {
     display: grid;
     grid-template-columns: repeat(3,auto);
@@ -10,5 +10,8 @@
   a[id^="social-button-"].btn {
     width: 100px !important;
     grid-column: auto;
+  }
+  a.btn.btn-dark[id^="social-button-"] {
+    width: 100%
   }
 }
