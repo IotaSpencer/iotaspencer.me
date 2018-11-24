@@ -14,3 +14,4 @@ _sass/node_src/bootstrap/LICENSE
 _sass/node_src/bootstrap/**/*.scss
 assets/css/themes
 .project
+Gemfile.lock
