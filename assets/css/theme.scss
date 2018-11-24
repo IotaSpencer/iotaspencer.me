@@ -34,9 +34,9 @@ $background-pattern: '3px-tile.png'; //*****************************************
 //********************************************************
 
 body {
-  color: $font-color;
-  background-color: $background-color;
-  background-image: url("/assets/css/pics/background/#{$background-pattern}");
+  color: $font-color !important;
+  background-color: $background-color !important;
+  background-image: url("/assets/css/pics/background/#{$background-pattern}") !important;
 }
 .well {
   background-color: $post-panel-color;
