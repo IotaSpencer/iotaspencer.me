@@ -559,3 +559,17 @@ small.text-green, span.text-green {
     color: green;
   }
 }
+
+#he-net-cert {
+  .image-container {
+    @include media-breakpoint-down(lg) {
+      width:100%;
+      background:green;
+      display:flex;
+      justify-content: center;
+      align-items:center;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+  }
+}
