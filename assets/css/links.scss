@@ -1,0 +1,14 @@
+---
+---
+@import "bootstrap.scss";
+
+@include media-breakpoint-down(xs) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+  }
+  a[id^="social-button-"].btn {
+    width: 100px !important;
+    grid-column: auto;
+  }
+}
