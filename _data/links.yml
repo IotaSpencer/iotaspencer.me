@@ -116,7 +116,7 @@ sites:
       width: 32px
     hide: false
     html: false
-    order: 1
+    order: 0
   -
     title: RSS Feed
     text: <abbr title="Really Simple Syndication">RSS</abbr>
@@ -160,3 +160,13 @@ sites:
     hide: false
     html:
     order: 999
+  -
+    title: DigitalOcean
+    text: DigitalOcean
+    service: digitalocean
+    href: https://m.do.co/c/145b0a3fb5be
+    style: color:blue;
+    fa-icon: fab fa-digital-ocean fa-2x
+    hide: false
+    html: false
+    order: 0
