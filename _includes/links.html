@@ -3,142 +3,47 @@
     {% include easter-egg.html %}
 
 </div>
+<!--<link rel="stylesheet" href="{{ '/assets/css/links.css' | relative_url }}">-->
+<div class="d-flex flex-row ">
+  <div class="d-flex flex-row mx-auto flex-wrap flex-fill">
+    {%- for account in site.data.links.sites -%}
+      <div class="flex-fill px-1 {% if account.order %} order-{{- account.order -}}{%- endif -%}">
 
-<ul class="social-media">
-    {% for account in site.data.links %}
-        <a title="{{ account.title }}" href="{{ account.href }}" target="_blank">
-          {% if account.html %}
-            {{ account.html }}
-          {% endif %}
+        <a id="social-button-{{ account.service }}" class="flex-fill btn btn-dark {% if account.order %} order-{{- account.order -}}{%- endif -%}" title="{{ account.title }}" href="{{ account.href }}" target="_blank" {% if account.style %}style="{{account.style}}"{% endif %} {% if account.data %}{{ account.data }}{% endif %}>
+          {%- if account.fa-icon -%}
+              <i class="{{ account.fa-icon }}"></i>
+          {%- endif -%}
+          {%- if account.image -%}
+              <img class="{{- account.image.class -}}" src="{{- account.image.path -}}" style="height:{{account.image-size.height}}; width:{{account.image-size.width}};"/>
+          {%- endif -%}
+          {%- if account.html -%}
+            {{- account.html -}}
+          {%- endif -%}
+          {%- if site.data.links.settings.text == true -%}
+            {%- if account.text -%}
+              <p>{{- account.text -}}</p>
+            {%- endif -%}
+          {%- endif -%}
         </a>
-    {% endfor %}
-    {% if site.social.twitter %}
-    <li>
-        <a title="@{{ site.social.twitter}} on Twitter" href="https://twitter.com/{{site.social.twitter}}"
-           target="_blank">
-            <i class="fab fa-twitter fa-2x" style="color:#1da1f2;"></i>
-        </a>
-    </li>
-    {% endif %}
-    {% if site.social.github %}
-    <li>
-        <a title="{{ site.social.github }} on Github" href="https://github.com/{{ site.social.github }}"
-           target="_blank">
-            <i class="fab fa-github fa-2x" style="color:333;"></i>
-        </a>
-    </li>
-    {% endif %}
-    {% if site.social.gitlab %}
-    <li>
-        <a title="{{ site.social.gitlab }} on GitLab" href="https://gitlab.com/{{ site.social.gitlab }}"
-           target="_blank">
-            <i class="fab fa-gitlab fa-2x" style="color: e24329;"></i>
-        </a>
-    </li>
-    {% endif %}
-    {% if site.social.tel %}
-    <li>
-        <a title="Call {{site.name}} via Telephone" href="tel:{{ site.social.tel }}" target="_blank">
-            <i class="fas fa-phone-square fa-2x" style="color:black;"></i>
-        </a>
-    </li>
-    {% endif %} {% if site.social.steam %}
-    <li>
-        <a href="https://steamcommunity.com/id/{{ site.social.steam}}" title="{{ site.social.steam }} on Steam">
-            <i class="fab fa-steam fa-2x" aria-hidden="true"></i>"
-        </a>
-    </li>
-    {% endif %} {% if site.social.discord %}
-    <li>
-        <a title="Talk to {{site.name}} on Discord" onclick="discord();">
-            <i class="fab fa-discord fa-2x" style="color:#7289da;"></i>
-        </a>
-    </li>
-    <div class="modal fade" id="discord" hidden>
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
 
-                <!-- Modal Header -->
-                <div class="modal-header bg-dark">
-                    <h4 class="modal-title">Follow Me!</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
+<!--
+{% if site.social.instagram %}
+  <li>
+    <a title="{{ site.social.instagram }} on Instagram" href="https://instagram.com/{{ site.social.instagram }}" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+  </li>
+{% endif %}
 
-                <!-- Modal body -->
-                <div class="modal-body bg-dark">
-                    My Discord Tag is
-                    <span style='color:darkgreen;'>Iota
-            <span style='color:gray'>#0001</span>
-          </span>
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer bg-dark">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <script>
-        function discord() {
-            $(document).ready(
-                function () {
-                    $('#discord').modal('show');
-                    $('#discord').removeAttr('hidden');
-                });
-        };
-    </script>
-    {% endif %}
-    {% if site.social.stackoverflow %}
-    <li>
-        <a title="{{ site.social.stackoverflow }} on StackOverflow"
-           href="https://stackoverflow.com/users/{{ site.social.stackoverflow }}" target="_blank"><i
-                class="fab fa-stack-overflow fa-2x"></i></a>
-    </li>
-    {% endif %}
-    {% if site.social.linkedin %}
-    <li>
-        {% assign linkedin = site.social.linkedin | split: '-' %}
-        {% capture titlecase %}{% for word in linkedin %}{{ word | capitalize }} {% endfor %}{% endcapture %}
-
-        <a title="{{ titlecase }} on LinkedIn" href="https://www.linkedin.com/in/{{ site.social.linkedin }}"
-           target="_blank">
-            <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-    </li>
-    {% endif %}
-    <!--
-    {% if site.social.instagram %}
-      <li>
-        <a title="{{ site.social.instagram }} on Instagram" href="https://instagram.com/{{ site.social.instagram }}" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-      </li>
-    {% endif %}
-
-    {% if site.social.lastfm %}
-      <li>
-        <a title="{{ site.social.lastfm }} on Last.fm" href="https://www.lastfm.com/user/{{ site.social.lastfm }}" target="_blank"><i class="fa fa-lastfm fa-2x"></i></a>
-      </li>
-    {% endif %} -->
-    {% if site.social.rss %}
-    <li>
-        <a title="{{ site.social.rss }} RSS" href="{{ site.social.rss | relative_url }}" target="_blank">
-            <i class="fas fa-rss fa-2x" style="color:#FF6600;"></i>
-        </a>
-    </li>
-    {% endif %}
-    <li>
-        <a title="My GNUPG Key" href="/gnupg" target="_blank">
-            <i class="fas fa-key fa-2x" style="color:yellow;"></i>
-        </a>
-    </li>
-    <!---<li>
-        <a title="NixStats Affiliate" href="https://nixstats.com/r/32628" target="_blank">
-            <img id="nixstats" src="{{ '/assets/images/nixstats.png' | relative_url }}"/>
-        </a>
-    </li>-->
-    <li>
-        <a title="Vultr Affiliate Link" href=""
-    </li>
-
-</ul>
+{% if site.social.lastfm %}
+  <li>
+    <a title="{{ site.social.lastfm }} on Last.fm" href="https://www.lastfm.com/user/{{ site.social.lastfm }}" target="_blank"><i class="fa fa-lastfm fa-2x"></i></a>
+  </li>
+{% endif %} -->
+<!---<li>
+    <a title="NixStats Affiliate" href="https://nixstats.com/r/32628" target="_blank">
+        <img id="nixstats" src="{{ '/assets/images/nixstats.png' | relative_url }}"/>
+    </a>
+</li>-->

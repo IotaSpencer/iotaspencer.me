@@ -1,0 +1,44 @@
+{% if site.social.discord %}
+   <li>
+       <a title="Talk to {{site.name}} on Discord" onclick="discord();">
+           <i class="fab fa-discord fa-2x" style="color:#7289da;"></i>
+       </a>
+   </li>
+   {% include discord.html %}
+{% endif %}
+
+<div class="modal fade" id="discord" hidden>
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header bg-dark">
+                <h4 class="modal-title">Follow Me!</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body bg-dark">
+                My Discord Tag is
+                <span style='color:darkgreen;'>Iota
+        <span style='color:gray'>#0001</span>
+      </span>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    function discord() {
+        $(document).ready(
+            function () {
+                $('#discord').modal('show');
+                $('#discord').removeAttr('hidden');
+            });
+    };
+</script>
