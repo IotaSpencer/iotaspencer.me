@@ -9,7 +9,7 @@
     {%- for account in site.data.links.sites -%}
       <div class="col-xs-4 col-sm-4 col-md-0 flex-fill px-1 {% if account.order %} order-{{- account.order -}}{%- endif -%}">
 
-        <a id="social-button-{{ account.service }}" class="flex-fill btn btn-dark {% if account.order %} order-{{- account.order -}}{%- endif -%}" title="{{ account.title }}" href="{{ account.href }}" target="_blank" {% if account.style %}style="{{account.style}}"{% endif %} {% if account.data %}{{ account.data }}{% endif %}>
+        <a id="social-button-{{ account.service }}" class="w-100 flex-fill btn btn-dark {% if account.order %} order-{{- account.order -}}{%- endif -%}" title="{{ account.title }}" href="{{ account.href }}" target="_blank" {% if account.style %}style="{{account.style}}"{% endif %} {% if account.data %}{{ account.data }}{% endif %}>
           {%- if account.fa-icon -%}
               <i class="{{ account.fa-icon }}"></i>
           {%- endif -%}
