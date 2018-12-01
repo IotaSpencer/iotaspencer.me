@@ -1,13 +1,13 @@
-{% if site.tags != "" %} {% include collecttags.html %} {% endif %}
+{%- if site.tags != "" -%}{%- include collecttags.html -%}{%- endif -%}
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>{{ site.name }}{% if page.title %} | {{ page.title }} {% endif %}</title>
     <meta name="theme-color" content="#292929"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
-    {% include meta.html %}
+    {% include meta.html -%}
     <script>
         FontAwesomeConfig = {
             autoReplaceSvg: 'nest'
