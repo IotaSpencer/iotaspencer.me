@@ -46,3 +46,7 @@
   name: IRCSocket
   title: IRCSocket
   badges: ['Ruby', 'Gem', 'Sockets', 'IRC']
+- path: /portfolio/cloudflare_cli
+  name: cloudflare_cli
+  title: cloudflare_cli
+  badges: ['Ruby', 'Gem', 'Cloudflare', 'API']
