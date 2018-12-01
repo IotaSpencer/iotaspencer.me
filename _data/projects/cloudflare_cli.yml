@@ -1,0 +1,15 @@
+title: cloudflare_cli
+description: A Gem interfaces with the Cloudflare API
+gem: "https://rubygems.org/gems/cloudflare_cli"
+href: /projects/cloudflare_cli
+repo: "https://github.com/IotaSpencer/cloudflare_cli"
+hosted: github.com
+category: Gem
+technology:
+  - name: Ruby
+    type: Language
+  - name: GLI
+    type: Ruby gem
+links:
+  - title: on RubyGems.org
+    url: https://rubygems.org/gems/cloudflare_cli
