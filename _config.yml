@@ -69,7 +69,7 @@ kramdown:
     block:
       line_numbers: true
 timezone: America/New_York
-exclude: ['README.md', 'LICENSE', 'vendor/', 'node_src', '*.map', '.gitignore', 'Gemfile*', '*.gemspec', '.sass-cache']
+exclude: ['README.md', 'LICENSE', 'vendor/', 'node_src', '*.map', '.gitignore', '.idea/', 'Gemfile*', '*.gemspec', '.sass-cache']
 sass_dir: _sass/
 plugins:
   - jekyll-feed
