@@ -11,3 +11,6 @@ services:
       url: https://gitlab.com/gitall
     - name: ElectroCode
       url: https://gitlab.com/ElectroCode
+  LaserShark:
+    - name: IotaSpencer
+      url: https://git.lasershark.army/IotaSpencer
