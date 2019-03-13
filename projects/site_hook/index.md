@@ -27,7 +27,11 @@ Discord Chat: [![Discord](https://img.shields.io/discord/497246541053165570.svg?
 ## About
 
 {{ page.excerpt }}
+**Note**: 'root' indicates the part of the config file that has only sibling keys, and no parents, the left most column
 
+1. Past 0.9.1 there are breaking configuration changes, they are the following
+   * ~/.shrc/config -> root:host --> root:webhook:host
+   * ~/.shrc/config -> root:port --> root:webhook:port
 1. Any version number in #.#.z is to be considered a development or patch/bug release.
    * These are released often, almost every other day or more than once in a day.
    * Consider these unstable
@@ -49,6 +53,9 @@ Discord Chat: [![Discord](https://img.shields.io/discord/497246541053165570.svg?
 
 I've made a tutorial for `site_hook`{:.highlight} [here](/projects/site_hook/tutorial/)
 
+This tutorial is for the < 0.9.3 version of site_hook.  
+For > 0.9.3 see [/projects/site_hook/guide](/projects/site_hook/guide/)
+{:.alert .alert-danger}
 ## Development
 
 To help develop **site_hook** see [>here<](/projects/site_hook/developing)

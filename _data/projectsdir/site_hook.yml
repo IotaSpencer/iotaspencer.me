@@ -4,6 +4,8 @@ desc: A Gem that allows git* webhooks to force a re-build on a jekyll site.
 links:
   - name: GitHub
     url: https://github.com/IotaSpencer/site_hook
+  - name: LaserShark
+    url: https://git.lasershark.army/IotaSpencer/site_hook
   - name: Portfolio
     url: https://iotaspencer.me/portfolio/site_hook
   - name: mkmatter on RubyGems.org

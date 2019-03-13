@@ -31,6 +31,9 @@
   color: #000;
   font-weight: bold;
 }
+.highlight .n {
+  color: #007020
+}
 .highlight .nb, .highlight .bp {
   color: #007020;
 }
@@ -86,7 +89,7 @@
   font-weight: bold;
 }
 .highlight .s, .highlight .sb, .highlight .s2, .highlight .sh, .highlight .s1 {
-  background-color: #fff0f0;
+  color: #14cc5b;
 }
 .highlight .sc {
   color: #04D;

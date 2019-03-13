@@ -1,5 +1,5 @@
-<div class="my-2 my-sm-2 my-md-0">
-
+<div class="py-2">
+    <!-- Divider Padding -->
 </div>
 <div id="sidebar-recent-posts" class="sidebar bg-dark">
     <h4>Recent Posts</h4>
@@ -38,7 +38,7 @@
     </ul>
 </div>
 {% endif %}
-<div class="sidebar bg-dark">
+<div id="sidebar-he-net-cert" class="sidebar bg-dark">
   <h4>HE.net Certification</h4>
   <div>
     <img id="he-net-cert"
@@ -46,9 +46,14 @@
         alt="IPv6 Certification Badge for IotaSpencer" />
   </div>
 </div>
-<div class="sidebar bg-dark">
+<div id="sidebar-vultr-aff" class="sidebar bg-dark">
     <h4>Vultr Affiliate</h4>
     <div>
         <a href="https://www.vultr.com/?ref=7630589"><img src="http://www.vultr.com/dist/img/brand/banner_3.png" width="300" height="250" alt="Vultr Affiliate">
+    </div>
+</div>
+<div id="sidebar-cloudflare-badges" class="sidebar bg-dark">
+    <div>
+        {% include cf-badge.html type='a' skin='dkgray' %}
     </div>
 </div>
