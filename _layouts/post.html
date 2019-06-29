@@ -4,20 +4,20 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="article">
-                        <div class="well px-3 py-3">
+                    <div id="article">
+                        <div class="card bg-dark-og px-3 py-3">
                             <h1 class="post-title page-header pl-4 pt-4 display-5">
                                 <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
                             </h1>
                             <div class="post-meta container">
                                 <div class="post-time">
-                                    <i class="fas fa-calendar"></i>
+                                    <i class="fas fa-calendar" aria-hidden="true"></i>
                                     <time>{{ page.date | date_to_string }}</time>
                                 </div>
-                                <i class="fas fa-times fa-spin"></i>
+                                <i class="fas fa-times fa-spin" aria-hidden="true"></i>
                                 <ul>
                                     {% for tag in page.tags %} {% if page.tags.first != tag %}
-                                    <i class="fab fa-linux"></i>
+                                    <i class="fab fa-linux" aria-hidden="true"></i>
                                     {% endif %}
                                     <li>
                                         <a href="{{ '/tag/' | append: tag | relative_url }}">{{ tag }}</a>
@@ -27,7 +27,7 @@
                                 </ul>
                             </div>
                             <div class="post-content">
-                                <div class="well toc-well float-right mx-3 px-3 pt-2 bg-dark-og">
+                                <div class="card float-right mx-3 px-3 pt-2 bg-dark">
                                     {% include toc.html html=content h_min=2 ordered=true id="post_toc" %}
                                 </div>
                                 <div>
