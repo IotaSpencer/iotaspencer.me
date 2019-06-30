@@ -3,9 +3,9 @@
 
 name: Iota
 author: Ken Spencer
-year: 2018
+year: 2019
 description: The ramblings of a madman in a mad world
-my_age: 26
+my_age: 27
 # Url is currently only used only for the RSS feed in feed.xml
 url: https://iotaspencer.me
 
@@ -35,7 +35,7 @@ social:
   rss: feed.xml
   steam: IotaSpencer
   tel: '1-802-327-4682'
-  discord: "Iota#1651"
+  discord: "Iota#0001"
   linkedin: ken-iota-spencer
   stackoverflow: 3095971/iotaspencer
 # Google Analytics key, leave blank to ignore

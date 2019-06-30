@@ -26,6 +26,9 @@ page_links:
 <div markdown="1">
 # {{ page.title }}
 
+**Note**: This tutorial is for < 0.9.2, see [/projects/site_hook/guide/](/projects/site_hook/guide/) for > 0.9.2
+{:.alert .alert-danger .d-inline-block}
+
 ## Installation
 
 * `gem install site_hook`{:.highlight}
@@ -39,9 +42,9 @@ for helping develop site_hook, please go [>here<](/projects/site_hook/developing
 * Backup any previous site_hook configs
 * Run `site_hook config gen`{:.highlight}
   * This will create the following files and directories.
-    * `~/.shrc/`{:.highlight}
-    * `~/.shrc/config`{:.highlight}
-    * `~/.shrc/logs`{:.highlight}
+    * `~/.jph/`{:.highlight}
+    * `~/.jph/config`{:.highlight}
+    * `~/.jph/logs`{:.highlight}
 
 ## Usage
   <a href="{% link projects/site_hook/tutorial/usage/index.md %}">Please go here for usage and Starting.</a>

@@ -49,8 +49,6 @@ scrolllist:
         * Mesa 19.0
 
         * Gnome 3.32 (For flavors that use it)
-
-
 ---
 {::options parse_block_html="true" /}
 
