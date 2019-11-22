@@ -24,6 +24,9 @@
               <p>{{- account.text -}}</p>
             {%- endif -%}
           {%- endif -%}
+          {%- if account.span -%}
+            <span class="{{account.span}}"></span>
+          {%- endif -%}
         </a>
       </div>
     {%- endfor -%}

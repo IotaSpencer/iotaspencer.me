@@ -170,3 +170,14 @@ sites:
     hide: false
     html: false
     order: 0
+  -
+    title: Youtube Gaming
+    text: IotaPlays
+    service: youtube-gaming
+    href: 
+    style: color:red;
+    fa-icon:
+    span: mdi mdi-youtube-gaming
+    hide: false
+    html: false
+    order: 50
