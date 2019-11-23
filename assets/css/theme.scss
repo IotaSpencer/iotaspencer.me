@@ -1,6 +1,6 @@
 ---
 ---
-// @import "bootstrap.scss";
+@import "bootstrap.scss";
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateRem($size);
