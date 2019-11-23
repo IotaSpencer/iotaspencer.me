@@ -78,12 +78,12 @@
         })();
     </script>
     <header id="header">
-        <nav class="navbar navbar-dark bg-dark navbar-expand-md mb-3">
+        <nav class="navbar navbar-dark bg-darker navbar-expand-md mb-3">
             <a class="navbar-brand" href="{{ '' | relative_url }}/">{{ site.name }} - {{ site.author }}</a>
             <p class="navbar-text small mr-1">{{ site.description }}</p>
-            <div class="bg-dark navbar-toggle justify-content-end d-md-none" data-toggle="collapse"
+            <div class="bg-darker navbar-toggle justify-content-end d-md-none" data-toggle="collapse"
                 data-target="#navbar">
-                <button class="bg-dark py-2 px-3 border border-1 border-secondary rounded">
+                <button class="bg-darker py-2 px-3 border border-1 border-secondary rounded">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -111,7 +111,7 @@
                     <li class="nav-item dropdown" id="portfolio-dropdown">
                         <a class="nav-link dropdown-toggle" href="{{ 'portfolio' | relative_url }}"
                             data-toggle="dropdown">/portfolio</a>
-                        <div class="dropdown-menu dropdown-menu-right bg-dark">
+                        <div class="dropdown-menu dropdown-menu-right bg-darker">
                             <a class="dropdown-header" href="/portfolio/">Portfolio Page</a>
                             <div class="dropdown-divider" style="border-color: darkgreen;"></div>
                             {% for item in site.data.navbar %}
