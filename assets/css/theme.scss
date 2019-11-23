@@ -588,6 +588,10 @@ h6,
   color: #53db1d !important;
 }
 
-div.post-content > div > ul > li {
-  color: #2ab80d;
+div.post-content {
+  div {
+    ul > li {
+      color: #2ab80d;
+    }
+  }
 }
