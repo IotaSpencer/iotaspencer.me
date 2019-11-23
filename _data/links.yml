@@ -99,7 +99,7 @@ sites:
     #  width:
     hide: false
     html: false
-    order: 997
+    order: 7
   -
     title: Sign up with Vultr!
     text: Vultr
@@ -144,7 +144,7 @@ sites:
     #  width: 32px
     hide: false
     html: false
-    order: 998
+    order: 8
   -
     title: GNUPG Key
     text: GNUPG
@@ -159,7 +159,7 @@ sites:
     #  width: 32px
     hide: false
     html:
-    order: 999
+    order: 9
   -
     title: DigitalOcean
     text: DigitalOcean
@@ -174,11 +174,23 @@ sites:
     title: Youtube Gaming
     text: IotaPlays
     service: youtube-gaming
-    href: 
+    href: https://www.youtube.com/channel/UCvFYJhzNR8jXpACEdvL6Btg
     style: color:red;
     fa-icon:
     span: mdi mdi-youtube-gaming mdi-24px
     hide: false
     html: false
-    order: 50
+    order: 5
+    social: 
+  -
+    title: Youtube
+    text: Iota Spencer
+    service: youtube
+    href: https://www.youtube.com/channel/UCk2QkzGvmqO-GUzV59b_8Hw
+    style: color:red;
+    fa-icon:
+    span: mdi mdi-youtube mdi-24px
+    hide: false
+    html: false
+    order: 5
     social: 
