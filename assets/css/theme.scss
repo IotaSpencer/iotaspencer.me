@@ -266,20 +266,6 @@ div.post-meta {
 //                       Comments
 //********************************************************
 
-#isso-thread {
-  border-radius: 5px;
-  @include media-breakpoint-up(md) {
-    margin-left: 7em;
-    margin-right: 7em;
-  }
-  @include media-breakpoint-down(md) {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  //margin-top: 1em;
-  background: linear-gradient(to bottom, black, rgb(41,41,41), black);
-  padding: 1em;
-}
 //********************************************************
 //                    Note / Warning
 //********************************************************
@@ -584,5 +570,5 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
-  color: #666666 !important; 
+  color: #53db1d !important; 
 }
