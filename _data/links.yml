@@ -72,7 +72,7 @@ sites:
     html: false
     order: 1
   -
-    title: Join IotaSpencer#0001 on Discord
+    title: Join iota#0001 on Discord
     service: discord
     text: Discord
     href:
