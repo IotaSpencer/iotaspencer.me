@@ -19,16 +19,16 @@
 // Several accent colors, choose one or create your own!
 //$accent-color: #3CA2A2; // original =)
 //$accent-color: #C38FD6;  // velvet
-$accent-color: #8FD6B3; // greenish
+$accent-color: rgb(31, 36, 32); // greenish
 //$accent-color: #35B4DE;  // bluish
 //$accent-color: #D2E354;  // yellowish
 //$accent-color: #52B54B;  // green
 $font-color: #dddddd;
 $background-color: #292929;
-$post-panel-color: #444;
-$footer-background-color: #292c2f;
-$note-color: #87CEFA;
-$warning-color: #ffff00; // use this or pick any from /css/pics/background folder or from transparenttextures.com
+$post-panel-color: rgb(36, 36, 36);
+$footer-background-color: #1f2122;
+$note-color: rgb(0, 3, 165);
+$warning-color: #c00000; // use this or pick any from /css/pics/background folder or from transparenttextures.com
 $background-pattern: '3px-tile.png'; //********************************************************
 //                  Common styles
 //********************************************************
@@ -41,7 +41,7 @@ body {
 .toc-well {
   border-style: solid;
   border-width: 5px;
-  border-color: #666666;
+  border-color: #001b08;
 }
 
 .main-page {
