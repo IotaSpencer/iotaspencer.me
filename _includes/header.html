@@ -1,11 +1,12 @@
 {%- if site.tags != "" -%}{%- include collecttags.html -%}{%- endif -%}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>{{ site.name }}{% if page.title %} | {{ page.title }} {% endif %}</title>
-    <meta name="theme-color" content="#292929"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#292929" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
     {% include meta.html -%}
     <script>
@@ -18,23 +19,31 @@
 
     <script src="/assets/js/header.js"></script>
     <script src="/assets/js/flowtype.js"></script>
-    
+
     <script data-cfasync="false" defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Fira+Mono|Overpass+Mono|Oxygen+Mono|PT+Mono|Roboto+Mono|Space+Mono|Ubuntu+Mono"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Cutive+Mono|Fira+Mono|Overpass+Mono|Oxygen+Mono|PT+Mono|Roboto+Mono|Space+Mono|Ubuntu+Mono"
+        rel="stylesheet">
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="{{ '/assets/css/theme.css' | relative_url }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
     {% if page.title == 'Resume' %}
-      <link href="{{ '/assets/css/resume.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/assets/css/resume.css' | relative_url }}" rel="stylesheet">
     {% endif %}
-    <link rel="manifest" href="/manifest.json"/>
+    <link rel="manifest" href="/manifest.json" />
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
     <script>
         var OneSignal = window.OneSignal || [];
@@ -51,72 +60,75 @@
 </head>
 
 <body data-spy="scroll">
-{% include google-analytics.html %} {% include yandex-metrica.html %}
-<script type="text/javascript">
-    WebFontConfig = {
-        google: {
-            families: ['Ubuntu::latin']
-        }
-    };
-    (function () {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-    })();
-</script>
-<header id="header">
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md mb-3">
-        <a class="navbar-brand" href="{{ '' | relative_url }}/">{{ site.name }} - {{ site.author }}</a>
-        <p class="navbar-text small mr-1">{{ site.description }}</p>
-        <div class="bg-dark navbar-toggle justify-content-end d-md-none" data-toggle="collapse" data-target="#navbar">
-            <button class="bg-dark py-2 px-3 border border-1 border-secondary rounded">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse justify-content-end">
-            <ul class="nav navbar-nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ '' | relative_url }}/">/home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ 'about' | relative_url }}">/about</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ 'resume' | relative_url }}">/resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ 'activity' | relative_url }}">/activity</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ 'tags' | relative_url }}">/tags</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ 'archive' | relative_url }}">/archive</a>
-                </li>
+    {% include google-analytics.html %} {% include yandex-metrica.html %}
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {
+                families: ['Ubuntu::latin']
+            }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+    <header id="header">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md mb-3">
+            <a class="navbar-brand" href="{{ '' | relative_url }}/">{{ site.name }} - {{ site.author }}</a>
+            <p class="navbar-text small mr-1">{{ site.description }}</p>
+            <div class="bg-dark navbar-toggle justify-content-end d-md-none" data-toggle="collapse"
+                data-target="#navbar">
+                <button class="bg-dark py-2 px-3 border border-1 border-secondary rounded">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse justify-content-end">
+                <ul class="nav navbar-nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ '' | relative_url }}/">/home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ 'about' | relative_url }}">/about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ 'resume' | relative_url }}">/resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ 'activity' | relative_url }}">/activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ 'tags' | relative_url }}">/tags</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ 'archive' | relative_url }}">/archive</a>
+                    </li>
 
-                <li class="nav-item dropdown" id="portfolio-dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{ 'portfolio' | relative_url }}" data-toggle="dropdown">/portfolio</a>
-                    <div class="dropdown-menu dropdown-menu-right bg-dark">
-                        <a class="dropdown-header" href="/portfolio/">Portfolio Page</a>
-                        <div class="dropdown-divider" style="border-color: darkgreen;"></div>
-                        {% for item in site.data.navbar %}
-                        <a class="dropdown-item" title="{{ item.title }}" href="{{ item.path }}">
-                            {{ item.name }}
-                            {% for badge in item.badges %}<small><span class="badge badge-dark text-green">{{ badge }}</span></small>{% endfor %}
-                        </a>
-                        {% endfor %}
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/gnupg">/gnupg</a>
-                </li>
+                    <li class="nav-item dropdown" id="portfolio-dropdown">
+                        <a class="nav-link dropdown-toggle" href="{{ 'portfolio' | relative_url }}"
+                            data-toggle="dropdown">/portfolio</a>
+                        <div class="dropdown-menu dropdown-menu-right bg-dark">
+                            <a class="dropdown-header" href="/portfolio/">Portfolio Page</a>
+                            <div class="dropdown-divider" style="border-color: darkgreen;"></div>
+                            {% for item in site.data.navbar %}
+                            <a class="dropdown-item" title="{{ item.title }}" href="{{ item.path }}">
+                                {{ item.name }}
+                                {% for badge in item.badges %}<small><span
+                                        class="badge badge-dark text-green">{{ badge }}</span></small>{% endfor %}
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gnupg">/gnupg</a>
+                    </li>
 
-            </ul>
-        </div>
-    </nav>
-</header>
-<div id="between">
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="between">
