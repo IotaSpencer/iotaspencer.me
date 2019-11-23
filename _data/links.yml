@@ -177,7 +177,7 @@ sites:
     href: 
     style: color:red;
     fa-icon:
-    span: mdi mdi-youtube-gaming
+    span: mdi mdi-youtube-gaming mdi-24px
     hide: false
     html: false
     order: 50
