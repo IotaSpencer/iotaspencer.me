@@ -421,7 +421,9 @@ img#nixstats {
 .bg-dark-og {
   background-color: rgb(71,71,71) !important;
 }
-
+.bg-darker {
+  background-color: $background-color;
+}
 .dropdown-item:hover {
   background-color: #292c2f;
 }
