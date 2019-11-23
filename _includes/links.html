@@ -7,7 +7,7 @@
 <div class="row">
   <div class="container grid d-inline-flex">
     {%- for account in site.data.links.sites -%}
-      <div class="d-md-inline-block social-button-{{- account.service }} px-1 {% if account.order %} order-{{- account.order -}}{%- endif -%}">
+      <div class="d-md-inline-block bg-darker social-button-{{- account.service }} px-1 {% if account.order %} order-{{- account.order -}}{%- endif -%}">
 
         <a id="social-button-{{ account.service }}" class="btn btn-dark {% if account.order %} order-{{- account.order -}}{%- endif -%}" title="{{ account.title }}" href="{{ account.href }}" target="_blank" {% if account.style %}style="{{account.style}}"{% endif %} {% if account.data %}{{ account.data }}{% endif %}>
           {%- if account.fa-icon -%}
