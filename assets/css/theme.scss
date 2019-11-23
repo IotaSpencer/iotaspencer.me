@@ -1,5 +1,6 @@
 ---
 ---
+
 @import "functions.scss";
 @import "variables.scss";
 @import "mixins/grid.scss";
@@ -34,7 +35,7 @@ $footer-background-color: #1f2122;
 $note-color: rgb(0, 3, 165);
 $warning-color: #c00000; // use this or pick any from /css/pics/background folder or from transparenttextures.com
 $accent-color: #007222;
-$background-pattern: '3px-tile.png'; //********************************************************
+$background-pattern: "3px-tile.png"; //********************************************************
 //                  Common styles
 //********************************************************
 
@@ -77,7 +78,7 @@ img {
   max-height: 100%;
 }
 
-img+em {
+img + em {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -151,7 +152,7 @@ ul.share-buttons {
   }
 
   li.share-facebook {
-    color: #3B5998;
+    color: #3b5998;
   }
 
   li.share-twitter {
@@ -163,15 +164,15 @@ ul.share-buttons {
   }
 
   li.share-linkedin {
-    color: #4875B4;
+    color: #4875b4;
   }
 
   li.share-pinterest {
-    color: #BD081C;
+    color: #bd081c;
   }
 
   li.share-envelope {
-    color: #3B5998;
+    color: #3b5998;
   }
 
   li.share-reddit {
@@ -214,9 +215,9 @@ ul.sideBarTags {
   list-style-type: none;
 
   li:before {
-    content: '\f02b';
+    content: "\f02b";
     display: none;
-    font-family: 'Font Awesome 5 Solid';
+    font-family: "Font Awesome 5 Solid";
     margin-left: -1.5em;
   }
 }
@@ -260,7 +261,7 @@ div.post-meta {
   text-align: center;
 }
 .article {
-  background-color: rgb(71, 71, 71)
+  background-color: rgb(71, 71, 71);
 }
 //********************************************************
 //                       Comments
@@ -279,7 +280,7 @@ div.post-meta {
 .note:before {
   content: "\f06a";
   font-size: 2em;
-  font-family: 'Font Awesome 5 Solid';
+  font-family: "Font Awesome 5 Solid";
   left: 0;
   position: absolute;
   top: 0;
@@ -355,7 +356,7 @@ iframe#follow.followme {
 //********************************************************
 
 .key {
-  font-size: 1.0em;
+  font-size: 1em;
   box-shadow: 1px 0 1px 0 #555, 0 1px 0 2px #888, 0 2px 0 2px #777;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -410,7 +411,7 @@ img#nixstats {
 }
 
 .bg-dark-og {
-  background-color: rgb(71,71,71) !important;
+  background-color: rgb(71, 71, 71) !important;
 }
 .bg-darker {
   background-color: #1b1b1b;
@@ -447,7 +448,7 @@ hr.hr-text {
   opacity: 0.5 !important;
 
   &:before {
-    content: '';
+    content: "";
     // use the linear-gradient for the fading effect
     // use a solid background color for a solid bar
     background: linear-gradient(to right, black, rgb(11, 177, 11), black) !important;
@@ -472,8 +473,6 @@ hr.hr-text {
   }
 }
 
-
-
 // Guides CSS
 $list-border-radius: 5px;
 $list-border-color: forestgreen;
@@ -496,10 +495,15 @@ $list-border-color: forestgreen;
   border-color: $list-border-color;
 }
 
-h1.section-header, h2.section-header, h3.section-header, h4.section-header, h5.section-header, h6.section-header {
+h1.section-header,
+h2.section-header,
+h3.section-header,
+h4.section-header,
+h5.section-header,
+h6.section-header {
   font-family: "Cutive Mono", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", monospace !important;
   &:before {
-    content: '> '
+    content: "> ";
   }
 }
 
@@ -525,7 +529,8 @@ h1.section-header, h2.section-header, h3.section-header, h4.section-header, h5.s
   white-space: pre-line;
 }
 
-small.text-green, span.text-green {
+small.text-green,
+span.text-green {
   color: green;
 }
 
@@ -543,7 +548,6 @@ small.text-green, span.text-green {
   &:hover {
     background-color: #292929 !important;
     color: green;
-
   }
   &:focus {
     background-color: #292929 !important;
@@ -554,30 +558,41 @@ small.text-green, span.text-green {
 #he-net-cert {
   .image-container {
     @include media-breakpoint-down(lg) {
-      width:100%;
-      background:green;
-      display:flex;
+      width: 100%;
+      background: green;
+      display: flex;
       justify-content: center;
-      align-items:center;
+      align-items: center;
       margin-left: 25%;
       margin-right: 25%;
     }
   }
 }
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
-  color: #53db1d !important; 
+  color: #53db1d !important;
 }
 
 div.post-content {
-  ul {
-    li {
-      color: #2ab80d;
-
+  div {
+    ul {
+      li {
+        color: #2ab80d;
+      }
     }
   }
 }
