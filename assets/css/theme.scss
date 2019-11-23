@@ -35,7 +35,7 @@ $footer-background-color: #1f2122;
 $note-color: rgb(0, 3, 165);
 $warning-color: #c00000; // use this or pick any from /css/pics/background folder or from transparenttextures.com
 $accent-color: #007222;
-$background-pattern: "3px-tile.png"; 
+$background-pattern: "3px-tile.png";
 //********************************************************
 //                  Common styles
 //********************************************************
@@ -588,12 +588,6 @@ h6,
   color: #53db1d !important;
 }
 
-div.post-content {
-  div {
-    ul {
-      li {
-        color: #2ab80d;
-      }
-    }
-  }
+div.post-content > div > ul > li {
+  color: #2ab80d;
 }
