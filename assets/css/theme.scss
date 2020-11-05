@@ -1,6 +1,11 @@
 ---
 ---
-@import "bootstrap.scss";
+
+@import "functions.scss";
+@import "variables.scss";
+@import "mixins/grid.scss";
+@import "mixins/grid-framework.scss";
+@import "mixins/breakpoints.scss";
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateRem($size);
@@ -19,29 +24,31 @@
 // Several accent colors, choose one or create your own!
 //$accent-color: #3CA2A2; // original =)
 //$accent-color: #C38FD6;  // velvet
-$accent-color: #8FD6B3; // greenish
-//$accent-color: #35B4DE;  // bluish
-//$accent-color: #D2E354;  // yellowish
-//$accent-color: #52B54B;  // green
-$font-color: #dddddd;
-$background-color: #292929;
-$post-panel-color: #444;
-$footer-background-color: #292c2f;
-$note-color: #87CEFA;
-$warning-color: #ffff00; // use this or pick any from /css/pics/background folder or from transparenttextures.com
-$background-pattern: '3px-tile.png'; //********************************************************
+// $accent-color: rgb(31, 36, 32); // greenish
+// $accent-color: #35B4DE;  // bluish
+// $accent-color: #D2E354;  // yellowish
+// $accent-color: #52B54B;  // green
+// $font-color: #dddddd;
+// $background-color: #292929;
+// $post-panel-color: rgb(36, 36, 36);
+$footer-background-color: #1f2122;
+$note-color: rgb(0, 3, 165);
+$warning-color: #c00000; // use this or pick any from /css/pics/background folder or from transparenttextures.com
+$accent-color: #007222;
+$background-pattern: "3px-tile.png";
+//********************************************************
 //                  Common styles
 //********************************************************
 
 body {
-  color: $font-color;
-  background-color: $background-color !important;
+  color: #777777 !important;
+  background-color: #1b1b1b !important;
   background-image: url("/assets/css/pics/background/#{$background-pattern}") !important;
 }
 .toc-well {
   border-style: solid;
   border-width: 5px;
-  border-color: #666666;
+  border-color: #001b08;
 }
 
 .main-page {
@@ -72,7 +79,7 @@ img {
   max-height: 100%;
 }
 
-img+em {
+img + em {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -146,7 +153,7 @@ ul.share-buttons {
   }
 
   li.share-facebook {
-    color: #3B5998;
+    color: #3b5998;
   }
 
   li.share-twitter {
@@ -158,15 +165,15 @@ ul.share-buttons {
   }
 
   li.share-linkedin {
-    color: #4875B4;
+    color: #4875b4;
   }
 
   li.share-pinterest {
-    color: #BD081C;
+    color: #bd081c;
   }
 
   li.share-envelope {
-    color: #3B5998;
+    color: #3b5998;
   }
 
   li.share-reddit {
@@ -209,9 +216,9 @@ ul.sideBarTags {
   list-style-type: none;
 
   li:before {
-    content: '\f02b';
+    content: "\f02b";
     display: none;
-    font-family: 'Font Awesome 5 Solid';
+    font-family: "Font Awesome 5 Solid";
     margin-left: -1.5em;
   }
 }
@@ -255,26 +262,12 @@ div.post-meta {
   text-align: center;
 }
 .article {
-  background-color: rgb(71, 71, 71)
+  background-color: rgb(71, 71, 71);
 }
 //********************************************************
 //                       Comments
 //********************************************************
 
-#isso-thread {
-  border-radius: 5px;
-  @include media-breakpoint-up(md) {
-    margin-left: 7em;
-    margin-right: 7em;
-  }
-  @include media-breakpoint-down(md) {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  //margin-top: 1em;
-  background: linear-gradient(to bottom, black, rgb(41,41,41), black);
-  padding: 1em;
-}
 //********************************************************
 //                    Note / Warning
 //********************************************************
@@ -288,7 +281,7 @@ div.post-meta {
 .note:before {
   content: "\f06a";
   font-size: 2em;
-  font-family: 'Font Awesome 5 Solid';
+  font-family: "Font Awesome 5 Solid";
   left: 0;
   position: absolute;
   top: 0;
@@ -364,7 +357,7 @@ iframe#follow.followme {
 //********************************************************
 
 .key {
-  font-size: 1.0em;
+  font-size: 1em;
   box-shadow: 1px 0 1px 0 #555, 0 1px 0 2px #888, 0 2px 0 2px #777;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -419,9 +412,11 @@ img#nixstats {
 }
 
 .bg-dark-og {
-  background-color: rgb(71,71,71) !important;
+  background-color: rgb(71, 71, 71) !important;
 }
-
+.bg-darker {
+  background-color: #1b1b1b;
+}
 .dropdown-item:hover {
   background-color: #292c2f;
 }
@@ -454,7 +449,7 @@ hr.hr-text {
   opacity: 0.5 !important;
 
   &:before {
-    content: '';
+    content: "";
     // use the linear-gradient for the fading effect
     // use a solid background color for a solid bar
     background: linear-gradient(to right, black, rgb(11, 177, 11), black) !important;
@@ -479,8 +474,6 @@ hr.hr-text {
   }
 }
 
-
-
 // Guides CSS
 $list-border-radius: 5px;
 $list-border-color: forestgreen;
@@ -503,10 +496,15 @@ $list-border-color: forestgreen;
   border-color: $list-border-color;
 }
 
-h1.section-header, h2.section-header, h3.section-header, h4.section-header, h5.section-header, h6.section-header {
+h1.section-header,
+h2.section-header,
+h3.section-header,
+h4.section-header,
+h5.section-header,
+h6.section-header {
   font-family: "Cutive Mono", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", monospace !important;
   &:before {
-    content: '> '
+    content: "> ";
   }
 }
 
@@ -518,7 +516,9 @@ h1.section-header, h2.section-header, h3.section-header, h4.section-header, h5.s
     column-count: 5;
   }
 }
-
+.card {
+  background-color: #1b1b1b !important;
+}
 .card-text {
   border-top: {
     color: #1b8d2e;
@@ -530,7 +530,8 @@ h1.section-header, h2.section-header, h3.section-header, h4.section-header, h5.s
   white-space: pre-line;
 }
 
-small.text-green, span.text-green {
+small.text-green,
+span.text-green {
   color: green;
 }
 
@@ -548,7 +549,6 @@ small.text-green, span.text-green {
   &:hover {
     background-color: #292929 !important;
     color: green;
-
   }
   &:focus {
     background-color: #292929 !important;
@@ -559,13 +559,39 @@ small.text-green, span.text-green {
 #he-net-cert {
   .image-container {
     @include media-breakpoint-down(lg) {
-      width:100%;
-      background:green;
-      display:flex;
+      width: 100%;
+      background: green;
+      display: flex;
       justify-content: center;
-      align-items:center;
+      align-items: center;
       margin-left: 25%;
       margin-right: 25%;
+    }
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #53db1d !important;
+}
+
+div.post-content {
+  div {
+    ul > li {
+      color: #2ab80d;
     }
   }
 }

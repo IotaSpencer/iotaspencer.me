@@ -1,0 +1,8 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* -crlf
+
+*.c text
+*.h text
+
+*.png binary
+*.jpg binary

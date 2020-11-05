@@ -1,7 +1,7 @@
 <div class="py-2">
     <!-- Divider Padding -->
 </div>
-<div id="sidebar-recent-posts" class="sidebar bg-dark">
+<div id="sidebar-recent-posts" class="sidebar bg-darker">
     <h4>Recent Posts</h4>
     <ul>
         {% for post in site.posts limit:5 %}
@@ -12,7 +12,7 @@
     </ul>
 </div>
 
-<div id="sidebar-tag-cloud" class="sidebar bg-dark pt-3">
+<div id="sidebar-tag-cloud" class="sidebar bg-darker pt-3">
     <h4>
         Tags
     </h4>
@@ -25,7 +25,7 @@
         {% endfor %}
 </div>
 {% if page.page_links %}
-<div class="sidebar bg-dark" id="sidebar-page-links">
+<div class="sidebar bg-darker" id="sidebar-page-links">
     <h4>Page Links</h4>
     <ul>
         {% for name in page.page_links %}
@@ -38,7 +38,7 @@
     </ul>
 </div>
 {% endif %}
-<div id="sidebar-he-net-cert" class="sidebar bg-dark">
+<div id="sidebar-he-net-cert" class="sidebar bg-darker">
   <h4>HE.net Certification</h4>
   <div>
     <img id="he-net-cert"
@@ -46,13 +46,13 @@
         alt="IPv6 Certification Badge for IotaSpencer" />
   </div>
 </div>
-<div id="sidebar-vultr-aff" class="sidebar bg-dark">
+<!-- <div id="sidebar-vultr-aff" class="sidebar bg-darker">
     <h4>Vultr Affiliate</h4>
     <div>
         <a href="https://www.vultr.com/?ref=7630589"><img src="http://www.vultr.com/dist/img/brand/banner_3.png" width="300" height="250" alt="Vultr Affiliate">
     </div>
-</div>
-<div id="sidebar-cloudflare-badges" class="sidebar bg-dark">
+</div> -->
+<div id="sidebar-cloudflare-badges" class="sidebar bg-darker">
     <div>
         {% include cf-badge.html type='a' skin='dkgray' %}
     </div>

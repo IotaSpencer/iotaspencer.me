@@ -41,7 +41,7 @@ $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
-$green:   #28a745 !default;
+$green:   #005514 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
@@ -100,7 +100,7 @@ $yiq-text-light: $white !default;
 
 $enable-caret:              true !default;
 $enable-rounded:            true !default;
-$enable-shadows:            false !default;
+$enable-shadows:            true !default;
 $enable-gradients:          true !default;
 $enable-transitions:        true !default;
 $enable-hover-media-query:  false !default; // Deprecated, no longer affects any compiled CSS
@@ -254,7 +254,7 @@ $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        inherit !default;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
-$headings-color:              inherit !default;
+$headings-color:              #666 !default;
 
 $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;
@@ -663,7 +663,7 @@ $card-border-radius:                $border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       rgba($black, .03) !default;
-$card-bg:                           $white !default;
+$card-bg:                           $dark !default;
 
 $card-img-overlay-padding:          1.25rem !default;
 
