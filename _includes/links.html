@@ -5,10 +5,13 @@
 </div>
 <!-- <link rel="stylesheet" href="{{ '/assets/css/links.css' | relative_url }}"> -->
 <div class="container">
-  <div class="row">
+  {% capture total_links %}{{ site.data.links.sites | size }}{% endcapture %}
+  {% capture links_rows %}{{ total_links | divided_by: 5 }}{% endcapture %}
+<ul class="nav nav-pills nav-fill"
+
+
     {%- for account in site.data.links.sites -%}
-    <div
-      class="d-md-inline-block bg-darker social-button-{{- account.service }} px-1 {% if account.order %} order-{{- account.order -}}{%- endif -%}">
+    <li class="d-md-inline-block bg-darker nav-link social-button-{{- account.service }} px-1 {% if account.order %} order-{{- account.order -}}{%- endif -%}">
 
       <a id="social-button-{{ account.service }}"
         class="btn btn-dark {%- if account.order -%} order-{{- account.order -}}{%- endif -%}"
@@ -34,10 +37,9 @@
         <span class="{{account.span}}" style="{{account.style}}"></span>
         {%- endif -%}
       </a>
-    </div>
+    </li>
     {%- endfor -%}
   </div>
-</div>
 <!--
 {% if site.social.instagram %}
   <li>
