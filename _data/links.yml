@@ -2,10 +2,10 @@ settings:
   text: true
 sites:
   - # Twitter
-    title: Follow @IotaEcode on Twitter
+    title: Follow @iotaspencer on Twitter
     text: Twitter
     service: twitter
-    href: https://twitter.com/@IotaEcode
+    href: https://twitter.com/@iotaspencer
     style: color:#1da1f2;
     fa-icon: fab fa-twitter fa-2x
     #image: /path/to/image
