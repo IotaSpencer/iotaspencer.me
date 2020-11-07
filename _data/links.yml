@@ -176,8 +176,8 @@ sites:
     service: youtube-gaming
     href: https://www.youtube.com/channel/UCvFYJhzNR8jXpACEdvL6Btg
     style: color:red;
-    fa-icon:
-    span: mdi mdi-youtube-gaming mdi-24px
+    fa-icon: fab fa-youtube fa-2x
+
     hide: false
     html: false
     order: 5
