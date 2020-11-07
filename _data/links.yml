@@ -1,5 +1,5 @@
 settings:
-  text: false
+  text: true
 sites:
   - # Twitter
     title: Follow @IotaEcode on Twitter
@@ -48,7 +48,7 @@ sites:
     text: Tel
     service: tel
     href: tel:+18023274682
-    style: color:black;
+    style: color:green;
     fa-icon: fas fa-phone-square fa-2x
     #image: /path/to/image
     #image-size:
@@ -77,7 +77,7 @@ sites:
     text: Discord
     href:
     data: data-toggle="tooltip" data-placement="top" data-trigger="click"
-    style: color:#7289da;
+    style: color:blurple;
     fa-icon: fab fa-discord fa-2x
     #image: /path/to/image
     #image-size:
@@ -136,7 +136,7 @@ sites:
     text: LinkedIn
     service: linkedin
     href: https://www.linkedin.com/in/ken-iota-spencer
-    style:
+    style: color:blue;
     fa-icon: fab fa-linkedin fa-2x
     #image:
     #image-size:
@@ -171,26 +171,24 @@ sites:
     html: false
     order: 0
   -
-    title: Youtube Gaming
-    text: IotaPlays
-    service: youtube-gaming
-    href: https://www.youtube.com/channel/UCvFYJhzNR8jXpACEdvL6Btg
-    style: color:red;
-    fa-icon: fab fa-youtube fa-2x
-
-    hide: false
-    html: false
-    order: 5
-    social: 
-  -
-    title: Youtube
+    title: Youtube 1
     text: Iota Spencer
     service: youtube
     href: https://www.youtube.com/channel/UCk2QkzGvmqO-GUzV59b_8Hw
     style: color:red;
-    fa-icon:
-    span: mdi mdi-youtube mdi-24px
+    fa-icon: fab fa-youtube fa-2x
     hide: false
     html: false
     order: 5
-    social: 
+    social:
+  -
+    title: Youtube 2
+    text: Iota Plays
+    service: youtube
+    href: https://www.youtube.com/channel/UCvFYJhzNR8jXpACEdvL6Btg
+    style: color:red;
+    fa-icon: fab fa-youtube fa-2x
+    hide: false
+    html: false
+    order: 5
+    social:
