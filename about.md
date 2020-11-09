@@ -2,7 +2,7 @@
 layout: page
 title: About
 breadcrumb: About
-excerpt: Iota\'s contact information and bio. -- Hi, my name is Ken Spencer, if you didn't already figure that out.. I'm 26 years old and live in New York State.
+excerpt: Iota\'s contact information and bio. -- Hi, my name is Ken Spencer, if you didn't already figure that out.. I'm {{ site.my_age }} years old and live in New York State.
 tags:
 - about
 ---
@@ -10,7 +10,7 @@ tags:
 
 ## So um
 
-Hi, my name is Ken Spencer, if you didn't already figure that out.. I'm {{ site.age }} years old and live in New York State.
+Hi, my name is Ken Spencer, if you didn't already figure that out.. I'm {{ site.my_age }} years old and live in New York State.
 
 I love programming and scripting, especially being able to make my own little utility scripts, whether I *really* need them or not. 'Why?' You may ask.. Because to me, coding and programming is actually fun in most circumstances.
 

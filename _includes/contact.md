@@ -1,7 +1,7 @@
 ### Social Media
 
 <div class="container">
-<a href="https://twitter.com/IotaEcode">
+<a href="https://twitter.com/iotaspencer">
 <i class="fab fa-twitter fa-2x"></i>
 @IotaEcode
 </a>
@@ -19,7 +19,7 @@ IotaSpencer on Steam
 </a>
 </div>
 <div class="container">
-<a href="tel:18022220843">
+<a href="tel:18023274682">
 <i class="fas fa-phone-square fa-2x"></i>
 Call or Text me
 </a>
@@ -27,18 +27,18 @@ Call or Text me
 <div class="container">
 <p>
 <i class="fab fa-discord fa-2x"></i>
-Iota#0001
+iotaspencer#0001
 </p>
 </div>
 
 ## Other Stuff
 
-<div class="container">
+<!--<div class="container">
 <a href="ircs://irc.electrocode.net">
 <i class="fas fa-hashtag fa-2x"></i>
 IRC
 </a>
-</div>
+</div>-->
 <div class="container">
 <i class="fas fa-key fa-2x"></i>
 <a href="/gnupg">
