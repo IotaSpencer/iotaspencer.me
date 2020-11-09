@@ -5,6 +5,6 @@ _site/
 vendor/
 .bundle/
 .sass-cache/
-_site/
 .project
 Gemfile.lock
+/.jekyll-cache/
