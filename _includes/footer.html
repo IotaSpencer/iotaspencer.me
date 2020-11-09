@@ -1,29 +1,15 @@
 <footer id="footer-distributed" class="footer-distributed">
     <div class="container">
         <div class="footer">
-            <p>{{site.author}} &copy; {{site.year}}</p>
+            <div class="flex-row">
+                <p>{{site.author}} &copy; {{ "now" | date: "%Y" }}</p>
+            </div>
             {% include links.html %}
-            <p>Page last generated at {{ "now" | date: "%Y-%m-%d %H:%M:%S" }}.</p>
+            <div class="py-3 flex-row">
+                <p>Page last generated at {{ "now" | date: "%Y-%m-%d %H:%M:%S" }}.</p>
+            </div>
         </div>
     </div>
 </footer>
-
-<script>
-    /*
-    $('body').flowtype({
-        minFont: 12,
-        maxFont: 18
-    }),
-    $('span.navbar-brand').flowtype({
-        minFont: 18,
-        maxFont: 22
-    }),
-    $('.post-title').flowtype({
-        minFont: 16,
-        maxFont: 20
-    })
-    */
-</script>
 </body>
-
 </html>
