@@ -1,45 +1,46 @@
 <div onclick="followme();">
-  <h6 id="follow-me">Follow me</h6>
-  {% include easter-egg.html %}
+    <h6 id="follow-me">Follow me</h6>
+    {% include easter-egg.html %}
 
 </div>
 <!-- <link rel="stylesheet" href="{{ '/assets/css/links.css' | relative_url }}"> -->
 <div class="container">
-  {% capture total_links %}{{ site.data.links.sites | size }}{% endcapture %}
-  {% capture links_rows %}{{ total_links | divided_by: 5 }}{% endcapture %}
-<ul class="nav nav-pills nav-fill"
+    {% capture total_links %}{{ site.data.links.sites | size }}{% endcapture %}
+    {% capture links_rows %}{{ total_links | divided_by: 5 }}{% endcapture %}
+    <ul class="nav nav-pills nav-fill">
 
 
-    {%- for account in site.data.links.sites -%}
-    <li class="d-md-inline-block bg-darker nav-link social-button-{{- account.service }} px-1 {% if account.order %} order-{{- account.order -}}{%- endif -%}">
+        {%- for account in site.data.links.sites -%}
+        <li class="d-md-inline-block bg-darker nav-link social-button-{{- account.service }} px-1 {% if account.order %} order-{{- account.order -}}{%- endif -%}">
 
-      <a id="social-button-{{ account.service }}"
-        class="btn btn-dark {%- if account.order -%} order-{{- account.order -}}{%- endif -%}"
-        title="{{- account.title -}}" href="{{- account.href -}}" target="_blank"
-        {%- if account.style -%}style="{{account.style}}"
-        {%- endif -%}{%- if account.data -%}{{- account.data -}}{%- endif -%}>
-        {%- if account.fa-icon -%}
-        <i class="{{ account.fa-icon }}"></i>
-        {%- endif -%}
-        {%- if account.image -%}
-        <img class="{{- account.image.class -}}" src="{{- account.image.path -}}"
-          style="height:{{account.image-size.height}}; width:{{account.image-size.width}};" />
-        {%- endif -%}
-        {%- if account.html -%}
-        {{- account.html -}}
-        {%- endif -%}
-        {%- if site.data.links.settings.text == true -%}
-        {%- if account.text -%}
-        <p>{{- account.text -}}</p>
-        {%- endif -%}
-        {%- endif -%}
-        {%- if account.span -%}
-        <span class="{{account.span}}" style="{{account.style}}"></span>
-        {%- endif -%}
-      </a>
-    </li>
-    {%- endfor -%}
-  </div>
+            <a id="social-button-{{ account.service }}"
+               class="btn btn-dark {%- if account.order -%} order-{{- account.order -}}{%- endif -%}"
+               title="{{- account.title -}}" href="{{- account.href -}}" target="_blank"
+               {%- if account.style -%}style="{{account.style}}"
+               {%- endif -%}{%- if account.data -%}{{- account.data -}}{%- endif -%}>
+                {%- if account.fa-icon -%}
+                <i class="{{ account.fa-icon }}"></i>
+                {%- endif -%}
+                {%- if account.image -%}
+                <img class="{{- account.image.class -}}" src="{{- account.image.path -}}"
+                     style="height:{{account.image-size.height}}; width:{{account.image-size.width}};"/>
+                {%- endif -%}
+                {%- if account.html -%}
+                {{- account.html -}}
+                {%- endif -%}
+                {%- if site.data.links.settings.text == true -%}
+                {%- if account.text -%}
+                <p>{{- account.text -}}</p>
+                {%- endif -%}
+                {%- endif -%}
+                {%- if account.span -%}
+                <span class="{{account.span}}" style="{{account.style}}"></span>
+                {%- endif -%}
+            </a>
+        </li>
+        {%- endfor -%}
+    </ul>
+</div>
 <!--
 {% if site.social.instagram %}
   <li>
