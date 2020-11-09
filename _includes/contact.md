@@ -3,7 +3,7 @@
 <div class="container">
 <a href="https://twitter.com/iotaspencer">
 <i class="fab fa-twitter fa-2x"></i>
-@IotaEcode
+@iotaspencer
 </a>
 </div>
 <div class="container">
@@ -33,8 +33,8 @@ iotaspencer#0001
 
 ## Other Stuff
 
-<!--<div class="container">
-<a href="ircs://irc.electrocode.net">
+<!--<div class="container"> Don't do IRC anymore
+<a href="[REDACTED]">
 <i class="fas fa-hashtag fa-2x"></i>
 IRC
 </a>
