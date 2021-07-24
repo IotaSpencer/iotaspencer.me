@@ -1,5 +1,5 @@
 ### Social Media
-{% for service in site.data.contact.sites[1] %}
+{% for service in site.data.contact.sites[0] %}
 {{service}}
 <div class="container">
     <a href="{{ service.url }}">
