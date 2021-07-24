@@ -1,6 +1,7 @@
 ### Social Media
 {% for service in site.data.contact.sites %}
 <div class="container">
+{{service}}
     <a href="{{ service.url }}">
         <i class="{{service.class }}"></i>
         {{ service.extra }}
