@@ -2,7 +2,7 @@
 sites:
   - url: https://twitter.com/iotaspencer
     class: fab fa-twitter fa-2x
-    extra: \@iotaspencer
+    extra: "@iotaspencer"
   - url: https://fb.com/ElectroCode
     class: fab fa-facebook fa-2x
     extra: /ElectroCode
@@ -12,6 +12,6 @@ sites:
   - url: tel:18023274682
     class: fas fa-phone-square fa-2x
     extra: Call or Text me
-  - url: \#
+  - url: "#"
     class: fab fa-discord fa-2x
     extra: IotaSpencer#0001
