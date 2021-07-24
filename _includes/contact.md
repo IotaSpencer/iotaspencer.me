@@ -11,7 +11,8 @@
 ## Other Stuff
 
 <div class="container"> Don't do IRC anymore
-<a href="[REDACTED]">
+<a href="#" disabled>
+<!---<a href="[REDACTED]">--->
 <i class="fas fa-hashtag fa-2x"></i>
 IRC
 </a>
