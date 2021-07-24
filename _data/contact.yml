@@ -3,7 +3,7 @@ sites:
   twitter:
     url: https://twitter.com/iotaspencer
     class: fab fa-twitter fa-2x
-    extra: @iotaspencer
+    extra: \@iotaspencer
   facebook:
     url: https://fb.com/ElectroCode
     class: fab fa-facebook fa-2x
