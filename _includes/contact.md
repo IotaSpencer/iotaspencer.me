@@ -1,10 +1,13 @@
+---
+
+---
 ### Social Media
 {% for service in data.contact.sites %}
 <div class="container">
-<a href="{{ service.url }}">
-<i class="{{service.class }}"></i>
-{{ service.extra }}
-</a>
+    <a href="{{ service.url }}">
+        <i class="{{service.class }}"></i>
+        {{ service.extra }}
+    </a>
 </div>
 {% endfor %}
 
