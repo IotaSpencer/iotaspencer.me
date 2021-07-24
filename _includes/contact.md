@@ -1,6 +1,3 @@
----
-
----
 ### Social Media
 {% for service in site.data.contact.sites %}
 <div class="container">
