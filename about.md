@@ -22,4 +22,4 @@ Unless I'm deeply down, programming is my goto for winding down after a hard day
 
 ------
 
-{% render "contact.md" %}
+{% include "contact.md" %}
