@@ -1,0 +1,53 @@
+- name: Python
+  years: 10
+- name: Bash
+  years: 10
+- name: GNU/Linux
+  years: 10
+- name: Ruby
+  years: 9
+- name: Rails
+  years: 6
+- name: HTML
+  years: 9
+- name: HAML
+  years: 9
+- name: SLIM
+  years: 9
+- name: ERubis
+  years: 9
+- name: CSS
+  years: 9 
+- name: SASS
+  years: 9
+- name: LESS
+  years: 9
+- name: SCSS
+  years: 9
+- name: "Cloud Computing"
+  years: 9
+- name: "Cloud Computing Infrastructure"
+  years: 9
+- name: "Cloud Computing Management"
+  years: 9
+- name: JS
+  years: 9
+- name: CoffeeScript
+  years: 9
+- name: MySQL
+  years: 7 
+- name: PostgreSQL
+  years: 7
+- name: PHP
+  years: 7
+- name: "Collaborative Software Development"
+  years: 7
+- name: "Data Entry"
+  years: 7
+- name: "Ledger Balancing"
+  years: 3
+- name: Lottery Machines Knowledge
+  years: 3
+- name: Software Troubleshooting
+  years: 10
+  

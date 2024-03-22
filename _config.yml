@@ -1,11 +1,11 @@
 # Jekyll configuration
 # now built using gogs!
 
-name: Iota
+name: IotaSpencer
 author: Ken Spencer
-year: 2019
+year: 2024
 description: The ramblings of a madman in a mad world
-my_age: 29
+my_age: 32
 # Url is currently only used only for the RSS feed in feed.xml
 url: https://iotaspencer.me
 
@@ -17,6 +17,13 @@ host: 0.0.0.0
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 baseurl: "/"
 repository: IotaSpencer/iotaspencer.me
+#   #####                                
+#  #     #  ####   ####  #   ##   #      
+#  #       #    # #    # #  #  #  #      
+#   #####  #    # #      # #    # #      
+#        # #    # #      # ###### #      
+#  #     # #    # #    # # #    # #      
+#   #####   ####   ####  # #    # ###### 
 share:
   facebook: true
   twitter: true
@@ -25,18 +32,23 @@ share:
   pinterest: false
   email: true
   reddit: true
-
 social:
   github: IotaSpencer
   gitlab: IotaSpencer
-  twitter: IotaEcode
-
+  twitter: iotaspencer
   rss: feed.xml
   steam: IotaSpencer
   tel: "1-802-327-4682"
-  discord: "iota#0001"
+  discord: "iotaspencer"
   linkedin: ken-iota-spencer
   stackoverflow: 3095971/iotaspencer
+
+#      #      
+#     # #              ##
+#    #   #    # ##       # 
+#   #######   ##  #   ####     
+#  #       #  #   #  #   #            
+# #         # #   #  #####            
 # Google Analytics key, leave blank to ignore
 google_analytics_key: UA-46280703-5
 # Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
@@ -75,6 +87,7 @@ exclude:
   - "*.map"
   - ".gitignore"
   - ".idea/"
+  - ".vscode/"
   - "Gemfile*"
   - "*.gemspec"
   - ".sass-cache"
@@ -89,7 +102,6 @@ plugins:
   - jemoji
   - jekyll-mentions
   - jekyll-include-cache
-  - jekyll-asciinema
   - jekyll-paginate
 #defaults:
 #  -

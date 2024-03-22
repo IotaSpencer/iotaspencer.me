@@ -11,15 +11,7 @@ div#resume-sidebar > ul {
   font-weight: bold;
 }
 
-.xp {
-  .xp-desc {
 
-  }
-
-  .xp-duration {
-
-  }
-}
 div#resume {
   column-count: 1;
   div.list-group {
@@ -39,10 +31,34 @@ div#resume {
     border-style: none !important;
   }
 }
-div#resume {
 
+.xp-location, .xp-duration, .xp-desc {
+  color: snow !important;
+}
+.edu-duration, .edu-major {
+  color: snow !important;
 }
 @media print {
+  a {
+    text-decoration: none !important;
+  }
+  div {
+    color: #000000 !important;
+  }
+  @for $index from 1 through 6 {
+    h#{$index}{
+      color: #000000 !important;
+    }
+  }
+  .contact-telephone, .contact-email, .contact-name {
+    color: #000
+  }
+  .navbar {
+    display: none;
+  }
+  #header {
+    display: none;
+  }
   .list-group, .list-group-item {
     border-style: none;
   }
@@ -53,7 +69,12 @@ div#resume {
   #sidebar {
     display: none;
   }
-
+  .xp-location, .xp-duration, .xp-desc {
+    color: #000000 !important;
+  }
+  .edu-duration, .edu-major {
+    color: #000000 !important;
+  }
   #footer-distributed {
     display: none;
   }
