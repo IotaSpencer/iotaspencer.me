@@ -6,7 +6,7 @@ sites:
     text: Twitter
     service: twitter
     href: https://twitter.com/@iotaspencer
-    style: color:#1da1f2;
+    style: "color:#1da1f2;"
     fa-icon: fab fa-twitter fa-2x
     #image: /path/to/image
     #image-size:
@@ -20,7 +20,7 @@ sites:
     text: GitHub
     service: github
     href: https://github.com/IotaSpencer
-    style: color:#555;
+    style: "color:#555;"
     fa-icon: fab fa-github fa-2x
     #image: /path/to/image
     #image-size:
@@ -34,7 +34,7 @@ sites:
     service: gitlab
     text: GitLab
     href: https://gitlab.com/IotaSpencer
-    style: color:#e24329;
+    style: "color:#e24329;"
     fa-icon: fab fa-gitlab fa-2x
     #image: /path/to/image
     #image-size:
@@ -48,7 +48,7 @@ sites:
     text: Tel
     service: tel
     href: tel:+18023274682
-    style: color:green;
+    style: "color:green;"
     fa-icon: fas fa-phone-square fa-2x
     #image: /path/to/image
     #image-size:
@@ -62,7 +62,7 @@ sites:
     text: Steam
     service: steam
     href: https://steamcommunity.com/id/IotaSpencer
-    style: color:black;
+    style: "color:#c7d5e0;"
     fa-icon: fab fa-steam fa-2x
     #image: /path/to/image
     #image-size:
@@ -77,7 +77,7 @@ sites:
     text: Discord
     href:
     data: data-toggle="tooltip" data-placement="top" data-trigger="click"
-    style: color:blurple;
+    style: "color:blurple;"
     fa-icon: fab fa-discord fa-2x
     #image: /path/to/image
     #image-size:
@@ -122,7 +122,7 @@ sites:
     text: <abbr title="Really Simple Syndication">RSS</abbr>
     service: rss
     href: /feed.xml
-    style: color:#F60;
+    style: "color:#F60;"
     fa-icon: fas fa-rss fa-2x
     #image:
     #image-size:
@@ -136,7 +136,7 @@ sites:
     text: LinkedIn
     service: linkedin
     href: https://www.linkedin.com/in/ken-iota-spencer
-    style: color:blue;
+    style: "color:blue;"
     fa-icon: fab fa-linkedin fa-2x
     #image:
     #image-size:
