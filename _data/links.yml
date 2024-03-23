@@ -20,7 +20,7 @@ sites:
     text: GitHub
     service: github
     href: https://github.com/IotaSpencer
-    style: "color:#555;"
+    style: "color:#bcbcbc;"
     fa-icon: fab fa-github fa-2x
     #image: /path/to/image
     #image-size:
@@ -77,7 +77,7 @@ sites:
     text: Discord
     href:
     data: data-toggle="tooltip" data-placement="top" data-trigger="click"
-    style: "color:blurple;"
+    style: "color:#4e5d94;"
     fa-icon: fab fa-discord fa-2x
     #image: /path/to/image
     #image-size:
