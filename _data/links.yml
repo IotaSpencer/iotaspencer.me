@@ -174,7 +174,7 @@ sites:
     title: Youtube 1
     text: Iota Spencer
     service: youtube
-    href: https://www.youtube.com/channel/UCk2QkzGvmqO-GUzV59b_8Hw
+    href: https://www.youtube.com/@IotaSpencer
     style: color:red;
     fa-icon: fab fa-youtube fa-2x
     hide: false
@@ -185,7 +185,7 @@ sites:
     title: Youtube 2
     text: Iota Plays
     service: youtube
-    href: https://www.youtube.com/channel/UCvFYJhzNR8jXpACEdvL6Btg
+    href: https://www.youtube.com/@IotaPlays
     style: color:red;
     fa-icon: fab fa-youtube fa-2x
     hide: false

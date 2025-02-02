@@ -65,54 +65,6 @@
     })();
 </script>
 <header id="header">
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md mb-3">
-        <a class="navbar-brand" href="{{ '' | relative_url }}/">{{ site.name }} - {{ site.author }}</a>
-        <p class="navbar-text small mr-1">{{ site.description }}</p>
-        <div class="bg-dark navbar-toggle justify-content-end d-md-none" data-toggle="collapse" data-target="#navbar">
-            <button class="bg-dark py-2 px-3 border border-1 border-secondary rounded">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse justify-content-end">
-            <ul class="nav navbar-nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ '' | relative_url }}/">/home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ 'about' | relative_url }}">/about</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ 'resume' | relative_url }}">/resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ 'activity' | relative_url }}">/activity</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ 'tags' | relative_url }}">/tags</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ 'archive' | relative_url }}">/archive</a>
-                </li>
-
-                <li class="nav-item dropdown" id="portfolio-dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{ 'portfolio' | relative_url }}" data-toggle="dropdown">/portfolio</a>
-                    <div class="dropdown-menu dropdown-menu-right bg-dark">
-                        <a class="dropdown-header" href="/portfolio/">Portfolio Page</a>
-                        <div class="dropdown-divider" style="border-color: darkgreen;"></div>
-                        {% for item in site.data.navbar %}
-                        <a class="dropdown-item" title="{{ item.title }}" href="{{ item.path }}">
-                            {{ item.name }}
-                            {% for badge in item.badges %}<small><span class="badge badge-dark text-green">{{ badge }}</span></small>{% endfor %}
-                        </a>
-                        {% endfor %}
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/gnupg">/gnupg</a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
+    {% include navbar.html %}
 </header>
 <div id="between">

@@ -10,13 +10,13 @@
 
 ## Other Stuff
 
-<div class="container"> Don't do IRC anymore
+<!-- <div class="container"> Don't do IRC anymore
 <a href="#" disabled>
-<!---<a href="[REDACTED]">--->
+<a href="[REDACTED]">
 <i class="fas fa-hashtag fa-2x"></i>
 IRC
 </a>
-</div>
+</div> -->
 <div class="container">
 <i class="fas fa-key fa-2x"></i>
 <a href="/gnupg">

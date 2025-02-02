@@ -4,6 +4,8 @@ services:
       url: https://github.com/IotaSpencer
     - name: ElectroCode
       url: https://github.com/ElectroCode
+    - name: ElectroCode-Gems
+      url: https://github.com/ElectroCode-Gems
   GitLab:
     - name: IotaSpencer
       url: https://gitlab.com/IotaSpencer
