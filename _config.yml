@@ -3,9 +3,9 @@
 
 name: IotaSpencer
 author: Ken Spencer
-year: 2024
+year: 2025
 description: The ramblings of a madman in a mad world
-my_age: 32
+my_age: 33
 # Url is currently only used only for the RSS feed in feed.xml
 url: https://iotaspencer.me
 
@@ -35,15 +35,15 @@ share:
 social:
   github: IotaSpencer
   gitlab: IotaSpencer
-  twitter: iotaspencer
+  twitter: Ken_I_Spencer
   rss: feed.xml
   steam: IotaSpencer
-  tel: "1-802-327-4682"
+  tel: ""
   discord: "iotaspencer"
   linkedin: ken-iota-spencer
   stackoverflow: 3095971/iotaspencer
 
-#      #      
+#      #                    
 #     # #              ##
 #    #   #    # ##       # 
 #   #######   ##  #   ####     
