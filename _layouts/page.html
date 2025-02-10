@@ -14,6 +14,11 @@
                     <div class="card px-1 py-1 p-sm-2 bg-darker">
                         {{ content }}
                     </div>
+                    {% if page.comments %}
+                        <div class="card px-1 py-1 p-sm-2 bg-darker">
+                            {% include disqus-comments.html %}
+                        </div>
+                    {% endif %}
                 </div>
                 {% if page.sidebar != 'false' %}
                 <div id="sidebar" class="col-md-3 d-sm-block d-xs-block d-md-block">
