@@ -25,13 +25,14 @@ repository: IotaSpencer/iotaspencer.me
 #  #     # #    # #    # # #    # #      
 #   #####   ####   ####  # #    # ###### 
 share:
-  facebook: true
+  facebook: false
   twitter: true
   gplus: false
   linkedin: false
   pinterest: false
   email: true
   reddit: true
+  bsky: true
 social:
   github: IotaSpencer
   gitlab: IotaSpencer
