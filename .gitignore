@@ -7,4 +7,4 @@ vendor/
 .project
 Gemfile.lock
 /.jekyll-cache/
-/bin/
+/bin/**/*.pyc
