@@ -1,7 +1,7 @@
-{% if page.share == true %}
-<div data-spy="affix" class="pull-left hidden-sm hidden-xs">
-<div class="share-bar fa-2x">
-  <ul class="share-buttons">
+{% if page.share != false %}
+<div class="d-flex justify-content-center">
+<div class="justify-content-center text-center fa-2x">
+  <ul class="list-group list-group-horizontal" style="list-style:none;">
     {% if site.share.facebook %}
     <li class="share-facebook">
       <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | append: page.url}}" target="_blank" title="Share on Facebook">
@@ -104,7 +104,7 @@
       });
     </script>    
     <li class="share-other">
-      <button>Share this page!</button>
+      <button class="btn text-nowrap">Share this page!</button>
       <p class="result"></p>
     </li>
 

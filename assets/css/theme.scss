@@ -129,27 +129,7 @@ ul.social-media {
 //                    Share
 //********************************************************
 
-.share-bar {
-  text-align: left;
-  position: fixed;
-  top: 50%;
-  margin-right: 100%;
-  margin-left: 0;
-  left: 0;
-  z-index: 10;
-}
 
-ul.share-buttons {
-  list-style: none;
-  margin-right: 100%;
-  margin-left: 0;
-  padding: 0;
-
-  li {
-    a {
-      text-decoration: none;
-    }
-  }
 
   li.share-facebook {
     color: #3b5998;
@@ -179,18 +159,8 @@ ul.share-buttons {
     color: tomato;
   }
 
-  li:hover {
-    z-index: 2;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.5);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    transition: all 200ms ease-in;
-    transform: scale(1.5);
-  }
-}
+
+
 //********************************************************
 //                  Breadcrumbs
 //********************************************************

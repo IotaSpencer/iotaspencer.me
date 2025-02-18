@@ -10,7 +10,7 @@
                                 <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
                             </h1>
                             <div class="post-meta container">
-                                <div class="post-time">
+                                <div class="post-time text-light">
                                     <i class="fas fa-calendar" aria-hidden="true"></i>
                                     <time>{{ page.date | date_to_string }}</time>
                                 </div>
@@ -36,7 +36,7 @@
                                 {% include share.html %}
                             </div>
 
-                            {% if post.comments %}
+                            {% if post.comments != false %}
                                 <div class="card bg-darker px-3 py-3">
                                     {% include disqus-comments.html %}
                                 </div> 

@@ -93,6 +93,7 @@ exclude:
   - "*.gemspec"
   - ".sass-cache"
   - "_resume.html"
+  - "bin/"
 sass_dir: _sass/
 plugins:
   - jekyll-feed
