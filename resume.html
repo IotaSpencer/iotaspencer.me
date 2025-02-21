@@ -149,11 +149,13 @@ tags:
         </ul>
         <h5>TECHNOLOGY BASED EXPERIENCE</h5>
         <div class="d-inline-flex flex-wrap">
-          {% for xp in site.data.resume.tech_skills %}
-          <div class="px-1">{{ xp.name }} <span class="badge text-bg-dark rounded-pill">{{xp.years}}</span></div>
-          {% endfor %}
+          <ul class="pt-2">
+            {% for xp in site.data.resume.tech_skills %}
+            <li class="px-1">{{ xp.name }} <span class="badge text-bg-dark rounded-pill">{{xp.years}}</span></li>
+            {% endfor %}
         </ul>
       </div>
     </div>
   </div>
+</div>
 </div>
