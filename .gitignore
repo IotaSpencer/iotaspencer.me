@@ -9,3 +9,4 @@ vendor/
 
 # Ignore folders I don't want to be pushed to GitHub
 _dist/
+Gemfile.lock
