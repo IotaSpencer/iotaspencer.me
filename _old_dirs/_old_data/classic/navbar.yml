@@ -1,0 +1,52 @@
+- path: /portfolio/mkmatter
+  name: mkmatter
+  title: mkmatter
+  badges: ['Gem', 'Jekyll', 'Ruby', 'Executable']
+- path: /portfolio/cinch-bot_template
+  name: cinch-bot_template
+  title: Cinch::BotTemplate
+  badges: ['Gem', 'Cinch', 'Ruby', 'Executable']
+- path: /portfolio/micro-install
+  name: micro_install
+  title: micro-install
+  badges: ['Gem', 'micro', 'Ruby', 'Executable']
+- path: /portfolio/gitall
+  name: gitall
+  title: GitAll
+  badges: ['Gem', 'Webhooks', 'Ruby', 'Executable', 'Server']
+- path: /portfolio/site_hook
+  name: site_hook
+  title: SiteHook
+  badges: ['Gem', 'Webhooks', 'Ruby', 'Executable', 'Server']
+- path: /portfolio/irc-source
+  name: IRC-Source
+  title: IRC-Source
+  badges: ['Site', 'HTML+CSS+JS']
+- path: /portfolio/dnsblim
+  name: DNSBL.im
+  title: DNSBL.im
+  badges: ['API', 'Site', 'Libraries']
+- path: /portfolio/pylink
+  name: pylink
+  title: 'PyLink'
+  badges: ['Python', 'IRC Services']
+- path: /portfolio/supyplugins
+  name: supyplugins
+  title: SupyPlugins
+  badges: ['Python', 'SupyBot', 'Limnoria']
+- path: /portfolio/mastosite
+  name: Mastosite
+  title: Mastosite
+  badges: ['Site', 'HTML+CSS+JS', 'Ruby', 'Jekyll']
+- path: /portfolio/unibanner
+  name: Unibanner
+  title: Unibanner
+  badges: ['Ruby', 'IRC', 'Gem', 'IRC Bot']
+- path: /portfolio/irc_socket
+  name: IRCSocket
+  title: IRCSocket
+  badges: ['Ruby', 'Gem', 'Sockets', 'IRC']
+- path: /portfolio/cloudflare_cli
+  name: cloudflare_cli
+  title: cloudflare_cli
+  badges: ['Ruby', 'Gem', 'Cloudflare', 'API']

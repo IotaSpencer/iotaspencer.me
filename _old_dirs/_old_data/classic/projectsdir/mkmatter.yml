@@ -1,0 +1,11 @@
+name: mkmatter
+priority: 0
+name-selector: mkmatter
+desc: A jekyll site helper, for content creation, tag pages and more
+links:
+  - name: GitHub
+    url: https://github.com/IotaSpencer/mkmatter
+  - name: Portfolio
+    url: https://iotaspencer.me/portfolio/mkmatter
+  - name: mkmatter on RubyGems.org
+    url: https://rubygems.org/gems/mkmatter

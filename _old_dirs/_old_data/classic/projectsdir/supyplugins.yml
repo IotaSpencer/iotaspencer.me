@@ -1,0 +1,8 @@
+name: SupyPlugins
+name-selector: supyplugins
+desc: A repository of SupyBot plugins
+links:
+  - name: GitHub
+    url: https://github.com/IotaSpencer/supyplugins
+  - name: Portfolio
+    url: https://iotaspencer.me/portfolio/supyplugins

@@ -1,0 +1,15 @@
+<footer id="footer-distributed" class="footer-distributed">
+    <div class="container">
+        <div class="footer">
+            <div class="flex-row">
+                <small><p>{{site.author}} &copy; {{ "now" | date: "%Y" }}</p></small>
+            </div>
+            {% include links.html %}
+            <div class="py-3 flex-row">
+                <p>Page last generated at {{ "now" | date: "%Y-%m-%d %H:%M:%S" }}.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

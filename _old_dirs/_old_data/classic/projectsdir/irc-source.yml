@@ -1,0 +1,6 @@
+name: IRC-Source
+name-selector: ircsource
+desc: An IRC Search Engine</dd>
+links:
+  - name: /projects/irc-source/
+    url: /projects/irc-source/

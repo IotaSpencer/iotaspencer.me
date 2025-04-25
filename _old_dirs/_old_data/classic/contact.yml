@@ -1,0 +1,20 @@
+### Social Media
+sites:
+  - url: https://twitter.com/KenISpencer
+    class: fab fa-twitter fa-2x
+    extra: "@iotaspencer"
+  - url: https://fb.com/ElectroCode
+    class: fab fa-facebook fa-2x
+    extra: /ElectroCode
+  - url: https://steamcommunity.com/id/IotaSpencer
+    class: fab fa-steam fa-2x
+    extra: IotaSpencer on Steam
+  - url: "#"
+    class: fas fa-phone-square fa-2x
+    extra: Call or Text me
+  - url: "#"
+    class: fab fa-discord fa-2x
+    extra: IotaSpencer
+  - url: bsky.app/@iotaspencer.me
+    class: fab fa-bluesky fa-2x
+    extra: IotaSpencer on Bsky

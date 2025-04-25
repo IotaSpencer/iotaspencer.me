@@ -1,0 +1,194 @@
+settings:
+  text: true
+sites:
+  - # Twitter
+    title: Follow @iotaspencer on Twitter
+    text: Twitter
+    service: twitter
+    href: https://twitter.com/@iotaspencer
+    style: "color:#1da1f2;"
+    fa-icon: fab fa-twitter fa-2x
+    #image: /path/to/image
+    #image-size:
+    #  height:
+    #  width:
+    hide: false
+    html: false
+    order: 0
+  -
+    title: IotaSpencer on GitHub
+    text: GitHub
+    service: github
+    href: https://github.com/IotaSpencer
+    style: "color:#bcbcbc;"
+    fa-icon: fab fa-github fa-2x
+    #image: /path/to/image
+    #image-size:
+    #  height:
+    #  width:
+    hide: false
+    html: false
+    order: 0
+  -
+    title: IotaSpencer on GitLab
+    service: gitlab
+    text: GitLab
+    href: https://gitlab.com/IotaSpencer
+    style: "color:#e24329;"
+    fa-icon: fab fa-gitlab fa-2x
+    #image: /path/to/image
+    #image-size:
+    #  height:
+    #  width:
+    hide: false
+    html: false
+    order: 0
+  -
+    title: Call or Text Iota
+    text: Tel
+    service: tel
+    href: tel:+18023274682
+    style: "color:green;"
+    fa-icon: fas fa-phone-square fa-2x
+    #image: /path/to/image
+    #image-size:
+    #  height:
+    #  width:
+    hide: false
+    html: false
+    order: 1
+  -
+    title: IotaSpencer on Steam
+    text: Steam
+    service: steam
+    href: https://steamcommunity.com/id/IotaSpencer
+    style: "color:#c7d5e0;"
+    fa-icon: fab fa-steam fa-2x
+    #image: /path/to/image
+    #image-size:
+    #  height:
+    #  width:
+    hide: false
+    html: false
+    order: 1
+  -
+    title: Join iota#0001 on Discord
+    service: discord
+    text: Discord
+    href:
+    data: data-toggle="tooltip" data-placement="top" data-trigger="click"
+    style: "color:#4e5d94;"
+    fa-icon: fab fa-discord fa-2x
+    #image: /path/to/image
+    #image-size:
+    #  height:
+    #  width:
+    hide: false
+    html: false
+    order: 0
+  -
+    title: IotaSpencer on StackOverflow
+    service: stackoverflow
+    text: <abbr title="StackOverflow">SO</abbr>
+    href: https://stackoverflow.com/users/3095971/iotaspencer
+    style: color:white;
+    fa-icon: fab fa-stack-overflow fa-2x
+    #image: /path/to/image
+    #image-size:
+    #  height:
+    #  width:
+    hide: false
+    html: false
+    order: 7
+  -
+    title: Sign up with Vultr!
+    text: Vultr
+    service: vultr
+    href: https://www.vultr.com/?ref=7630589
+    style:
+    fa-icon:
+    data:
+    image:
+      path: /assets/images/vultr/logo_v_ondark.svg
+      class:
+    image-size:
+      height: 32px
+      width: 32px
+    hide: false
+    html: false
+    order: 0
+  -
+    title: RSS Feed
+    text: <abbr title="Really Simple Syndication">RSS</abbr>
+    service: rss
+    href: /feed.xml
+    style: "color:#F60;"
+    fa-icon: fas fa-rss fa-2x
+    #image:
+    #image-size:
+    #  height: 32px
+    #  width: 32px
+    hide: false
+    html: false
+    order: 1
+  -
+    title: Ken on LinkedIn
+    text: LinkedIn
+    service: linkedin
+    href: https://www.linkedin.com/in/ken-iota-spencer
+    style: "color:blue;"
+    fa-icon: fab fa-linkedin fa-2x
+    #image:
+    #image-size:
+    #  height: 32px
+    #  width: 32px
+    hide: false
+    html: false
+    order: 8
+  -
+    title: GNUPG Key
+    text: GNUPG
+    service: gnupg-page
+    href: /gnupg.asc
+    style: color:goldenrod;
+    data: download
+    fa-icon: fas fa-key fa-2x
+    #image:
+    #image-size:
+    #  height: 32px
+    #  width: 32px
+    hide: false
+    html:
+    order: 9
+  -
+    title: DigitalOcean
+    text: DigitalOcean
+    service: digitalocean
+    href: https://m.do.co/c/145b0a3fb5be
+    style: color:blue;
+    fa-icon: fab fa-digital-ocean fa-2x
+    hide: false
+    html: false
+    order: 0
+  -
+    title: Youtube 1
+    text: Iota Spencer
+    service: youtube
+    href: https://www.youtube.com/@IotaSpencer
+    style: color:red;
+    fa-icon: fab fa-youtube fa-2x
+    hide: false
+    html: false
+    order: 5
+    social:
+  -
+    title: Youtube 2
+    text: Iota Plays
+    service: youtube
+    href: https://www.youtube.com/@IotaPlays
+    style: color:red;
+    fa-icon: fab fa-youtube fa-2x
+    hide: false
+    html: false
+    order: 5
+    social:

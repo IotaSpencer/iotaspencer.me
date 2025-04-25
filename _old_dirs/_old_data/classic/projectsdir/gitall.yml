@@ -1,0 +1,8 @@
+name: GitAll
+name-selector: gitall
+desc: A Git Service Webhook that posts to IRC
+links:
+  - name: GitHub
+    url: https://gitlab.com/gitall/gitall
+  - name: Portfolio
+    url: https://iotaspencer.me/portfolio/gitall

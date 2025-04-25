@@ -1,0 +1,5 @@
+name: DNSBL.im
+desc: A DNSBL (Domain Name Service BlackList)
+links:
+  - name: /projects/dnsbl.im/
+    url: /projects/dnsbl.im/

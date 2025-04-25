@@ -1,0 +1,11 @@
+name: Cinch Bot Template
+priority: 0
+name-selector: cinch-bottemplate
+desc: A template for cinch bots. (very Alpha stages)
+links:
+  - name: /projects/cinch-bot_template
+    url: /projects/cinch-bot_template
+  - name: cinch-bot_template on RubyGems.org
+    url: https://rubygems.org/gems/cinch-bot_template
+  - name: Portfolio
+    url: /portfolio/cinch-bot_template/
