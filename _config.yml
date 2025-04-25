@@ -1,0 +1,18 @@
+theme: bulma-clean-theme
+
+title: "iotaspencer.me"
+description: "A simple Jekyll site using the Bulma Clean Theme"
+author: "Ken Spencer"
+email: "me@iotaspencer.me"
+disqus.shortname: "iotaspencerme"
+
+show_sidebar: true
+sass:
+  silence_deprecations: ['import']
+  quiet_deps: true
+
+social:
+  github: "https://github.com/IotaSpencer"
+  youtube: "https://www.youtube.com/@iotaspencer"
+  bluesky: "https://bsky.app/profile/iotaspencer.me"
+  mastodon: "https://floss.social/@iotaspencer"
