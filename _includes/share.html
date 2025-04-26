@@ -83,6 +83,86 @@
         </a>
       </li>
     {% endif %}
+    {% if site.share.mastodon %}
+      <li class="share-mastodon">
+        <a href="https://mastodon.social/share?text={{page.title}} — {{ site.url | append: page.url }}" target="_blank" title="Share on Mastodon">
+          <span class="fa-layers fa-fw">
+            <i class="fa-brands fa-mastodon" style="color:#3b5998;"></i>
+            <i class="fa-inverse"></i>
+          </span>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.share.tiktok %}
+      <li class="share-tiktok">
+        <a href="https://www.tiktok.com/share?url={{ site.url | append: page.url }}" target="_blank" title="Share on TikTok">
+          <span class="fa-layers fa-fw">
+            <i class="fa-brands fa-tiktok" style="color:#3b5998;"></i>
+            <i class="fa-inverse"></i>
+          </span>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.share.whatsapp %}
+    <li class="share-whatsapp">
+      <a href="whatsapp://send?text={{ page.title }} {{ site.url | append: page.url }}" target="_blank" title="Share on WhatsApp">
+        <span class="fa-layers fa-fw">
+          <i class="fas fa-circle" style="color:#25D366;"></i>
+          <i class="fa-inverse fab fa-whatsapp" data-fa-transform="shrink-6"></i>
+        </span>
+      </a>
+    </li>
+    {% endif %} 
+    {% if site.share.telegram %}
+    <li class="share-telegram">
+      <a href="https://telegram.me/share/url?url={{ site.url | append: page.url }}&text={{page.title}}" target="_blank" title="Share on Telegram">
+        <span class="fa-layers fa-fw">
+          <i class="fas fa-circle" style="color:#0088cc;"></i>
+          <i class="fa-inverse fab fa-telegram" data-fa-transform="shrink-6"></i>
+        </span>
+      </a>
+    </li>
+    {% endif %} 
+    {% if site.share.discord %}
+    <li class="share-discord">
+      <a href="https://discord.com/share?url={{ site.url | append: page.url }}" target="_blank" title="Share on Discord">
+        <span class="fa-layers fa-fw">
+          <i class="fas fa-circle" style="color:#7289DA;"></i>
+          <i class="fa-inverse fab fa-discord" data-fa-transform="shrink-6"></i>
+        </span>
+      </a>
+    </li>
+    {% endif %} 
+    {% if site.share.signal %}
+    <li class="share-signal">
+      <a href="sms:?&body={{ page.title }} {{ site.url | append: page.url }}" target="_blank" title="Share on Signal">
+        <span class="fa-layers fa-fw">
+          <i class="fas fa-circle" style="color:#3CB371;"></i>
+          <i class="fa-inverse fab fa-signal" data-fa-transform="shrink-6"></i>
+        </span>
+      </a>
+    </li>
+    {% endif %} 
+    {% if site.share.viber %}
+    <li class="share-viber">
+      <a href="viber://forward?text={{ page.title }} {{ site.url | append: page.url }}" target="_blank" title="Share on Viber">
+        <span class="fa-layers fa-fw">
+          <i class="fas fa-circle" style="color:#7F00FF;"></i>
+          <i class="fa-inverse fab fa-viber" data-fa-transform="shrink-6"></i>
+        </span>
+      </a>
+    </li>
+    {% endif %} 
+    {% if site.share.copy %}
+    <li class="share-copy">
+      <a href="javascript:void(0)" onclick="copyToClipboard('{{ site.url | append: page.url }}')" title="Copy to clipboard">
+        <span class="fa-layers fa-fw">
+          <i class="fas fa-circle" style="color:#000;"></i>
+          <i class="fa-inverse fas fa-copy" data-fa-transform="shrink-6"></i>
+        </span>
+      </a>
+    </li>
+    {% endif %} 
     <script>
       const shareData = {
         title: "{{ page.title }}",
