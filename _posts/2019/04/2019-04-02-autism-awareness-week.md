@@ -10,6 +10,11 @@ tags:
 - autism awareness week
 - TakeBackOurIdentity
 date: '2019-04-03 00:00:00 -0400'
+modified:
+  - datetime: "2025-04-26 03:10:00 -0400"
+    reason: "Fixed a missing comma"
+  - datetime: "2025-04-26 12:06:00 -0400"
+    reason: Not all Autistics have an affinity for tech.
 ---
 <h2><i class="fas fa-puzzle-piece" aria-hidden="true"></i> What?</h2>
 April 1st-7th is Autism Awareness Week.
@@ -29,8 +34,9 @@ With that out of the way, some pointers and some knowledge about autism.
 
 ### Second,
   <strong style="font-size: 125%;">It is not a disease to be cured</strong>. Autism is a fundamentally different brain configuration.
+
 ### Third,
-  most importantly.. Don't just assume that they have to be screaming to be autistic. They might be, but that screaming means that they are overstimulated and/or their trigger has occurred, whether that be a multitude of things. Such as arguing, interrupting them when they are trying to get a thought out, having them do something outside their 'self-described' schedule, over-stimulation or stressors in a work environment.. such as retail, big crowds, like in a restaurant, or event venue among others.
+  And most importantly.. Don't just assume that they have to be screaming to be autistic. They might be, but that screaming means that they are overstimulated and/or their trigger has occurred, whether that be a multitude of things. Such as arguing, interrupting them when they are trying to get a thought out, having them do something outside their 'self-described' schedule, over-stimulation or stressors in a work environment.. such as retail, big crowds, like in a restaurant, or event venue among others.
 
 ## 
 Here's some things that may show that your child or you or w/e person you see, might have autism.
@@ -38,13 +44,12 @@ Here's some things that may show that your child or you or w/e person you see, m
 As noted for each group of ages.
 * All -- Not wanting to be touched, or only by certain people.
 * Children -- Non-verbal or delayed speaking development.
-* Repetitive motions, e.g. tics or as they are called in this context, stim's
+* Repetitive motions/actions, e.g. tics or as they are called in this context, stim's
 * All -- Overly agitated when interrupted.
 * All -- Can't sit still or has to fidget, bites fingernails, pencils, pens, etc.
 * All -- Cannot understand sarcasm, or has an affinity for languages or both.
 * All -- Shuts down and or hurts themselves when stressed, like slamming their head or hands into things when they are over-stimulated, or in the case of shutting down, they will look at the person talking to them but make no motions to acknowledge them.
 * I for one have literally slammed my head against the cooler door at a McDonalds I used to work at in 2008 when I got stressed out from loud noises and beeping.
-* All -- An affinity for technology, like in excess.
-* All -- Cannot understand social cues, including but not limited to, sarcasm, 'taking the hint', 'you picking up what i'm putting down', and other similar figures of speech.
+* All -- Cannot understand social cues, including, but not limited to, sarcasm, 'taking the hint', 'you picking up what i'm putting down', and other similar figures of speech.
 * Overly precise when speaking, or has to elaborate on things.
-* It may be my OCD but I myself have to repeat some things because I */need/* to put them into my brain how I put them. Any 
+* It may be my OCD but I myself have to repeat some things because I */need/* to put them into my brain how I put them. 
