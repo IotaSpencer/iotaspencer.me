@@ -1,0 +1,566 @@
+---
+---
+
+@import "functions.scss";
+@import "variables.scss";
+@import "mixins/grid.scss";
+@import "mixins/grid-framework.scss";
+@import "mixins/breakpoints.scss";
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+//********************************************************
+//                    Variables
+//********************************************************
+
+// Several accent colors, choose one or create your own!
+//$accent-color: #3CA2A2; // original =)
+//$accent-color: #C38FD6;  // velvet
+// $accent-color: rgb(31, 36, 32); // greenish
+// $accent-color: #35B4DE;  // bluish
+// $accent-color: #D2E354;  // yellowish
+// $accent-color: #52B54B;  // green
+// $font-color: #dddddd;
+// $background-color: #292929;
+// $post-panel-color: rgb(36, 36, 36);
+$footer-background-color: #1f2122;
+$note-color: rgb(0, 3, 165);
+$warning-color: #c00000; // use this or pick any from /css/pics/background folder or from transparenttextures.com
+$accent-color: #007222;
+$background-pattern: "3px-tile.png";
+//********************************************************
+//                  Common styles
+//********************************************************
+
+body {
+  color: #777777 !important;
+  background-color: #1b1b1b !important;
+}
+.toc-well {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #001b08;
+}
+
+.main-page {
+  width: 75%;
+}
+
+#content-div {
+  margin-bottom: 1em;
+}
+
+sub {
+  line-height: 1;
+}
+
+sup {
+  line-height: 1;
+}
+
+span.badge {
+  white-space: normal !important;
+  text-align: center !important;
+}
+
+img {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+img + em {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+blockquote {
+  color: #bbb;
+  font-size: 1em;
+}
+
+a {
+  color: $accent-color;
+
+  &:hover {
+    color: darkgreen !important;
+    text-decoration: none !important;
+  }
+
+  &:visited {
+    color: green !important;
+    text-decoration: none !important;
+  }
+}
+//********************************************************
+//                    Social Links
+//********************************************************
+
+ul.social-media {
+  text-align: center;
+  padding: 0 0 10px;
+
+  li {
+    display: inline-block;
+  }
+
+  li > a {
+    width: 45px;
+    height: 45px;
+    @include transition(color 0.2s);
+    display: inline-block;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+//********************************************************
+//                    Share
+//********************************************************
+
+
+
+  li.share-facebook {
+    color: #3b5998;
+  }
+
+  li.share-twitter {
+    color: #55acee;
+  }
+
+  li.share-google-plus {
+    color: #dd4b39;
+  }
+
+  li.share-linkedin {
+    color: #4875b4;
+  }
+
+  li.share-pinterest {
+    color: #bd081c;
+  }
+
+  li.share-envelope {
+    color: #3b5998;
+  }
+
+  li.share-reddit {
+    color: tomato;
+  }
+
+
+
+//********************************************************
+//                  Breadcrumbs
+//********************************************************
+//ol.breadcrumb {
+//}
+//********************************************************
+//                    Sidebar
+//********************************************************
+
+div.sidebar {
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+
+.sidebar li {
+  margin-top: 0.7em;
+  line-height: 1em;
+}
+
+ul.sideBarTags {
+  list-style: none;
+  list-style-type: none;
+
+  li:before {
+    content: "\f02b";
+    display: none;
+    font-family: "Font Awesome 5 Solid";
+    margin-left: -1.5em;
+  }
+}
+//********************************************************
+//                    Post
+//********************************************************
+
+h2.post-title {
+  padding-top: 10px;
+  text-align: left;
+}
+
+div.post-meta {
+  border-width: 1px 0;
+  border-color: #666666;
+  border-style: solid;
+  margin: 0 0 20px;
+
+  ul {
+    display: inline;
+    padding-left: 5px;
+  }
+
+  ul > li {
+    display: inline;
+    padding: 0 10px 5px;
+  }
+
+  .post-time {
+    display: inline;
+    padding-right: 10px;
+  }
+}
+
+.post-footer {
+  height: 40px;
+  display: table;
+  width: 100%;
+  position: relative;
+  margin-top: 32px;
+  text-align: center;
+}
+.article {
+  background-color: rgb(71, 71, 71);
+}
+//********************************************************
+//                       Comments
+//********************************************************
+
+//********************************************************
+//                    Note / Warning
+//********************************************************
+
+.note {
+  position: relative;
+  border: 0;
+  padding-left: 30px;
+}
+
+.note:before {
+  content: "\f06a";
+  font-size: 2em;
+  font-family: "Font Awesome 5 Solid";
+  left: 0;
+  position: absolute;
+  top: 0;
+  color: $note-color;
+}
+
+.warning:before {
+  content: "\f071";
+  color: $warning-color;
+}
+//********************************************************
+//                    Header
+//********************************************************
+
+nav a {
+  @include transition(color 0.31s);
+  font-size: 18px;
+  font-family: Ubuntu;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+nav.navbar {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+nav.navbar.shrink {
+  min-height: 15px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  color: $accent-color;
+}
+
+nav.shrink a {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 15px;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 20px;
+  height: inherit;
+}
+//********************************************************
+//                    Footer
+//********************************************************
+
+.footer {
+  text-align: center;
+}
+
+.footer-distributed {
+  background-color: $footer-background-color;
+  font: normal 16px sans-serif;
+  padding: 20px 25px;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  top: 100%;
+  bottom: 0;
+}
+
+iframe#follow.followme {
+  width: 100%;
+  height: 100%;
+}
+//********************************************************
+//       Custom classes to apply to block elements,
+//  more info: http://pavelmakhov.com/2015/12/images-in-jekyll
+//********************************************************
+
+.key {
+  font-size: 1em;
+  box-shadow: 1px 0 1px 0 #555, 0 1px 0 2px #888, 0 2px 0 2px #777;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 2px 3px;
+  padding: 0 5px;
+}
+
+.center-image {
+  margin: 0 auto;
+  display: block;
+}
+
+.filename {
+  padding: 0;
+  margin: 0;
+  background-color: #292929;
+  color: lightgrey;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-bottom: 0;
+  padding-left: 1em;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  border-left: 0;
+  bottom: -2px;
+  position: relative;
+  padding-bottom: 2px;
+}
+//********************************************************
+@media (min-width: 1000px) {
+  .footer-distributed .footer {
+    text-align: center;
+  }
+
+  .footer-distributed .footer {
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .footer-distributed .footer {
+    line-height: 1;
+  }
+}
+
+img#nixstats {
+  height: 40px;
+  width: 40px;
+}
+
+.bg-dark-gray {
+  background-color: #292929 !important;
+}
+
+.bg-dark-og {
+  background-color: rgb(71, 71, 71) !important;
+}
+.bg-darker {
+  background-color: #1b1b1b;
+}
+.dropdown-item:hover {
+  background-color: #292c2f;
+}
+
+dt {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+dd {
+  background: none no-repeat left top;
+  padding-left: 50px;
+}
+
+#markdown-toc {
+  li {
+    list-style: none;
+  }
+}
+
+hr.hr-text {
+  line-height: 2em !important;
+  position: relative !important;
+  margin-right: 25% !important;
+  outline: 0 !important;
+  border: 0 !important;
+  color: black !important;
+  text-align: center !important;
+  height: 1.5em !important;
+  opacity: 0.5 !important;
+
+  &:before {
+    content: "";
+    // use the linear-gradient for the fading effect
+    // use a solid background color for a solid bar
+    background: linear-gradient(to right, black, rgb(11, 177, 11), black) !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 50% !important;
+    width: 100% !important;
+    height: 2.5px !important;
+  }
+
+  &:after {
+    content: attr(data-content) !important;
+    position: relative !important;
+    display: inline-block !important;
+    color: black !important;
+    font-size: x-large;
+    padding: 0 0.5em !important;
+    line-height: 1em !important;
+    // this is really the only tricky part, you need to specify the background color of the container element...
+    color: #2ab80d !important;
+    background: #444 !important;
+  }
+}
+
+// Guides CSS
+$list-border-radius: 5px;
+$list-border-color: forestgreen;
+
+.list-group-header.list-options-header {
+  border-radius: $list-border-radius !important;
+  border-style: none !important;
+  border-width: 0 !important;
+}
+.list-group-item.list-options-item {
+  border-radius: $list-border-radius !important;
+  border-style: solid;
+  border-width: 2.5px;
+  //border-color: $list-border-color;
+}
+.list-group.list-options {
+  border-radius: $list-border-radius !important;
+  border-style: solid;
+  border-width: 2.5px;
+  border-color: $list-border-color;
+}
+
+h1.section-header,
+h2.section-header,
+h3.section-header,
+h4.section-header,
+h5.section-header,
+h6.section-header {
+  font-family: "Cutive Mono", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", monospace !important;
+  &:before {
+    content: "> ";
+  }
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+.card {
+  background-color: #1b1b1b !important;
+}
+.card-text {
+  border-top: {
+    color: #1b8d2e;
+    style: solid;
+  }
+}
+
+.card-link.btn {
+  white-space: pre-line;
+}
+
+small.text-green,
+span.text-green {
+  color: green;
+}
+
+.dropdown-item {
+  &:hover {
+    background-color: #292929 !important;
+    background: none !important;
+  }
+  &:focus {
+    background-color: #292929 !important;
+    background: none !important;
+  }
+}
+.dropdown-item {
+  &:hover {
+    background-color: #292929 !important;
+    color: green;
+  }
+  &:focus {
+    background-color: #292929 !important;
+    color: green;
+  }
+}
+
+#he-net-cert {
+  .image-container {
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      background: green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #53db1d !important;
+}
+
+div.post-content {
+  div {
+    ul > li {
+      color: #2ab80d;
+    }
+  }
+}
