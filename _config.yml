@@ -34,7 +34,7 @@ social:
 # host for serving locally and viewing with my phone
 # host: 0.0.0.0
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
-baseurl: "/"
+
 repository: IotaSpencer/iotaspencer.me
 #   #####                                
 #  #     #  ####   ####  #   ##   #      
@@ -74,11 +74,6 @@ google_analytics_key: UA-46280703-5
 # Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
 yandex_metrica:
 
-# Set this to your disqus shortname to enable comments. Note that the 'comments'
-# setting below must also be true. Individual posts can override 'comments' to
-# disable on a post-by-post basis
-disqus: iotaspencerme
-comments: true
 
 permalink: pretty
 
@@ -113,7 +108,15 @@ exclude:
   - ".sass-cache"
   - "_resume.html"
   - "bin/"
-sass_dir: _sass/
+  - .jekyll-cache
+  - .jekyll-metadata
+  - .DS_Store
+  - node_modules/
+  - package-lock.json
+  - yarn.lock
+  - .venv/
+  - bin/
+  - assets/img/
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
