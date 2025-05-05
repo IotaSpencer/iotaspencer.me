@@ -1,0 +1,13 @@
+title: DNSBL.im API
+description: DNSBL.im's API
+href: /projects/dnsbl.im
+hosted: gitlab
+repo: "https://gitlab.com/Kopiena/DNSBLim/api"
+website: "https://dnsbl.im"
+category: Website
+technology:
+  - name: HTML
+    type: Language
+  - name: REST
+    type: API Framing
+

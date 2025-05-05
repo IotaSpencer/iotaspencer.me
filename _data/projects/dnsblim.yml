@@ -1,0 +1,10 @@
+title: DNSBL.im
+description: DNSBL.im's Site
+href: /projects/dnsbl.im
+hosted: gitlab
+repo: "https://gitlab.com/Kopiena/DNSBLim/api"
+website: "https://dnsbl.im"
+category: Website
+technology:
+  - name: HTML
+    type: Language

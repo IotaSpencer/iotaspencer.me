@@ -1,0 +1,23 @@
+title: Mkmatter
+description: A Gem that helps with content creation on Jekyll Sites
+gem: "https://rubygems.org/gems/mkmatter"
+href: /projects/mkmatter
+repo: "https://github.com/IotaSpencer/mkmatter"
+hosted: github.com
+category: Gem
+technology:
+  - name: Ruby
+    type: Language
+  - name: Thor
+    type: Ruby gem
+  - name: HighLine
+    type: Ruby gem
+links:
+  - title: Thor
+    url: https://rubygems.org/gems/thor
+  - title: HighLine
+    url: https://rubygems.org/gems/highline
+  - title: Guide
+    url: /projects/mkmatter/guide/
+  - title: micro-install
+    url: /projects/micro-install/

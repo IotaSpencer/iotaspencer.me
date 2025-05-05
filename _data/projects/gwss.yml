@@ -1,0 +1,12 @@
+title: GWSS
+description: 
+href: /projects/gwss
+repo: "https://github.com/IotaSpencer/gwss"
+hosted: github.com
+category: Python
+technology:
+  - name: Python
+    type: Language
+  - name: HTTP
+    type: Protocol
+links:

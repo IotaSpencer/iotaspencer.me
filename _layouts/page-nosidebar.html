@@ -1,0 +1,24 @@
+{% include header.html %}
+<div class="wrapper">
+    <div class="content" id="content-div">
+        <div class="container-fluid">
+            <div class="row">
+                {% if page.sidebar == 'false' %}
+                <div class="col-md-12 d-inline-block">
+                {% else %}
+                 <div class="col-md-12 d-inline-block">
+                {% endif %}
+                    <div id="breadcrumbs">
+                        {% include nav-breadcrumbs.html %}
+                    </div>
+
+                    <div class="well px-1 py-1 p-sm-2">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% include footer.html %}

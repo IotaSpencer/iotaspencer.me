@@ -1,0 +1,29 @@
+<nav class="breadcrumbs hidden-sm-down bg-dark">
+   <ol class="breadcrumb list-unstyled bg-dark" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+      {% for crumb in breadcrumbs %}
+         {% if forloop.first %}
+         <li class="breadcrumb-item breadcrumb-item-icon" property="itemListElement" typeof="ListItem">
+            <a property="item" typeof="WebPage" href="{{ crumb.url | relative_url }}">
+               <span class="icon" property="name"><i class="fas fa-home"></i></span>
+               <meta property="position" content="{{ crumb.position }}" />
+            </a>
+         </li>
+         {% continue %}
+      {% endif %}
+      {% if forloop.last %}
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">{{ crumb.title }}</span>
+         <meta property="position" content="{{ crumb.position }}" />
+      </li>
+      {% continue %} {% endif %}
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="{{ crumb.url | relative_url }}">
+            <span property="name">{{ crumb.title }}</span>
+            <meta property="position" content="{{ crumb.position }}" />
+         </a>
+      </li>
+      {% endfor %}
+
+   </ol>
+</nav>

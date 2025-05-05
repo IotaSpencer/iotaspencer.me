@@ -1,0 +1,9 @@
+name: IRCSocket
+priority: 0
+name-selector: irc-socket
+desc: An IRC wrapper on top of TCPSocket
+links:
+  - name: /projects/irc_socket
+    url: /projects/irc_socket
+  - name: Portfolio
+    url: /portfolio/irc_socket/

@@ -1,0 +1,16 @@
+{
+  "short_name": "Iota",
+  "name": "IotaSpencer.me",
+  "gcm_sender_id": "482941778795",
+  "gcm_sender_id_comment": "Do not change the GCM Sender ID",
+  "icons": [{
+    "src": "/iota.png",
+    "type": "image/png",
+    "sizes": "622x622"
+  }],
+  "display": "standalone",
+  "background_color": "#292929",
+  "theme_color": "#292929",
+  "lang": "en-US",
+  "start_url": "/?utm_source=android_homescreen&utm_medium=android&utm_campaign=homescreen"
+}

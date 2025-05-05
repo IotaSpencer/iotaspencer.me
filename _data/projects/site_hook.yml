@@ -1,0 +1,17 @@
+title: Site_Hook
+description: A Gem that watches for git pushes to repositories and builds jekyll sites
+gem: "https://rubygems.org/gems/site_hook"
+href: /projects/site_hook
+hosted: github.com
+repo: "https://git.lasershark.army/IotaSpencer/site_hook"
+category: Gem
+technology:
+  - name: Ruby
+    type: Language
+  - name: Thor
+    type: CLI Framework
+  - name: Grape
+    type: API Framework
+links:
+  - title: Thor
+    url: https://rubygems.org/gems/thor

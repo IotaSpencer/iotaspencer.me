@@ -11,3 +11,14 @@ vendor/
 _dist/
 Gemfile.lock
 .venv/
+_cache/
+_site/
+.idea/
+.vscode/
+vendor/
+.sass-cache/
+.project
+Gemfile.lock
+/.jekyll-cache/
+/bin/**/*.pyc
+_dist/

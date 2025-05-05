@@ -1,0 +1,50 @@
+---
+title: Portfolio
+permalink: /portfolio/index.html
+layout: page-nosidebar
+---
+<div class="card-columns">
+    {% assign projects = site.data.projects | get_projects_from_files | sort:'date' %}
+    {% for project in projects reversed %}
+    <!-- portfolio-item -->
+    <div class="card bg-dark">
+        <div class="card-body">
+            <!-- project title -->
+            <h2 class="card-title">{{ project.title }}</h2>
+            <!-- project title -->
+            <!-- project description -->
+            <p class="card-text">{{ project.description | newline_to_br }}</p>
+            <!-- project description -->
+            <!-- project href -->
+            <div class="pt-2 pb-2">
+                <div class="badge-success badge-pill w-75 text-secondary"><a class="text-dark" href="{{ project.href }}">Project Page</a></div>
+            </div>
+            <!-- project href -->
+        </div>
+        <!-- technology badges -->
+        <ul class="list-group list-group-flush bg-dark">
+            {%- for technology in project.technology -%}
+            <li class="list-group-item bg-dark">
+                <h4>{{ technology.name }}</h4>
+                <span class="badge badge-success badge-pill">{{ technology.type }}</span>
+            </li>
+            {%- endfor -%}
+        </ul>
+        <!-- technology badges -->
+        <!-- project links -->
+        <div class="card-body">
+            {%- if project.links != nil %}
+            <div class="btn-group-vertical">
+            {%- for link in project.links %}
+            <a class="btn btn-dark card-link" href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+            {%- endfor %}
+            </div>
+            {% else %}
+            <span>No links</span>
+            {%- endif -%}
+        </div>
+        <!-- project links -->
+    </div>
+    <!-- portfolio-item -->
+    {%- endfor -%}
+</div>

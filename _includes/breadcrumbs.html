@@ -1,0 +1,14 @@
+{% unless page.hide-breadcrumbs %}
+  <ol class="breadcrumb bg-dark">
+    <li class="breadcrumb-item pl-2 pr-1"><a href="/"><i class="fas fa-home" title="{{site.title}}"></i></a></li>
+    {%- for crumb in breadcrumbs -%}
+      <li class="breadcrumb-item{% if forloop.last %} active {% endif %}">
+        {%- unless forloop.last -%}
+          <a href="{{ crumb.url }}">{{ crumb.title }}</a>
+        {%- else -%}
+          {{ crumb }}
+        {%- endunless -%}
+      </li>
+    {%- endfor -%}
+  </ol>
+{%- endunless -%}

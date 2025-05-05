@@ -1,0 +1,17 @@
+title: unibanner
+description: A simple-ish IRC bot built to ZLine and blacklist unicode spammers
+gem: "https://rubygems.org/gems/unibanner"
+href: /projects/unibanner
+repo: "https://git.lasershark.army/IotaSpencer/unibanner"
+hosted: git.lasershark.army
+category: Gem
+technology:
+  - name: Ruby
+    type: Language
+  - name: Logging
+    type: Gem
+links:
+  - title: Logging
+    url: https://rubygems.org/gems/logging
+  - title: Logging on GitHub
+    url: https://github.com/TwP/logging
