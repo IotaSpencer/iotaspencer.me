@@ -1,6 +1,6 @@
 ---
 title: Resume
-layout: page-nosidebar
+layout: page
 breadcrumb: Resume
 categories:
 - resume
@@ -9,11 +9,11 @@ tags:
 - resume
 - pages
 ---
-
+<link rel="stylesheet" href="{{ '/assets/css/resume.css' | relative_url }}">
 <div id="resume">
-
-  <div class="row d-flex">
-    <div class="col-md-8" id="xp-edu-prohob">
+  <p>{{site.baseurl}}</p>
+  <div class="columns ">
+    <div class="column is-two-thirds is-pulled-left" id="xp-edu-prohob">
       <h1 class="section-header">EXPERIENCE</h1>
       <div class="list-group ml-4" id="xp">
         <div class="list-group-item bg-dark-gray">
@@ -81,7 +81,7 @@ tags:
         </div>
         <div class="list-group-item bg-dark-gray">
           <h3 class="xp-position">Dollar Tree &mdash; Sales Associate</h3>
-          <small class="xp-location">Saratoga Springs, NY</small>
+          <small class="ml-4 xp-location">Saratoga Springs, NY</small>
           <span class="xp-location">&nbsp;|&nbsp;</span>
           <small class="xp-duration">October 2014 &mdash; April 2015</small>
           <p class="xp-desc">Cash Handling, Janitorial</p>
@@ -113,7 +113,7 @@ tags:
         </div>
       </div>-->
     </div>
-    <div class="col-md-4 float-right" id="resume-sidebar">
+    <div class="is-pulled-right" id="resume-sidebar">
       <div class="" id="contact">
         <div class="pb-1 pt-1">
           <h5 class="">CONTACT</h5>
@@ -121,7 +121,7 @@ tags:
             <li class="contact-name">Ken Spencer</li>
             <li class="contact-email">me@iotaspencer.me</li>
             <li class="contact-email">ken.iota.spencer@gmail.com</li>
-            <li class="contact-telephone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            {% comment %}<li class="contact-telephone">1-518-764-5086</li>{% endcomment %}
           </ul>
         </div>
         <div id="xtra-contact-bits">
@@ -157,5 +157,4 @@ tags:
       </div>
     </div>
   </div>
-</div>
 </div>

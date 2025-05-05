@@ -15,6 +15,6 @@ sites:
   - url: "#"
     class: fab fa-discord fa-2x
     extra: IotaSpencer
-  - url: bsky.app/@iotaspencer.me
+  - url: https://bsky.app/@iotaspencer.me
     class: fab fa-bluesky fa-2x
     extra: IotaSpencer on Bsky

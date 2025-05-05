@@ -9,7 +9,7 @@ tags:
 - bot-template
 
 ---
-{% assign projectsdir = site.data.projectsdir | get_projectsdir_from_files | sort: 'priority', 'last' %}
+{% assign projectsdir = site.data.projectsdir | get_projectsdir_from_files %}
 <h1>Projects</h1>
 
 <div class="">

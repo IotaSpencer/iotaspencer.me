@@ -1,15 +1,21 @@
-<footer id="footer-distributed" class="footer-distributed">
-    <div class="container">
-        <div class="footer">
-            <div class="flex-row">
-                <small><p>{{site.author}} &copy; {{ "now" | date: "%Y" }}</p></small>
-            </div>
-            {% include links.html %}
-            <div class="py-3 flex-row">
-                <p>Page last generated at {{ "now" | date: "%Y-%m-%d %H:%M:%S" }}.</p>
-            </div>
-        </div>
-    </div>
+<footer class="footer">
+  <div class="container">
+      {% if site.footer_menu %}
+          <div class="columns is-multiline">
+              {% for item in site.data[site.footer_menu] %}
+                  <div class="column has-text-centered">
+                      <div>
+                          <a href="{{ item.link | relative_url }}" class="link">{{ item.name }}</a>
+                      </div>
+                  </div>
+              {% endfor %}
+          </div>
+      {% endif %}
+
+      {% include follow.html %}
+
+      <div class="content is-small has-text-centered">
+          <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+      </div>
+  </div>
 </footer>
-</body>
-</html>
