@@ -2,47 +2,25 @@ theme: bulma-clean-theme
 
 title: "iotaspencer.me"
 description: "A simple Jekyll site using the Bulma Clean Theme"
+# description: The ramblings of a madman in a mad world
 author: "Ken Spencer"
 email: "me@iotaspencer.me"
-disqus.shortname: "iotaspencerme"
-
+disqus.shortname: "iotaspencerme.disqus.com"
+# name: IotaSpencer
+# year: 2025
+# my_age: 33
+# # Url is currently only used only for the RSS feed in feed.xml
+# url: https://iotaspencer.me
 show_sidebar: true
 sass:
   silence_deprecations: ['import']
   quiet_deps: true
-
-social:
-  github: "https://github.com/IotaSpencer"
-  youtube: "https://www.youtube.com/@iotaspencer"
-  bluesky: "https://bsky.app/profile/iotaspencer.me"
-  mastodon: "https://floss.social/@iotaspencer"
-  
-# Jekyll configuration
-# now built using gogs!
-
-# name: IotaSpencer
-# author: Ken Spencer
-# year: 2025
-# description: The ramblings of a madman in a mad world
-# my_age: 33
-# # Url is currently only used only for the RSS feed in feed.xml
-# url: https://iotaspencer.me
-
-#related_project_keys: ["technology", "gem"]
-# skip_related_projects: true
-
+related_project_keys: ["technology", "gem"]
+skip_related_projects: true
 # host for serving locally and viewing with my phone
 # host: 0.0.0.0
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
-
 repository: IotaSpencer/iotaspencer.me
-#   #####                                
-#  #     #  ####   ####  #   ##   #      
-#  #       #    # #    # #  #  #  #      
-#   #####  #    # #      # #    # #      
-#        # #    # #      # ###### #      
-#  #     # #    # #    # # #    # #      
-#   #####   ####   ####  # #    # ###### 
 share:
   facebook: false
   twitter: true
@@ -56,29 +34,35 @@ social:
   github: IotaSpencer
   gitlab: IotaSpencer
   twitter: Ken_I_Spencer
+  youtube1: "@iotaspencer"
+  youtube2: "@iotaplays"
+  bluesky: "@iotaspencer.me"
   rss: feed.xml
   steam: IotaSpencer
-  tel: ""
+  tel: "14087824682"
+  floss.social: "@iotaspencer"
   discord: "iotaspencer"
   linkedin: ken-iota-spencer
-  stackoverflow: 3095971/iotaspencer
-
-#      #                    
-#     # #              ##
-#    #   #    # ##       # 
-#   #######   ##  #   ####     
-#  #       #  #   #  #   #            
-# #         # #   #  #####            
+  stackoverflow: 3095971/iotaspencer         
 # Google Analytics key, leave blank to ignore
 google_analytics_key: UA-46280703-5
 # Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
 yandex_metrica:
-
-
 permalink: pretty
 
 # Enable for using pages, more details are here: http://jekyllrb.com/docs/pagination/
-paginate: 3
+pagination:
+  enabled: true
+  # The number of posts to show per page
+  per_page: 3
+  permalink: /page/:num/
+  title: ':title | :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -94,29 +78,9 @@ kramdown:
     block:
       line_numbers: true
 timezone: America/New_York
-exclude:
-  - "README.md"
-  - "LICENSE"
-  - "vendor/"
-  - "node_src"
-  - "*.map"
-  - ".gitignore"
-  - ".idea/"
-  - ".vscode/"
-  - "Gemfile*"
-  - "*.gemspec"
-  - ".sass-cache"
-  - "_resume.html"
-  - "bin/"
-  - .jekyll-cache
-  - .jekyll-metadata
-  - .DS_Store
-  - node_modules/
-  - package-lock.json
-  - yarn.lock
-  - .venv/
-  - bin/
-  - assets/img/
+exclude: ["README.md", "LICENSE", "vendor/", "node_src", "*.map", ".gitignore", ".idea/", ".vscode/",
+  "Gemfile*", "*.gemspec", ".sass-cache", "_resume.html", "bin/", ".jekyll-cache", ".jekyll-metadata",
+   ".DS_Store", "node_modules/", "package-lock.json", "yarn.lock", ".venv/", "bin/", "assets/img/"]
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
@@ -126,7 +90,7 @@ plugins:
   - jemoji
   - jekyll-mentions
   - jekyll-include-cache
-  - jekyll-paginate
+  - jekyll-paginate-v2
 #defaults:
 #  -
 #    scope:
