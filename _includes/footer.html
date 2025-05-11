@@ -15,7 +15,13 @@
       {% include follow.html %}
 
       <div class="content is-small has-text-centered">
-          <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+            <p class="has-text-grey">
+                <a href="{{ site.url | relative_url }}">{{ site.title }}</a> &copy; {{ site.time | date: '%Y' }}.
+                <!-- <a href="{{ site.url | relative_url }}/privacy.html">Privacy Policy</a> -->
+                &nbsp;|&nbsp;
+                <!-- <a href="{{ site.url | relative_url }}/terms.html">Terms of Service</a> -->
+                <span>Theme by <a href="https://www.csrhymes.com">C.S. Rhymes</a></span>
+            </p>
       </div>
   </div>
 </footer>
