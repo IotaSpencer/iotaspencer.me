@@ -75,7 +75,7 @@ module Jekyll
       result = total.fdiv(total_possible_matches).round(2)
 
       # Uncomment to see info about the matches for each project
-      puts "Matches between #{project1["title"]} and #{project2["title"]}: #{total} (#{result})"
+      #puts "Matches between #{project1["title"]} and #{project2["title"]}: #{total} (#{result})"
 
       result
     end
@@ -113,16 +113,18 @@ module Jekyll
 
   module ProjectFilter
     def get_projects_from_files(input)
-      projects = []
-      input.each { |project| projects.push(project[1]) }
+      #STDERR.puts input.inspect
+      projects = {}
+      
+      input.each { |project| projects.store(project[0], project[1]) }
       projects
     end
   end
   module ProjectsDirFilter
     def get_projectsdir_from_files(input)
-      $STDERR.puts input.inspect
-      projectsdir = []
-      input.each { |project| projectsdir.push(project[1]) }
+      #STDERR.puts input.inspect
+      projectsdir = {}
+      input.each { |project| projectsdir.merge(project[1]) }
       projectsdir
     end
   end
