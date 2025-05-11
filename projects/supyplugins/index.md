@@ -13,16 +13,14 @@ date: '2018-06-16 15:00:33 -0400'
 ---
 # SupyPlugins
 
-SupyBot & Limnoria are python  based IRC bots used for many different purposes.
+SupyBot & Limnoria are/were python based IRC bots used for many different purposes.
 In the past I've made bots for..
 
-* Opering
-* Services
-* Channel Management
+* chatroom Management
 * Fun APIs
 * Utilities
 * Connectors to other projects
-* IRC File Tailers
+* Sending log file changes to an IRC chatroom
 
 Some plugins are already made, like `OperUp`{:.highlight} a plugin for making a bot `operup`{:.highlight}
 While I can send in Pull Requests, not all projects are still *alive*, so I have to take matters into my own hands

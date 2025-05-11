@@ -1,6 +1,6 @@
-## cloudflare_cli - Interface with the Cloudflare API!
+## clickflare - Interface with the Cloudflare API!
 
-    cloudflare_cli is an interface into the Cloudflare API,
+    clickflare is an interface into the Cloudflare API,
     usage is rate-limited by Cloudflare itself, not the gem.
 
     See https://api.cloudflare.com/#getting-started-requests for information

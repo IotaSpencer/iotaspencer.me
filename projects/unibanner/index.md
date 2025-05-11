@@ -12,7 +12,7 @@ tags:
 kramdown:
   parse_block_html: true
 page_links:
-  GitHub: https://git.lasershark.army/IotaSpencer/unibanner
+  GitHub: https://github.com/IotaSpencer/unibanner
 ---
 
 # unibanner

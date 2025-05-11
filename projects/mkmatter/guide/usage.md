@@ -36,7 +36,7 @@ if you want to use 'micro' the terminal text editor.
 
 ### New (mkmatter new)
 
-##### Post (mkmatter new post)
+##### Post (mkmatter new --type post)
 
 <div class="list-group list-options bg-dark-gray d-flex">
 <div class="list-group-item list-options-item bg-dark-gray">
@@ -46,14 +46,13 @@ if you want to use 'micro' the terminal text editor.
 * `--publish`{:.highlight}
   * Whether to publish the following post.
   * This has no effect if not used with `--file`{:.highlight}
-* `--file`{:.highlight}
+* `--dry-run`{:.highlight}
   * Save the answers to a file named in the format of `YEAR-MONTH-DAY-TITLE.format`{:.highlight}
-* `--draft`{:.highlight}
-  * Save the post in the `_draft`{:.highlight} folder.
+
 
 </div></div>
 
-##### Page (mkmatter new page)
+##### Page (mkmatter new  --type page)
 
 <div class="list-group list-options bg-dark-gray d-flex">
 <div class="list-group-item list-options-item bg-dark-gray">

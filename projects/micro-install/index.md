@@ -22,7 +22,7 @@ page_links:
 
 micro_install is a ruby gem ported from [benweissmann](https://github.com/benweissmann) curlable script hosted at https://getmic.ro, and micro is developed and owned by [@zyedidia](https://github.com/zyedidia)
 
-micro_install is used as an ruby port to benweissmann's [https://getmic.ro](https://getmic.ro) but packaged as a gem.
+micro_install is used as a ruby port to benweissmann's [https://getmic.ro](https://getmic.ro) but packaged as a gem.
 It installs [@zyedidia](https://github.com/zyedidia)'s micro, a terminal text editor.
 The gem itself is also installed when [mkmatter](https://iotaspencer.me/projects/mkmatter) is installed.
 If installed by running `micro-install`{:.highlight} then mkmatter uses `micro`{:.highlight} by default when it asks to open an editor.

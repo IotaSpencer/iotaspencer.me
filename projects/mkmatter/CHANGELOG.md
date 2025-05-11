@@ -1,46 +1,46 @@
 # Change Log
 
-## [v1.0.10](https://github.com/IotaSpencer/jekyllposter/tree/v1.0.10) (2018-01-24)
+## [v1.0.10](https://github.com/IotaSpencer/mkmatter/tree/v1.0.10) (2018-01-24)
 
-[Full Changelog](https://github.com/IotaSpencer/jekyllposter/compare/v1.0.9...v1.0.10)
+[Full Changelog](https://github.com/IotaSpencer/mkmatter/compare/v1.0.9...v1.0.10)
 
-## [v1.0.9](https://github.com/IotaSpencer/jekyllposter/tree/v1.0.9) (2018-01-24)
+## [v1.0.9](https://github.com/IotaSpencer/mkmatter/tree/v1.0.9) (2018-01-24)
 
-[Full Changelog](https://github.com/IotaSpencer/jekyllposter/compare/v1.0.8...v1.0.9)
+[Full Changelog](https://github.com/IotaSpencer/mkmatter/compare/v1.0.8...v1.0.9)
 
-## [v1.0.8](https://github.com/IotaSpencer/jekyllposter/tree/v1.0.8) (2018-01-23)
+## [v1.0.8](https://github.com/IotaSpencer/mkmatter/tree/v1.0.8) (2018-01-23)
 
-[Full Changelog](https://github.com/IotaSpencer/jekyllposter/compare/v1.0.7...v1.0.8)
+[Full Changelog](https://github.com/IotaSpencer/mkmatter/compare/v1.0.7...v1.0.8)
 
-## [v1.0.7](https://github.com/IotaSpencer/jekyllposter/tree/v1.0.7) (2018-01-23)
+## [v1.0.7](https://github.com/IotaSpencer/mkmatter/tree/v1.0.7) (2018-01-23)
 
-[Full Changelog](https://github.com/IotaSpencer/jekyllposter/compare/v1.0.6...v1.0.7)
+[Full Changelog](https://github.com/IotaSpencer/mkmatter/compare/v1.0.6...v1.0.7)
 
-## [v1.0.6](https://github.com/IotaSpencer/jekyllposter/tree/v1.0.6) (2018-01-23)
+## [v1.0.6](https://github.com/IotaSpencer/mkmatter/tree/v1.0.6) (2018-01-23)
 
-[Full Changelog](https://github.com/IotaSpencer/jekyllposter/compare/v1.0.5...v1.0.6)
+[Full Changelog](https://github.com/IotaSpencer/mkmatter/compare/v1.0.5...v1.0.6)
 
-## [v1.0.5](https://github.com/IotaSpencer/jekyllposter/tree/v1.0.5) (2018-01-23)
+## [v1.0.5](https://github.com/IotaSpencer/mkmatter/tree/v1.0.5) (2018-01-23)
 
-[Full Changelog](https://github.com/IotaSpencer/jekyllposter/compare/v1.0.4...v1.0.5)
+[Full Changelog](https://github.com/IotaSpencer/mkmatter/compare/v1.0.4...v1.0.5)
 
-## [v1.0.4](https://github.com/IotaSpencer/jekyllposter/tree/v1.0.4) (2018-01-23)
+## [v1.0.4](https://github.com/IotaSpencer/mkmatter/tree/v1.0.4) (2018-01-23)
 
-[Full Changelog](https://github.com/IotaSpencer/jekyllposter/compare/v1.0.3...v1.0.4)
+[Full Changelog](https://github.com/IotaSpencer/mkmatter/compare/v1.0.3...v1.0.4)
 
-## [v1.0.3](https://github.com/IotaSpencer/jekyllposter/tree/v1.0.3) (2018-01-23)
+## [v1.0.3](https://github.com/IotaSpencer/mkmatter/tree/v1.0.3) (2018-01-23)
 
-[Full Changelog](https://github.com/IotaSpencer/jekyllposter/compare/v1.0.2...v1.0.3)
+[Full Changelog](https://github.com/IotaSpencer/mkmatter/compare/v1.0.2...v1.0.3)
 
-## [v1.0.2](https://github.com/IotaSpencer/jekyllposter/tree/v1.0.2) (2018-01-23)
+## [v1.0.2](https://github.com/IotaSpencer/mkmatter/tree/v1.0.2) (2018-01-23)
 
-[Full Changelog](https://github.com/IotaSpencer/jekyllposter/compare/v1.0.1...v1.0.2)
+[Full Changelog](https://github.com/IotaSpencer/mkmatter/compare/v1.0.1...v1.0.2)
 
-## [v1.0.1](https://github.com/IotaSpencer/jekyllposter/tree/v1.0.1) (2018-01-23)
+## [v1.0.1](https://github.com/IotaSpencer/mkmatter/tree/v1.0.1) (2018-01-23)
 
-[Full Changelog](https://github.com/IotaSpencer/jekyllposter/compare/v1.0.0...v1.0.1)
+[Full Changelog](https://github.com/IotaSpencer/mkmatter/compare/v1.0.0...v1.0.1)
 
-## [v1.0.0](https://github.com/IotaSpencer/jekyllposter/tree/v1.0.0) (2018-01-23)
+## [v1.0.0](https://github.com/IotaSpencer/mkmatter/tree/v1.0.0) (2018-01-23)
 
 * Released
 <!--
