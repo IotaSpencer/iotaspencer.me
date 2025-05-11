@@ -1,0 +1,36 @@
+---
+title: Projects
+subtitle: My Projects
+layout: page
+#showcase: projects_showcase
+show_sidebar: false
+---
+{% assign projects = site.data.projects %}
+{% for project in projects %}
+<div class="card bg-dark text-light">
+    <div class="card-header">
+        <h2>{{ project.title }} &mdash; <span>{{ project.category }}</span></h2>
+    </div>
+
+    <div class="card-body">
+        <h5>About</h5>
+        <div class="card-subtitle">
+            <p>{{ project.description | newline_to_br }}</p>
+        </div>
+
+        <h5>Software/Languages Used</h5>
+        <ul>
+            {% for technology in project.technology %}
+            <li><a>{{ technology.name }}</a> &ndash; <span>{{ technology.type }}</span></li>
+            {% endfor %}
+        </ul>
+        <h5>Related Links</h5>
+        <div class="btn-group bg-dark">
+            {% for link in project.links %}
+            <a class="btn btn-dark" role="button" href="{{ link.url }}">{{link.title}}</a>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endfor %}
