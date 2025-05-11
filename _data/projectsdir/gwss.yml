@@ -1,6 +1,6 @@
 name: GWSS
 name-selector: gwss
-desc: A small cli that downloads 
+desc: A small cli that downloads Web Ready Script files from a CDN and places them in a local directory of your choosing. (Think bootstrap, jquery, etc.)
+project_page: /projects/gwss
+portfolio_page: /portfolio/gwss
 links:
-  - name: Portfolio
-    url: https://iotaspencer.me/portfolio/gwss

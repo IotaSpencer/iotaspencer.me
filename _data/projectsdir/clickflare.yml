@@ -1,0 +1,9 @@
+name: clickflare
+priority: 0
+name-selector: clickflare
+desc: An CLI interface into the cloudflare API
+project_page: /projects/clickflare
+portfolio_page: /portfolio/clickflare
+links:
+  - name: clickflare on PyPI
+    url: https://pypi.org/project/clickflare/

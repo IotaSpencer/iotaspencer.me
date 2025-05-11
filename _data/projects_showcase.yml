@@ -1,0 +1,44 @@
+intro: |-
+  This is a collection of projects that I have worked on, showcasing my skills and interests in various areas of technology. 
+  Each project highlights different aspects of my expertise, from web development to data analysis.
+  I hope you find these projects interesting and informative.
+  If you have any questions or would like to collaborate on a project, feel free to reach out to me.
+  I am always open to new opportunities and challenges.
+  Thank you for visiting my project showcase!
+items:
+  - title: "IotaSpencer"
+    description: |-
+      The ramblings of a madman in a mad world"
+    features:
+      - Jekyll
+      - Bulma Clean Theme
+      - Ruby
+      - Python
+      - Disqus
+    link: "/"
+    link_text: "This Website"
+    image: "/iota.png"
+    image_ratio: is-1by1
+    tags: blog,jekyll,github,git,ruby,html,css
+  - title: "mkmatter"
+    description: |-
+      A gem for creating posts and pages in Jekyll
+      It is a simple and easy to use gem that allows you to create posts and pages in Jekyll with ease.
+    features:
+      - Jekyll
+      - Ruby
+      - YAML
+      - Markdown
+    link: "/projects/mkmatter"
+    link_text: "mkmatter"
+    tags: jekyll,github,git,ruby,html,css
+  - title: "clickflare"
+    description: |-
+      A python app that allows you to utilize the Cloudflare API
+    features:
+      - Python
+      - Cloudflare API
+      - Click (A command line interface package)
+      - Cloudflare Package (Interface to the Cloudflare API)
+    link: "/projects/clickflare"
+    tags: python,github,git,cloudflare
