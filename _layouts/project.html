@@ -1,50 +1,30 @@
-<div class="wrapper">
-    <div class="content" id="content-div">
-        <div class="container-fluid">
-            <div class="row">
-                {% if page.sidebar == 'false' %}
-                <div class="col-md-12 d-inline-block">
-                    {% else %}
-                    <div class="col-md-12 d-inline-block">
-                        {% endif %}
-                        <div id="breadcrumbs">
-                            {% include nav-breadcrumbs.html %}
-                        </div>
+---
+layout: page
+---
 
-                        <div class="well px-1 py-1 p-sm-2">
-                            <div class="card bg-dark text-light">
-                                <div class="card-header">
-                                    <h2>{{ page.title }} &mdash; <span>{{ page.category }}</span></h2>
-                                </div>
+<div class="card bg-dark text-light">
+    <div class="card-header">
+        <h2>{{ page.title }} &mdash; <span>{{ page.category }}</span></h2>
+    </div>
 
-                                <div class="card-body">
-                                    <h5>About</h5>
-                                    <div class="card-subtitle">
-                                        <p>{{ page.description | newline_to_br }}</p>
-                                    </div>
-
-                                    <h5>Software/Languages Used</h5>
-                                    <ul>
-                                        {% for technology in page.technology %}
-                                        <li><a>{{ technology.name }}</a> &ndash; <span>{{ technology.type }}</span></li>
-                                        {% endfor %}
-                                    </ul>
-                                    <h5>Related Links</h5>
-                                    <div class="btn-group bg-dark">
-                                        {% for link in page.links %}
-                                        <a class="btn btn-dark" role="button" href="{{ link.url }}">{{link.title}}</a>
-
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="card-body">
+        <h5>About</h5>
+        <div class="card-subtitle">
+            <p>{{ page.description | newline_to_br }}</p>
         </div>
 
+        <h5>Software/Languages Used</h5>
+        <ul>
+            {% for technology in page.technology %}
+            <li><a>{{ technology.name }}</a> &ndash; <span>{{ technology.type }}</span></li>
+            {% endfor %}
+        </ul>
+        <h5>Related Links</h5>
+        <div class="btn-group bg-dark">
+            {% for link in page.links %}
+            <a class="btn btn-dark" role="button" href="{{ link.url }}">{{link.title}}</a>
 
+            {% endfor %}
+        </div>
     </div>
 </div>
-{% include footer.html %}
