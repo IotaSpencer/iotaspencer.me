@@ -1,0 +1,25 @@
+$mqIterations: 19;
+@mixin fontResize($iterations)
+{
+  $i: 1;
+  @while $i <= $iterations
+  {
+    @media all and (min-width: 100px * $i) {
+      .resize-to-fit { font-size:0.1em * $i; }
+    }
+    $i: $i + 1;
+  }
+}
+@include fontResize($mqIterations);
+
+@mixin containerfontResize($iterations)
+{
+  $i: 1;
+  @while $i <= $iterations
+  {
+    @container all and (min-width: 100px * $i) {
+      .resize-to-fit { font-size:0.1em * $i; }
+    }
+    $i: $i + 1;
+  }
+}
