@@ -50,6 +50,9 @@ google_analytics_key: UA-46280703-5
 yandex_metrica:
 permalink: pretty
 
+autopages:
+  enabled: true
+
 # Enable for using pages, more details are here: http://jekyllrb.com/docs/pagination/
 pagination:
   enabled: true
@@ -79,8 +82,8 @@ kramdown:
       line_numbers: true
 timezone: America/New_York
 exclude: ["README.md", "LICENSE", "vendor/", "node_src", "*.map", ".gitignore", ".idea/", ".vscode/",
-  "Gemfile*", "*.gemspec", ".sass-cache", "_resume.html", "bin/", ".jekyll-cache", ".jekyll-metadata",
-   ".DS_Store", "node_modules/", "package-lock.json", "yarn.lock", ".venv/", "bin/", "assets/img/"]
+  "Gemfile*", "*.gemspec", ".sass-cache", "_resume.html", ".jekyll-cache", ".jekyll-metadata",
+   ".DS_Store", "node_modules/", "package-lock.json", "yarn.lock", ".venv/", "bin/", "_old_dirs/"]
 plugins:
   - jekyll-feed
   - jekyll-redirect-from

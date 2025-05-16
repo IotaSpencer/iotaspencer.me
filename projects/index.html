@@ -67,11 +67,17 @@ tags:
                                 <p>{{ project2.desc }}</p>
                                 <a class="button is-size-5" href="{{project2.project_page}}">Project Page</a>
                                 <a class="button is-size-5" href="{{project2.portfolio_page}}">Portfolio Page</a>
-                                <h4>Links</h4>
+                                <h4 class="pl-2 pt-2">Links</h4>
                                 <div class="buttons">
-                                {% for link in project2.links %}
-                                <a class="button" href="{{ link.url }}">{{ link.name }}</a>
-                                {% endfor %}
+                                
+                                {% assign links = project2.links %}
+                                {% if links == false %}
+                                    <a class="button is-size-5" disabled>No links available</p>
+                                {% else %}
+                                    {% for link in links %}
+                                    <a class="button" href="{{ link.url }}">{{ link.name }}</a>
+                                    {% endfor %}
+                                {% endif %}
                                 </div>
                             </div>
                         </div>

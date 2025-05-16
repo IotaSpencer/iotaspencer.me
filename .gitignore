@@ -22,4 +22,4 @@ Gemfile.lock
 /.jekyll-cache/
 /bin/**/*.pyc
 _dist/
-/bin/__pycache__/
+/bin/__pycache__/*
