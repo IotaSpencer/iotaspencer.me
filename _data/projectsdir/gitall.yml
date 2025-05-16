@@ -1,6 +1,6 @@
 name: GitAll
 name-selector: gitall
-desc: A Git Service Webhook that posts to IRC
+desc: A Git Service Webhook that posts to IRC <br/><br/> Now defunct
 project_page: /projects/gitall
 portfolio_page: /portfolio/gitall
-links:
+links: false

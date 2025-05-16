@@ -2,7 +2,7 @@ title: irc_socket
 description: An IRC wrapper on top of TCPSocket
 gem: "https://rubygems.org/gems/irc_socket"
 href: /projects/irc_socket
-repo: "https://git.lasershark.army/IotaSpencer/irc_socket"
+repo: "https://github.com/IotaSpencer/irc_socket"
 hosted: git.lasershark.army
 category: Gem
 technology:
@@ -10,6 +10,4 @@ technology:
     type: Language
   - name: Raw Sockets
     type: TCP
-links:
-  - title: Ruby
-    url: https://ruby-lang.org/
+links: false

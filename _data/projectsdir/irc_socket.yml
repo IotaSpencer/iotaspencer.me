@@ -4,4 +4,4 @@ name-selector: irc-socket
 desc: An IRC wrapper on top of TCPSocket
 project_page: /projects/irc_socket
 portfolio_page: /portfolio/irc_socket
-links:
+links: false

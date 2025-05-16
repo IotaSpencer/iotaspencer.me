@@ -3,7 +3,7 @@ description: A Gem that watches for git pushes to repositories and builds jekyll
 gem: "https://rubygems.org/gems/site_hook"
 href: /projects/site_hook
 hosted: github.com
-repo: "https://git.lasershark.army/IotaSpencer/site_hook"
+repo: "https://github.com/IotaSpencer/site_hook"
 category: Gem
 technology:
   - name: Ruby

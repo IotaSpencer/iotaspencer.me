@@ -2,14 +2,12 @@ name: MicroInstall
 priority: 0
 name-selector: micro-install
 desc: An install script for the terminal text editor 'micro'
+project_page: /projects/micro-install
+portfolio_page: /portfolio/micro-install
 links:
-  - name: /projects/micro-install/
-    url: /projects/micro-install/
   - name: RubyGems.org
     url: https://rubygems.org/gems/micro-install
-  - name: zyedidya/micro on GitHub
+  - name: micro on GitHub
     url: https://github.com/zyedidya/micro
-  - name: benweissmann/getmic.ro - The inspiration behind micro_install
+  - name: "getmic.ro <span class='pl-2'><i class='fa-brands fa-github'></i></span>"
     url: https://github.com/benweissmann/getmic.ro
-  - name: https://getmic.ro - the live version of ben's repo
-    url: https://getmic.ro

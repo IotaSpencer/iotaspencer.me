@@ -1,0 +1,17 @@
+title: cloudflare_cli
+description: A Gem interfaces with the Cloudflare API
+gem: "https://pypi.org/clickflare
+href: /projects/clickflare
+repo: "https://github.com/IotaSpencer/clickflare"
+hosted: github.com
+category: Gem
+technology:
+  - name: Python
+    type: language
+  - name: click
+    type: CLI library
+  - name: cloudflare
+    type: API library
+links:
+  - title: on PyPI
+    url: https://pypi.org/project/clickflare/

@@ -1,5 +1,6 @@
 title: GitAll
-description: A Git service webhook
+description: A Git service webhook (now defunct) that posts to IRC
+name-selector: gitall
 gem: "https://rubygems.org/gems/gitall"
 href: /projects/gitall
 repo: "https://gitlab.com/gitall/gitall"
@@ -19,7 +20,3 @@ technology:
 links:
   - title: Sinatra
     url: https://sinatrarb.com
-  - title: GitAll on freenode
-    url: "ircs://chat.freenode.net/#gitall,#gitall-dev"
-  - title: GitAll on EBP Net
-    url: "ircs://irc.electrocode.net/#gitall,#gitall-dev"

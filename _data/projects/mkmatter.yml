@@ -12,6 +12,10 @@ technology:
     type: Ruby gem
   - name: HighLine
     type: Ruby gem
+  - name: YAML
+    type: Data Format
+  - name: Jekyll
+    type: Static Site Generator
 links:
   - title: Thor
     url: https://rubygems.org/gems/thor

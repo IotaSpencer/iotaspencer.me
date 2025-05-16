@@ -1,6 +1,6 @@
 name: IRC-Source
 name-selector: ircsource
-desc: An IRC Search Engine</dd>
-links:
-  - name: /projects/irc-source/
-    url: /projects/irc-source/
+desc: An IRC Search Engine <br/><br/> Now defunct
+project_page: /projects/irc-source
+portfolio_page: /portfolio/irc-source
+links: false

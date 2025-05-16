@@ -2,8 +2,8 @@ title: unibanner
 description: A simple-ish IRC bot built to ZLine and blacklist unicode spammers
 gem: "https://rubygems.org/gems/unibanner"
 href: /projects/unibanner
-repo: "https://git.lasershark.army/IotaSpencer/unibanner"
-hosted: git.lasershark.army
+repo: "https://github.com/IotaSpencer/unibanner"
+hosted: GitHub
 category: Gem
 technology:
   - name: Ruby

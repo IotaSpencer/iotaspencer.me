@@ -1,6 +1,5 @@
 title: IRC-Source
 description: An IRC Search Engine
-
 href: /projects/irc-source
 technology:
   - name: HTML
@@ -11,6 +10,4 @@ technology:
     type: Language
   - name: JavaScript
     type: Language
-links:
-  - title: IRC-Source on EBP Net
-    url: "ircs://irc.buddy.im:6697/IRC-Source"
+links: false

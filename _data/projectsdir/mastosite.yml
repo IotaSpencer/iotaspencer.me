@@ -1,8 +1,0 @@
-name: Mastosite
-name-selector: mastosite
-desc: A site for my mastodon instance
-links:
-  - name: GitHub
-    url: https://git.lasershark.army/IotaSpencer/mastosite
-  - name: Portfolio
-    url: https://iotaspencer.me/portfolio/mastosite

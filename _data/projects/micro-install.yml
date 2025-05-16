@@ -10,6 +10,4 @@ category: Gem
 technology:
   - name: Ruby
     type: Language
-links:
-  - title: micro-install on RubyGems.org
-    url: https://rubygems.org/gems/micro_install
+links: false

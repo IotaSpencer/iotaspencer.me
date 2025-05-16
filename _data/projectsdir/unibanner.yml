@@ -1,9 +1,7 @@
-name: Unibanner / Unicode Banner
+name: Unibanner 
 priority: 0
 name-selector: unibanner
-desc: A simple-ish IRC bot that bans unicode spamming bots
-links:
-  - name: /projects/unibanner
-    url: /projects/unibanner
-  - name: Portfolio
-    url: /portfolio/unibanner/
+desc: A simple-ish IRC bot that bans unicode spamming bots <br/><br/> Now defunct
+portfolio_page: /portfolio/unibanner/
+project_page: /projects/unibanner
+links: false

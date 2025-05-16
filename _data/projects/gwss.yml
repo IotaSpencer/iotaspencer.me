@@ -9,4 +9,4 @@ technology:
     type: Language
   - name: HTTP
     type: Protocol
-links:
+links: false
