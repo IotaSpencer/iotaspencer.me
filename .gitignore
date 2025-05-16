@@ -23,3 +23,4 @@ Gemfile.lock
 /bin/**/*.pyc
 _dist/
 /bin/__pycache__/*
+bin/__pycache__/increment_file.cpython-*.pyc
