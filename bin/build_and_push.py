@@ -75,12 +75,16 @@ def push():
                 "key_filename": "/home/ken/.ssh/id_rsa",
             }).run('ls -l /var/www')
   logger.info('ls complete')
+  
+  
 def build_n_tar():
+  logger.info("Starting 'bundle install'")
   install = subprocess.run(["bundle", "install"], check=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
   for line in install.stdout.decode().splitlines():
     logger.info("        %s", line)
   logger.info("'bundle install' complete")
   # logger.info(install.stdout)
+  logger.info("Starting 'bundle exec jekyll build'")
   os.environ['JEKYLL_ENV'] = 'production'
   build = subprocess.run(["bundle", "exec", "jekyll", "build"], env= os.environ,  check=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
   for line in build.stdout.decode().splitlines():
