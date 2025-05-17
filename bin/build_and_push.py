@@ -1,4 +1,4 @@
-#! /home/ken/repos/is.me-redux/.venv/bin/python3
+#! /home/ken/repos/is.me-redux/.venv/bin/python3 -B
 
 # import os
 import subprocess
