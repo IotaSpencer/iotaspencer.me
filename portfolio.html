@@ -3,48 +3,53 @@ title: Portfolio
 permalink: /portfolio/index.html
 layout: page
 ---
-<div class="card-columns">
-    {% assign projects = site.data.projects | get_projects_from_files %}
-    {% for project in projects reversed %}
-    <!-- portfolio-item -->
-    <div class="card bg-dark">
-        <div class="card-body">
-            <!-- project title -->
-            <h2 class="card-title">{{ project.title }}</h2>
-            <!-- project title -->
-            <!-- project description -->
-            <p class="card-text">{{ project.description | newline_to_br }}</p>
-            <!-- project description -->
-            <!-- project href -->
-            <div class="pt-2 pb-2">
-                <div class="tag-success tag-rounded w-75 text-secondary"><a class="text-dark" href="{{ project.href }}">Project Page</a></div>
+<div class="container">
+    <div class="grid ">
+        {% assign projects = site.data.projects %}
+        {% for project in projects %}
+            <div class="cell panel is-col-span-2 p-2">
+            {% assign project_dict = project[1] %}
+            <!-- portfolio-item -->
+                <div class="card p-auto m-auto bg-dark">
+                    <div class="card-body">
+                        <!-- project title -->
+                        <h2 class="card-title">{{ project_dict.title }}</h2>
+                        <!-- project title -->
+                        <!-- project description -->
+                        <p class="card-text">{{ project_dict.description | newline_to_br }}</p>
+                        <!-- project description -->
+                        <!-- project href -->
+                        <div class="pt-2 pb-2">
+                            <div class="tag is-success is-rounded w-75 text-secondary"><a class="text-dark" href="{{ project_dict.href }}">Project Page</a></div>
+                        </div>
+                        <!-- project href -->
+                    </div>
+                    <!-- technology badges -->
+                    <ul class="list-group list-group-flush bg-dark">
+                        {%- for technology in project_dict.technology -%}
+                        <li class="list-group-item bg-dark">
+                            <h4>{{ technology.name }}</h4>
+                            <span class="tag is-success is-rounded">{{ technology.type }}</span>
+                        </li>
+                        {%- endfor -%}
+                    </ul>
+                    <!-- technology badges -->
+                    <!-- project links -->
+                    <div class="card-body">
+                        {%- if project_dict.links != nil %}
+                            <div class="buttons">
+                            {%- for link in project_dict.links %}
+                                <a class="button card-link" href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+                            {%- endfor %}
+                            </div>
+                        {% else %}
+                            <span>No links</span>
+                        {%- endif -%}
+                    </div>
+                    <!-- project links -->
+                </div>
             </div>
-            <!-- project href -->
-        </div>
-        <!-- technology badges -->
-        <ul class="list-group list-group-flush bg-dark">
-            {%- for technology in project.technology -%}
-            <li class="list-group-item bg-dark">
-                <h4>{{ technology.name }}</h4>
-                <span class="badge badge-success badge-pill">{{ technology.type }}</span>
-            </li>
-            {%- endfor -%}
-        </ul>
-        <!-- technology badges -->
-        <!-- project links -->
-        <div class="card-body">
-            {%- if project.links != nil %}
-            <div class="btn-group-vertical">
-            {%- for link in project.links %}
-            <a class="btn btn-dark card-link" href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
-            {%- endfor %}
-            </div>
-            {% else %}
-            <span>No links</span>
-            {%- endif -%}
-        </div>
-        <!-- project links -->
+        <!-- portfolio-item -->
+        {%- endfor -%}
     </div>
-    <!-- portfolio-item -->
-    {%- endfor -%}
 </div>
