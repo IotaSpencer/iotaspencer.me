@@ -4,6 +4,9 @@
   link: /blog/
 - name: Projects
   link: /projects/
+  dropdown:
+    - name: Showcase
+      link: /projects/showcase/
 - name: Portfolio
   link: /portfolio/
 - name: Contact
