@@ -72,7 +72,7 @@ sites:
     html: false
     order: 1
   -
-    title: Join iota#0001 on Discord
+    title: Join iotaspencer on Discord
     service: discord
     text: Discord
     href:
@@ -109,8 +109,13 @@ sites:
     fa-icon:
     data:
     image:
-      path: /assets/images/vultr/logo_v_ondark.svg
-      class:
+      if_dark_mode:
+        path: /assets/images/vultr/logo_v_ondark.svg
+        class:
+      if_light_mode:
+        path: /assets/images/vultr/logo_v_onwhite.svg
+        class:
+      path: /assets/images/vultr/logo_v_onblue.svg
     image-size:
       height: 32px
       width: 32px
