@@ -6,10 +6,11 @@
 
 
         {%- for account in site.data.links.sites -%}
+        <div class="col {% if account.order %}{{ account.order }}{% endif %}">
         <li class="d-md-inline-block bg-darker nav-link social-button-{{- account.service }} px-1 {% if account.order %} order-{{- account.order -}}{%- endif -%}">
 
             <a id="social-button-{{ account.service }}"
-               class="btn btn-dark {%- if account.order -%} order-{{- account.order -}}{%- endif -%}"
+               class="button {%- if account.order -%}order-{{- account.order -}}{%- endif -%}"
                title="{{- account.title -}}" href="{{- account.href -}}" target="_blank"
                {%- if account.style -%}style="{{account.style}}"
                {%- endif -%}{%- if account.data -%}{{- account.data -}}{%- endif -%}>
@@ -17,8 +18,21 @@
                 <i class="{{ account.fa-icon }}"></i>
                 {%- endif -%}
                 {%- if account.image -%}
-                <img class="{{- account.image.class -}}" src="{{- account.image.path -}}"
-                     style="height:{{account.image-size.height}}; width:{{account.image-size.width}};"/>
+                  {{account.image}}
+                  {% if account.image.if_dark_mode %}
+                    <picture>
+                      <source srcset="{{- account.image.if_dark_mode.path -}}" media="(prefers-color-scheme: dark)">
+                    
+                    </picture>
+                  {% elsif account.image.if_light_mode %}
+                    <picture>
+                      <source srcset="{{- account.image.if_light_mode.path -}}" media="(prefers-color-scheme: light)">
+                      
+                    </picture>
+                  {% else %}
+                  <img class="{{- account.image.class -}}" src="{{- account.image.path -}}"
+                      style="height:{{account.image-size.height}}; width:{{account.image-size.width}};"/>
+                  {% endif %}
                 {%- endif -%}
                 {%- if account.html -%}
                 {{- account.html -}}
@@ -33,6 +47,7 @@
                 {%- endif -%}
             </a>
         </li>
+        </div>
         {%- endfor -%}
     </ul>
 </div>
