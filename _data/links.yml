@@ -91,7 +91,7 @@ sites:
     service: stackoverflow
     text: <abbr title="StackOverflow">SO</abbr>
     href: https://stackoverflow.com/users/3095971/iotaspencer
-    style: color:white;
+    style: color:orange;
     fa-icon: fab fa-stack-overflow fa-2x
     #image: /path/to/image
     #image-size:
