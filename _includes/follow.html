@@ -1,4 +1,59 @@
 <!-- <link rel="stylesheet" href="{{ '/assets/css/links.css' | relative_url }}"> -->
+<style>
+  
+.order-first {
+  order: -1 !important;
+}
+
+.order-0 {
+  order: 0 !important;
+}
+
+.order-1 {
+  order: 1 !important;
+}
+
+.order-2 {
+  order: 2 !important;
+}
+
+.order-3 {
+  order: 3 !important;
+}
+
+.order-4 {
+  order: 4 !important;
+}
+
+.order-5 {
+  order: 5 !important;
+}
+.order-6 {
+  order: 6 !important;
+}
+.order-7 {
+  order: 7 !important;
+}
+.order-8 {
+  order: 8 !important;
+}
+.order-9 {
+  order: 9 !important;
+}
+.order-10 {
+  order: 10 !important;
+}
+.order-11 {
+  order: 11 !important;
+}
+.order-12 {
+  order: 12 !important;
+}
+
+.order-last {
+  order: 99 !important;
+}
+</style>
 <div class="container">
   {% capture total_links %}{{ site.data.links.sites | size }}{% endcapture %}
   {% capture links_rows %}{{ total_links | divided_by: 5 }}{% endcapture %}
@@ -6,9 +61,10 @@
 
 
       {%- for account in site.data.links.sites -%}
-        <a href="{{ account.href }}" class="button is-medium{%- if account.class -%}
+        <div class="col {% if account.order %}order-{{ account.order }}{% endif %}">
+        <a href="{{ account.href }}" class="button is-medium {% if account.class -%}
             {{account.class + ' '}}
-          {% endif %}{%- if account.order -%} order-{{ account.order}}{% endif %}" id="social-button-{{ account.service }}"
+          {% endif %} {% if account.order -%} order-{{ account.order}}{% endif %}" id="social-button-{{ account.service }}"
            title="{{- account.title -}}"
            target="_blank"
            {%- if account.style -%}style="{{account.style}}"{%- endif -%}
@@ -20,9 +76,19 @@
             <i class="{{ account.fa-icon }}"></i>
             {%- endif -%}
             {%- if account.image -%}
-            <img class="{{- account.image.class -}}" src="{{- account.image.path -}}"
-                 style="height:{{account.image-size.height}}; width:{{account.image-size.width}};"/>
-            {%- endif -%}
+                  {% if account.image.if_dark_mode or account.image.if_light_mode %}
+                    <picture>
+                      <source srcset="{{ account.image.if_dark_mode.path }}" media="(prefers-color-scheme: dark)">
+                      <source srcset="{{ account.image.if_light_mode.path }}" media="(prefers-color-scheme: light)">
+                      <img class="{{- account.image.class -}}" src="{{- account.image.path -}}"
+                      style="height:{{account.image-size.height}}; width:{{account.image-size.width}};"/>
+                    </picture>
+                    
+                  {% else %}
+                  <img class="{{- account.image.class -}}" src="{{- account.image.path -}}"
+                      style="height:{{account.image-size.height}}; width:{{account.image-size.width}};"/>
+                  {% endif %}
+                {%- endif -%}
             {%- if account.html -%}
             {{- account.html -}}
             {%- endif -%}
@@ -37,6 +103,7 @@
             <span class="is-sr-only">{{ account.title }}</span>
           </span>
         </a>
+        </div>
 {% comment %}
       <!-- <li class="d-md-inline-block bg-darker nav-link social-button-{{- account.service }} px-1 {% if account.order %} order-{{- account.order -}}{%- endif -%}">
 
