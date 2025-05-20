@@ -8,7 +8,9 @@ intro: |-
 items:
   - title: "IotaSpencer"
     description: |-
-      The ramblings of a madman in a mad world"
+      The ramblings of a madman in a mad world
+      Here's how much time I spent on this project(with Wakatime enabled):
+      <a href="https://wakatime.com/badge/user/5ce38313-6fca-4c1e-b156-14447557e40f/project/abdea7f0-d121-4550-92cf-2887855a3ca8"><img src="https://wakatime.com/badge/user/5ce38313-6fca-4c1e-b156-14447557e40f/project/abdea7f0-d121-4550-92cf-2887855a3ca8.svg" alt="wakatime"></a>
     features:
       - Jekyll
       - Bulma Clean Theme
