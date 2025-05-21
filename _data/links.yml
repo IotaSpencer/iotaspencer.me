@@ -2,10 +2,10 @@ settings:
   text: true
 sites:
   # - # Twitter
-  #   title: Follow @iotaspencer on Twitter
+  #   title: Follow @KenISpencer on Twitter
   #   text: Twitter
   #   service: twitter
-  #   href: https://twitter.com/@iotaspencer
+  #   href: https://twitter.com/@KenISpencer
   #   style: "color:#1da1f2;"
   #   fa-icon: fab fa-twitter fa-2x
   #   #image: /path/to/image
@@ -47,7 +47,7 @@ sites:
   #   title: Call or Text Iota
   #   text: Tel
   #   service: tel
-  #   href: tel:+18023274682
+  #   href: tel:+14087824682
   #   style: "color:green;"
   #   fa-icon: fas fa-phone-square fa-2x
   #   #image: /path/to/image
