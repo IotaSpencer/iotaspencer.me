@@ -2,7 +2,6 @@ source "https://rubygems.org"
 gem "bulma-clean-theme"
 gem 'jekyll', '4.4.1'
 gem 'logger'
-source 'https://rubygems.org'
 gem 'jekyll-feed'
 gem 'jekyll-redirect-from'
 gem 'jekyll-seo-tag'
