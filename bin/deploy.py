@@ -1,4 +1,4 @@
-#! /home/ken/repos/is.me-redux/.venv/bin/python3 -B
+#! /home/ken/repos/iotaspencer.me/.venv/bin/python3 -B
 
 # import os
 import subprocess
@@ -7,8 +7,10 @@ from pysftp import Connection as pConnection
 from fabric import Connection as fConnection
 import increment_file
 import os
-
+from pathlib import Path
+import click
 import logging
+
 def remove_non_needed(record):
   if record.name == "paramiko.transport" and record.levelname == 'DEBUG':
     return False
@@ -27,18 +29,6 @@ logger = logging.getLogger("b&p")
 logger.addFilter(remove_non_needed)
 logging.basicConfig(level=logging.DEBUG, handlers=[handler], format='{asctime} {name} {levelname:8s} {message}', style='{', datefmt='%Y-%m-%d %H:%M:%S')
 
-def main():
-  logger.info("Logging Started")
-  logger.info("Starting build()")
-  build_n_tar()
-  logger.info("Build complete")
-  logger.info("Starting push() & checking for uname and git")
-  push()
-  logger.info("Push complete")
-  logger.info("Extraction started")
-  extract()
-  logger.info("Extraction complete")
-  
 def extract():
   # logger.info("Checking if tar runs")
   # tar = fConnection(host='spidey', user='root', connect_kwargs={
@@ -98,7 +88,39 @@ def build_n_tar():
     logger.info("        %s", line)
   logger.info("tar complete")
 
+@click.group()
+def cli():
+  """
+  Group for build and push commands.
+  """
+  pass
+@cli.command()
+def btp():
+  """
+  Build, tar, and push the site to the remote server.
+  """
+  logger.info("Starting btp()")
+  build_n_tar()
+  logger.info("Build complete")
+  push()
+  logger.info("Push complete")
+  extract()
+
+@cli.command()
+def clear():
+  """
+  Clear the _dist directory.
+  """
+  logger.info("Starting clear()")
+  dist = Path("_dist")
+  for child in dist.iterdir():
+    if child.is_file() and child.name.startswith("site_") and child.name.endswith(".tar.gz"):
+      logger.info(f"        Removing {child}")
+      child.unlink() 
+  glob = "_dist/site_*.tar.gz"
+  logger.info(f"        Removing {dist}")
   
+  logger.info("clear_dist complete")
 if __name__ == '__main__':
-  main()
+  cli()
   logger.info("Build&Push complete")
