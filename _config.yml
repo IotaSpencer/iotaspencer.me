@@ -5,20 +5,38 @@ description: "A simple Jekyll site using the Bulma Clean Theme"
 # description: The ramblings of a madman in a mad world
 author: "Ken Spencer"
 email: "me@iotaspencer.me"
-disqus.shortname: "iotaspencerme.disqus.com"
+disqus:
+  shortname: "iotaspencerme"
+feed: 
+  tags: true
+  categories:
+    - "technology"
+    - "gem"
+    - 'ubuntu'
+    - 'updates'
+    - 'linux'
+    - 'programming'
+    - 'python'
+    - 'ruby'
+    - 'jekyll'
+    - 'javascript'
+    - 'html'
+    - 'css'
+    - 'web'
+    - 'misc'
+  path: /feed.xml
 # name: IotaSpencer
 # year: 2025
 # my_age: 33
 # # Url is currently only used only for the RSS feed in feed.xml
-# url: https://iotaspencer.me
+url: https://iotaspencer.me
 show_sidebar: true
 sass:
   silence_deprecations: ['import']
   quiet_deps: true
 related_project_keys: ["technology", "gem"]
 skip_related_projects: true
-# host for serving locally and viewing with my phone
-# host: 0.0.0.0
+
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 repository: IotaSpencer/iotaspencer.me
 share:
@@ -45,7 +63,8 @@ social:
   linkedin: ken-iota-spencer
   stackoverflow: 3095971/iotaspencer         
 # Google Analytics key, leave blank to ignore
-google_analytics_key: UA-46280703-5
+
+google_analytics: "G-WPXPG4QVW6"
 # Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
 yandex_metrica:
 permalink: pretty
