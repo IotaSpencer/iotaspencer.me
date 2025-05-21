@@ -19,7 +19,9 @@ keywords:
 - jekyll ruby
 - jekyll framework
 - github pages
-description: Jekyll is a blogging framework that scores high on my board.
+summary: |-
+  Jekyll is a blogging framework that scores high on my board.
+
 ---
 ## About Jekyll
 

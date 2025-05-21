@@ -15,6 +15,10 @@ modified:
     reason: "Fixed a missing comma"
   - datetime: "2025-04-26 12:06:00 -0400"
     reason: Not all Autistics have an affinity for tech.
+summary: |+
+  April 1st to 7th is Autism Awareness Week.
+  Here's some pointers.
+
 ---
 <h2><i class="fas fa-puzzle-piece" aria-hidden="true"></i> What?</h2>
 April 1st-7th is Autism Awareness Week.

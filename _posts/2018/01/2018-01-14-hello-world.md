@@ -6,7 +6,8 @@ tags:
   - first-post
 categories:
   - posts
-description: First post on jekyll! .. also I have my own site now!
+description: &summary First post on jekyll! .. also I have my own site now!
+summary: *summary
 date: 2018-01-14 20:00:00
 ---
 
