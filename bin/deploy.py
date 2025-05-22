@@ -67,19 +67,22 @@ def push():
   logger.info('ls complete')
   
   
-def build_n_tar():
+def build_n_tar(build_args):
+  build_command = ["bundle", "exec", "jekyll", "build"]
+  if len(build_args) > 0:
+    build_command.extend(build_args)
   logger.info("Starting 'bundle install'")
   install = subprocess.run(["bundle", "install"], check=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
   for line in install.stdout.decode().splitlines():
     logger.info("        %s", line)
   logger.info("'bundle install' complete")
   # logger.info(install.stdout)
-  logger.info("Starting 'bundle exec jekyll build'")
+  logger.info(f"Starting '{build_command}'")
   os.environ['JEKYLL_ENV'] = 'production'
-  build = subprocess.run(["bundle", "exec", "jekyll", "build"], env= os.environ,  check=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+  build = subprocess.run(build_command, env=os.environ,  check=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
   for line in build.stdout.decode().splitlines():
     logger.info("        %s", line)
-  logger.info("'bundle exec jekyll build' complete")
+  logger.info(f"'{build_command}' complete")
   logger.info("Starting tar")
   filename = increment_file.get_next_filename("_dist/site_{}.tar.gz")
   logger.info(f"        Creating {filename}")
@@ -94,13 +97,14 @@ def cli():
   Group for build and push commands.
   """
   pass
-@cli.command()
-def btp():
+@cli.command(context_settings=dict(ignore_unknown_options=True, allow_extra_args=True, allow_interspersed_args=False))
+@click.argument('build_args', nargs=-1, type=click.UNPROCESSED)
+def btp(build_args):
   """
   Build, tar, and push the site to the remote server.
   """
   logger.info("Starting btp()")
-  build_n_tar()
+  build_n_tar(build_args)
   logger.info("Build complete")
   push()
   logger.info("Push complete")
