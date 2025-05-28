@@ -17,7 +17,7 @@
 IRC
 </a>
 </div> -->
-<div class="container">
+<div class="bulma-container">
 <i class="fas fa-key fa-2x"></i>
 <a href="/gnupg">
 GNUPG Key
