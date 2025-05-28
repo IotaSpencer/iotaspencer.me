@@ -3,24 +3,24 @@ title: Portfolio
 permalink: /portfolio/index.html
 layout: page
 ---
-<div class="container">
-    <div class="grid ">
+<div class="bulma-container">
+    <div class="bulma-grid ">
         {% assign projects = site.data.projects %}
         {% for project in projects %}
-            <div class="cell panel is-col-span-2 p-2">
+            <div class="bulma-cell bulma-panel bulma-is-col-span-2 bulma-p-2">
             {% assign project_dict = project[1] %}
             <!-- portfolio-item -->
-                <div class="card p-auto m-auto bg-dark">
-                    <div class="card-body">
+                <div class="bulma-card bulma-p-auto bulma-m-auto bg-dark">
+                    <div class="bulma-card-body">
                         <!-- project title -->
-                        <h2 class="card-title">{{ project_dict.title }}</h2>
+                        <h2 class="bulma-card-title">{{ project_dict.title }}</h2>
                         <!-- project title -->
                         <!-- project description -->
-                        <p class="card-text">{{ project_dict.description | newline_to_br }}</p>
+                        <p class="bulma-card-text">{{ project_dict.description | newline_to_br }}</p>
                         <!-- project description -->
                         <!-- project href -->
-                        <div class="pt-2 pb-2">
-                            <div class="tag is-success is-rounded w-75 text-secondary"><a class="text-dark" href="{{ project_dict.href }}">Project Page</a></div>
+                        <div class="bulma-pt-2 bulma-pb-2">
+                            <div class="bulma-tag bulma-is-success bulma-is-rounded bulma-w-75 bulma-text-secondary"><a class="bulma-text-dark" href="{{ project_dict.href }}">Project Page</a></div>
                         </div>
                         <!-- project href -->
                     </div>
@@ -29,17 +29,17 @@ layout: page
                         {%- for technology in project_dict.technology -%}
                         <li class="list-group-item bg-dark">
                             <h4>{{ technology.name }}</h4>
-                            <span class="tag is-success is-rounded">{{ technology.type }}</span>
+                            <span class="bulma-tag bulma-is-success bulma-is-rounded">{{ technology.type }}</span>
                         </li>
                         {%- endfor -%}
                     </ul>
                     <!-- technology badges -->
                     <!-- project links -->
-                    <div class="card-body">
+                    <div class="bulma-card-body">
                         {%- if project_dict.links != nil %}
-                            <div class="buttons">
+                            <div class="bulma-buttons">
                             {%- for link in project_dict.links %}
-                                <a class="button card-link" href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+                                <a class="bulma-button bulma-card-link" href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
                             {%- endfor %}
                             </div>
                         {% else %}
