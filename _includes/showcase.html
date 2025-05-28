@@ -1,28 +1,28 @@
 {% if page.showcase %}
     {% assign showcase = site.data.[page.showcase] %}
 
-    <div class="content">
+    <div class="bulma-content">
         <p>{{ showcase.intro | markdownify }}</p>
     </div>
 
     {% for item in showcase.items %}
-        <section class="showcase">
+        <section class="bulma-showcase">
             {% if item.image %}
-            <figure class="image {% if item.image_ratio %} {{ item.image_ratio }} {% else %} is-16by9 {% endif %}">
+            <figure class="bulma-image {% if item.image_ratio %} {{ item.image_ratio }} {% else %} bulma-is-16by9 {% endif %}">
                 <img src="{{ item.image | relative_url }}">
             </figure>
             {% endif %}
-            <div class="showcase-content">
-                <div class="columns is-centered">
-                    <div class="column is-8-desktop is-12-tablet">
-                        <p class="title">{{ item.title }}</p>
-                        <p class="subtitle">{{ item.subtitle }}</p>
+            <div class="bulma-showcase-content">
+                <div class="bulma-columns bulma-is-centered">
+                    <div class="bulma-column bulma-is-8-desktop bulma-is-12-tablet">
+                        <p class="bulma-title">{{ item.title }}</p>
+                        <p class="bulma-subtitle">{{ item.subtitle }}</p>
 
                         {% if item.github %}
-                            <div class="buttons is-centered my-4">
+                            <div class="bulma-buttons bulma-is-centered bulma-my-4">
                                 <a
                                     href="https://github.com/{{ item.github }}/stargazers"
-                                    class="button is-white is-small"
+                                    class="bulma-button bulma-is-white bulma-is-small"
                                 >
                                     <img
                                         alt="GitHub stars"
@@ -31,7 +31,7 @@
                                 </a>
                                 <a
                                     href="https://github.com/{{ item.github }}/network/members"
-                                    class="button is-white is-small"
+                                    class="bulma-button bulma-is-white bulma-is-small"
                                 >
                                     <img
                                         alt="GitHub forks"
@@ -40,7 +40,7 @@
                                 </a>
                                 <a
                                     href="https://github.com/{{ item.github }}/watchers"
-                                    class="button is-white is-small"
+                                    class="bulma-button bulma-is-white bulma-is-small"
                                 >
                                     <img
                                         alt="GitHub watchers"
@@ -50,29 +50,29 @@
                             </div>
                         {% endif %}
 
-                        <div class="content">
+                        <div class="bulma-content">
                             <p>{{ item.description | markdownify }}</p>
                         </div>
 
                         {% if item.features %}
-                            <ul class="block-list is-dark {{ item.features_styles }}">
+                            <ul class="list-group bulma-is-dark {{ item.features_styles }}">
                                 {% for feature in item.features %}
-                                    <li>{{ feature }}</li>
+                                    <li class="list-group-item">{{ feature }}</li>
                                 {% endfor %}
                             </ul>
                         {% endif %}
 
                         {% if item.tags %}
                             {% assign tags = item.tags | split: ',' %}
-                            <div class="tags is-centered my-4">
+                            <div class="bulma-tags bulma-is-centered bulma-my-4">
                                 {% for tag in tags %}
-                                    {% include tag.html tag=tag style="is-dark" %}
+                                    {% include tag.html tag=tag style="bulma-is-dark" %}
                                 {% endfor %}
                             </div>
                         {% endif %}
 
-                        <div class="my-4">
-                            <a href="{{ item.link }}" class="button is-primary">
+                        <div class="bulma-my-4 bulma-buttons bulma-is-centered">
+                            <a href="{{ item.link }}" class="bulma-button bulma-is-primary">
                                 {{ item.link_text }}
                             </a>
                         </div>

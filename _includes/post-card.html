@@ -1,0 +1,29 @@
+<div class="bulma-card">
+    {% if post.image %}
+        <div class="bulma-card-image">
+            <img src="{{ post.image }}" alt="{{ post.title }}">
+        </div>
+    {% else %}
+        <header class="bulma-card-header">
+            <a class="bulma-card-header-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </header>
+    {% endif %}
+    <div class="bulma-card-content">
+        <div class="bulma-content">
+            {% if post.image %}
+                <a class="bulma-title bulma-is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            {% endif %}
+            {% if post.summary %}
+                {{ post.summary | markdownify }}
+            {% else %}
+                <p>{{ post.excerpt }}</p>
+            {% endif %}
+        </div>
+        <div class="bulma-has-text-centered">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="bulma-button bulma-is-primary">Read more</a>
+        </div>
+    </div>
+    <footer class="bulma-card-footer">
+        <p class="bulma-card-footer-item">Published: {{ post.date | date: '%b %-d, %Y' }}</p>
+    </footer>
+</div>

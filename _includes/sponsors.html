@@ -1,0 +1,42 @@
+{% if page.sponsors %}
+    {% assign tiers=site.data.[page.sponsors] %}
+    <div class="bulma-columns bulma-is-multiline">
+        {% for tier in tiers %}
+            <div class="bulma-column bulma-is-12">
+                <p class="bulma-title bulma-is-3 bulma-has-text-centered">
+                    <span>{{ tier.tier_name }}</span>
+                </p>
+                <p class="bulma-subtitle bulma-has-text-centered">
+                    <span class="bulma-icon bulma-is-large bulma-gh-sponsor"><i class="fas fa-heart fa-2x"></i></span>
+                </p>
+                <div class="bulma-columns bulma-is-centered">
+                    <div class="bulma-column bulma-is-6 bulma-content bulma-has-text-centered">
+                        <p>{{ tier.description | markdownify }}</p>
+                    </div>
+                </div>
+
+                <div class="bulma-columns bulma-is-multiline bulma-is-centered">
+                    {% for sponsor in tier.sponsors %}
+                        <div class="bulma-column {% if tier.size == 'large' %} bulma-is-4-desktop bulma-is-6-tablet {% else %} bulma-is-3-desktop bulma-is-4-tablet {% endif %}">
+                            <div class="box has-text-centered">
+                                <p class="bulma-title {% if tier.size == 'large' %} bulma-is-4 {% elsif tier.size == 'small' %} bulma-is-6 {% else %} bulma-is-5 {% endif %}">
+                                    {{ sponsor.name }}
+                                </p>
+                                <p class="bulma-subtitle bulma-is-6">
+                                    {% if sponsor.profile %}
+                                        <a href="{{ sponsor.profile }}" class="bulma-is-link bulma-is-small">View Profile</a>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="bulma-column bulma-is-12">
+                <hr>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}

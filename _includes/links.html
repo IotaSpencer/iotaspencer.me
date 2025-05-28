@@ -1,5 +1,5 @@
 <!-- <link rel="stylesheet" href="{{ '/assets/css/links.css' | relative_url }}"> -->
-<div class="container">
+<div class="bulma-container">
     {% capture total_links %}{{ site.data.links.sites | size }}{% endcapture %}
     {% capture links_rows %}{{ total_links | divided_by: 5 }}{% endcapture %}
     <ul class="nav nav-pills nav-fill">

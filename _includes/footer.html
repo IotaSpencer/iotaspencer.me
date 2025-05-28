@@ -1,9 +1,9 @@
 <footer class="footer">
-  <div class="container">
+  <div class="bulma-container">
       {% if site.footer_menu %}
-          <div class="columns is-multiline">
+          <div class="bulma-columns bulma-is-multiline">
               {% for item in site.data[site.footer_menu] %}
-                  <div class="column has-text-centered">
+                  <div class="bulma-column bulma-has-text-centered">
                       <div>
                           <a href="{{ item.link | relative_url }}" class="link">{{ item.name }}</a>
                       </div>
@@ -14,8 +14,8 @@
 
       {% include follow.html %}
 
-      <div class="content is-small has-text-centered">
-            <p class="has-text-grey">
+      <div class="bulma-content bulma-is-small bulma-has-text-centered">
+            <p class="bulma-has-text-grey">
                 <a href="{{ site.url | relative_url }}">{{ site.title }}</a> &copy; {{ site.time | date: '%Y' }}.
                 <!-- <a href="{{ site.url | relative_url }}/privacy.html">Privacy Policy</a> -->
                 &nbsp;|&nbsp;

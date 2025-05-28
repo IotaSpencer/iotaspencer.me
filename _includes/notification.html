@@ -1,0 +1,22 @@
+<div x-data="{visible: true}" markdown="0">
+    <div
+        class="bulma-notification {{ include.status | default: 'bulma-is-warning' }} bulma-my-4"
+        x-show.transition.duration.300ms="visible"
+    >
+        {% if include.dismissable %}
+            <button class="bulma-delete" x-on:click="visible = false"></button>
+        {% endif %}
+        <article class="bulma-media">
+            {% if include.icon != 'false' %}
+                <div class="bulma-media-left">
+                    <span class="bulma-icon">
+                        <i class="{{ include.icon | default: 'fas fa-exclamation-circle' }} fa-lg"></i>
+                    </span>
+                </div>
+            {% endif %}
+            <div class="bulma-media-content">
+                <div class="bulma-content">{{ include.message | markdownify }}</div>
+            </div>
+        </article>
+    </div>
+</div>

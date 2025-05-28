@@ -1,0 +1,39 @@
+<nav class="bulma-pagination bulma-is-centered">
+    {% if paginator.previous_page %}
+        <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="bulma-pagination-previous bulma-is-info">Previous</a>
+    {% else %}
+        <p class="bulma-pagination-previous" disabled>Previous</p>
+    {% endif %}
+    {% if paginator.next_page %}
+        <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="bulma-pagination-next bulma-is-info">Next</a>
+    {% else %}
+        <p class="bulma-pagination-next" disabled>Next</p>
+    {% endif %}
+    <ul class="bulma-pagination-list">
+        {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+                <li>
+                    <a class="bulma-pagination-link bulma-is-current">{{ page }}</a>
+                </li>
+            {% elsif page == 1 %}
+                <li>
+                    <a
+                        href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | split: '/' | pop | join: '/' }}"
+                        class="bulma-pagination-link"
+                    >
+                        {{- page -}}
+                    </a>
+                </li>
+            {% else %}
+                <li>
+                    <a
+                        href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"
+                        class="bulma-pagination-link"
+                    >
+                        {{- page -}}
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</nav>

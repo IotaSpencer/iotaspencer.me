@@ -1,0 +1,24 @@
+{% if page.gallery %}
+    {% assign galleries=site.data.[page.gallery] %}
+    {% for gallery in galleries %}
+        <div class="bulma-columns bulma-is-multiline">
+            <div class="bulma-column bulma-is-12">
+                <p class="bulma-title bulma-is-3 bulma-has-text-centered">{{ gallery.title }}</p>
+            </div>
+            {% for image in gallery.images %}
+                <div class="bulma-column bulma-is-4-desktop bulma-is-6-tablet">
+                    <div class="bulma-card">
+                        <div class="bulma-card-image">
+                            {% include image-modal.html ratio=image.ratio link=image.link alt=image.alt large_link=image.large_link %}
+                        </div>
+                        <div class="bulma-card-content">
+                            <div class="bulma-content">
+                                {{ image.description | markdownify }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+{% endif %}

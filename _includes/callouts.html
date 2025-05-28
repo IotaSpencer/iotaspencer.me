@@ -1,0 +1,45 @@
+{% if page.callouts %}
+    {% assign callouts=site.data.[page.callouts] %}
+    <section class="bulma-hero {% if callouts.height %} {{ callouts.height }} {% else %} bulma-is-medium {% endif %} {{ callouts.style }}">
+        <div class="bulma-hero-body">
+            <div class="bulma-container">
+                <div class="bulma-columns bulma-is-multiline bulma-is-centered">
+                    {% for callout in callouts.items %}
+                        <div class="bulma-column bulma-is-4 bulma-has-text-centered">
+                            {% if callout.icon %}
+                                <div class="bulma-icon bulma-callout-icon">
+                                    {% if callout.icon_brand %}
+                                        <i class="fab {{ callout.icon }} fa-4x"></i>
+                                    {% else %}
+                                        <i class="fas {{ callout.icon }} fa-4x"></i>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                            <p class="bulma-title is-5">{{ callout.title }}</p>
+                            <p class="bulma-subtitle is-5">{{ callout.subtitle }}</p>
+
+                            {% if callout.description %}
+                                <div class="bulma-my-4">
+                                    <div class="bulma-content">
+                                        <p>{{ callout.description | newline_to_br }}</p>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if callout.call_to_action_name %}
+                                <div class="bulma-my-4">
+                                    <a
+                                        href="{{ callout.call_to_action_link | relative_url }}"
+                                        class="bulma-button bulma-is-primary"
+                                    >
+                                        {{ callout.call_to_action_name }}
+                                    </a>
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}

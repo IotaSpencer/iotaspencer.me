@@ -1,0 +1,9 @@
+<p class="bulma-title bulma-is-4">Latest Posts</p>
+
+<div class="bulma-columns bulma-is-multiline">
+    {% for post in site.posts limit: 3 %}
+        <div class="bulma-column bulma-is-12">
+            {% include post-card.html %}
+        </div>
+    {% endfor %}
+</div>
