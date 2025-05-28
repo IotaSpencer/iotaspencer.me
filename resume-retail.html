@@ -8,14 +8,16 @@ categories:
 tags:
 - resume
 - pages
+hide_hero: true
+hide_header: true
+hide_footer: true
 ---
 <link rel="stylesheet" href="{{ '/assets/css/resume.css' | relative_url }}">
 <div id="resume">
-  <p>{{site.baseurl}}</p>
-  <div class="columns ">
-    <div class="column is-two-thirds is-pulled-left" id="xp-edu-prohob">
-      <h1 class="section-header">EXPERIENCE</h1>
-      <div class="list-group ml-4" id="xp">
+  <div class="bulma-columns ">
+    <div class="bulma-column bulma-is-two-thirds bulma-is-pulled-left" id="xp-edu-prohob">
+      <h1 class="bulma-section-header">EXPERIENCE</h1>
+      <div class="list-group" id="xp">
         <div class="list-group-item py-2 bg-dark-gray">
           <h3 class="xp-position">Target Warehouse Associate</h3>
           <small class="xp-location">Wilton, NY</small>
@@ -43,7 +45,7 @@ tags:
             </ul>
           </div>
         </div>
-        <div class="list-group-item py-2 bg-dark-gray">
+        <div class="list-group-item bg-dark-gray">
           <h3 class="xp-position">Lowe's Home Improvement &mdash; Overnight Receiver/Stocker / Forklift Operator</h3>
           <small class="xp-location">Saratoga Springs, NY</small>
           <span class="xp-location">&nbsp;|&nbsp;</span>
@@ -57,7 +59,7 @@ tags:
 
           </div>
         </div>
-        <div class="list-group-item py-2 bg-dark-gray">
+        <div class="list-group-item bg-dark-gray">
           <h3 class="xp-position">Price Chopper &mdash; Customer Service &lsquo;Teammate&rsquo;</h3>
           <small class="xp-location">Saratoga Springs, Malta, Glenville NY</small>
           <span class="xp-location">&nbsp;|&nbsp;</span>
@@ -79,9 +81,9 @@ tags:
           </div>
 
         </div>
-        <div class="list-group-item py-2 bg-dark-gray">
+        <div class="list-group-item bg-dark-gray">
           <h3 class="xp-position">Dollar Tree &mdash; Sales Associate</h3>
-          <small class="ml-4 xp-location">Saratoga Springs, NY</small>
+          <small class="xp-location">Saratoga Springs, NY</small>
           <span class="xp-location">&nbsp;|&nbsp;</span>
           <small class="xp-duration">October 2014 &mdash; April 2015</small>
           <p class="xp-desc">Cash Handling, Janitorial</p>
@@ -95,8 +97,8 @@ tags:
         </div>
 
       </div>
-      <h1 class="section-header">EDUCATION</h1>
-      <div id="edu" class="list-group ml-4 bg-dark-gray">
+      <h1 class="bulma-section-header">EDUCATION</h1>
+      <div id="edu" class="list-group bg-dark-gray">
         <div class="list-group-item bg-dark-gray">
           <h3>Saranac Lake High School, Saranac Lake, NY &mdash; Regents Diploma</h3>
           <small class="edu-duration">September 2005 — June 2010</small>
@@ -113,7 +115,7 @@ tags:
         </div>
       </div>-->
     </div>
-    <div class="is-pulled-right" id="resume-sidebar">
+    <div class="bulma-is-pulled-right" id="resume-sidebar">
       <div class="" id="contact">
         <div class="pb-1 pt-1">
           <h5 class="">CONTACT</h5>
@@ -125,32 +127,25 @@ tags:
         </div>
         <div id="xtra-contact-bits">
           <div class="pb-1 pt-1">
-            <h5>NOTES</h5>
+            <!-- <h5>NOTES</h5>
             <ul class="list-unstyled">
               <li>This resume and site was built using Jekyll, Ruby, Liquid, Python</li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </div>
       <div>
         <h5 class="">SKILLS</h5>
         <ul class="list-bullet">
-          {% for skill in site.data.resume.skills %}
+          {% for skill in site.data.resume_retail.skills %}
             <li>{{skill}}</li>
-          {% endfor %}
-        </ul>
-        <h5>LANGUAGES</h5>
-        <small>(in order of fluency)</small>
-        <ul class="pt-2">
-          {% for lang in site.data.resume.languages %}
-          <li>{{lang}}</li>
           {% endfor %}
         </ul>
         <h5>TECHNOLOGY BASED EXPERIENCE</h5>
         <div class="d-inline-flex flex-wrap">
           <ul class="pt-2">
-            {% for xp in site.data.resume.tech_skills %}
-            <li class="px-1">{{ xp.name }} <span class="tag">{{xp.years}}</span></li>
+            {% for xp in site.data.resume_retail.tech_skills %}
+            <li class="px-1">{{ xp.name }} <span class="bulma-tag">{{xp.years}}</span></li>
             {% endfor %}
         </ul>
       </div>

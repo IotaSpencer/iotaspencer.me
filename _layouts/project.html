@@ -2,14 +2,14 @@
 layout: page
 ---
 
-<div class="card bg-dark text-light">
-    <div class="card-header">
+<div class="bulma-card bg-dark text-light">
+    <div class="bulma-card-header">
         <h2>{{ page.title }} &mdash; <span>{{ page.category }}</span></h2>
     </div>
 
-    <div class="card-body">
+    <div class="bulma-card-body">
         <h5>About</h5>
-        <div class="card-subtitle">
+        <div class="bulma-card-subtitle">
             <p>{{ page.description | newline_to_br }}</p>
         </div>
 
@@ -20,9 +20,9 @@ layout: page
             {% endfor %}
         </ul>
         <h5>Related Links</h5>
-        <div class="btn-group bg-dark">
+        <div class="bulma-buttons bg-dark">
             {% for link in page.links %}
-            <a class="btn btn-dark" role="button" href="{{ link.url }}">{{link.title}}</a>
+            <a class="bulma-button bulma-button-dark" role="button" href="{{ link.url }}">{{link.title}}</a>
 
             {% endfor %}
         </div>
