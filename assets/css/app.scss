@@ -1,14 +1,49 @@
 ---
 ---
 
-$primary: rgb(5, 66, 5);
+$bulma-primary: rgb(5, 66, 5);
+$bulma-hero: rgb(5, 66, 5);
+$bulma-hero-h: 120deg;
+$bulma-hero-s: 86%;
+$bulma-hero-l: 14%;
+$bulma-hero-background-h: 120deg;
+$bulma-hero-background-s: 86%;
+$bulma-hero-background-l: 14%;
+$bulma-primary-h: 120deg;
+$bulma-primary-s: 86%;
+$bulma-primary-l: 14%;
+$bulma-primary-h: 120deg;
+$bulma-primary-s: 86%;
+$bulma-primary-l: 14%;
+.bulma-hero.is-primary {
+  background-color: $bulma-hero;
+}
 $dimensions: 116 24 32 48 64 96 128 160 192 224 256 288 320 384 448 512;
 // Import Main CSS file from theme
-@import "main";
-@import "resize";
-
 a.button { 
   white-space: wrap;
   word-wrap: break-word;
   overflow-wrap: anywhere;
+}
+a {
+  color: $bulma-primary;
+  
+}
+$bulma-hero-background-l-darkened: calc($bulma-hero-background-l + 10%);
+$bulma-hero-background-l-dark: calc($bulma-hero-background-l + 50%);
+
+a:hover {
+  color: hsl($bulma-primary-h, $bulma-primary-s, $bulma-hero-background-l-darkened);
+}
+.bulma-navbar-item {
+  color: $bulma-primary;
+}
+.bulma-navbar-item:hover {
+  color: hsl($bulma-primary-h, $bulma-primary-s, $bulma-hero-background-l-darkened);
+}
+.bulma-navbar-link {
+  color: $bulma-primary;
+}
+.bulma-navbar-link:hover {
+  color: hsl($bulma-primary-h, $bulma-primary-s, $bulma-hero-background-l-dark);
 }
