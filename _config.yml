@@ -1,4 +1,6 @@
 theme: bulma-clean-theme
+# TODO: copy theme files to my part of the site and use them from there 
+# so i can use bootstrap and bulmas prefixed classes together
 title: "iotaspencer.me"
 description: "A simple Jekyll site using the Bulma Clean Theme"
 # description: The ramblings of a madman in a mad world
@@ -66,7 +68,7 @@ social:
 google_analytics: "G-WPXPG4QVW6"
 # Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
 yandex_metrica:
-permalink: pretty
+permalink: /:year/:month/:day/:title/
 
 autopages:
   enabled: true

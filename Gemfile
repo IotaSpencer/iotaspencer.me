@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gem "bulma-clean-theme"
-gem 'jekyll', '4.4.1'
+gem 'jekyll', git: 'https://github.com/IotaSpencer/jekyll', branch: 'IotaSpencer-update-terminal-table'
 gem 'logger'
 gem 'jekyll-feed'
 gem 'jekyll-redirect-from'
@@ -13,3 +13,4 @@ gem 'jekyll-include-cache'
 gem 'jekyll-asciinema'
 gem 'jekyll-paginate-v2'
 gem 'netrc'
+gem 'mkmatter', :path => '/home/ken/repos/mkmatter'
