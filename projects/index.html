@@ -11,9 +11,9 @@ tags:
 {% assign projectsdir = site.data.projectsdir %}
 <h1>Projects</h1>
 
-<div class="block">
+<div class="container-fluid">
     <div class="px-3">
-        <div class="card-header">
+        <div class="">
             <h2>User/Org Links</h2>
         </div>
         <div class="px-3 card-body">
@@ -21,9 +21,9 @@ tags:
 
                 {% assign gits = site.data.gits %}
                 <h3>GitHub</h3>
-                <div class="buttons px-6">
+                <div class="btn-group px-6">
                     {% for repo in gits.services.GitHub %}
-                    <a type="button" href="{{ repo.url }}" class="button">
+                    <a type="button" href="{{ repo.url }}" class="btn">
                         <span class="pr-2">
                             <i class="fa-brands fa-github fa-2x"></i>
                         </span>
@@ -32,9 +32,9 @@ tags:
                     {% endfor %}
                 </div>
                 <h3>GitLab</h3>
-                <div class="buttons px-6">
+                <div class="btn-group px-6">
                     {% for repo in gits.services.GitLab %}
-                    <a type="button" href="{{ repo.url }}" class="button">
+                    <a type="button" href="{{ repo.url }}" class="btn">
                         <span class="pr-2">
                             <i class="fa-brands fa-gitlab fa-2x"></i>
                         </span>
@@ -47,15 +47,17 @@ tags:
         </div>
     </div>
     <div class="bg-dark-gray py-6">
-        <div class="card-header">
+        <div class="">
             <h2>Projects</h2>
         </div>
         <div class="row">
-            <div class="container is-flex is-fluid">
-                <div class="grid mb-1">
+            <div class="container-fluid d-flex ">
+                <div class="">
+                    <div class="card-columns">
                     {% for project in projectsdir %}
                     {% assign project2 = project[1] %}
-                    <div class="panel">
+                    <div class="col">
+
                         <div class="card ">
                             <div class="card-header">
                                 <a class="card-link">
@@ -65,24 +67,26 @@ tags:
                             <div class="card-body">
                                 <h4>Description</h4>
                                 <p>{{ project2.desc }}</p>
-                                <a class="button is-size-5" href="{{project2.project_page}}">Project Page</a>
-                                <a class="button is-size-5" href="{{project2.portfolio_page}}">Portfolio Page</a>
+                                <a class="btn " href="{{project2.project_page}}">Project Page</a>
+                                <a class="btn " href="{{project2.portfolio_page}}">Portfolio Page</a>
                                 <h4 class="pl-2 pt-2">Links</h4>
-                                <div class="buttons">
+                                <div class="btn-group">
                                 
                                 {% assign links = project2.links %}
                                 {% if links == false %}
-                                    <a class="button is-size-5" disabled>No links available</p>
+                                    <a class="btn " disabled>No links available</p>
                                 {% else %}
                                     {% for link in links %}
-                                    <a class="button" href="{{ link.url }}">{{ link.name }}</a>
+                                    <a class="btn" href="{{ link.url }}">{{ link.name }}</a>
                                     {% endfor %}
                                 {% endif %}
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
