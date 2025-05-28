@@ -11,8 +11,12 @@
   link: /portfolio/
 - name: Contact
   link: /contact/
-- name: Resume
-  link: /resume/
+# - name: Resume
+#   dropdown:
+#     - name: Technical Resume
+#       link: /resume-technical/
+#     - name: Retail Resume
+#       link: /resume-retail/
 - name: Activity
   link: /activity/
 - name: GitHub

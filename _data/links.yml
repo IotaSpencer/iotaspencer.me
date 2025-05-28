@@ -1,20 +1,20 @@
 settings:
   text: true
 sites:
-  # - # Twitter
-  #   title: Follow @KenISpencer on Twitter
-  #   text: Twitter
-  #   service: twitter
-  #   href: https://twitter.com/@KenISpencer
-  #   style: "color:#1da1f2;"
-  #   fa-icon: fab fa-twitter fa-2x
-  #   #image: /path/to/image
-  #   #image-size:
-  #   #  height:
-  #   #  width:
-  #   hide: false
-  #   html: false
-  #   order: 0
+  - # Twitter
+    title: Follow @KenISpencer on Twitter
+    text: Twitter
+    service: twitter
+    href: https://twitter.com/@KenISpencer
+    style: "color:#1da1f2;"
+    fa-icon: fab fa-twitter fa-2x
+    #image: /path/to/image
+    #image-size:
+    #  height:
+    #  width:
+    hide: false
+    html: false
+    order: 0
   -
     title: IotaSpencer on GitHub
     text: GitHub
@@ -43,20 +43,20 @@ sites:
     hide: false
     html: false
     order: 0
-  # -
-  #   title: Call or Text Iota
-  #   text: Tel
-  #   service: tel
-  #   href: tel:+14087824682
-  #   style: "color:green;"
-  #   fa-icon: fas fa-phone-square fa-2x
-  #   #image: /path/to/image
-  #   #image-size:
-  #   #  height:
-  #   #  width:
-  #   hide: false
-  #   html: false
-  #   order: 1
+  -
+    title: Call or Text Iota
+    text: Tel
+    service: tel
+    href: tel:+14087824682
+    style: "color:green;"
+    fa-icon: fas fa-phone-square fa-2x
+    #image: /path/to/image
+    #image-size:
+    #  height:
+    #  width:
+    hide: false
+    html: false
+    order: 1
   -
     title: IotaSpencer on Steam
     text: Steam
@@ -176,7 +176,7 @@ sites:
     html: false
     order: 0
   -
-    title: Youtube 1
+    title: Youtube @IotaSpencer
     text: Iota Spencer
     service: youtube
     href: https://www.youtube.com/@IotaSpencer
@@ -187,7 +187,7 @@ sites:
     order: 5
     social:
   -
-    title: Youtube 2
+    title: Youtube @IotaPlays
     text: Iota Plays
     service: youtube
     href: https://www.youtube.com/@IotaPlays
