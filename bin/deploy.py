@@ -30,12 +30,6 @@ logger.addFilter(remove_non_needed)
 logging.basicConfig(level=logging.DEBUG, handlers=[handler], format='{asctime} {name} {levelname:8s} {message}', style='{', datefmt='%Y-%m-%d %H:%M:%S')
 
 def extract():
-  # logger.info("Checking if tar runs")
-  # tar = fConnection(host='spidey', user='root', connect_kwargs={
-  #               "key_filename": "/home/ken/.ssh/id_rsa",
-  #           }).run('tar --version')
-  # logger.info('tar check complete')
-
   logger.info('Extracting tar file on remote server')
   extract_tar = fConnection(host='spidey', user='root', connect_kwargs={
                 "key_filename": "/home/ken/.ssh/id_rsa",
@@ -43,18 +37,6 @@ def extract():
   logger.info('Remote extraction complete')
   
 def push():
-  # logger.info('Checking if uname runs')
-  # uname = fConnection(host='spidey', user='root', connect_kwargs={
-  #               "key_filename": "/home/ken/.ssh/id_rsa",
-  #           }).run('uname -s')
-  # # logger.info(str(uname))
-  # logger.info('uname complete')
-  # logger.info('Checking if git runs')
-  # git = fConnection(host='spidey', user='root', connect_kwargs={
-  #               "key_filename": "/home/ken/.ssh/id_rsa",
-  #           }).run('git --version')
-  # logger.info(str(git))
-  # ssh = paramiko.SSHClient()
   tar_put = fConnection(host='spidey', user='root', connect_kwargs={
                 "key_filename": "/home/ken/.ssh/id_rsa",
             }).put(increment_file.get_latest_filename("_dist/site_{}.tar.gz"), "/var/www/site.tar.gz")
