@@ -35,15 +35,14 @@ $bulma-hero-background-l-dark: calc($bulma-hero-background-l + 50%);
 a:hover {
   color: hsl($bulma-primary-h, $bulma-primary-s, $bulma-hero-background-l-darkened);
 }
-.bulma-navbar-item {
-  color: $bulma-primary;
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: green !important;
 }
-.bulma-navbar-item:hover {
-  color: hsl($bulma-primary-h, $bulma-primary-s, $bulma-hero-background-l-darkened);
+
+h1, h2, h3, h4, h5, h6 {
+  color: green !important;
 }
-.bulma-navbar-link {
-  color: $bulma-primary;
-}
-.bulma-navbar-link:hover {
-  color: hsl($bulma-primary-h, $bulma-primary-s, $bulma-hero-background-l-dark);
+p {
+  color: snow !important;
 }
