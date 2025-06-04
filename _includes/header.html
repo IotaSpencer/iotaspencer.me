@@ -1,4 +1,5 @@
-<nav
+{% comment %}
+<!-- <nav
     class="bulma-navbar bulma-is-primary {% if site.fixed_navbar %} bulma-is-fixed-{{ site.fixed_navbar }} {% endif %}"
     x-data="{ openNav: false }"
 >
@@ -23,14 +24,14 @@
         </div>
         <div class="bulma-navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
             <div class="bulma-navbar-start">
-                <a href="{{ site.baseurl }}/" class="bulma-navbar-item text-success{% if page.url == "/" %}bulma-is-active{% endif %}">Home</a>
+                <a href="{{ site.baseurl }}/" class="bulma-navbar-item text-dark{% if page.url == "/" %}bulma-is-active{% endif %}">Home</a>
                 {% if site.data.navigation %}
                     {% for item in site.data.navigation %}
                         {% if item.dropdown %}
                             <div class="bulma-navbar-item bulma-has-dropdown bulma-is-hoverable {% if site.fixed_navbar == 'bottom' %} bulma-has-dropdown-up {% endif %}">
                                 <a
                                     href="{{ item.link | relative_url }}"
-                                    class="bulma-navbar-link text-success{% if page.url contains item.link %}bulma-is-active{% endif %}"
+                                    class="bulma-navbar-link text-dark{% if page.url contains item.link %}bulma-is-active{% endif %}"
                                 >
                                     {{- item.name -}}
                                 </a>
@@ -67,4 +68,6 @@
             </div>
         </div>
     </div>
-</nav>
+</nav> -->
+{% endcomment %}
+{% include navbar.html%}
