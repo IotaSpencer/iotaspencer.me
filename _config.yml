@@ -2,7 +2,10 @@ theme: bulma-clean-theme
 # TODO: copy theme files to my part of the site and use them from there 
 # so i can use bootstrap and bulmas prefixed classes together
 title: "iotaspencer.me"
-description: "A simple Jekyll site using the Bulma Clean Theme"
+name: "IotaSpencer.me"
+force_theme: 'dark'
+description: "The ramblings of a madman in a mad world."
+tagline: "The ramblings of a madman in a mad world."
 # description: The ramblings of a madman in a mad world
 author: "Ken Spencer"
 email: "me@iotaspencer.me"
