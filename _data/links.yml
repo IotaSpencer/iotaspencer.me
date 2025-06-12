@@ -101,6 +101,20 @@ sites:
     html: false
     order: 7
   -
+    title: IotaSpencer on BlueSky
+    text: BlueSky
+    service: bluesky
+    href: https://bsky.app/profile/iotaspencer.me
+    style: "color:#1c9bf0;"
+    fa-icon: fab fa-bluesky fa-2x
+    #image: /path/to/image
+    #image-size:
+    #  height:
+    #  width:
+    hide: false
+    html: false
+    order: 6
+  -
     title: Sign up with Vultr!
     text: Vultr
     service: vultr
