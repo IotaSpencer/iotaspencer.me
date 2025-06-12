@@ -23,7 +23,7 @@ tags:
                 <h3>GitHub</h3>
                 <div class="btn-group px-6">
                     {% for repo in gits.services.GitHub %}
-                    <a type="button" href="{{ repo.url }}" class="btn">
+                    <a type="button" href="{{ repo.url }}" class="btn text-light">
                         <span class="pr-2">
                             <i class="fa-brands fa-github fa-2x"></i>
                         </span>
@@ -34,7 +34,7 @@ tags:
                 <h3>GitLab</h3>
                 <div class="btn-group px-6">
                     {% for repo in gits.services.GitLab %}
-                    <a type="button" href="{{ repo.url }}" class="btn">
+                    <a type="button" href="{{ repo.url }}" class="btn text-light">
                         <span class="pr-2">
                             <i class="fa-brands fa-gitlab fa-2x"></i>
                         </span>
@@ -51,43 +51,37 @@ tags:
             <h2>Projects</h2>
         </div>
         <div class="row">
-            <div class="container-fluid d-flex ">
-                <div class="">
-                    <div class="card-columns">
+            <div class="bg-dark">
+                    <div class="vstack d-flex bg-dark text-white">
                     {% for project in projectsdir %}
                     {% assign project2 = project[1] %}
-                    <div class="col">
 
-                        <div class="card ">
-                            <div class="card-header">
-                                <a class="card-link">
+                        <div class="card bg-dark text-white mb-3 order-{{ project2.priority}}">
+                            <div class="card-header bg-dark text-white">
                                     <h2>{{ project2.name }}</h2>
-                                </a>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body bg-dark text-white">
                                 <h4>Description</h4>
                                 <p>{{ project2.desc }}</p>
-                                <a class="btn " href="{{project2.project_page}}">Project Page</a>
-                                <a class="btn " href="{{project2.portfolio_page}}">Portfolio Page</a>
+                                <a class="btn text-white" href="{{project2.project_page}}">Project Page</a>
+                                <a class="btn text-white" href="{{project2.portfolio_page}}">Portfolio Page</a>
                                 <h4 class="pl-2 pt-2">Links</h4>
                                 <div class="btn-group">
                                 
                                 {% assign links = project2.links %}
                                 {% if links == false %}
-                                    <a class="btn " disabled>No links available</p>
+                                    <a class="btn text-white" disabled>No links available</p>
                                 {% else %}
                                     {% for link in links %}
-                                    <a class="btn" href="{{ link.url }}">{{ link.name }}</a>
+                                    <a class="btn btn-outline-success text-light" href="{{ link.url }}">{{ link.name }}</a>
                                     {% endfor %}
                                 {% endif %}
                                 </div>
                             </div>
                         </div>
-                    </div>
 
                     {% endfor %}
                     </div>
-                </div>
             </div>
         </div>
     </div>
