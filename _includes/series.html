@@ -18,7 +18,11 @@
 
             {% if page.url == post[0].url %}
                 <li class="is-highlighted is-dark">
-                    <p>{{ item.title }}</p>
+                    {% if item.title == page.title %}
+                      <p>{{ item.title }}{% if item.title == page.title %}{{ ' (current)' }}{% endif %}</p>
+                    {% else %}
+                      <a href="{{ site.baseurl }}{{ post[0].url }}" class="is-flex">{{ item.title }}</a>
+                    {% endif %}
                 </li>
             {% else %}
                 <li>
