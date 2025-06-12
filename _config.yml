@@ -44,14 +44,22 @@ skip_related_projects: true
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 repository: IotaSpencer/iotaspencer.me
 share:
-  facebook: false
+  facebook: true
   twitter: true
   gplus: false
   linkedin: false
   pinterest: false
   email: true
   reddit: true
+  mastodon: false
+  tiktok: true
+  whatsapp: true
+  telegram: true
+  discord: true
   bsky: true
+  copy: true
+  hackernews: true
+  signal: true
 social:
   github: IotaSpencer
   gitlab: IotaSpencer
@@ -126,3 +134,10 @@ plugins:
 #      layout: "project"
 #      author: "Mr. Hyde"
 #      category: "project"
+defaults:
+  -
+    scope:
+      path: "*"
+      type: "posts"
+    values:
+      author: "IotaSpencer"
