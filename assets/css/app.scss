@@ -1,6 +1,5 @@
 ---
 ---
-
 $bulma-primary: rgb(5, 66, 5);
 $bulma-hero: rgb(5, 66, 5);
 $bulma-hero-h: 120deg;
@@ -25,10 +24,7 @@ a.button {
   word-wrap: break-word;
   overflow-wrap: anywhere;
 }
-a {
-  color: $bulma-primary;
-  
-}
+
 $bulma-hero-background-l-darkened: calc($bulma-hero-background-l + 10%);
 $bulma-hero-background-l-dark: calc($bulma-hero-background-l + 50%);
 
@@ -45,4 +41,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
   color: snow !important;
+}
+ul,li {
+  color: snow !important;
+}
+.bulma-title {
+  color: #5eff3d !important;
+}
+.dropdown-item {
+  color: #5eff3d !important;
+}
+.dropdown-item:hover {
+  background-color: #5eff3d !important;
+  color: black !important;
+}
+.bulma-navbar-item {
+  color: #5eff3d !important;
+}
+.bulma-navbar-item:hover {
+  background-color: #5eff3d !important;
+  color: black !important;
+}
+.bulma-navbar-link {
+  color: #5eff3d !important;
+}
+.bulma-navbar-link:hover {
+  background-color: #5eff3d !important;
+  color: black !important;
 }
