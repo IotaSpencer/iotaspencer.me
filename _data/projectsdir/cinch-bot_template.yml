@@ -1,5 +1,5 @@
 name: Cinch Bot Template
-priority: 0
+priority: last
 name-selector: cinch-bottemplate
 desc: A template for cinch bots.<br/><br/> Now defunct
 project_page: /projects/cinch-bot_template
