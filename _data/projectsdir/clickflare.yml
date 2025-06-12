@@ -1,5 +1,5 @@
 name: clickflare
-priority: 0
+priority: 3
 name-selector: clickflare
 desc: An CLI interface into the cloudflare API
 project_page: /projects/clickflare
