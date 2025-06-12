@@ -1,4 +1,5 @@
 name: GWSS
+priority: 5
 name-selector: gwss
 desc: A small cli that downloads Web Ready Script files from a CDN and places them in a local directory of your choosing. (Think bootstrap, jquery, etc.)
 project_page: /projects/gwss

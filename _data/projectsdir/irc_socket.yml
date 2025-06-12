@@ -1,5 +1,5 @@
 name: IRCSocket
-priority: 0
+priority: last
 name-selector: irc-socket
 desc: An IRC wrapper on top of TCPSocket
 project_page: /projects/irc_socket

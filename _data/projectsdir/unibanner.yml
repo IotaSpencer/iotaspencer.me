@@ -1,5 +1,5 @@
 name: Unibanner 
-priority: 0
+priority: last
 name-selector: unibanner
 desc: A simple-ish IRC bot that bans unicode spamming bots <br/><br/> Now defunct
 portfolio_page: /portfolio/unibanner/

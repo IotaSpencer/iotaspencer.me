@@ -1,4 +1,5 @@
 name: GitAll
+priority: last
 name-selector: gitall
 desc: A Git Service Webhook that posts to IRC <br/><br/> Now defunct
 project_page: /projects/gitall

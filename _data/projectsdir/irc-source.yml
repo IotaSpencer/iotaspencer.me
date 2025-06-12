@@ -1,4 +1,5 @@
 name: IRC-Source
+priority: 2
 name-selector: ircsource
 desc: An IRC Search Engine <br/><br/> Now defunct
 project_page: /projects/irc-source

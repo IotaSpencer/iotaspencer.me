@@ -1,4 +1,5 @@
 name: SupyPlugins
+priority: last
 name-selector: supyplugins
 desc: A repository of SupyBot plugins <br/><br/> Now defunct
 project_page: /projects/supyplugins

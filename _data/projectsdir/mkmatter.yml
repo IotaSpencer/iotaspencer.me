@@ -1,5 +1,5 @@
 name: mkmatter
-priority: 0
+priority: first
 name-selector: mkmatter
 desc: A jekyll site helper, for content creation, tag pages and more
 project_page: /projects/mkmatter

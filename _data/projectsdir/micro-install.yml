@@ -1,5 +1,5 @@
 name: MicroInstall
-priority: 0
+priority: 1
 name-selector: micro-install
 desc: An install script for the terminal text editor 'micro'
 project_page: /projects/micro-install
