@@ -4,6 +4,50 @@ layout: default
 <div class="content">
     <p>Published: {{ page.date | date: '%b %-d, %Y' }} by {{ page.author }}</p>
 
+    <h1>{{ page.title }}</h1>
+
+    {% if page.modified %}
+        <p>Last modified: {{ page.modified | date: '%b %-d, %Y' }}</p>
+    {% endif %}
+
+
+    {% if page.modifications %}
+        <div class="modifications-list my-4">
+            <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#modificationsList" aria-expanded="false" aria-controls="modificationsList">
+                <i class="bi bi-list-columns"></i> Modifications List
+            </button>
+            <div class="collapse" id="modificationsList">
+                <div class="card card-body">
+                    <ul class="list-unstyled">
+                        {% if page.modified == empty %}
+                            <li class="text-muted">No modifications yet.</li>
+                        {% endif %}
+                        {% for modification in page.modified %}
+                            <li>
+                                <a href="{{ modification.url | relative_url }}">{{ modification.title }}</a>
+                                <p class="small">{{ modification.description }}</p>
+                                <span class="text-muted">({{ modification.date | date: '%Y-%m-%d' }})</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if page.categories %}
+        <div class="categories my-4">
+            <h2>Categories</h2>
+            <ul class="list-unstyled">
+                {% for category in page.categories %}
+                    <li>
+                        <a href="{{ site.baseurl }}/categories/{{ category | slugify }}">{{ category }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
     {% if page.series %}
         {% include series.html %}
     {% endif %}
@@ -19,7 +63,7 @@ layout: default
 
 {% unless site.hide_share_buttons %}
     <div class="my-4">
-        {% include share-buttons.html %}
+        {% include share.html %}
     </div>
 {% endunless %}
 

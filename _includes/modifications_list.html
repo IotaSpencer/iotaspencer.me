@@ -1,0 +1,21 @@
+<p>
+  <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#modificationsList" aria-expanded="false" aria-controls="modificationsList">
+    <i class="bi bi-list-columns"></i> Modifications List
+</p>
+
+<div class="collapse" id="modificationsList">
+  <div class="card card-body">
+    <ul class="list-unstyled">
+      {% if page.modified == empty %}
+        <li class="text-muted">No modifications yet.</li>
+      {% endif %}
+      {% assign modifications = %}
+      {% for modification in page.modified %}
+        <li>
+          <a href="{{ modification.url | relative_url }}">{{ modification.title }}</a>
+          <p class="small">{{ modification.description }}</p>
+          <span class="text-muted">({{ modification.date | date: '%Y-%m-%d' }})</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
