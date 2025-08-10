@@ -1,0 +1,79 @@
+---
+layout: page
+title: Usage
+breadcrumb: Usage
+categories:
+- Jekyll
+- mkmatter
+- Usage
+tags:
+- mkmatter
+- usage
+permalink: /projects/mkmatter/guide/usage/index.html
+date: '2018-03-04 06:52:40 -0500'
+---
+<h1>{{ page.title }}</h1>
+
+<h2>Note Before Reading</h2>
+Please read <a href="{% link projects/mkmatter/guide/installation.md %}">Installation</a> before reading this page.
+
+At this point, if you haven't already, you should probably run 'micro-install'
+if you want to use 'micro' the terminal text editor.
+<hr class="d-flex">
+
+<h2>Commands</h2>
+
+<h3>New (mkmatter new)</h3>
+
+<ul class="list-group list-options bg-dark d-flex border-0">
+<li class="list-group-item list-options-item bg-dark">
+
+<h6 class="no_toc bg-dark list-group-header list-options-header d-inline-block p-2">Options</h6>
+
+<li><code>--publish</code></li>
+  <ul>
+    <li>Whether to publish the following post.</li>
+    <li>This has no effect if not used with <code>--dry-run</code></li>
+  </ul>
+<li><code>--dry-run</code></li>
+  <ul>
+    <li>Whether to output the front-matter/page to the command-line</li>
+    <li>Otherwise, it will output the front-matter/content to a file, named in <code>YEAR-MONTH-DAY-TITLE.ext</code> format.</li>
+  </ul>
+  
+
+<h5>Page (mkmatter new  --type page)</h5>
+
+<div class="list-group list-options bg-dark d-flex">
+<div class="list-group-item list-options-item bg-dark border-0 ">
+
+<h6 class="no_toc bg-dark list-group-header list-options-header d-inline-block p-2">Options</h6>
+
+* `--publish`{:.highlight}
+* `--file`{:.highlight}
+
+</div></div>
+
+<h3>Tags (mkmatter tags)</h3>
+
+<h5> Find (mkmatter tags find)</h5>
+
+<h5> Gen (mkmatter tags gen)</h5>
+
+<div class="list-group list-options bg-dark d-flex">
+<div class="list-group-item list-options-item bg-dark border-0">
+
+<h6 class="no_toc bg-dark list-group-header d-inline-block p-2">Options</h6>
+
+<ul class="list-options-list list-unstyled">
+<li> <code class="highlight">--tag-index=TAG-INDEX</code>, <code class="highlight">-i</code></li>
+  <ul>
+    <li>Configures whether, while generating the tag files, if and what layout they will be given</li>
+    <li>If you don't have a tag index, omit <code class="highlight">--tag-index</code></li>
+  </ul>
+<li><code class="highlight">--dry-run</code>
+
+</div></div>
+
+<h5>New (mkmatter tags new)</h5>
+</div>
