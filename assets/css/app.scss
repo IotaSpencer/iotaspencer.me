@@ -1,36 +1,36 @@
 ---
 ---
-$bulma-primary: rgb(5, 66, 5);
-$bulma-hero: rgb(5, 66, 5);
-$bulma-hero-h: 120deg;
-$bulma-hero-s: 86%;
-$bulma-hero-l: 14%;
-$bulma-hero-background-h: 120deg;
-$bulma-hero-background-s: 86%;
-$bulma-hero-background-l: 14%;
-$bulma-primary-h: 120deg;
-$bulma-primary-s: 86%;
-$bulma-primary-l: 14%;
-$bulma-primary-h: 120deg;
-$bulma-primary-s: 86%;
-$bulma-primary-l: 14%;
-.bulma-hero.is-primary {
-  background-color: $bulma-hero;
-}
-$dimensions: 116 24 32 48 64 96 128 160 192 224 256 288 320 384 448 512;
-// Import Main CSS file from theme
-a.button { 
-  white-space: wrap;
-  word-wrap: break-word;
-  overflow-wrap: anywhere;
-}
+// $bulma-primary: rgb(5, 66, 5);
+// $bulma-hero: rgb(5, 66, 5);
+// $bulma-hero-h: 120deg;
+// $bulma-hero-s: 86%;
+// $bulma-hero-l: 14%;
+// $bulma-hero-background-h: 120deg;
+// $bulma-hero-background-s: 86%;
+// $bulma-hero-background-l: 14%;
+// $bulma-primary-h: 120deg;
+// $bulma-primary-s: 86%;
+// $bulma-primary-l: 14%;
+// $bulma-primary-h: 120deg;
+// $bulma-primary-s: 86%;
+// $bulma-primary-l: 14%;
+// .bulma-hero.is-primary {
+//   background-color: $bulma-hero;
+// }
+// $dimensions: 116 24 32 48 64 96 128 160 192 224 256 288 320 384 448 512;
+// // Import Main CSS file from theme
+// a.button { 
+//   white-space: wrap;
+//   word-wrap: break-word;
+//   overflow-wrap: anywhere;
+// }
 
-$bulma-hero-background-l-darkened: calc($bulma-hero-background-l + 10%);
-$bulma-hero-background-l-dark: calc($bulma-hero-background-l + 50%);
+// $bulma-hero-background-l-darkened: calc($bulma-hero-background-l + 10%);
+// $bulma-hero-background-l-dark: calc($bulma-hero-background-l + 50%);
 
-a:hover {
-  color: hsl($bulma-primary-h, $bulma-primary-s, $bulma-hero-background-l-darkened);
-}
+// $bulma-hero-background-l-lightened: calc($bulma-hero-background-l - 10%);
+// $bulma-hero-background-l-light: calc($bulma-hero-background-l - 50%);
+
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: green !important;
@@ -51,6 +51,13 @@ ul,li {
 .dropdown-item {
   color: #5eff3d !important;
 }
+.bulma-button {
+  background-color: rgb(5, 66, 5) !important;
+}
+.bulma-button:hover {
+  background-color: #5eff3d !important;
+  color: black !important;
+}
 .dropdown-item:hover {
   background-color: #5eff3d !important;
   color: black !important;
@@ -68,4 +75,8 @@ ul,li {
 .bulma-navbar-link:hover {
   background-color: #5eff3d !important;
   color: black !important;
+}
+.bs-hero.showcase-hero {
+  background: #005907;
+  background: linear-gradient(120deg,rgba(0, 89, 7, 1) 36%, rgba(70, 247, 67, 1) 100%);
 }
