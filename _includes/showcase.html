@@ -22,17 +22,17 @@
                             <div class="bulma-buttons bulma-is-centered bulma-my-4">
                                 # TODO: change to dark mode
                                 <a href="https://github.com/{{ item.github }}/stargazers"
-                                    class="bulma-button bulma-is-black bulma-is-small">
+                                    class="btn bg-dark bulma-is-small">
                                     <img alt="GitHub stars"
                                         src="https://img.shields.io/github/stars/{{ item.github }}?style=for-the-badge">
                                 </a>
                                 <a href="https://github.com/{{ item.github }}/network/members"
-                                    class="bulma-button bulma-is-black bulma-is-small">
+                                    class="btn bg-dark bulma-is-small">
                                     <img alt="GitHub forks"
                                         src="https://img.shields.io/github/forks/{{ item.github }}?style=for-the-badge">
                                 </a>
                                 <a href="https://github.com/{{ item.github }}/watchers"
-                                    class="bulma-button bulma-is-black bulma-is-small">
+                                    class="btn bg-dark bulma-is-small">
                                     <img alt="GitHub watchers"
                                         src="https://img.shields.io/github/watchers/{{ item.github }}?style=for-the-badge">
                                 </a>
@@ -46,7 +46,7 @@
                         {% if item.features %}
                             <ul class="list-group bulma-is-dark {{ item.features_styles }}">
                                 {% for feature in item.features %}
-                                    <li class="bg-dark list-group-item">{{ feature }}</li>
+                                    <li class="bg-dark list-group-item col-2-md">{{ feature }}</li>
                                 {% endfor %}
                             </ul>
                         {% endif %}
@@ -59,11 +59,12 @@
                                 {% endfor %}
                             </div>
                         {% endif %}
-
-                        <div class="bulma-my-4 bulma-buttons bulma-is-centered">
-                            <a href="{{ item.link }}" class="bulma-button bulma-is-primary">
-                                {{ item.link_text }}
-                            </a>
+                        <div class="row justify-content-center">
+                            <div class="mx-auto my-4  text-center ">
+                                <a href="{{ item.link }}" class="btn btn-success">
+                                    {{ item.link_text }}
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
