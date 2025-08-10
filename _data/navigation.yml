@@ -5,6 +5,8 @@
 - name: Projects
   link: /projects/
   dropdown:
+    - name: List of Projects
+      link: /projects/
     - name: Showcase
       link: /projects/showcase/
 - name: Portfolio
