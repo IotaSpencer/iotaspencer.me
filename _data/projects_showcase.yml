@@ -10,7 +10,7 @@ items:
     description: |-
       The ramblings of a madman in a mad world
       Here's how much time I spent on this project(with Wakatime enabled):
-      <a href="https://wakatime.com/badge/user/5ce38313-6fca-4c1e-b156-14447557e40f/project/abdea7f0-d121-4550-92cf-2887855a3ca8"><img src="https://wakatime.com/badge/user/5ce38313-6fca-4c1e-b156-14447557e40f/project/abdea7f0-d121-4550-92cf-2887855a3ca8.svg" alt="wakatime"></a>
+      <a href="https://wakatime.com/badge/user/5ce38313-6fca-4c1e-b156-14447557e40f/project/abdea7f0-d121-4550-92cf-2887855a3ca8"><img src="https://wakatime.com/badge/user/5ce38313-6fca-4c1e-b156-14447557e40f/project/abdea7f0-d121-4550-92cf-2887855a3ca8.svg" alt="wakatime for iotaspencer.me"></a>
 
       I also have a deployment script in the repository that allows me to deploy this site to my server with ease.
     features:
@@ -29,6 +29,11 @@ items:
     description: |-
       A gem for creating posts and pages in Jekyll
       It is a simple and easy to use gem that allows you to create posts and pages in Jekyll with ease.
+
+      Here's how much time I spent on this project(with Wakatime enabled):
+      <a href="https://wakatime.com/badge/user/5ce38313-6fca-4c1e-b156-14447557e40f/project/339be810-d008-4a2a-8436-fe8675241c36"><img src="https://wakatime.com/badge/user/5ce38313-6fca-4c1e-b156-14447557e40f/project/339be810-d008-4a2a-8436-fe8675241c36.svg" alt="wakatime for mkmatter"></a>
+
+      Posts on iotaspencer.me are created using this gem.
     features:
       - Jekyll
       - Ruby
@@ -57,7 +62,7 @@ items:
       It was a collaborative effort with other developers and was a great learning experience.
       The project was hosted on GitHub and was open source, allowing others to contribute and improve the code.
       The project was a great way to learn about DNS, spam detection, and collaborative software development.
-      My corraborators were: @xnite
+      My corraborators were: @xnite (<a href="https://xnite.me">xnite.me</a>))
     features:
       - Ruby
       - API
@@ -87,6 +92,10 @@ items:
       A project meant to install 'micro' on a system
       micro is a terminal-based text editor that is easy to use and has a lot of features.
 
+      Here's how much time I spent on this project(with Wakatime enabled):
+      <a href="https://wakatime.com/badge/user/5ce38313-6fca-4c1e-b156-14447557e40f/project/2559ff3f-8f91-4387-8011-3fa628c2244a"><img src="https://wakatime.com/badge/user/5ce38313-6fca-4c1e-b156-14447557e40f/project/2559ff3f-8f91-4387-8011-3fa628c2244a.svg" alt="wakatime"></a>
+
+      mkmatter installs micro-install as a dependency, so you can use an editor right from the CLI.
     features:
       - Ruby
       - HTTP
@@ -96,3 +105,4 @@ items:
     link: "/projects/micro-install"
     link_text: "micro-install"
     tags: ruby,github,git,cli
+  - title: +++
