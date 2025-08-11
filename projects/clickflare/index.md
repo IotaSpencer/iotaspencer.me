@@ -30,11 +30,11 @@ page_links:
 
 ## About
 
-
+[About the Project](/projects/clickflare/about)
 
 ## Usage
 
-
+[How to Use 'clickflare'](/projects/clickflare/usage)
 
 ## License
 
