@@ -11,6 +11,8 @@ tags:
 - TakeBackOurIdentity
 date: '2019-04-03 00:00:00 -0400'
 modified:
+  - datetime: "2025-09-01 14:30:00 -0400"
+    reason: "Fixed a markdown formatting error"
   - datetime: "2025-04-26 03:10:00 -0400"
     reason: "Fixed a missing comma"
   - datetime: "2025-04-26 12:06:00 -0400"
@@ -42,7 +44,7 @@ With that out of the way, some pointers and some knowledge about autism.
 ### Third,
   And most importantly.. Don't just assume that they have to be screaming to be autistic. They might be, but that screaming means that they are overstimulated and/or their trigger has occurred, whether that be a multitude of things. Such as arguing, interrupting them when they are trying to get a thought out, having them do something outside their 'self-described' schedule, over-stimulation or stressors in a work environment.. such as retail, big crowds, like in a restaurant, or event venue among others.
 
-## 
+## Finally,
 Here's some things that may show that your child or you or w/e person you see, might have autism.
 
 As noted for each group of ages.
